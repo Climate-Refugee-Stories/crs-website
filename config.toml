@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "http://examplesite.com"
+baseURL = "https://climate-refugee-stories.github.io/crs-website"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross-hugo"

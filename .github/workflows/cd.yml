@@ -1,0 +1,47 @@
+---
+
+name: Deploy Website
+
+on:
+  push:
+    #branches:
+    # - master
+ 
+
+jobs:
+  prod:
+    name: Deploy to prod
+    runs-on: ubuntu-latest
+    container:
+      image: registry.gitlab.com/pages/hugo/hugo_extended:latest
+
+    steps:
+      - name: Prep env
+        run: |
+          set -ex
+          apk add --update --no-cache openssl git bash &&
+          rm -rf /var/cache/apk/*
+
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      # - name: Prep script
+      #   run: |
+      #     sed 's/GITHUBTOKEN/${{ env.GITHUB_TOKEN }}/g' .github/repo_ci-cd/deployment/deploy.sh
+
+      - name: Deploy
+        run: bash .github/repo_ci-cd/deployment/deploy.sh
+        env:
+          GITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ARGZ: --gc --minify --cleanDestinationDir
+          GH_PAGES: gh-pages
+          #DEBUG: 'true'
+
+        # uses: chabad360/hugo-gh-pages@v2
+        # with:
+        #   githubToken: ${{ secrets.GITHUB_TOKEN }}
+        # env:
+        #   HUGO_ARGS: --gc --minify --cleanDestinationDir
+          # CNAME: incovatesolutions.com
