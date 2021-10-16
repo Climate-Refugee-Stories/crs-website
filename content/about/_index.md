@@ -5,8 +5,17 @@ author_image : "images/CRS Logo.png"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+**Climate Refugee Stories** is a multimedia narrative, archiving, and education project that uplifts the stories of people around the world who have been displaced by direct or indirect impacts of climate change, and documents the ways communities are resilient in the face of overlapping crises--including the COVID-19 pandemic.
+ 
+There are currently no legal protections for climate migrants in international law. In many places, Indigenous relationships to land and natural resources continue to go unrecognized, and environmental defenders face policing and persecution. Patterns of displacement and inequality are further exacerbated by increasing militarization, border controls, and politics of climate denial.
+ 
+But there is hope. We invite storytellers and audiences to debate and define **climate refugees** for themselves - to explore the historical, political, economic, and environmental causes of migration in order to bridge movements for social and environmental justice.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+Learn more about our approach to [Ethical Storytelling](https://drive.google.com/file/d/1x75Omo3fhjdADClZyOVb-oO9BVIu9fDm/view?usp=sharing)  
+​
 
-Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
+Visit our **Stories** and **Archive**  
+Check out our **Toolkit** for Teaching, Learning, and Taking Action
+​
+
+*This project is funded with support from the University of California’s [Critical Refugee Studies Collective](http://criticalrefugeestudies.com/), the National Geographic Society, and the North Carolina Humanities Council.*
