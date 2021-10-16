@@ -25,15 +25,25 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">Follow me on Social</h2>
+        <h2 class="section-title">Follow Us</h2>
       </div>
       <div class="col-12">
         <ul class="list-inline social-icons text-center">
           {{ range site.Params.social }}
-          <li class="list-inline-item"><a href="{{.URL}}"><i class="{{.icon}}"></i></a></li>
+          <li class="list-inline-item"><a href="{{.URL}}"  target="_blank"><i class="{{.icon}}"></i></a></li>
           {{ end }}
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Contact Form</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBrrMWkMs_zvikNMEb1P-4HbIl1QyXSPjJDKH7eoRokkczpA/viewform?embedded=true" 
+        width="640" height="1933" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
     </div>
   </div>
 </section>
