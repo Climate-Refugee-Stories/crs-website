@@ -4,8 +4,8 @@ name: Deploy Website
 
 on:
   push:
-    #branches:
-    # - master
+    branches:
+     - master
  
 
 jobs:
