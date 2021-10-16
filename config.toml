@@ -3,7 +3,7 @@ baseURL = "http://examplesite.com"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross-hugo"
-title = "Kross"
+title = "Climate Refugee Stories"
 
 # css plugins
 [[params.plugins.css]]
@@ -44,9 +44,14 @@ name = "Portfolio"
 weight = 3
 
 [[menu.main]]
+URL = "resources"
+name = "Resources"
+weight = 4
+
+[[menu.main]]
 URL = "contact"
 name = "Contact"
-weight = 4
+weight = 5
 
 
 # default parameters
@@ -54,7 +59,7 @@ weight = 4
 home = "Home"
 logo = ""
 # theme color
-theme_color = "#41228e"
+theme_color = "#054ca7"
 # contact info
 # phone = "+880 2544 658 256"
 email = "climaterefugeestories@gmail.com"
