@@ -49,8 +49,6 @@
       {{ range .item }}
       <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
         <img src="{{ .icon | absURL }}" class="mb-4" alt="icon">
-        <h4 class="mb-4">{{ .title }}</h4>
-        <p>{{ .content | markdownify }}</p>
       </div>
       {{ end }}
     </div>

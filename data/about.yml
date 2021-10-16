@@ -1,20 +1,23 @@
 # work process
 work_process:
   enable : true
-  title : "Work Process"
+  title : "Partners"
   item:
-  - title : "Research and Plan"
-    icon : "images/icons/plan.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    
-  - title : "Design and Develop"
-    icon : "images/icons/design.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    
-  - title : "Deliver"
-    icon : "images/icons/print.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  - icon : "images/partner-logos/National-Geographic-Logo.png"
 
+  - icon : "images/partner-logos/Activate Labs Logo.png"
+
+  - icon : "images/partner-logos/NC-Humanities.png"
+       
+  - icon : "images/partner-logos/FFI Logo.png"
+
+  - icon : "images/partner-logos/NED-Africa-Support-Africa.png"
+
+  - icon : "images/partner-logos/CRSC.png"
+
+  - icon : "images/partner-logos/PlusPeace.png"
+
+  - icon : "images/partner-logos/Roots of Unity.png"
 
 # team
 team:
@@ -90,6 +93,6 @@ team:
 
 # client logo slider
 clients_logo_slider:
-  enable : true
+  enable : false
   title : "My Clients"
   # clients logo comes from 'data/homepage.yml' file
