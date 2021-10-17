@@ -1,6 +1,6 @@
 ---
 title: "Tina Shull"
-date: 2021-10-17T03:01:46Z
+weight: 1
 draft: true
 image: "images/team/Tina Shull.jpg"
 designation: "US & US-Mexico Border"
