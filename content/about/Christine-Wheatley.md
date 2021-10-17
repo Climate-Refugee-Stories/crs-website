@@ -1,7 +1,7 @@
 ---
 title: "Christine Wheatley"
 weight: 0
-draft: true
+draft: false
 image: "images/team/Christine Wheatley.jpg"
 designation: "Ghana"
 work_area: ""

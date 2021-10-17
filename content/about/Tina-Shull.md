@@ -1,7 +1,7 @@
 ---
 title: "Tina Shull"
 weight: 1
-draft: true
+draft: false
 image: "images/team/Tina Shull.jpg"
 designation: "US & US-Mexico Border"
 work_area: "United States & US-Mexico Border"

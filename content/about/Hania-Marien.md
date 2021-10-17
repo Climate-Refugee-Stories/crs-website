@@ -1,7 +1,7 @@
 ---
 title: "Hania Marien"
 weight: 0
-draft: true
+draft: false
 image: "images/team/Hania Marien.jpg"
 designation: "The United States"
 work_area: ""

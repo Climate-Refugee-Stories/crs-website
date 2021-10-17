@@ -1,7 +1,7 @@
 ---
 title: "Bo Daraphant"
 weight: 0
-draft: true
+draft: false
 image: "images/team/Bo Daraphant.png"
 designation: "US & Marshall Islands"
 work_area: ""

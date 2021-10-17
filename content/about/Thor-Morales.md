@@ -1,7 +1,7 @@
 ---
 title: "Thor Morales"
 weight: 0
-draft: true
+draft: false
 image: "images/team/Thor Morales.jpg"
 designation: "Mexico"
 work_area: ""

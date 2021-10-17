@@ -1,7 +1,7 @@
 ---
 title: "Tanaya Dutta Gupta"
 weight: 0
-draft: true
+draft: false
 image: "images/team/Tanaya Dutta Gupta.jpg"
 designation: "India & Bangladesh"
 work_area: ""
