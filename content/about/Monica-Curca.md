@@ -1,6 +1,6 @@
 ---
 title: "Monica Curca"
-weight: 3
+weight: 0
 draft: true
 image: "images/team/Monica Curca.png"
 designation: "Central America & US-Mexico Border"

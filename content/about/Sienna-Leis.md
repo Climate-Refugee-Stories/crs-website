@@ -1,6 +1,6 @@
 ---
 title: "Sienna Leis"
-weight: 2
+weight: 0
 draft: true
 image: "images/team/Sienna Leis.jpg"
 designation: "The Caribbean"
