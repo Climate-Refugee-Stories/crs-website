@@ -14,7 +14,6 @@ recent_publications:
       [Reagan’s Cold War on Immigrants: Resistance and the Rise of a Detention Regime, 1980-1981](https://www.jstor.org/stable/10.5406/jamerethnhist.40.2.0005#:~:text=Reagan's%20%E2%80%9CCold%20War%20on%20immigrants,detention%20system%E2%80%94%20sparked%20mass%20resistance), 
       Journal of American Ethnic History
 recent_projects:
-  - |
 ---
 
 Project Director [Tina Shull](http://kristinashull.com/), PhD, is an Assistant Professor of Post-1960 US History at UNC Charlotte.
