@@ -1,12 +1,13 @@
 ---
 title: "Thor Morales"
-weight: 0
+weight: 7
 draft: false
 image: "images/team/Thor Morales.jpg"
 designation: "Mexico"
-work_area: ""
-location: ""
+work_area: "United States, Mexico, Global"
+location: "Washington, DC"
 recent_publications:
 recent_projects:
 ---
 
+Thor Morales is an ethnobiologist, photographer, filmmaker and participatory video & photovoice facilitator in Mexico. He leads participatory video and storytelling at [PlusPeace](https://www.pluspeace.org/).

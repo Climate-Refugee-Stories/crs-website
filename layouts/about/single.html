@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="text-white font-tertiary">{{ .Title }}</h1>
+        <h2 class="text-white font-tertiary">{{ .Title }}</h2>
       </div>
     </div>
   </div>
@@ -31,19 +31,19 @@
           <img src="{{.Params.image | absURL }}" alt="author"
             class="img-fluid w-100 rounded-lg border-thick border-white">
         </div>
-        location: {{ .Params.location }}<br>
-        designation: {{ .Params.designation }}<br>
-        work area: {{ .Params.work_area }}<br>
+        <strong>Location:</strong> {{ .Params.location }}<br>
+        <!-- <strong>Designation:</strong> {{ .Params.designation }}<br> -->
+        <strong>Work Area:</strong> {{ .Params.work_area }}<br>
       </div>
       <div class="col-md-8">
         {{ with .Params.recent_publications }}
-          <strong>Publications</strong><br>
+          <strong>Recent Publications</strong><br>
           {{ range . }}
             {{ . | markdownify }}<br>
           {{ end }}
         {{ end }}
         {{ with .Params.recent_projects }}
-          <strong>Projects</strong><br>
+          <strong>Recent Projects</strong><br>
           {{ range . }}
             {{ . | markdownify }}<br>
           {{ end }}
