@@ -1,0 +1,59 @@
+{{ define "main" }}
+
+<!-- page title -->
+<section class="page-title-alt bg-primary position-relative overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-white font-tertiary">{{ .Title }}</h1>
+      </div>
+    </div>
+  </div>
+  <!-- background shapes -->
+  <img src="{{`images/illustrations/page-title.png`| relURL}}" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="{{`images/illustrations/dots-group-sm.svg`| relURL}}" alt="illustrations" class="bg-shape-2">
+  <img src="{{`images/illustrations/leaf-yellow.svg`| relURL}}" alt="illustrations" class="bg-shape-3">
+  <img src="{{`images/illustrations/leaf-orange.svg`| relURL}}" alt="illustrations" class="bg-shape-4">
+  <img src="{{`images/illustrations/dots-group-cyan.svg`| relURL}}" alt="illustrations" class="bg-shape-5">
+  <img src="{{`images/illustrations/leaf-cyan-lg.svg`| relURL}}" alt="illustrations" class="bg-shape-6">
+</section>
+<!-- /page title -->
+
+<!-- about -->
+<section class="section pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        {{ .Content }}
+      </div>
+      <div class="col-md-4 text-left drag-lg-top">
+        <div class="shadow-down mb-4">
+          <img src="{{.Params.image | absURL }}" alt="author"
+            class="img-fluid w-100 rounded-lg border-thick border-white">
+        </div>
+        location: {{ .Params.location }}<br>
+        designation: {{ .Params.designation }}<br>
+        work area: {{ .Params.work_area }}<br>
+      </div>
+      <div class="col-md-8">
+        {{ with .Params.recent_publications }}
+          <strong>Publications</strong><br>
+          {{ range . }}
+            {{ . | markdownify }}<br>
+          {{ end }}
+        {{ end }}
+        {{ with .Params.recent_projects }}
+          <strong>Projects</strong><br>
+          {{ range . }}
+            {{ . | markdownify }}<br>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
+
+
+
+{{ end }}
