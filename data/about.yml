@@ -4,20 +4,28 @@ work_process:
   title : "Partners"
   item:
   - icon : "images/partner-logos/National-Geographic-Logo.png"
-
-  - icon : "images/partner-logos/Activate Labs Logo.png"
-
-  - icon : "images/partner-logos/NC-Humanities.png"
-       
-  - icon : "images/partner-logos/FFI Logo.png"
-
-  - icon : "images/partner-logos/NED-Africa-Support-Africa.png"
+    link: "https://www.nationalgeographic.com/"
 
   - icon : "images/partner-logos/CRSC.png"
+    link: "https://criticalrefugeestudies.com/"
+
+  - icon : "images/partner-logos/NC-Humanities.png"
+    link: "https://nchumanities.org/"
+
+  - icon : "images/partner-logos/FFI Logo.png"
+    link: "https://www.freedomforimmigrants.org/"
+
+  - icon : "images/partner-logos/NED-Africa-Support-Africa.png"
+    link: "https://nedafrica.com/"
+
+  - icon : "images/partner-logos/Activate Labs Logo.png"
+    link: "http://www.activatelabs.org/"
 
   - icon : "images/partner-logos/PlusPeace.png"
+    link: "https://www.pluspeace.org/"
 
   - icon : "images/partner-logos/Roots of Unity.png"
+    link: "https://rootsofunitymedia.org/"
 
 # team
 team:
