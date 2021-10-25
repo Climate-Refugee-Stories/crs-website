@@ -97,10 +97,10 @@ service:
       content : "A crowd-sourced, expanding set of resources for further reading, research, and action."
       highlighted : false
 
-# portfolio
-portfolio:
+# archives
+archives:
   enable : true
-  title : "Portfolio"
+  title : "Archives"
   item_show : 5
   # portfolio item comes from 'data/portfolio.yml' item.
 
@@ -158,8 +158,8 @@ clients_logo_slider:
     - logo : "images/clients-logo/client-logo-5.png"
       URL : "#"
 
-# blog
-blog:
+# stories
+stories:
   enable : true
-  title : "Blogs"
+  title : "Stories"
   # blog post comes from "content/blog" folder

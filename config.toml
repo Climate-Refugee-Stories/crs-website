@@ -34,13 +34,13 @@ name = "About"
 weight = 1
 
 [[menu.main]]
-URL = "blog"
-name = "Blog"
+URL = "stories"
+name = "Stories"
 weight = 2
 
 [[menu.main]]
-URL = "portfolio"
-name = "Portfolio"
+URL = "archives"
+name = "Archives"
 weight = 3
 
 [[menu.main]]

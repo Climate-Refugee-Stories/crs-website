@@ -85,36 +85,36 @@
  <!--  {{ end }}
   {{ end }} -->
 
-  {{ if site.Data.homepage.blog.enable }}
+  {{ if site.Data.homepage.stories.enable }}
   <!-- blog -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">{{site.Data.homepage.blog.title | markdownify }}</h2>
+          <h2 class="section-title">{{site.Data.homepage.stories.title | markdownify }}</h2>
         </div>
-        {{ range first 3 (where .Site.RegularPages "Section" "blog")}}
+        {{ range first 3 (where .Site.RegularPages "Section" "stories")}}
         {{ .Render "post" }}
         {{ end }}
       </div>
     </div>
   </section>
-  <!-- /blog -->
+  <!-- /stories -->
   {{ end }}
 
 
-  {{ if site.Data.homepage.portfolio.enable }}
+  {{ if site.Data.homepage.archives.enable }}
   <!-- Archives -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">{{ site.Data.homepage.portfolio.title | markdownify }}</h2>
+          <h2 class="section-title">{{ site.Data.homepage.archives.title | markdownify }}</h2>
         </div>
       </div>
       <div class="row shuffle-wrapper">
-        {{ $item:= site.Data.homepage.portfolio.item_show }}
-        {{ range first $item (where .Site.RegularPages "Section" "portfolio") }}
+        {{ $item:= site.Data.homepage.archives.item_show }}
+        {{ range first $item (where .Site.RegularPages "Section" "archives") }}
         <div class="col-lg-4 col-6 mb-4 shuffle-item">
           <div class="position-relative rounded hover-wrapper">
             <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
@@ -129,7 +129,7 @@
       </div>
     </div>
   </section>
-  <!-- /portfolio -->
+  <!-- /archives -->
   {{ end }}
 
   {{ if site.Data.homepage.service.enable }}
