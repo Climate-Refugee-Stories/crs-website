@@ -73,24 +73,28 @@ education:
       year : "1998"
       academy : "Cardiff School"
 
-# service
+# resources
 service:
   enable : true
-  title : "Services"
+  title : "Resources"
+  button:
+    enable : true
+    label : "learn more"
+    URL : "resources"
   item:
-    - title : "UI Design"
-      icon : "ti-palette"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    - title : "High School Curriculum"
+      icon : "ti-ruler-pencil"
+      content : "Gain a greater understanding of climate-induced migration, and how it fits within the broader phenomenon of human migration."
       highlighted : false
 
-    - title : "UX Design"
-      icon : "ti-vector"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    - title : "Ways to Take Action"
+      icon : "ti-clipboard"
+      content : "Check out our Community Discussion Toolkit, Media Toolkit, Organizations, and more!"
       highlighted : true
 
-    - title : "Interaction Design"
-      icon : "ti-panel"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    - title : "Climate Migration Syllabus"
+      icon : "ti-bookmark-alt"
+      content : "A crowd-sourced, expanding set of resources for further reading, research, and action."
       highlighted : false
 
 # portfolio
