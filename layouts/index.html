@@ -2,40 +2,17 @@
 
   <!-- hero area -->
   <section class="hero-area bg-primary overflow-hidden" id="parallax">
+    <div class="layer-bg w-100">
+      <img class="img-fluid w-100" src="{{`images/headers/testing.png` | relURL}}" alt="bg-shape">
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-lg-11 mx-auto">
-          <h1 class="text-white font-tertiary">{{ site.Data.homepage.banner.title | safeHTML }}</h1>
+          <h3 class="text-white font-tertiary home-tagline">{{ site.Data.homepage.banner.title | safeHTML }}</h3>
         </div>
       </div>
     </div>
-    <div class="layer-bg w-100">
-      <img class="img-fluid w-100" src="{{`images/illustrations/leaf-bg.png` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l2">
-      <img src="{{`images/illustrations/dots-cyan.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l3">
-      <img src="{{`images/illustrations/leaf-orange.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l4">
-      <img src="{{`images/illustrations/dots-orange.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l5">
-      <img src="{{`images/illustrations/leaf-yellow.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l6">
-      <img src="{{`images/illustrations/leaf-cyan.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l7">
-      <img src="{{`images/illustrations/dots-group-orange.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l8">
-      <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l9">
-      <img src="{{`images/illustrations/leaf-cyan-2.svg` | relURL}}" alt="bg-shape">
-    </div>
+    
     <!-- social icon -->
     <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
       {{ range site.Params.social }}
@@ -68,9 +45,9 @@
   {{ end }}
 
 
-  {{ if site.Data.homepage.skill.enable }}
-  {{ with site.Data.homepage.skill }}
-  <!-- skills -->
+<!--   {{ if site.Data.homepage.skill.enable }}
+  {{ with site.Data.homepage.skill }}-->
+  <!-- skills --><!--
   <section class="section">
     <div class="container">
       <div class="row">
@@ -91,71 +68,61 @@
         {{ end }}
       </div>
     </div>
-  </section>
+  </section>-->
   <!-- /skills -->
-  {{ end }}
-  {{ end }}
+ <!--  {{ end }}
+  {{ end }} -->
 
-  {{ if site.Data.homepage.experience.enable }}
-  {{ with site.Data.homepage.experience }}
-  <!-- experience -->
+  {{ if site.Data.homepage.stories.enable }}
+  <!-- blog -->
   <section class="section">
     <div class="container">
-      <div class="row justify-content-around">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{site.Data.homepage.stories.title | markdownify }}</h2>
         </div>
-        {{ range .item }}
-        <div class="col-lg-3 col-md-4 text-center">
-          <img src="{{.logo | relURL }}" alt="icon">
-          <p class="mb-0">{{.duration}}</p>
-          <h4>{{.title }}</h4>
-          <h6 class="text-light">{{.company }}</h6>
-        </div>
+        {{ range first 3 (where .Site.RegularPages "Section" "stories")}}
+        {{ .Render "post" }}
         {{ end }}
       </div>
     </div>
   </section>
-  <!-- /experience -->
-  {{ end }}
+  <!-- /stories -->
   {{ end }}
 
-  {{ if site.Data.homepage.education.enable }}
-  {{ with site.Data.homepage.education }}
-  <!-- education -->
-  <section class="section position-relative">
+
+  {{ if site.Data.homepage.archives.enable }}
+  <!-- Archives -->
+  <section class="section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{ site.Data.homepage.archives.title | markdownify }}</h2>
         </div>
-        {{ range .item }}
-        <div class="col-lg-6 col-md-6 mb-80">
-          <div class="d-flex">
-            <div class="mr-lg-5 mr-3">
-              <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
-            </div>
-            <div>
-              <p class="text-dark mb-1">{{.year}}</p>
-              <h4>{{ .title }}</h4>
-              <p class="mb-0 text-light">{{.academy}}</p>
+      </div>
+      <div class="row shuffle-wrapper">
+        {{ $item:= site.Data.homepage.archives.item_show }}
+        {{ range first $item (where .Site.RegularPages "Section" "archives") }}
+        <div class="col-lg-4 col-6 mb-4 shuffle-item">
+          <div class="position-relative rounded hover-wrapper">
+            <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+            <div class="hover-overlay">
+              <div class="hover-content">
+                <a class="btn btn-light btn-sm" href="{{ .Permalink | safeURL }}">view project</a>
+              </div>
             </div>
           </div>
         </div>
         {{ end }}
       </div>
     </div>
-    <!-- bg image -->
-    <img class="img-fluid edu-bg-image w-100" src="{{`images/backgrounds/education-bg.png`|relURL}}" alt="bg-image">
   </section>
-  <!-- /education -->
+  <!-- /archives -->
   {{ end }}
-  {{ end }}
-
 
   {{ if site.Data.homepage.service.enable }}
   {{ with site.Data.homepage.service }}
-  <!-- services -->
+  <!-- Resources/Toolkit -->
   <section class="section">
     <div class="container">
       <div class="row">
@@ -173,6 +140,13 @@
           </div>
         </div>
         {{ end }}
+        <div class="col-12 text-center">
+          {{ if .button.enable }}
+          {{ with .button }}
+            <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
+          {{ end }}
+          {{ end }}
+        </div>
       </div>
     </div>
   </section>
@@ -180,50 +154,19 @@
   {{ end }}
   {{ end }}
 
-
-  {{ if site.Data.homepage.portfolio.enable }}
-  <!-- portfolio -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">{{ site.Data.homepage.portfolio.title | markdownify }}</h2>
-        </div>
-      </div>
-      <div class="row shuffle-wrapper">
-        {{ $item:= site.Data.homepage.portfolio.item_show }}
-        {{ range first $item (where .Site.RegularPages "Section" "portfolio") }}
-        <div class="col-lg-4 col-6 mb-4 shuffle-item">
-          <div class="position-relative rounded hover-wrapper">
-            <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-            <div class="hover-overlay">
-              <div class="hover-content">
-                <a class="btn btn-light btn-sm" href="{{ .Permalink | safeURL }}">view project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  <!-- /portfolio -->
-  {{ end }}
-
-
-  {{ if site.Data.homepage.testimonial.enable }}
-  {{ with site.Data.homepage.testimonial }}
+  <!-- {{ if site.Data.homepage.testimonial.enable }}
+  {{ with site.Data.homepage.testimonial }} -->
   <!-- testimonial -->
-  <section class="section bg-primary position-relative testimonial-bg-shapes">
+  <!-- <section class="section bg-primary position-relative testimonial-bg-shapes">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
           <h2 class="section-title text-white mb-5">{{ .title | markdownify }}</h2>
         </div>
         <div class="col-lg-10 mx-auto testimonial-slider">
-          {{ range .item }}
+          {{ range .item }}-->
           <!-- slider-item -->
-          <div class="text-center testimonial-content">
+          <!-- <div class="text-center testimonial-content">
             <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
             <p class="text-white mb-4">{{.content | markdownify}}</p>
             <img class="img-fluid rounded-circle mb-4 d-inline-block" src="{{.image | absURL }}" alt="client-image">
@@ -233,46 +176,52 @@
           {{ end }}
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- bg shapes -->
-    <img src="{{`images/backgrounds/map.png` | relURL }}" alt="map" class="img-fluid bg-map">
+    <!-- <img src="{{`images/backgrounds/map.png` | relURL }}" alt="map" class="img-fluid bg-map">
     <img src="{{`images/illustrations/dots-group-v.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-1">
     <img src="{{`images/illustrations/leaf-orange.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-2">
     <img src="{{`images/illustrations/dots-group-sm.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-3">
     <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-4">
     <img src="{{`images/illustrations/leaf-cyan.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-5">
-  </section>
+  </section> -->
   <!-- /testimonial -->
-  {{ end }}
-  {{ end }}
+ <!--  {{ end }}
+  {{ end }} -->
 
 
-  {{ if site.Data.homepage.clients_logo_slider.enable }}
-  <!-- client logo slider -->
-  <section class="section pb-0">
-    <div class="container">
-      {{ partial "client-slider.html" . }}
+  <!-- Partners -->
+{{ if site.Data.about.work_process.enable }}
+{{ with site.Data.about.work_process }}
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">{{ .title | markdownify }}</h2>
+        <p>This project is funded with support from the University of California’s Critical Refugee Studies Collective, the National Geographic Society, and the North Carolina Humanities Council.</p>
+      </div>
+      {{ range .item }}
+      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
+        <a href="{{ .link }}"><img src="{{ .icon | absURL }}" class="mb-4" alt="icon"></a>
+      </div>
+      {{ end }}
     </div>
-  </section>
-  <!-- /client logo slider -->
-  {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- ./Partners -->
 
-  {{ if site.Data.homepage.blog.enable }}
-  <!-- blog -->
+  <!-- TODO: Make horizontal -->
   <section class="section">
     <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">{{site.Data.homepage.blog.title | markdownify }}</h2>
-        </div>
-        {{ range first 3 (where .Site.RegularPages "Section" "blog")}}
-        {{ .Render "post" }}
-        {{ end }}
+      <div class="row justify-content-around">
+        <div class="col-lg-7 text-center">
+        <a class="twitter-timeline" data-height="500" data-tweet-limit="3" href="https://twitter.com/ClimRefStories?ref_src=twsrc%5Etfw">Tweets by ClimRefStories</a> 
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
       </div>
     </div>
   </section>
-  <!-- /blog -->
-  {{ end }}
-
 
 {{ end }}

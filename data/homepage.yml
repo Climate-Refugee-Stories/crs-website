@@ -5,13 +5,13 @@ banner:
 # about
 about:
   enable : true
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  content : "Climate Refugee Stories is a multimedia narrative, archiving, and education project that uplifts the stories of people around the world who have been displaced by direct or indirect impacts of climate change, and documents the ways communities are resilient in the face of overlapping crises--including the COVID-19 pandemic."
   button:
     enable : true
-    label : "know more"
+    label : "learn more"
     URL : "about"
 
-# skill
+# TODO: Replace skill with stats 
 skill:
   enable : true
   title : "Skills"
@@ -73,30 +73,34 @@ education:
       year : "1998"
       academy : "Cardiff School"
 
-# service
+# resources
 service:
   enable : true
-  title : "Services"
+  title : "Resources"
+  button:
+    enable : true
+    label : "learn more"
+    URL : "resources"
   item:
-    - title : "UI Design"
-      icon : "ti-palette"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    - title : "High School Curriculum"
+      icon : "ti-ruler-pencil"
+      content : "Gain a greater understanding of climate-induced migration, and how it fits within the broader phenomenon of human migration."
       highlighted : false
 
-    - title : "UX Design"
-      icon : "ti-vector"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    - title : "Ways to Take Action"
+      icon : "ti-clipboard"
+      content : "Check out our Community Discussion Toolkit, Media Toolkit, Organizations, and more!"
       highlighted : true
 
-    - title : "Interaction Design"
-      icon : "ti-panel"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    - title : "Climate Migration Syllabus"
+      icon : "ti-bookmark-alt"
+      content : "A crowd-sourced, expanding set of resources for further reading, research, and action."
       highlighted : false
 
-# portfolio
-portfolio:
+# archives
+archives:
   enable : true
-  title : "Portfolio"
+  title : "Archives"
   item_show : 5
   # portfolio item comes from 'data/portfolio.yml' item.
 
@@ -154,8 +158,8 @@ clients_logo_slider:
     - logo : "images/clients-logo/client-logo-5.png"
       URL : "#"
 
-# blog
-blog:
+# stories
+stories:
   enable : true
-  title : "Blogs"
+  title : "Stories"
   # blog post comes from "content/blog" folder

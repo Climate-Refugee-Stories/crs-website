@@ -17,5 +17,3 @@ Learn more about our approach to [Ethical Storytelling](https://drive.google.com
 Visit our **Stories** and **Archive**  
 Check out our **Toolkit** for Teaching, Learning, and Taking Action
 ​
-
-*This project is funded with support from the University of California’s [Critical Refugee Studies Collective](http://criticalrefugeestudies.com/), the National Geographic Society, and the North Carolina Humanities Council.*
