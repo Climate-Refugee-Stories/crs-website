@@ -2,15 +2,15 @@
 
   <!-- hero area -->
   <section class="hero-area bg-primary overflow-hidden" id="parallax">
+    <div class="layer-bg w-100">
+      <img class="img-fluid w-100" src="{{`images/headers/testing.png` | relURL}}" alt="bg-shape">
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-lg-11 mx-auto">
-          <h3 class="text-white font-tertiary">{{ site.Data.homepage.banner.title | safeHTML }}</h3>
+          <h3 class="text-white font-tertiary home-tagline">{{ site.Data.homepage.banner.title | safeHTML }}</h3>
         </div>
       </div>
-    </div>
-    <div class="layer-bg w-100">
-      <img class="img-fluid w-100" src="{{`images/headers/testing.png` | relURL}}" alt="bg-shape">
     </div>
     
     <!-- social icon -->
@@ -23,8 +23,6 @@
   </section>
   <!-- /hero area -->
 
-  <div class="row center">
-    <div class="col-lg-7">
   {{ if site.Data.homepage.about.enable }}
   <!-- about -->
   <section class="section">
@@ -121,22 +119,7 @@
   </section>
   <!-- /archives -->
   {{ end }}
-</div>
 
-<div class="col-lg-4 right">
-  <!-- TODO: MAKE RIGHT ALIGNED -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 text-center">
-        <a class="twitter-timeline" data-height="500" data-tweet-limit="3" href="https://twitter.com/ClimRefStories?ref_src=twsrc%5Etfw">Tweets by ClimRefStories</a> 
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-      </div>
-    </div>
-  </section>
-</div>
-</div>
   {{ if site.Data.homepage.service.enable }}
   {{ with site.Data.homepage.service }}
   <!-- Resources/Toolkit -->
@@ -228,5 +211,17 @@
 {{ end }}
 {{ end }}
 <!-- ./Partners -->
+
+  <!-- TODO: Make horizontal -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-lg-7 text-center">
+        <a class="twitter-timeline" data-height="500" data-tweet-limit="3" href="https://twitter.com/ClimRefStories?ref_src=twsrc%5Etfw">Tweets by ClimRefStories</a> 
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      </div>
+    </div>
+  </section>
 
 {{ end }}

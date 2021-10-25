@@ -933,3 +933,7 @@ blockquote {
 .twitter-timeline {
   column-count: 2;
 }
+
+.home-tagline {
+  margin-right: 30%;
+}
