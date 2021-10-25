@@ -8,10 +8,10 @@ about:
   content : "Climate Refugee Stories is a multimedia narrative, archiving, and education project that uplifts the stories of people around the world who have been displaced by direct or indirect impacts of climate change, and documents the ways communities are resilient in the face of overlapping crises--including the COVID-19 pandemic."
   button:
     enable : true
-    label : "know more"
+    label : "learn more"
     URL : "about"
 
-# skill
+# TODO: Replace skill with stats 
 skill:
   enable : true
   title : "Skills"
