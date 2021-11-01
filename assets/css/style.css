@@ -174,11 +174,11 @@ body {
   justify-content: center
 }
 
-ol,
+/* ol,
 ul {
   list-style-type: none;
   margin: 0
-}
+} */
 
 img {
   vertical-align: middle;
@@ -759,14 +759,18 @@ blockquote {
   margin-bottom: 20px
 }
 
-.content strong {
+/* .content img {
+
+} */
+
+/* .content strong {
   font-family: playfair display, serif;
   font-size: 22px;
   font-weight: 400;
   color: #000;
   display: inherit;
   line-height: 1.5
-}
+} */
 
 .page-title-alt {
   padding: 350px 0 70px
