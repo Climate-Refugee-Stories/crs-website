@@ -3,7 +3,7 @@ title: "Marshall Islands: \"Art Stops the Damage\""
 author: "Tina Shull"
 author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2020-06-08T12:14:34+06:00
-image: "images/blog/Marshal-Islands-Art-Post/1Capture.webp"
+image: "images/blog/Marshall-Islands-Art-Post/1Capture.webp"
 image_source: "Bo Thai" 
 image_source_link: "https://illegal-drip.com/"
 description: "This is meta description."
@@ -16,7 +16,7 @@ draft: false
 Small, low-lying island nations in the South Pacific are some of the most vulnerable locations in the world to the impacts of climate change.  The Maldives, Marshall Islands, Kiribati and Tuvalu have been key sites where debates over the concept of “climate refugees” have taken place.  Affected community members and activists have [resisted media narratives](https://link.springer.com/chapter/10.1007/978-3-319-70703-7_1) that depict them as victims and have taken a range of political and artistic responses.  These nations’ leaders and ambassadors have been some of the first to bring these questions to the international stage.
 
 <!-- TO-DO: Center -->
-![Tokelauns protest against climate change ](../../images/blog/Marshal-Islands-Art-Post/2Capture.webp)  
+![Tokelauns protest against climate change ](../../images/blog/Marshall-Islands-Art-Post/2Capture.webp)  
 *Tokelauns protest against climate change during the Pacific Warrior Day of Action in 2014.*  
 *Photo Credit: [360 Pacific](http://350pacific.org/we-are-not-drowning-we-are-fighting/)*
 
@@ -30,7 +30,7 @@ As early as 1987, former President of the Republic of the Maldives Maumoon Abdul
 During World War II, the United States occupied the Marshall Islands as a trust territory and built a strategic military weapons base on Kwajalein Atoll.  The islands were then developed as a nuclear testing site, where the United States detonated 67 nuclear bomb tests between 1946-1958.  Residents were relocated, but Bikini and Rongelap Atolls became uninhabitable and radioactive fallout has poisoned Marshallese residents across the islands [for decades since](https://theconversation.com/bikini-islanders-still-deal-with-fallout-of-us-nuclear-tests-70-years-later-58567).  
 
 <!-- TO-DO: Center -->
-![Marshall Islands](../../images/blog/Marshal-Islands-Art-Post/3Capture.webp)  
+![Marshall Islands](../../images/blog/Marshall-Islands-Art-Post/3Capture.webp)  
 *Photo Credit: [SciDevNet](https://www.scidev.net/global/climate-change/multimedia/pacific-islands-threatened-waves-climate-change.html?)*
 
 Declassified documents reveal that contamination spread farther than the US government publicly recognized, and that US researchers took the opportunity to test nuclear contamination’s effects on humans.  
@@ -75,14 +75,15 @@ They say:
 Climate Refugee Stories art director and project collaborator Bo Daraphant sat down with Soultree in 2017 to discuss their art, activism, and climate migration:
 
 <!-- TO-DO: Center -->  
+<!-- TO-DO: Combine clips to 1 interview or list out all the Qs and interview clips -->  
 {{< youtube uBpVOhHWSxI >}}  
 
 <!-- TO-DO: Center -->  
-![Sampaguita - First Art Attempts](../../images/blog/Marshal-Islands-Art-Post/4Capture.webp)  
+![Sampaguita - First Art Attempts](../../images/blog/Marshall-Islands-Art-Post/4Capture.webp)  
 *“Sampaguita is one of my first attempts at visual art that mixed ancient Pilipino text, Baybayin, passport imagery, blurred relationships with nation-states and individuals, wrapping paper, charcoal, and pencil.”*  
 Source: [(Un)documenting](http://undocumenting.com/post/61601717049/stephanie)
 
 <!-- TO-DO: Figure out spacing & sizing -->  
 ***Listen to "Stolen Lands" by Soultree on Soundcloud:***
 <!-- TO-DO: Center -->
-[!["Stolen Lands" by Soultree](../../images/blog/Marshal-Islands-Art-Post/5Capture.webp)](https://soundcloud.com/elephant-rebellion/stolen-lands)  
+[!["Stolen Lands" by Soultree](../../images/blog/Marshall-Islands-Art-Post/5Capture.webp)](https://soundcloud.com/elephant-rebellion/stolen-lands)  
