@@ -4,6 +4,7 @@ author: "Tina Shull"
 author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2020-06-08T12:14:34+06:00
 image: "images/blog/Marshall-Islands-Art-Post/1Capture.webp"
+image_description: "\"Not 1 More\" featuring musician and spoken-word artist Soultree."
 image_source: "Bo Thai" 
 image_source_link: "https://illegal-drip.com/"
 description: "This is meta description."

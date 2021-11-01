@@ -4,6 +4,7 @@ author: "Tina Shull"
 author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-05-01T12:14:34+06:00
 image: "images/CRS Logo.png"
+image_description: 
 image_source: "Tina Shull" 
 image_source_link: "http://localhost:1313/crs-website/about/tina-shull/"
 description: "Who are Climate Refugees?"
