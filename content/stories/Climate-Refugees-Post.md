@@ -19,7 +19,6 @@ After World War II, the United Nations (UN) was created and established the Univ
 
 But there are limits to the definition of refugee in international law. For example, how is “persecution” defined?
 
-<!-- TO-DO: Center -->
 ![Butterflies at US-Mexico border](../../images/blog/Climate-Refugees-Post/2Capture.webp#caption "Butterflies aloft at the US-Mexico border in Nogales, Arizona.
 Photo Credit: Steve Pavey, [Hope in Focus](https://www.stevepavey.com/index)")
 
@@ -60,7 +59,7 @@ Could climate refugees be:
 Here, we invite storytellers and audiences to debate and define climate refugees for themselves.
 
 <!-- TO-DO: Center -->
-And we ask:
+And we ask:  
 [**What does it take to move from a world rooted in violence, extraction, and domination to a world rooted in regeneration, resilience, and interdependence?**](http://communityresilience.uci.edu/co-lab/)
 
 <!-- TO-DO: Center -->

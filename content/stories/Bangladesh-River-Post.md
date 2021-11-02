@@ -57,7 +57,6 @@ The International Organization for Migration (IOM) is an intergovernmental organ
 
 > Bangladesh is often described as the most vulnerable country on the planet in the face of a changing climate. Find out why. Watch the short documentary film Thirty Million.
 
-<!-- TO-DO: Center -->
 {{< vimeo 170108444 >}}
 
 > Thirty Million is a 35 minute documentary on the effects sea-level rise and climate change will have on the people of Bangladesh. The country is widely considered the most vulnerable in the world to climate change. The title Thirty Million references a staggering statistic: 30 million people are expected to be displaced over the coming decades as the country is projected to lose 17% of its land as global sea levels rise by one metre.  

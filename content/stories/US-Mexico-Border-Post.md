@@ -20,7 +20,6 @@ In this interview for Climate Refugee Stories conducted by Steve Pavey of [Hope 
 ***An Interview with Todd Miller***  
 ***author of Storming the Wall***
 
-<!-- TO-DO: Center -->  
 <!-- TO-DO: Combine clips to 1 interview or list out all the Qs and interview clips -->  
 {{< youtube y4d8k4JTJfA >}}  
 
