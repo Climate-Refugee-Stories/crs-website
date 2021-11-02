@@ -1,25 +1,13 @@
+.main-blog-image{
+    @include normal-image-processing{
+        img {
+            max-height: 700px
+        }
+    }
+}
 
 .content{
-    img {
-        height: auto;
-        width: auto;
-        max-height: 650px;
-        max-width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        @include mobile {
-            max-height: 300px;
-        }
-        // credit: https://www.xaprb.com/blog/how-to-style-images-with-markdown/
-        &[src*="#caption"]{
-            margin-bottom: 10px;
-        }
-    }
-    figcaption {
-        text-align: center;
-        font-style: italic;
-    }
+    @include normal-image-processing;
     .vidcaption {
         @include video-shortcode-base {
             margin-bottom: 10px;
