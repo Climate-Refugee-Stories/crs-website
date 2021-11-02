@@ -91,18 +91,18 @@
   {{ end }}
 
 
-  {{ if site.Data.homepage.archives.enable }}
-  <!-- Archives -->
+  {{ if site.Data.homepage.archive.enable }}
+  <!-- Archive -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">{{ site.Data.homepage.archives.title | markdownify }}</h2>
+          <h2 class="section-title">{{ site.Data.homepage.archive.title | markdownify }}</h2>
         </div>
       </div>
       <div class="row shuffle-wrapper">
-        {{ $item:= site.Data.homepage.archives.item_show }}
-        {{ range first $item (where .Site.RegularPages "Section" "archives") }}
+        {{ $item:= site.Data.homepage.archive.item_show }}
+        {{ range first $item (where .Site.RegularPages "Section" "archive") }}
         <div class="col-lg-4 col-6 mb-4 shuffle-item">
           <div class="position-relative rounded hover-wrapper">
             <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
@@ -117,7 +117,7 @@
       </div>
     </div>
   </section>
-  <!-- /archives -->
+  <!-- /archive -->
   {{ end }}
 
   {{ if site.Data.homepage.service.enable }}

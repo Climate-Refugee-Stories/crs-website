@@ -97,10 +97,10 @@ service:
       content : "A crowd-sourced, expanding set of resources for further reading, research, and action."
       highlighted : false
 
-# archives
-archives:
+# archive
+archive:
   enable : true
-  title : "Archives"
+  title : "Archive"
   item_show : 5
   # portfolio item comes from 'data/portfolio.yml' item.
 

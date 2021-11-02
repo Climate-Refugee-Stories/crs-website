@@ -39,8 +39,8 @@ name = "Stories"
 weight = 2
 
 [[menu.main]]
-URL = "archives"
-name = "Archives"
+URL = "archive"
+name = "Archive"
 weight = 3
 
 [[menu.main]]
