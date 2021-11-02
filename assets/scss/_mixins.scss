@@ -1,0 +1,63 @@
+@mixin mobile-xs{
+  @media(max-width:400px){
+    @content;
+  }
+}
+@mixin mobile{
+  @media(max-width:575px){
+    @content;
+  }
+}
+@mixin tablet{
+  @media(max-width:767px){
+    @content;
+  }
+}
+@mixin desktop{
+  @media(max-width:991px){
+    @content;
+  }
+}
+@mixin desktop-lg{
+  @media(max-width:1200px){
+    @content;
+  }
+}
+
+@mixin size($size){
+  width: $size; height: $size;
+}
+
+@mixin video-shortcode-base {
+  // Default styling for YT shortcode
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  //
+  @content;
+}
+
+@mixin normal-image-processing {
+  img {
+      height: auto;
+      width: auto;
+      max-height: 650px;
+      max-width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      @include mobile {
+          max-height: 300px;
+      }
+      // credit: https://www.xaprb.com/blog/how-to-style-images-with-markdown/
+      &[src*="#caption"]{
+          margin-bottom: 10px;
+      }
+  }
+  figcaption {
+      text-align: center;
+      font-style: italic;
+  }
+  @content;
+}
