@@ -53,9 +53,8 @@ It is unacceptable that death and disappearance are treated as accepted and norm
 
 As long as people are forced to risk their lives to enter this country, people will continue to provide aid, and as long as a culture of impunity exists for Border Patrol agents who engage in routine acts of cruelty, we will continue to document and expose the human rights abuses we witness daily in the borderlands.  
 
-{{< youtube eqaslbj5Th8 >}}
-<!-- TO-DO: Center -->
-*"Footage of Border Patrol Vandalism of Humanitarian Aid, 2010-2017" by No More Deaths*  
+{{< youtube id="eqaslbj5Th8" title="*\"Footage of Border Patrol Vandalism of Humanitarian Aid, 2010-2017\" by No More Deaths*" class="vidcaption" >}}
+<!-- TO-DO: Center -->  
 
 {{< youtube dnmOOnRALfI >}}
 <!-- TO-DO: Center -->

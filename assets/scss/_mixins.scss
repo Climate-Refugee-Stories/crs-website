@@ -23,7 +23,17 @@
       @content;
     }
   }
-  
+
   @mixin size($size){
     width: $size; height: $size;
+  }
+
+  @mixin video-shortcode-base {
+    // Default styling for YT shortcode
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    //
+    @content;
   }
