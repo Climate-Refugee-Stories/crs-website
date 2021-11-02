@@ -23,9 +23,14 @@ In this interview for Climate Refugee Stories conducted by Steve Pavey of [Hope 
 <!-- TO-DO: Combine clips to 1 interview or list out all the Qs and interview clips -->  
 {{< youtube y4d8k4JTJfA >}}  
 
+> "My book itself is journalism, so it presents a problem, but it offers examples of how this is not necessarily inevitable."​  
+
+---  
+  
+
 ![No More Deaths](../../images/blog/US-Mexico-Border-Post/3Capture.webp)
 
-***No More Deaths***
+***No More Deaths***  
 *May, 2018*
 
 My name is Caitlin Deighan, and I’m the Abuse Documentation and Advocacy Coordinator for No More Deaths.  For those who aren’t familiar, [No More Deaths](http://forms.nomoredeaths.org/en/) is a humanitarian aid organization based in Tucson, Arizona, whose mission is to end death and suffering in the US-Mexico borderlands.
@@ -46,4 +51,20 @@ This crisis is not an accident, and it is not inevitable.  It is the effect of U
 
 It is unacceptable that death and disappearance are treated as accepted and normalized risks for the act of migration--even that it is considered such an integral feature of border enforcement that attempts to mitigate the risk are treated as criminal activities.  Our border enforcement apparatus is designed to kill people, and criminalization of people attempting to rescue them is merely an escalation of the same. 
 
-As long as people are forced to risk their lives to enter this country, people will continue to provide aid, and as long as a culture of impunity exists for Border Patrol agents who engage in routine acts of cruelty, we will continue to document and expose the human rights abuses we witness daily in the borderlands.
+As long as people are forced to risk their lives to enter this country, people will continue to provide aid, and as long as a culture of impunity exists for Border Patrol agents who engage in routine acts of cruelty, we will continue to document and expose the human rights abuses we witness daily in the borderlands.  
+
+{{< youtube eqaslbj5Th8 >}}
+<!-- TO-DO: Center -->
+*"Footage of Border Patrol Vandalism of Humanitarian Aid, 2010-2017" by No More Deaths*  
+
+{{< youtube dnmOOnRALfI >}}
+<!-- TO-DO: Center -->
+*Disappeared," Part 2, "Interference with Humanitarian Aid" by No More Deaths*  
+
+![Migrant Deaths and Humane Borders Water Stations Map](../../images/blog/US-Mexico-Border-Post/4Capture.webp#caption "Organizations such as Humane Borders, [No More Deaths](http://www.nomoredeaths.org/), and the [Colibri Center for Human Rights](http://www.colibricenter.org/) have documented increasing migrant deaths in the Arizona desert, revealing the deadly intersections of increasing immigration enforcement measures, such as Operation Gatekeeper and the construction of the border wall, and climate change. Photo Credit: [Humane Borders](https://humaneborders.org/migrant-death-mapping/)")  
+
+{{< youtube yR9tARIVxvw >}}
+<!-- TO-DO: Center -->
+*"Torn Apart," featuring Robin Reineke of the Colibri Center for Human Rights, by Human Rights Watch* 
+
+![Disappeared Report](../../images/blog/US-Mexico-Border-Post/5Capture.webp#caption "Click to read [No More Deaths's report \"Disappeared\"](http://www.thedisappearedreport.org/)")
