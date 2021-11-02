@@ -11,5 +11,13 @@
         @include mobile {
             max-height: 300px;
         }
+        // credit: https://www.xaprb.com/blog/how-to-style-images-with-markdown/
+        &[src*="#caption"]{
+            margin-bottom: 10px;
+        }
+    }
+    figcaption {
+        text-align: center;
+        font-style: italic;
     }
 }
