@@ -1,13 +1,13 @@
 ---
 title: "Marshall Islands: \"Art Stops the Damage\""
 author: "Tina Shull"
-author_link: "http://localhost:1313/crs-website/about/tina-shull/"
+# author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2020-06-08T12:14:34+06:00
 image: "images/blog/Marshall-Islands-Art-Post/1Capture.webp"
-image_description: "\"Not 1 More\" featuring musician and spoken-word artist Soultree."
-image_source: "Bo Thai" 
-image_source_link: "https://illegal-drip.com/"
+image_caption: |
+  "Not 1 More" artwork by [Bo Thai](https://illegal-drip.com/), featuring musician and spoken-word artist Soultree
 description: "This is meta description."
+summary: "Small, low-lying island nations in the South Pacific are some of the most vulnerable locations in the world to the impacts of climate change." 
 draft: false
 ---
 
@@ -21,10 +21,11 @@ Small, low-lying island nations in the South Pacific are some of the most vulner
 
 As early as 1987, former President of the Republic of the Maldives Maumoon Abdul Gayoom spoke to the United Nations about the impacts of climate change the small nation was already experiencing.  At the [1989 Small States Conference on Sea Level Rise](https://www.sciencedirect.com/science/article/pii/S0016718509000335), Gayoom asked larger nations not to make decisions on behalf of small island states. He said:
 
-> “There must be a way out. Neither the Maldives nor any small island nation wants to drown.  That’s for sure.  Neither do we want our lands eroded, or our economies destroyed.  Nor do we want to become environmental refugees either.  We want to stand up and fight.  All we ask is that the more affluent nations and the international community in general, help us in this fight.”  
+> “There must be a way out. Neither the Maldives nor any small island nation wants to drown.  That’s for sure.  Neither do we want our lands eroded, or our economies destroyed.  Nor do we want to become environmental refugees either.  We want to stand up and fight.  All we ask is that the more affluent nations and the international community in general, help us in this fight.”  \
   
 <!-- TO-DO: Figure out spacing & sizing -->
-***Histories of Colonialism***  
+&nbsp;
+##### ***Histories of Colonialism*** 
 
 During World War II, the United States occupied the Marshall Islands as a trust territory and built a strategic military weapons base on Kwajalein Atoll.  The islands were then developed as a nuclear testing site, where the United States detonated 67 nuclear bomb tests between 1946-1958.  Residents were relocated, but Bikini and Rongelap Atolls became uninhabitable and radioactive fallout has poisoned Marshallese residents across the islands [for decades since](https://theconversation.com/bikini-islanders-still-deal-with-fallout-of-us-nuclear-tests-70-years-later-58567).  
 
@@ -41,9 +42,10 @@ Activism and artistic responses to climate change in the Marshall Islands recogn
 
 ---  
 <!-- TO-DO: Figure out spacing & sizing -->
-***Kathy Jetnil-Kijiner***  
+&nbsp;
+##### ***Kathy Jetnil-Kijiner***  
   
-Kathy Jetnil-Kijiner is a Marshallese poet and spoken-word artist.  She was chosen to perform her poetry at the UN Climate Summit in New York City in 2014 as the "voice of civil society."  She is a co-founder of the nonprofit [Jo Jikum](https://jojikum.org/), which empowers Marshallese youth to seek solutions to climate change.​
+Kathy Jetnil-Kijiner is a Marshallese poet and spoken-word artist.  She was chosen to perform her poetry at the UN Climate Summit in New York City in 2014 as the "voice of civil society."  She is a co-founder of the nonprofit *[Jo Jikum](https://jojikum.org/)*, which empowers Marshallese youth to seek solutions to climate change.​
 
 
 In "History Project," Kathy Jetnil-Kijiner confronts the legacies of US occupation and atomic testing in the Marshall Islands:   
@@ -55,7 +57,8 @@ Kathy Jetnil-Kijiner performed "Dear Matafele Peinem," a poem to her daughter, a
   
   ---  
 <!-- TO-DO: Figure out spacing & sizing -->  
-***Stephanie Camba: Soultree***  
+&nbsp;
+#### ***Stephanie Camba: Soultree***  
   
 Stephanie Camba, or Soultree, is an undocumented artist, musician, and poet in the United States.  They were born in Manila, Philippines, and grew up in Majuro, Marshall Islands.  Their family relocated to Arkansas shortly after 9/11.  While Soultree does not label themself a “climate refugee” per se, their art, music, and activism acknowledges the interconnections between a changing environment, histories of US colonialism and militarism in the South Pacific, and the displacements their family and other Marshallese have experienced.
   
@@ -64,20 +67,24 @@ They say:
 
 {{< youtube gAYTg6eqHuk >}}
 *"Coqui Lullaby" Soultree official music video*  
-<br>
+&nbsp;
     
 <!-- TO-DO: Figure out spacing & sizing -->  
-***An Interview with Soultree***  
+##### ***An Interview with Soultree***  
 Climate Refugee Stories art director and project collaborator Bo Daraphant sat down with Soultree in 2017 to discuss their art, activism, and climate migration:
  
 <!-- TO-DO: Combine clips to 1 interview or list out all the Qs and interview clips -->  
 {{< youtube uBpVOhHWSxI >}}  
+<!-- TO-DO: Maybe pick a favorite quote from the interview for below -->  
+> “I have never known a life without my culture and my country being colonized.”
 
-![Sampaguita - First Art Attempts](../../images/blog/Marshall-Islands-Art-Post/4Capture.webp)  
-*“Sampaguita is one of my first attempts at visual art that mixed ancient Pilipino text, Baybayin, passport imagery, blurred relationships with nation-states and individuals, wrapping paper, charcoal, and pencil.”*  
-Source: [(Un)documenting](http://undocumenting.com/post/61601717049/stephanie)
+&nbsp;
+
+![Sampaguita - First Art Attempts](../../images/blog/Marshall-Islands-Art-Post/4Capture.webp#caption "Sampaguita is one of my first attempts at visual art that mixed ancient Pilipino text, Baybayin, passport imagery, blurred relationships with nation-states and individuals, wrapping paper, charcoal, and pencil. Source: [(Un)documenting](http://undocumenting.com/post/61601717049/stephanie)")
+
+&nbsp;
 
 <!-- TO-DO: Figure out spacing & sizing -->  
-***Listen to "Stolen Lands" by Soultree on Soundcloud:***
+##### ***Listen to "Stolen Lands" by Soultree on Soundcloud:***
 <!-- TO-DO: Center -->
 [!["Stolen Lands" by Soultree](../../images/blog/Marshall-Islands-Art-Post/5Capture.webp)](https://soundcloud.com/elephant-rebellion/stolen-lands)  

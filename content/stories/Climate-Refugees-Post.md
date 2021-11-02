@@ -1,13 +1,13 @@
 ---
 title: "Who are Climate Refugees?"
 author: "Tina Shull"
-author_link: "http://localhost:1313/crs-website/about/tina-shull/"
-date: 2021-05-01T12:14:34+06:00
+# author_link: "http://localhost:1313/crs-website/about/tina-shull/"
+date: 2021-05-20T12:14:34+06:00
 image: "images/CRS Logo.png"
-image_description:
-image_source: "Tina Shull"
-image_source_link: "http://localhost:1313/crs-website/about/tina-shull/"
+image_caption: |
+    Photo Credit: [Tina Shull](https://climate-refugee-stories.github.io/crs-website/about/tina-shull)
 description: "Who are Climate Refugees?"
+summary: "The International Organization for Migration (IOM) estimates that in 2019, 25 million people were displaced by climate change-related events."
 draft: false
 ---
 

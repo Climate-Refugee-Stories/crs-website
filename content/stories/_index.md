@@ -8,5 +8,6 @@ image_description: "This is an image description"
 image_source: "Artist" 
 image_source_link: "#"
 description: "This is meta description."
+summary: "This is a sentence preview of the story content, typically the first sentence of the main content of the article."
 draft: false
 ---

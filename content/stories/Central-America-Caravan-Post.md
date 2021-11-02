@@ -1,23 +1,26 @@
 ---
 title: "Central America: \"This Caravan is Yours, Mr. Trump\""
-author: "Tina Shull "
-author_link: "http://localhost:1313/crs-website/about/tina-shull/"
+author: "Tina Shull"
+# author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2020-01-01T12:14:34+06:00
 image: "images/blog/Central-America-Caravan-Post/1Capture.webp"
-image_description: "A young member of the spring 2018 [refugee caravan](https://www.pueblosinfronteras.org/viacrucis.html) waves a Honduran flag atop the US-Mexico border wall in Playas Tijuana."
-image_source: "Tina Shull" 
-image_source_link: "http://localhost:1313/crs-website/about/tina-shull/"
+image_caption: |
+    A young member of the spring 2018 [refugee caravan](https://www.pueblosinfronteras.org/viacrucis.html) waves a Honduran flag atop the US-Mexico border wall in Playas Tijuana. Photo Credit: [Tina Shull](https://climate-refugee-stories.github.io/crs-website/about/tina-shull)
 description: "Central America: This Caravan is Yours"
+summary: "When the people of my country of Honduras decide to leave, they do not leave because they lack love for Honduras, but because the need demands it."
 draft: false
 ---
 
 <!-- TO-DO: Center -->
-***Coming Soon: Stories from the Migrant Caravan***   
-***by Monica Curca and Thor Morales of Activate Labs***
+#### ***Coming Soon: Stories from the Migrant Caravan***   
+#### ***by Monica Curca and Thor Morales of Activate Labs***
+&nbsp;
 
-***This Caravan is Yours, Mr. Trump***  
-
+![Members of the Viacrusis Migrantes](../../images/blog/Central-America-Caravan-Post/2Capture.webp#caption "Members of the Viacrusis Migrantes en la luche (\"Migrants in Struggle\" Refugee Caravan) in Mexico in April 2018. Photo Credit: [Pueblo sin Fronteras](http://www.pueblosinfronteras.org/)")
+&nbsp;
+#### ***This Caravan is Yours, Mr. Trump***  
 [Español aquí](http://www.latinorebels.com/2018/04/10/caravanisyours/)  
+
 
 When the people of my country of Honduras decide to leave, they do not leave because they lack love for Honduras, but because the need demands it.  When these people begin their route north, their feelings are conflicted and painful.
 
@@ -54,3 +57,5 @@ You invented the borders because you are afraid of us.  You fear our people who 
 *Poet and Cultural Representative in Honduras*  
 
 *Originally published by [Latino Rebels](http://www.latinorebels.com/2018/04/10/caravanisyours/), April 10, 2018*
+
+---

@@ -1,28 +1,31 @@
 ---
 title: "Bangladesh: \"The River Took Everything\""
 author: "Tina Shull"
-author_link: "http://localhost:1313/crs-website/about/tina-shull/"
-date: 2021-10-01T12:14:34+06:00
+# author_link: "http://localhost:1313/crs-website/about/tina-shull/"
+date: 2021-10-11T12:14:34+06:00
 image: "images/blog/Bangladesh-River-Post/1Capture.webp"
-image_description: "Entryway to a home in Dhaka's Bhola Slum, 2017."
-image_source: "Saumaun Heiat" 
-image_source_link: "#"
+image_caption: |
+    Entryway to a home in Dhaka's Bhola Slum, 2017. Photo Credit: Saumaun Heiat 
 description: "The River Took Everything."
+summary: "In 2017-8, Climate Refugee Stories project collaborator Saumaun Heiat worked as a Program Support Officer for the International Organization for Migration in Dhaka, Bangladesh."
 draft: false
 ---
 
 <!-- TO-DO: Center -->
-Coming Soon: Stories from Dhaka, Bangladesh  
-by Tanaya Dutta Gupta
+#### ***Coming Soon: Stories from Dhaka, Bangladesh***  
+#### ***by Tanaya Dutta Gupta***
+&nbsp;
 
 <!-- TO-DO: Center -->
-**Climate Refugee Stories: Bangladesh is supported by National Geographic Society**  
+#### **Climate Refugee Stories: Bangladesh is supported by National Geographic Society**  
 ![NatGeo Logo](../../images/blog/Bangladesh-River-Post/2Capture.webp)  
 
-In 2017-8, Climate Refugee Stories project collaborator [Saumaun Heiat](https://www.linkedin.com/in/saumaun-heiat-52560013a/) worked as a Program Support Officer for the International Organization for Migration in Dhaka, Bangladesh. Below, he writes about his experiences listening to the stories of Rohingya Muslim refugees in one of the world's largest refugee camps, Cox's Bazaar, on the southeastern coast of Bangladesh, and community members displaced by coastal erosion and relocated to Dhaka's Bhola Slum.
+In 2017-8, Climate Refugee Stories project collaborator [Saumaun Heiat](https://www.linkedin.com/in/saumaun-heiat-52560013a/) worked as a Program Support Officer for the International Organization for Migration in Dhaka, Bangladesh. Below, he writes about his experiences listening to the stories of Rohingya Muslim refugees in one of the world's largest refugee camps, Cox's Bazaar, on the southeastern coast of Bangladesh, and community members displaced by coastal erosion and relocated to Dhaka's Bhola Slum.  
+&nbsp; 
+&nbsp;
 
-**Reflections in the Rising Waters of Bangladesh**  
-***by Saumaun Heiat***
+#### **Reflections in the Rising Waters of Bangladesh**  
+##### ***by Saumaun Heiat***
 
 On August 25th, 2017, fresh waves of violence in Myanmar’s Rakhine state towards the Rohingya people began the unraveling of one of the worst humanitarian disasters of the 21st century thus far. I arrived in Bangladesh on July 27th, 2017, to begin my internship with the International Organization for Migration (IOM-UN Migration Agency). Being a recent college graduate from California, I thought I was prepared to be immersed in a completely new country, culture, and work ethic and to grow out from the bubble of Orange County where I had been living. 
 
@@ -39,7 +42,7 @@ The personal narratives I recorded with the help of my translator Ripon, a forme
 Hearing both the stories of the Rohingya as political refugees and [the Bhola slum community](https://www.researchgate.net/publication/282516165_Insecure_hope_the_challenges_faced_by_urban_slum_dwellers_in_Bhola_Slum_Bangladesh) as environmental refugees, there are similarities and differences in their personal narratives and thoughts of their own future contexts. From the new Rohingya arrivals at the time, their narratives were very much based in escaping violence, familial separation, and loss of property and assets, resulting in much more psychosocial trauma. While among the Bhola community we interviewed, there was undoubtedly also trauma in the narratives of loss of agriculture-based livelihoods, but those we spoke with also seemed more willing to adapt and accept their new urban environment. In regard to their future prospects, the newly arrived Rohingya at the time were overall more optimistic about eventually going back to their homes in Rakhine State but were wary about trusting the reintegration process, which now is looking increasingly bleak. The Bhola slum community, on the other hand, voiced much more of an acceptance to the reality of how climate change has caused irreversible change to their homes and livelihoods, resulting in individuals being more resigned to their fate as urban dwellers in Dhaka who must adapt to a new livelihood. 
 
 
-UPDATE—In the spring of 2020, while Climate Refugee Stories collaborator Tanaya Dutta Gupta was conducting fieldwork in Dhaka's Bhola Slum, it was partially [destroyed by fire](https://www.usnews.com/news/world/articles/2020-03-11/bangladesh-slum-fire-leaves-many-people-homeless) and cleared by authorities with no warning, leaving many residents homeless.
+*UPDATE—In the spring of 2020, while Climate Refugee Stories collaborator Tanaya Dutta Gupta was conducting fieldwork in Dhaka's Bhola Slum, it was partially [destroyed by fire](https://www.usnews.com/news/world/articles/2020-03-11/bangladesh-slum-fire-leaves-many-people-homeless) and cleared by authorities with no warning, leaving many residents homeless.*
 
 
 The International Organization for Migration (IOM) is an intergovernmental organization, under the United Nations, that provides services for migrants and governments to promote orderly and humane management of migration. IOM views migration as [an adaptive response](https://publications.iom.int/books/migration-adaptation-environmental-and-climate-change-case-kenya) to climate change, and understands that there is an environmental aspect in migration that is being intensified due to climate change, making it a very visible dynamic within migrant communities. Additionally, IOM believes that climate change will have adverse consequences for livelihoods, public health, food security, and water availability. This in turn will impact human mobility, likely leading to a substantial rise in the scale of migration and displacement. IOM’s most notable partnership in this context is the [Climate Change, Environment and Migration Alliance (CCEMA)](http://www.ccema-portal.org/). 
@@ -50,9 +53,10 @@ The International Organization for Migration (IOM) is an intergovernmental organ
 ***Read Saumaun's latest article [Iran's Dustbowl Migration](https://www.eonmag.org/irans-dustbowl-migration/) in Eon Magazine***
   
 ---  
+&nbsp;
 
-**Documentary Film: Thirty Million**  
-  
+#### **Documentary Film: Thirty Million**  
+
 > Thirty Million People. A statistic. But this statistic is made up of individuals.  
 
 > Bangladesh is often described as the most vulnerable country on the planet in the face of a changing climate. Find out why. Watch the short documentary film Thirty Million.
@@ -64,5 +68,5 @@ The International Organization for Migration (IOM) is an intergovernmental organ
 In a [review of the film](https://www.downtoearth.org.in/reviews/thirty-million-a-documentary-on-bangladesh-and-that-sinking-feeling-54425), Subhojit Goswami says that it gives viewers a sinking, "realisation that climate-vulnerable Bangladesh is suffering because of what rest of the world is doing... One can feel the enormity of the situation by looking at instances of [land subsidence](https://oceanservice.noaa.gov/facts/subsidence.html) and resilience of the people who have built their homes, seen them washed away and rebuilt them again—20 or 30 times in their lifetime. Still, Bangladeshis don’t want to see themselves as victims." 
   
 As environmental lawyer Monica Jahan Bose says in the film, “They are fighters, poets and singers. They don’t want to give up their land. They want to stay and fight.”
-  
+
 ---
