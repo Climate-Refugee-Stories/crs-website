@@ -21,7 +21,7 @@ cms:
 
 take_action:
   enable: true
-  title: "Ways to Take Action"
+  title: "Take Action"
   bold_description: "Coming Soon: "
   description: |   
     &nbsp;  
