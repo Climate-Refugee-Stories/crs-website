@@ -50,34 +50,28 @@
   {{ end }}
 
 
-  {{ if site.Data.homepage.archive.enable }}
+  {{ if site.Data.resources.cms.enable }}
+  {{ with site.Data.resources.cms }}
   <!-- Archive -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">{{ site.Data.homepage.archive.title | markdownify }}</h2>
+          <h2 class="section-title">{{ .title | markdownify }}</h2>
+          <p>{{ site.Data.resources.cms.description | markdownify }}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+            <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
+          {{ end }}
+          {{ end }}
         </div>
-      </div>
-      <div class="row shuffle-wrapper">
-        {{ $item:= site.Data.homepage.archive.item_show }}
-        {{ range first $item (where .Site.RegularPages "Section" "archive") }}
-        <div class="col-lg-4 col-6 mb-4 shuffle-item">
-          <div class="position-relative rounded hover-wrapper">
-            <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-            <div class="hover-overlay">
-              <div class="hover-content">
-                <a class="btn btn-light btn-sm" href="{{ .Permalink | safeURL }}">view project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        {{ end }}
       </div>
     </div>
   </section>
   <!-- /archive -->
   {{ end }}
+  {{ end }}
+
 
   {{ if site.Data.homepage.service.enable }}
   {{ with site.Data.homepage.service }}

@@ -10,3 +10,12 @@ hscurriculum:
   description: "Gain a greater understanding of climate-induced migration, and how it fits within the broader phenomenon of human migration."
   pdf: "https://drive.google.com/file/d/16DgrYOK7l_zdmJS0DwNnZwqAJX4qH4k7/preview"
 
+cms:
+  enable: true
+  title: "Climate Migration Syllabus"
+  description: "Part of the Climate Refugee Stories project, the #ClimateMigrationSyllabus is a crowd-sourced, expanding set of resources for further reading, research, and action. This syllabus is designed to introduce a critical climate refugee studies to scholarly and public discussions about climate migration. In other words, we aim to challenge prevailing narratives about climate and migration \"crisis\" that sow division and despair, and instead invite readers to define challenges and opportunities surrounding climate migration through critical thought and debate. Above all, we urge audiences to listen primarily to the voices and expertise of those who are most impacted."
+  button: 
+    enable: true
+    label: "visit the #ClimateMigrationSyllabus"
+    URL: "https://climatemigrationsyllabus.com/"
+
