@@ -19,3 +19,16 @@ cms:
     label: "visit the #ClimateMigrationSyllabus"
     URL: "https://climatemigrationsyllabus.com/"
 
+take_action:
+  enable: true
+  title: "Ways to Take Action"
+  bold_description: "Coming Soon: "
+  description: |   
+    &nbsp;  
+    Community Discussion Toolkit
+
+    Media Toolkit  
+
+    Organizations  
+
+    More Ways to Take Action  

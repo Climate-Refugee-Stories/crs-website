@@ -52,7 +52,7 @@
 
   {{ if site.Data.resources.cms.enable }}
   {{ with site.Data.resources.cms }}
-  <!-- Archive -->
+  <!-- CMS -->
   <section class="section">
     <div class="container">
       <div class="row">
@@ -68,77 +68,27 @@
       </div>
     </div>
   </section>
-  <!-- /archive -->
+  <!-- /CMS -->
   {{ end }}
   {{ end }}
 
-
-  {{ if site.Data.homepage.service.enable }}
-  {{ with site.Data.homepage.service }}
-  <!-- Resources/Toolkit -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
-        </div>
-        {{ range .item }}
-        <div class="col-md-4 mb-4">
-          <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
-            <div class="card-body text-center px-4 py-5">
-              <i class="{{.icon }} icon mb-5 d-inline-block"></i>
-              <h4 class="mb-4">{{.title}}</h4>
-              <p>{{.content | markdownify}}</p>
-            </div>
-          </div>
-        </div>
-        {{ end }}
-        <div class="col-12 text-center">
-          {{ if .button.enable }}
-          {{ with .button }}
-            <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
-          {{ end }}
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /services -->
-  {{ end }}
-  {{ end }}
-
-  <!-- Partners -->
-{{ if site.Data.about.work_process.enable }}
-{{ with site.Data.about.work_process }}
+  <!-- take action -->
+{{ if site.Data.resources.take_action.enable }}
+{{ with site.Data.resources.take_action }}
 <section class="section">
   <div class="container">
     <div class="row justify-content-around">
       <div class="col-lg-12 text-center">
         <h2 class="section-title">{{ .title | markdownify }}</h2>
-        <p>This project is funded with support from the University of California’s Critical Refugee Studies Collective, the National Geographic Society, and the North Carolina Humanities Council.</p>
+        <h3><strong>{{ site.Data.resources.take_action.bold_description | markdownify }}</strong></h3>      
+        <h4>{{ site.Data.resources.take_action.description | markdownify }}</h4>      
       </div>
-      {{ range .item }}
-      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
-        <a href="{{ .link }}"><img src="{{ .icon | absURL }}" class="mb-4" alt="icon"></a>
-      </div>
-      {{ end }}
     </div>
   </div>
 </section>
 {{ end }}
 {{ end }}
-<!-- ./Partners -->
+<!-- ./take action -->
 
-  <!-- TODO: Make horizontal -->
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-around">
-        <div class="col-lg-7 text-center">
-        <a class="twitter-timeline" data-height="500" data-tweet-limit="3" href="https://twitter.com/ClimRefStories?ref_src=twsrc%5Etfw">Tweets by ClimRefStories</a> 
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-      </div>
-    </div>
-  </section>
 
 {{ end }}
