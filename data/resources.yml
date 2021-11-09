@@ -1,0 +1,12 @@
+# about
+about:
+  enable: false
+  content: " "
+
+# hs curriculum
+hscurriculum: 
+  enable: true
+  title: "Climate-Induced Migration: A High School Curriculum"
+  description: "Gain a greater understanding of climate-induced migration, and how it fits within the broader phenomenon of human migration."
+  pdf: "https://drive.google.com/file/d/16DgrYOK7l_zdmJS0DwNnZwqAJX4qH4k7/preview"
+
