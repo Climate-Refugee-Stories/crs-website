@@ -1,10 +1,94 @@
 {{ define "main" }}
 
 {{ partial "page-title.html" . }}
-<br><br>
-<div class="text-center">
-    <h3>This page is coming soon!</h3>
-</div>
-<br><br>
-<br><br>
+    
+    <!-- social icon -->
+    <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+      {{ range site.Params.social }}
+      <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
+      {{ end }}
+    </ul>
+    <!-- /social icon -->
+  </section>
+  <!-- /hero area -->
+
+  {{ if site.Data.resources.about.enable }}
+  <!-- about -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          {{ with site.Data.resources.about }}
+          <p class="font-secondary lead text-dark">{{.content | markdownify}}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /about -->
+  {{ end }}
+
+  {{ if site.Data.resources.hscurriculum.enable }}
+  <!-- hs curriculum -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3 class="section-title">{{ site.Data.resources.hscurriculum.title | markdownify }}</h3>
+          <p>{{ site.Data.resources.hscurriculum.description | markdownify }}</p>
+          <iframe src="{{ site.Data.resources.hscurriculum.pdf | absURL }}" width="100%" height="500px"></iframe>  
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /hs curriculum -->
+  {{ end }}
+
+
+  {{ if site.Data.resources.cms.enable }}
+  {{ with site.Data.resources.cms }}
+  <!-- CMS -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{ .title | markdownify }}</h2>
+          <p>{{ site.Data.resources.cms.description | markdownify }}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+            <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /CMS -->
+  {{ end }}
+  {{ end }}
+
+  <!-- take action -->
+{{ if site.Data.resources.take_action.enable }}
+{{ with site.Data.resources.take_action }}
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">{{ .title | markdownify }}</h2>
+        <h3><strong>{{ site.Data.resources.take_action.bold_description | markdownify }}</strong></h3>      
+        <h3>{{ site.Data.resources.take_action.description | markdownify }}</h3>      
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- ./take action -->
+
+
 {{ end }}

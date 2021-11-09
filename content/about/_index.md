@@ -14,6 +14,6 @@ But there is hope. We invite storytellers and audiences to debate and define **c
 Learn more about our approach to [Ethical Storytelling](https://drive.google.com/file/d/1x75Omo3fhjdADClZyOVb-oO9BVIu9fDm/view?usp=sharing)  
 ​
 
-Visit our [**Stories**]({{< ref "/stories" >}}) and **Archive**  
-Check out our **Toolkit** for Teaching, Learning, and Taking Action
+Visit our [**Stories**]({{< ref "/stories" >}}) and [**Archive**]({{< ref "/archive" >}})  
+Check out our [**Resources**]({{< ref "/resources" >}}) for Teaching, Learning, and Taking Action
 ​
