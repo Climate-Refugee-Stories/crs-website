@@ -73,7 +73,7 @@ Climate Refugee Stories collaborator and sociocultural anthropologist Maria Barb
 ##### **by Maria Barbero in the *Daily Beast***
  
 &nbsp; 
-![Hope and Prayers Artwork](../../images/blog/US-Detention-Water-Post/3Capture.webp#caption "Artwork drawn by a man in immigration detention in Louisiana in 2017. Photo Credit: Tina Shull")
+![Hope and Prayers Artwork](../../images/blog/US-Detention-Water-Post/3Capture.webp#caption "Artwork drawn by a man in immigration detention in Louisiana in 2017. Image Credit: Tina Shull")
 &nbsp; 
 
 <!-- TO-DO: Center -->

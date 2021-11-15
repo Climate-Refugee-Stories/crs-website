@@ -5,7 +5,7 @@ author: "Tina Shull"
 date: 2021-10-11T12:14:34+06:00
 image: "images/blog/Bangladesh-River-Post/1Capture.webp"
 image_caption: |
-    Entryway to a home in Dhaka's Bhola Slum, 2017. Photo Credit: [Saumaun Heiat](https://climate-refugee-stories.github.io/crs-website/about/saumaun-heiat) 
+    Entryway to a home in Dhaka's Bhola Slum, 2017. Image Credit: [Saumaun Heiat](https://climate-refugee-stories.github.io/crs-website/about/saumaun-heiat) 
 description: "The River Took Everything."
 summary: "In 2017-8, Climate Refugee Stories project collaborator Saumaun Heiat worked as a Program Support Officer for the International Organization for Migration in Dhaka, Bangladesh."
 draft: false
