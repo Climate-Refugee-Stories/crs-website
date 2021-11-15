@@ -451,7 +451,7 @@ textarea.form-control {
 }
 
 .navbar .nav-item.active .nav-link{
-  color: #52f8f4;
+  color: #fff017;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -892,15 +892,29 @@ blockquote {
 }
 
 .social-icons a{
-  height: 100px;
-  width: 100px;
-  line-height: 102px;
+  height: 70px;
+  width: 70px;
+  line-height: 75px;
   border-radius: 50%;
   display: block;
   box-shadow:  0 18px 39.1px 6.9px rgba(224,241,255,.34);
   color: #fff;
   background-color: var(--primary-color);
-  font-size: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin: 5px;
+}
+
+.social-icons-home a{
+  height: 50px;
+  width: 50px;
+  line-height: 55px;
+  border-radius: 50%;
+  display: block;
+  box-shadow:  0 18px 39.1px 6.9px rgba(224,241,255,.34);
+  color: #fff;
+  background-color: var(--primary-color);
+  font-size: 18px;
   text-align: center;
 }
 

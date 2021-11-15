@@ -2,7 +2,7 @@
 
 {{ partial "page-title.html" . }}
 
-<!-- portfolio -->
+<!-- archive -->
 <section class="section">
   <div class="container">
     <div class="row mb-5">
@@ -32,7 +32,7 @@
           <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="{{ .Permalink }}">view project</a>
+              <a class="btn btn-light btn-sm" href="{{ .Permalink }}">learn more</a>
             </div>
           </div>
         </div>
@@ -41,12 +41,6 @@
     </div>
   </div>
 </section>
-<!-- /portfolio -->
-
-<section class="section bg-light">
-  <div class="container">
-    {{ partial "client-slider.html" . }}
-  </div>
-</section>
+<!-- /archive -->
 
 {{ end }}

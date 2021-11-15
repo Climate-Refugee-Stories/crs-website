@@ -2,10 +2,10 @@
 title: "Central America: \"This Caravan is Yours, Mr. Trump\""
 author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
-date: 2020-01-01T12:14:34+06:00
+date: 2021-10-15T12:14:34+07:00
 image: "images/blog/Central-America-Caravan-Post/1Capture.webp"
 image_caption: |
-    A young member of the spring 2018 [refugee caravan](https://www.pueblosinfronteras.org/viacrucis.html) waves a Honduran flag atop the US-Mexico border wall in Playas Tijuana. Photo Credit: [Tina Shull](https://climate-refugee-stories.github.io/crs-website/about/tina-shull)
+    A young member of the spring 2018 [refugee caravan](https://www.pueblosinfronteras.org/viacrucis.html) waves a Honduran flag atop the US-Mexico border wall in Playas Tijuana. Image Credit: [Tina Shull](https://climate-refugee-stories.github.io/crs-website/about/tina-shull)
 description: "Central America: This Caravan is Yours"
 summary: "When the people of my country of Honduras decide to leave, they do not leave because they lack love for Honduras, but because the need demands it."
 draft: false
@@ -16,7 +16,7 @@ draft: false
 #### ***by Monica Curca and Thor Morales of Activate Labs***
 &nbsp;
 
-![Members of the Viacrusis Migrantes](../../images/blog/Central-America-Caravan-Post/2Capture.webp#caption "Members of the Viacrusis Migrantes en la luche (\"Migrants in Struggle\" Refugee Caravan) in Mexico in April 2018. Photo Credit: [Pueblo sin Fronteras](http://www.pueblosinfronteras.org/)")
+![Members of the Viacrusis Migrantes](../../images/blog/Central-America-Caravan-Post/2Capture.webp#caption "Members of the Viacrusis Migrantes en la luche (\"Migrants in Struggle\" Refugee Caravan) in Mexico in April 2018. Image Credit: [Pueblo sin Fronteras](http://www.pueblosinfronteras.org/)")
 &nbsp;
 #### ***This Caravan is Yours, Mr. Trump***  
 [Español aquí](http://www.latinorebels.com/2018/04/10/caravanisyours/)  

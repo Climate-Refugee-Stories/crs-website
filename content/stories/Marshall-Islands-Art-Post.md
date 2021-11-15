@@ -2,7 +2,7 @@
 title: "Marshall Islands: \"Art Stops the Damage\""
 author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
-date: 2020-06-08T12:14:34+06:00
+date: 2021-10-20T12:14:34+07:00
 image: "images/blog/Marshall-Islands-Art-Post/1Capture.webp"
 image_caption: |
   "Not 1 More" artwork by [Bo Thai](https://illegal-drip.com/), featuring musician and spoken-word artist Soultree
@@ -17,7 +17,7 @@ draft: false
 Small, low-lying island nations in the South Pacific are some of the most vulnerable locations in the world to the impacts of climate change.  The Maldives, Marshall Islands, Kiribati and Tuvalu have been key sites where debates over the concept of “climate refugees” have taken place.  Affected community members and activists have [resisted media narratives](https://link.springer.com/chapter/10.1007/978-3-319-70703-7_1) that depict them as victims and have taken a range of political and artistic responses.  These nations’ leaders and ambassadors have been some of the first to bring these questions to the international stage.
 
 <!-- TO-DO: Center -->
-![Tokelauns protest against climate change ](../../images/blog/Marshall-Islands-Art-Post/2Capture.webp#caption "Tokelauns protest against climate change during the Pacific Warrior Day of Action in 2014 Photo Credit: [360 Pacific](http://350pacific.org/we-are-not-drowning-we-are-fighting/)")
+![Tokelauns protest against climate change ](../../images/blog/Marshall-Islands-Art-Post/2Capture.webp#caption "Tokelauns protest against climate change during the Pacific Warrior Day of Action in 2014 Image Credit: [360 Pacific](http://350pacific.org/we-are-not-drowning-we-are-fighting/)")
 
 As early as 1987, former President of the Republic of the Maldives Maumoon Abdul Gayoom spoke to the United Nations about the impacts of climate change the small nation was already experiencing.  At the [1989 Small States Conference on Sea Level Rise](https://www.sciencedirect.com/science/article/pii/S0016718509000335), Gayoom asked larger nations not to make decisions on behalf of small island states. He said:
 
@@ -29,7 +29,7 @@ As early as 1987, former President of the Republic of the Maldives Maumoon Abdul
 
 During World War II, the United States occupied the Marshall Islands as a trust territory and built a strategic military weapons base on Kwajalein Atoll.  The islands were then developed as a nuclear testing site, where the United States detonated 67 nuclear bomb tests between 1946-1958.  Residents were relocated, but Bikini and Rongelap Atolls became uninhabitable and radioactive fallout has poisoned Marshallese residents across the islands [for decades since](https://theconversation.com/bikini-islanders-still-deal-with-fallout-of-us-nuclear-tests-70-years-later-58567).  
 
-![Marshall Islands](../../images/blog/Marshall-Islands-Art-Post/3Capture.webp#caption "Photo Credit: [SciDevNet](https://www.scidev.net/global/climate-change/multimedia/pacific-islands-threatened-waves-climate-change.html?)")
+![Marshall Islands](../../images/blog/Marshall-Islands-Art-Post/3Capture.webp#caption "Image Credit: [SciDevNet](https://www.scidev.net/global/climate-change/multimedia/pacific-islands-threatened-waves-climate-change.html?)")
 
 Declassified documents reveal that contamination spread farther than the US government publicly recognized, and that US researchers took the opportunity to test nuclear contamination’s effects on humans.  
 

@@ -2,10 +2,10 @@
 title: "The US-Mexico Border: \"Over My Dead Body\""
 author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
-date: 2021-05-28T12:14:34+06:00
+date: 2021-10-15T12:14:34+06:00
 image: "images/blog/US-Mexico-Border-Post/1Capture.webp"
 image_caption: |
-    Artwork on the Mexican side of the US-Mexico border wall in Tijuana. Photo Credit: [Tina Shull](https://climate-refugee-stories.github.io/crs-website/about/tina-shull)
+    Artwork on the Mexican side of the US-Mexico border wall in Tijuana. Image Credit: [Tina Shull](https://climate-refugee-stories.github.io/crs-website/about/tina-shull)
 description: "US-Mexico Border"
 summary: "Climate change not only contributes to conditions globally that drive migration to the United States, but it also exacerbates tensions along the US-Mexico border."
 draft: false
@@ -64,7 +64,7 @@ As long as people are forced to risk their lives to enter this country, people w
 {{< youtube id="dnmOOnRALfI" title="*Disappeared, \"Part 2, Interference with Humanitarian Aid\" by No More Deaths*" class="vidcaption" >}}  
 &nbsp;
 
-![Migrant Deaths and Humane Borders Water Stations Map](../../images/blog/US-Mexico-Border-Post/4Capture.webp#caption "Organizations such as Humane Borders, [No More Deaths](http://www.nomoredeaths.org/), and the [Colibri Center for Human Rights](http://www.colibricenter.org/) have documented increasing migrant deaths in the Arizona desert, revealing the deadly intersections of increasing immigration enforcement measures, such as Operation Gatekeeper and the construction of the border wall, and climate change. Photo Credit: [Humane Borders](https://humaneborders.org/migrant-death-mapping/)")  
+![Migrant Deaths and Humane Borders Water Stations Map](../../images/blog/US-Mexico-Border-Post/4Capture.webp#caption "Organizations such as Humane Borders, [No More Deaths](http://www.nomoredeaths.org/), and the [Colibri Center for Human Rights](http://www.colibricenter.org/) have documented increasing migrant deaths in the Arizona desert, revealing the deadly intersections of increasing immigration enforcement measures, such as Operation Gatekeeper and the construction of the border wall, and climate change. Image Credit: [Humane Borders](https://humaneborders.org/migrant-death-mapping/)")  
 &nbsp;
 
 {{< youtube id="yR9tARIVxvw" title="*\"Torn Apart,\" featuring Robin Reineke of the Colibri Center for Human Rights, by Human Rights Watch*" class="vidcaption" >}} 

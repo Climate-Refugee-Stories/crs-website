@@ -1,6 +1,10 @@
 <div class="col-lg-4 col-sm-6 mb-4">
   <article class="card shadow">
-    <a href="{{.Permalink}}" title="{{.Title }}"><img class="rounded card-img-top" src="{{.Params.Image | relURL}}" alt="{{.Title }}" style="max-height: 280px;"></a>
+    <a href="{{.Permalink}}" title="{{.Title }}">
+      <div class="text-center">
+        <img class="rounded card-img-top" src="{{.Params.Image | relURL}}" alt="{{.Title }}" style="max-height: 300px; max-width: 300px;">
+      </div>
+    </a>
     <div class="card-body">
       <h4 class="card-title"><a class="text-dark" href="{{.Permalink}}">{{.Title }}</a>
       </h4>
