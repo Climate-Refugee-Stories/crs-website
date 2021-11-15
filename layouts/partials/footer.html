@@ -62,7 +62,8 @@
 {{ if site.Params.cookies.enable }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 <div id="js-cookie-box" class="cookie-box cookie-box-hide">
-	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+	Stay up to date with our newsletter! <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2"><a href="https://climaterefugeestories.substack.com/p/coming-soon?showWelcome=true" target="_blank">Subscribe</a></span>
+  <!-- Dismiss button <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">Dismiss</span> -->
 </div>
 <script>
 	(function ($) {
@@ -93,6 +94,14 @@
   background: rgb(71, 71, 71);
   transition: all .75s cubic-bezier(.19, 1, .22, 1);
   color: #fdfdfd;
+}
+
+.cookie-box a {
+  color: white;
+}
+
+.cookie-box a:hover {
+  color: rgb(204, 204, 204);
 }
 
 .cookie-box-hide {
