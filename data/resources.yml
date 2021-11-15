@@ -1,19 +1,22 @@
 # about
 about:
-  enable: false
-  content: " "
+  enable: true
+  content: | 
+    This page contains a range of resources to supplement our [**Stories**](/stories) and provide ways for students, educators, researchers, and community members to learn more and take action. Check back often as we will continue adding to our list, and [**Contact Us**](/contact) if you have any resources or actions to share.
 
 # hs curriculum
 hscurriculum: 
   enable: true
-  title: "Climate-Induced Migration: A High School Curriculum"
-  description: "Gain a greater understanding of climate-induced migration, and how it fits within the broader phenomenon of human migration."
+  title: "K-12 Curriculum"
+  description: | 
+    Our curriculum includes a broad multi-unit “Climate-Induced Migration: A High School Curriculum'' and a range of K-12 curriculum units in a variety of disciplines developed and piloted by teachers in the Charlotte-Mecklenburg school district in North Carolina. These units are for educational purposes only and should be used with attribution to authors cited within. Curriculum developed with support from National Geographic Society and the Charlotte Teachers Institute.
   pdf: "https://drive.google.com/file/d/16DgrYOK7l_zdmJS0DwNnZwqAJX4qH4k7/preview"
 
 cms:
   enable: true
   title: "Climate Migration Syllabus"
-  description: "Part of the Climate Refugee Stories project, the #ClimateMigrationSyllabus is a crowd-sourced, expanding set of resources for further reading, research, and action. This syllabus is designed to introduce a critical climate refugee studies to scholarly and public discussions about climate migration. In other words, we aim to challenge prevailing narratives about climate and migration \"crisis\" that sow division and despair, and instead invite readers to define challenges and opportunities surrounding climate migration through critical thought and debate. Above all, we urge audiences to listen primarily to the voices and expertise of those who are most impacted."
+  description: |  
+    The **#ClimateMigrationSyllabus** is a crowd-sourced, expanding set of resources for further reading, research, and action. This syllabus is designed to introduce critical **climate refugee studies** to scholarly and public discussions about climate migration. In other words, we aim to challenge prevailing narratives about climate and migration “crisis” that sow division and despair, and instead invite readers to define challenges and opportunities surrounding climate migration through critical thought and debate. Above all, we urge audiences to listen primarily to the voices and expertise of those who are most impacted.
   button: 
     enable: true
     label: "visit the #ClimateMigrationSyllabus"
