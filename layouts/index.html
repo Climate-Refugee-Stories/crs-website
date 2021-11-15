@@ -78,9 +78,12 @@
   <section class="section">
     <div class="container">
       <div class="row">
+        {{ with site.Data.homepage.stories }}
         <div class="col-12 text-center">
-          <h2 class="section-title">{{site.Data.homepage.stories.title | markdownify }}</h2>
+          <h2 class="section-title">{{ .title | markdownify }}</h2>
+          <a href="{{ .URL | absURL }}"><img src="{{ .story_image | absURL }}" class="img-fluid mb-20"></a>
         </div>
+        {{ end }}
         {{ range first 3 (where .Site.RegularPages "Section" "stories")}}
         {{ .Render "post" }}
         {{ end }}
