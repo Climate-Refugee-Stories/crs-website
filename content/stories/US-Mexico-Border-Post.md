@@ -2,7 +2,7 @@
 title: "The US-Mexico Border: \"Over My Dead Body\""
 author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
-date: 2021-05-28T12:14:34+06:00
+date: 2021-10-15T12:14:34+06:00
 image: "images/blog/US-Mexico-Border-Post/1Capture.webp"
 image_caption: |
     Artwork on the Mexican side of the US-Mexico border wall in Tijuana. Image Credit: [Tina Shull](https://climate-refugee-stories.github.io/crs-website/about/tina-shull)

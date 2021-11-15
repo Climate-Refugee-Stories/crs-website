@@ -2,7 +2,7 @@
 title: "Central America: \"This Caravan is Yours, Mr. Trump\""
 author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
-date: 2020-01-01T12:14:34+06:00
+date: 2021-10-15T12:14:34+07:00
 image: "images/blog/Central-America-Caravan-Post/1Capture.webp"
 image_caption: |
     A young member of the spring 2018 [refugee caravan](https://www.pueblosinfronteras.org/viacrucis.html) waves a Honduran flag atop the US-Mexico border wall in Playas Tijuana. Image Credit: [Tina Shull](https://climate-refugee-stories.github.io/crs-website/about/tina-shull)
