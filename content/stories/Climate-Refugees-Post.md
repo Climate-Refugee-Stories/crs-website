@@ -3,7 +3,8 @@ title: "Who are Climate Refugees?"
 author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-20T12:14:34+06:00
-image: "images/blog/Who Are Climate Refugees.JPG"
+image: "images/blog/Climate-Refugees-Post/Climate-Refugees-Post-cover.png"
+thumbnail: "images/blog/Climate-Refugees-Post/Climate-Refugees-Post-thumb.png"
 image_caption: |
     Image Credit: [Tina Shull](https://climate-refugee-stories.github.io/crs-website/about/tina-shull)
 description: "Who are Climate Refugees?"

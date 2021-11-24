@@ -3,7 +3,8 @@ title: "In US Detention: \"That Water Had a Strange Smell\""
 author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-15T12:14:34+08:00
-image: "images/blog/US-Detention-Water-Post/1Capture.webp"
+image: "images/blog/US-Detention-Water-Post/US-Detention-Water-Post-cover.png"
+thumbnail: "images/blog/US-Detention-Water-Post/US-Detention-Water-Post-thumb.png"
 image_caption: |
     [Abbas al Aboudi](https://www.refugee-artist.com/my-story), "Waiting," pen and ink on paper
 description: "Water in US Detention"

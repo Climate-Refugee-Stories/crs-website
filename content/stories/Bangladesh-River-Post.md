@@ -3,7 +3,8 @@ title: "Bangladesh: \"The River Took Everything\""
 author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-20T12:14:34+08:00
-image: "images/blog/Bangladesh-River-Post/1Capture.webp"
+image: "images/blog/Bangladesh-River-Post/Bangladesh-River-Post-cover.png"
+thumbnail: "images/blog/Bangladesh-River-Post/Bangladesh-River-Post-thumb.png"
 image_caption: |
     Entryway to a home in Dhaka's Bhola Slum, 2017. Image Credit: [Saumaun Heiat](https://climate-refugee-stories.github.io/crs-website/about/saumaun-heiat) 
 description: "The River Took Everything."

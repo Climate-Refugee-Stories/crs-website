@@ -3,7 +3,8 @@ title: "Marshall Islands: \"Art Stops the Damage\""
 author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-20T12:14:34+07:00
-image: "images/blog/Marshall-Islands-Art-Post/1Capture.webp"
+image: "images/blog/Marshall-Islands-Art-Post/Marshall-Islands-Art-Post-cover.png"
+thumbnail: "images/blog/Marshall-Islands-Art-Post/Marshall-Islands-Art-Post-thumb.png"
 image_caption: |
   "Not 1 More" artwork by [Bo Thai](https://illegal-drip.com/), featuring musician and spoken-word artist Soultree
 description: "This is meta description."
