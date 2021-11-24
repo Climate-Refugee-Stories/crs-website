@@ -13,9 +13,12 @@ draft: false
 ---
 
 <!-- TO-DO: Center -->
+{{< center >}}
 #### ***Coming Soon: Stories from Dhaka, Bangladesh***  
 #### ***by Tanaya Dutta Gupta***
+{{< /center >}}
 &nbsp;
+
 
 <!-- TO-DO: Center -->
 #### **Climate Refugee Stories: Bangladesh is supported by National Geographic Society**  
