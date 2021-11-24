@@ -61,11 +61,11 @@ Could climate refugees be:
 Here, we invite storytellers and audiences to debate and define climate refugees for themselves
 
 <!-- TO-DO: Center -->
+{{< center >}}
 And we ask:  
 > What does it take to move from a world rooted in violence, extraction, and domination to a world rooted in regeneration, resilience, and interdependence?
+{{< /center >}}
 
-<!-- TO-DO: Center -->
 ![A Word cloud from CRSC](../../images/blog/Climate-Refugees-Post/3Capture.webp#caption "*A word cloud created from audience responses at a convening of the UC Critical Refugee Studies Collective at UCLA in April of 2018.
 Participants were asked to define the concept of climate refugees.*")
-
 

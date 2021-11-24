@@ -22,7 +22,9 @@ Although it is considered a "civil" form of confinement, immigration detention l
 &nbsp;
 
 <!-- TO-DO: Center -->
+{{< center >}}
 #### **Coming Soon: Mapping Toxic Detention**  
+{{< /center >}}
 &nbsp;
 #### ***Hurricanes, Prisons, and Environmental Racism***
 
@@ -78,8 +80,9 @@ Climate Refugee Stories collaborator and sociocultural anthropologist Maria Barb
 &nbsp; 
 
 <!-- TO-DO: Center -->
+{{< center >}}
 #### ***Coming Soon: More Resources on Prisons and Environmental Racism***  
-
+{{< /center >}}
 &nbsp;
 #### ***One man's account of his experiences in immigration detention after Hurricane Irma***  
 ##### ***by Barbara Woshinsky, a visitor volunteer with [Friends of Miami-Dade Detainees](https://fomdd.org/?fbclid=IwAR2RC5ZR9xzMKJ5hWcKWQMfGv_nJJqDW1J9a34xa4QMOQzttuuQ9LNKZT4Q)***  

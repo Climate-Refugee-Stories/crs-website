@@ -13,10 +13,13 @@ draft: false
 ---
 
 <!-- TO-DO: Center -->
+{{< center >}}
 #### ***Coming Soon: Stories from the Migrant Caravan***   
 #### ***by Monica Curca and Thor Morales of Activate Labs***
 &nbsp;
+{{< /center >}}
 
+&nbsp;
 ![Members of the Viacrusis Migrantes](../../images/blog/Central-America-Caravan-Post/2Capture.webp#caption "Members of the Viacrusis Migrantes en la luche (\"Migrants in Struggle\" Refugee Caravan) in Mexico in April 2018. Image Credit: [Pueblo sin Fronteras](http://www.pueblosinfronteras.org/)")
 &nbsp;
 #### ***This Caravan is Yours, Mr. Trump***  
