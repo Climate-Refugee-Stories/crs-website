@@ -20,7 +20,7 @@ draft: false
 ![Members of the Viacrusis Migrantes](../../images/blog/Central-America-Caravan-Post/2Capture.webp#caption "Members of the Viacrusis Migrantes en la luche (\"Migrants in Struggle\" Refugee Caravan) in Mexico in April 2018. Image Credit: [Pueblo sin Fronteras](http://www.pueblosinfronteras.org/)")
 &nbsp;
 #### ***This Caravan is Yours, Mr. Trump***  
-[Español aquí](http://www.latinorebels.com/2018/04/10/caravanisyours/)  
+[Español aquí](https://www.latinorebels.com/2018/04/10/la-caravana-es-suya-senor-trump/)  
 
 
 When the people of my country of Honduras decide to leave, they do not leave because they lack love for Honduras, but because the need demands it.  When these people begin their route north, their feelings are conflicted and painful.

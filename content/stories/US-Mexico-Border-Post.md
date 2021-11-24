@@ -20,8 +20,7 @@ In this interview for Climate Refugee Stories conducted by Steve Pavey of [Hope 
 ![Storming the Wall by Todd Miller](../../images/blog/US-Mexico-Border-Post/2Capture.webp)
 &nbsp;
 
-#### ***An Interview with Todd Miller***  
-#### ***author of Storming the Wall***
+#### ***An Interview with Todd Miller, author of Storming the Wall***
 
 <!-- TO-DO: Combine clips to 1 interview or list out all the Qs and interview clips -->  
 {{< youtube y4d8k4JTJfA >}}  
@@ -76,8 +75,7 @@ As long as people are forced to risk their lives to enter this country, people w
 --- 
 &nbsp;
 
-#### ***Tohono O'odham Nation:***
-#### ***Border Wall "Over My Dead Body"*** 
+#### ***Tohono O'odham Nation: Border Wall "Over My Dead Body"*** 
 &nbsp;
 
 ![Over My Dead Body](../../images/blog/US-Mexico-Border-Post/6Capture.webp#caption "“It’s going to affect our sacred lands. It’s going to affect our ceremonial sites. It’s going to affect the environment. We have wildlife, and they have their own patterns of migration,” he said. “There are just so many things that are wrong with this. The whole idea behind it is just racist.” Tohono O'odham member Bradley Moreno in [The Guardian.](https://www.theguardian.com/us-news/2017/jan/26/donald-trump-border-wall-tohono-oodham-arizona-tribe)")

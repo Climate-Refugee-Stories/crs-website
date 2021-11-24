@@ -13,8 +13,7 @@ draft: false
 ---
 
 <!-- TO-DO: Center -->
-#### ***Coming Soon: Stories from Dhaka, Bangladesh***  
-#### ***by Tanaya Dutta Gupta***
+#### ***Coming Soon: Stories from Dhaka, Bangladesh by Tanaya Dutta Gupta***
 &nbsp;
 
 <!-- TO-DO: Center -->
