@@ -1,6 +1,6 @@
 ---
 title: "Bangladesh: \"The River Took Everything\""
-author: "Tina Shull"
+# author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-20T12:14:34+08:00
 image: "images/blog/Bangladesh-River-Post/Bangladesh-River-Post-cover.png"

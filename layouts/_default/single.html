@@ -9,7 +9,7 @@
           <img src="{{.Params.image | absURL }}#caption" alt="{{.Title}}">
           <p class="font-secondary"><i>{{ .Params.image_caption | markdownify }}</i></p>
           <!-- Possibly add back: by <span class="text-primary"><a href="{{ .Site.BaseURL }}about/{{ replace .Params.Author " " "-" | lower }}" target="_blank">{{ .Params.Author }}</a></span> -->
-          <p class="font-secondary">Written by {{ .Params.author }} &nbsp;|&nbsp; {{ .PublishDate.Format "Jan 02, 2006" }} </p>
+          <!-- <p class="font-secondary">Published on {{ .PublishDate.Format "Jan 02, 2006" }} </p> -->
         </div>
         <div class="col-lg-9">
           <div class="content">

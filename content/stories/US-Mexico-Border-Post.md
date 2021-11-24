@@ -1,6 +1,6 @@
 ---
 title: "The US-Mexico Border: \"Over My Dead Body\""
-author: "Tina Shull"
+# author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-15T12:14:34+06:00
 image: "images/blog/US-Mexico-Border-Post/US-Mexico-Border-Post-cover.png"

@@ -1,6 +1,6 @@
 ---
 title: "Central America: \"This Caravan is Yours, Mr. Trump\""
-author: "Tina Shull"
+# author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-15T12:14:34+07:00
 image: "images/blog/Central-America-Caravan-Post/Central-America-Caravan-Post-cover.png"
