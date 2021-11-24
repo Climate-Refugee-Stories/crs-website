@@ -834,6 +834,10 @@ blockquote {
   padding: 250px 0 150px
 }
 
+.page-title-post {
+  padding: 215px 0 125px
+}
+
 .page-title .container {
   position: relative;
   z-index: 1
@@ -951,4 +955,8 @@ blockquote {
 
 .home-tagline {
   margin-right: 30%;
+}
+
+.story-title {
+  font-size: 45px;
 }
