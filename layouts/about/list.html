@@ -79,6 +79,23 @@
 </section>
 <!-- /team -->
 
+<!-- in the media -->
+{{ with site.GetPage "/about/in-the-media.md" }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">{{ .Title }}</h2>
+      </div>
+      <div class="col-md-8">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /in the media -->
+
 {{ if site.Data.about.clients_logo_slider.enable }}
 <section class="section">
   <div class="container">
