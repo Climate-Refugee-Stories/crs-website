@@ -1,9 +1,10 @@
 ---
 title: "Marshall Islands: \"Art Stops the Damage\""
-author: "Tina Shull"
+# author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-20T12:14:34+07:00
-image: "images/blog/Marshall-Islands-Art-Post/1Capture.webp"
+image: "images/blog/Marshall-Islands-Art-Post/Marshall-Islands-Art-Post-cover.png"
+thumbnail: "images/blog/Marshall-Islands-Art-Post/Marshall-Islands-Art-Post-thumb.png"
 image_caption: |
   "Not 1 More" artwork by [Bo Thai](https://illegal-drip.com/), featuring musician and spoken-word artist Soultree
 description: "This is meta description."
@@ -11,12 +12,8 @@ summary: "Small, low-lying island nations in the South Pacific are some of the m
 draft: false
 ---
 
-<!-- TO-DO: Center - figure out positioning (should be with main image)
-*"Not 1 More" artwork by [Bo Thai](https://illegal-drip.com/), featuring musician and spoken-word artist Soultree*-->
-
 Small, low-lying island nations in the South Pacific are some of the most vulnerable locations in the world to the impacts of climate change.  The Maldives, Marshall Islands, Kiribati and Tuvalu have been key sites where debates over the concept of “climate refugees” have taken place.  Affected community members and activists have [resisted media narratives](https://link.springer.com/chapter/10.1007/978-3-319-70703-7_1) that depict them as victims and have taken a range of political and artistic responses.  These nations’ leaders and ambassadors have been some of the first to bring these questions to the international stage.
 
-<!-- TO-DO: Center -->
 ![Tokelauns protest against climate change ](../../images/blog/Marshall-Islands-Art-Post/2Capture.webp#caption "Tokelauns protest against climate change during the Pacific Warrior Day of Action in 2014 Image Credit: [360 Pacific](http://350pacific.org/we-are-not-drowning-we-are-fighting/)")
 
 As early as 1987, former President of the Republic of the Maldives Maumoon Abdul Gayoom spoke to the United Nations about the impacts of climate change the small nation was already experiencing.  At the [1989 Small States Conference on Sea Level Rise](https://www.sciencedirect.com/science/article/pii/S0016718509000335), Gayoom asked larger nations not to make decisions on behalf of small island states. He said:
@@ -86,5 +83,4 @@ Climate Refugee Stories art director and project collaborator Bo Daraphant sat d
 
 <!-- TO-DO: Figure out spacing & sizing -->  
 ##### ***Listen to "Stolen Lands" by Soultree on Soundcloud:***
-<!-- TO-DO: Center -->
 [!["Stolen Lands" by Soultree](../../images/blog/Marshall-Islands-Art-Post/5Capture.webp)](https://soundcloud.com/elephant-rebellion/stolen-lands)  

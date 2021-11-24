@@ -5,21 +5,23 @@
     <div class="layer-bg w-100">
       <img class="img-fluid w-100" src="{{`images/headers/Bo Thai Climate Refugees.jpg` | relURL}}" alt="bg-shape">
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-11 mx-auto">
-          <h3 class="text-white font-tertiary home-tagline">{{ site.Data.homepage.banner.title | safeHTML }}</h3>
+    <div class="main-title">
+      <div class="container main-circle">
+        <div class="row">
+          <div class="col-lg-8 tagline-circle-div">
+            <h3 class="text-white text-center font-tertiary home-tagline tagline-circle">{{ site.Data.homepage.banner.title | safeHTML }}</h3>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- social icon -->
-    <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-      {{ range site.Params.social }}
-      <li class="mb-3 social-icons-home"><a class="text-white" href="{{.URL | safeURL }}" target="_blank"><i class="{{.icon}}"></i></a></li>
-      {{ end }}
-    </ul>
-    <!-- /social icon -->
+      <!-- social icon -->
+      <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+        {{ range site.Params.social }}
+        <li class="mb-3 social-icons-home"><a class="text-white" href="{{.URL | safeURL }}" target="_blank"><i class="{{.icon}}"></i></a></li>
+        {{ end }}
+      </ul>
+      <!-- /social icon -->
+    </div>
   </section>
   <!-- /hero area -->
 
@@ -111,7 +113,7 @@
             <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
             <div class="hover-overlay">
               <div class="hover-content">
-                <a class="btn btn-light btn-sm" href="{{ .Permalink | safeURL }}">view project</a>
+                <a class="btn btn-light btn-sm" href="{{ .Permalink | safeURL }}">Learn More</a>
               </div>
             </div>
           </div>

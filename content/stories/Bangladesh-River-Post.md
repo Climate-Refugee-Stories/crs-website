@@ -1,9 +1,10 @@
 ---
 title: "Bangladesh: \"The River Took Everything\""
-author: "Tina Shull"
+# author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-20T12:14:34+08:00
-image: "images/blog/Bangladesh-River-Post/1Capture.webp"
+image: "images/blog/Bangladesh-River-Post/Bangladesh-River-Post-cover.png"
+thumbnail: "images/blog/Bangladesh-River-Post/Bangladesh-River-Post-thumb.png"
 image_caption: |
     Entryway to a home in Dhaka's Bhola Slum, 2017. Image Credit: [Saumaun Heiat](https://climate-refugee-stories.github.io/crs-website/about/saumaun-heiat) 
 description: "The River Took Everything."
@@ -12,13 +13,18 @@ draft: false
 ---
 
 <!-- TO-DO: Center -->
+{{< center >}}
 #### ***Coming Soon: Stories from Dhaka, Bangladesh***  
 #### ***by Tanaya Dutta Gupta***
+{{< /center >}}
 &nbsp;
 
+
 <!-- TO-DO: Center -->
+{{< center >}}
 #### **Climate Refugee Stories: Bangladesh is supported by National Geographic Society**  
 ![NatGeo Logo](../../images/blog/Bangladesh-River-Post/2Capture.webp)  
+{{< /center >}}
 
 In 2017-8, Climate Refugee Stories project collaborator [Saumaun Heiat](https://www.linkedin.com/in/saumaun-heiat-52560013a/) worked as a Program Support Officer for the International Organization for Migration in Dhaka, Bangladesh. Below, he writes about his experiences listening to the stories of Rohingya Muslim refugees in one of the world's largest refugee camps, Cox's Bazaar, on the southeastern coast of Bangladesh, and community members displaced by coastal erosion and relocated to Dhaka's Bhola Slum.  
 &nbsp; 
@@ -50,7 +56,9 @@ The International Organization for Migration (IOM) is an intergovernmental organ
 ***Saumaun Heiat*** *is currently a Humanitarian Assistance Fellow at Project Concern International. He holds a Master’s degree in International Relations and Affairs from George Washington University and a B.A. in International Studies and Political Science from UC Irvine.*
 
 <!-- TO-DO: Center -->
+{{< center >}}
 ***Read Saumaun's latest article [Iran's Dustbowl Migration](https://www.eonmag.org/irans-dustbowl-migration/) in Eon Magazine***
+{{< /center >}}
   
 ---  
 &nbsp;

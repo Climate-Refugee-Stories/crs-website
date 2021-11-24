@@ -1,9 +1,10 @@
 ---
 title: "The US-Mexico Border: \"Over My Dead Body\""
-author: "Tina Shull"
+# author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-15T12:14:34+06:00
-image: "images/blog/US-Mexico-Border-Post/1Capture.webp"
+image: "images/blog/US-Mexico-Border-Post/US-Mexico-Border-Post-cover.png"
+thumbnail: "images/blog/US-Mexico-Border-Post/US-Mexico-Border-Post-thumb.png"
 image_caption: |
     Artwork on the Mexican side of the US-Mexico border wall in Tijuana. Image Credit: [Tina Shull](https://climate-refugee-stories.github.io/crs-website/about/tina-shull)
 description: "US-Mexico Border"
@@ -19,8 +20,7 @@ In this interview for Climate Refugee Stories conducted by Steve Pavey of [Hope 
 ![Storming the Wall by Todd Miller](../../images/blog/US-Mexico-Border-Post/2Capture.webp)
 &nbsp;
 
-#### ***An Interview with Todd Miller***  
-#### ***author of Storming the Wall***
+#### ***An Interview with Todd Miller, author of Storming the Wall***
 
 <!-- TO-DO: Combine clips to 1 interview or list out all the Qs and interview clips -->  
 {{< youtube y4d8k4JTJfA >}}  
@@ -75,8 +75,7 @@ As long as people are forced to risk their lives to enter this country, people w
 --- 
 &nbsp;
 
-#### ***Tohono O'odham Nation:***
-#### ***Border Wall "Over My Dead Body"*** 
+#### ***Tohono O'odham Nation: Border Wall "Over My Dead Body"*** 
 &nbsp;
 
 ![Over My Dead Body](../../images/blog/US-Mexico-Border-Post/6Capture.webp#caption "“It’s going to affect our sacred lands. It’s going to affect our ceremonial sites. It’s going to affect the environment. We have wildlife, and they have their own patterns of migration,” he said. “There are just so many things that are wrong with this. The whole idea behind it is just racist.” Tohono O'odham member Bradley Moreno in [The Guardian.](https://www.theguardian.com/us-news/2017/jan/26/donald-trump-border-wall-tohono-oodham-arizona-tribe)")

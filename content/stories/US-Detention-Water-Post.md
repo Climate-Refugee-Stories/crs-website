@@ -1,9 +1,10 @@
 ---
 title: "In US Detention: \"That Water Had a Strange Smell\""
-author: "Tina Shull"
+# author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-15T12:14:34+08:00
-image: "images/blog/US-Detention-Water-Post/1Capture.webp"
+image: "images/blog/US-Detention-Water-Post/US-Detention-Water-Post-cover.png"
+thumbnail: "images/blog/US-Detention-Water-Post/US-Detention-Water-Post-thumb.png"
 image_caption: |
     [Abbas al Aboudi](https://www.refugee-artist.com/my-story), "Waiting," pen and ink on paper
 description: "Water in US Detention"
@@ -21,7 +22,9 @@ Although it is considered a "civil" form of confinement, immigration detention l
 &nbsp;
 
 <!-- TO-DO: Center -->
+{{< center >}}
 #### **Coming Soon: Mapping Toxic Detention**  
+{{< /center >}}
 &nbsp;
 #### ***Hurricanes, Prisons, and Environmental Racism***
 
@@ -77,8 +80,9 @@ Climate Refugee Stories collaborator and sociocultural anthropologist Maria Barb
 &nbsp; 
 
 <!-- TO-DO: Center -->
+{{< center >}}
 #### ***Coming Soon: More Resources on Prisons and Environmental Racism***  
-
+{{< /center >}}
 &nbsp;
 #### ***One man's account of his experiences in immigration detention after Hurricane Irma***  
 ##### ***by Barbara Woshinsky, a visitor volunteer with [Friends of Miami-Dade Detainees](https://fomdd.org/?fbclid=IwAR2RC5ZR9xzMKJ5hWcKWQMfGv_nJJqDW1J9a34xa4QMOQzttuuQ9LNKZT4Q)***  

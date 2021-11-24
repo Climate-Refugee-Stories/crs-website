@@ -1,9 +1,10 @@
 ---
 title: "Who are Climate Refugees?"
-author: "Tina Shull"
+# author: "Tina Shull"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-20T12:14:34+06:00
-image: "images/blog/Who Are Climate Refugees.JPG"
+image: "images/blog/Climate-Refugees-Post/Climate-Refugees-Post-cover.png"
+thumbnail: "images/blog/Climate-Refugees-Post/Climate-Refugees-Post-thumb.png"
 image_caption: |
     Image Credit: [Tina Shull](https://climate-refugee-stories.github.io/crs-website/about/tina-shull)
 description: "Who are Climate Refugees?"
@@ -60,11 +61,11 @@ Could climate refugees be:
 Here, we invite storytellers and audiences to debate and define climate refugees for themselves
 
 <!-- TO-DO: Center -->
+{{< center >}}
 And we ask:  
 > What does it take to move from a world rooted in violence, extraction, and domination to a world rooted in regeneration, resilience, and interdependence?
+{{< /center >}}
 
-<!-- TO-DO: Center -->
 ![A Word cloud from CRSC](../../images/blog/Climate-Refugees-Post/3Capture.webp#caption "*A word cloud created from audience responses at a convening of the UC Critical Refugee Studies Collective at UCLA in April of 2018.
 Participants were asked to define the concept of climate refugees.*")
-
 

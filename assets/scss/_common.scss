@@ -22,3 +22,41 @@
         }
     }
 }
+
+
+.bg-shape-stories {
+    background: rgb(0, 152, 212);
+}
+
+.bg-shape-archive {
+    background: rgb(4, 192, 199);
+}
+
+.bg-shape-resources {
+    background: rgb(0, 179, 140);
+}
+
+.bg-shape-contact {
+    background: rgb(235, 221, 33);
+}
+
+.bg-shape-about {
+    background: rgb(36, 89, 189);
+}
+
+.main-title {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-circle {
+    grid-column: 1/-1;
+    
+}
+
+.tagline-circle {
+    align-items: flex-end;
+    border-radius: 50%;
+    background: $primary-color;
+    padding: 5% 10%
+}

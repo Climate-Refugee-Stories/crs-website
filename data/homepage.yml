@@ -162,6 +162,6 @@ clients_logo_slider:
 stories:
   enable : true
   title : "Stories"
-  story_image : "images/world-map.png"
+  story_image : "images/Stories-World-Map.png"
   URL : "stories"
   # blog post comes from "content/blog" folder

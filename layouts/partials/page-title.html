@@ -3,12 +3,12 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h1 class="text-white font-tertiary">{{.Title}}</h1>
+        <h2 class="text-white font-tertiary">{{.Title}}</h1>
       </div>
     </div>
   </div>
   <!-- background shapes -->
-  <img src="{{`images/illustrations/leaf-bg.png`| relURL}}" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="{{`images/illustrations/leaf-bg.png`| relURL}}" alt="illustrations" class="bg-shape-1 w-100 bg-shape-{{ index (last 2 (split (.Permalink | relURL | string) `/`)) 0 }}">
 
 </section>
 <!-- /page title -->

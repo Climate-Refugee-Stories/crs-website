@@ -222,7 +222,7 @@ a:hover {
 }
 
 .section-title {
-  margin-bottom: 80px;
+  margin-bottom: 45px;
   font-family: bwnistaint-xbd
 }
 
@@ -834,6 +834,10 @@ blockquote {
   padding: 250px 0 150px
 }
 
+.page-title-post {
+  padding: 215px 0 125px
+}
+
 .page-title .container {
   position: relative;
   z-index: 1
@@ -950,5 +954,13 @@ blockquote {
 }
 
 .home-tagline {
-  margin-right: 30%;
+  /* margin-right: 30%; */
+  /* background: red; */
+  /* padding: 4% 5%; */
+  /* right: 0;
+  top: 0; */
+}
+
+.story-title {
+  font-size: 45px;
 }
