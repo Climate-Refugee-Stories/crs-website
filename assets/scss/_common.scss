@@ -43,3 +43,20 @@
 .bg-shape-about {
     background: rgb(36, 89, 189);
 }
+
+.main-title {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-circle {
+    grid-column: 1/-1;
+    
+}
+
+.tagline-circle {
+    align-items: flex-end;
+    border-radius: 50%;
+    background: $primary-color;
+    padding: 5% 10%
+}
