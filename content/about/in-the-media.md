@@ -1,5 +1,7 @@
 ---
 title: "In the Media"
+description: |
+    See below for a snapshot of what we have been up to--events, news, conference presentations, and more! [Click here](https://climaterefugeestories.substack.com) to sign up for our email newsletter.
 weight: 0
 draft: false
 image: 

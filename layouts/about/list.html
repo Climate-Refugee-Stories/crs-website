@@ -86,6 +86,9 @@
     <div class="row justify-content-around">
       <div class="col-12 text-center">
         <h2 class="section-title">{{ .Title }}</h2>
+        <div class="col-lg-9 mx-auto text-center">
+          <p> {{ .Description | markdownify }}</p><br/><br/>
+        </div>
       </div>
       <div class="col-9 content">
         {{ .Content }}
