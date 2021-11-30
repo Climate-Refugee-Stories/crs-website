@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="text-white font-tertiary">{{ .Title }}</h1>
+        <h2 class="text-white font-tertiary">{{ .Title }}</h2>
       </div>
     </div>
   </div>
@@ -55,7 +55,7 @@
 <!-- ./Work Process -->
 
 <!-- team -->
-<section class="section bg-cover" data-background="{{`images/backgrounds/team-bg.png`|relURL}}">
+<section class="section bg-cover">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -86,6 +86,9 @@
     <div class="row justify-content-around">
       <div class="col-12 text-center">
         <h2 class="section-title">{{ .Title }}</h2>
+        <div class="col-lg-9 mx-auto text-center">
+          <p> {{ .Description | markdownify }}</p><br/><br/>
+        </div>
       </div>
       <div class="col-9 content">
         {{ .Content }}

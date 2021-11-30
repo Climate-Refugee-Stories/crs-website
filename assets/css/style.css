@@ -770,7 +770,7 @@ blockquote {
 } */
 
 .page-title-alt {
-  padding: 350px 0 70px
+  padding: 290px 0 60px
 }
 
 .border-thick {
@@ -963,4 +963,12 @@ blockquote {
 
 .story-title {
   font-size: 45px;
+}
+
+.curriculum {
+  font-weight: 400;
+  color: #4c4c4c;
+  font-size: 22px;
+  line-height: 1.8;
+  font-family: roboto, sans-serif
 }
