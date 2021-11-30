@@ -1,7 +1,7 @@
 ---
 title: "In the Media"
 weight: 0
-draft: true
+draft: false
 image: 
 designation: ""
 work_area: ""
