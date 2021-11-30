@@ -5,7 +5,7 @@ banner:
 # about
 about:
   enable : true
-  content : "Climate Refugee Stories is a multimedia narrative, archiving, and education project that uplifts the stories of people around the world who have been displaced by direct or indirect impacts of climate change, and documents the ways communities are resilient in the face of overlapping crises--including the COVID-19 pandemic."
+  content : "Climate Refugee Stories is a multimedia narrative, archiving, and education project that uplifts the stories of people around the world who have been displaced by direct or indirect impacts of climate change, and documents the ways communities are resilient in the face of overlapping crises--including the COVID-19 pandemic. &nbsp; [Artwork by Bo Thai]"
   button:
     enable : true
     label : "learn more"
