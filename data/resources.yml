@@ -10,7 +10,12 @@ hscurriculum:
   title: "K-12 Curriculum"
   description: | 
     Our curriculum includes a broad multi-unit “Climate-Induced Migration: A High School Curriculum'' and a range of K-12 curriculum units in a variety of disciplines developed and piloted by teachers in the Charlotte-Mecklenburg school district in North Carolina. These units are for educational purposes only and should be used with attribution to authors cited within. Curriculum developed with support from National Geographic Society and the Charlotte Teachers Institute.
-  pdf: "https://drive.google.com/file/d/16DgrYOK7l_zdmJS0DwNnZwqAJX4qH4k7/preview"
+  curriculum: 
+    - | 
+        [Climate-Induced Migration: A High School Curriculum](https://drive.google.com/file/d/16DgrYOK7l_zdmJS0DwNnZwqAJX4qH4k7/view?usp=sharing) &nbsp;  
+        by Hania Mariën and Miriam Engeler
+
+
 
 cms:
   enable: true
