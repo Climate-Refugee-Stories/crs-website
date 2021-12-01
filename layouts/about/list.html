@@ -62,6 +62,7 @@
         <h2 class="section-title">Our Team</h2>
       </div>
       {{ range .Pages }}
+      {{ if .Params.image }}
       <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
         <div class="card text-center">
           <a href="{{ .Permalink }}">
@@ -73,6 +74,7 @@
           </a>
         </div>
       </div>
+      {{ end }}
       {{ end }}
     </div>
   </div>
