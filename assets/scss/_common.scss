@@ -55,8 +55,26 @@
 }
 
 .tagline-circle {
-    align-items: flex-end;
-    border-radius: 50%;
+    border-radius: 10px;
     background: $primary-color;
-    padding: 5% 10%
+    padding: 5% 23% 5% 5%;
+    position: relative;
+}
+
+.tagline-circle::before {
+    content: "";
+    background-color: #fff;
+    height: 120%;
+    width: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-radius: 50%;
+    background-image: url("images/CRS Logo-transparent.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 40%;
+    transform: translate(60%, -50%);
 }
