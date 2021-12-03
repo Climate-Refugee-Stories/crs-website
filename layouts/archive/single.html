@@ -36,7 +36,10 @@
               <i class="ti-folder"></i>
               <div class="ml-3">
                 <h4>Categories</h4>
-                <p>{{ delimit .Params.categories ", " | humanize }}</p>
+                {{ $tags := slice }}
+                {{ $tags = .Params.categories }}
+                {{ $tags = $tags | append .Params.alt_cat }}
+                <p>{{ delimit $tags ", " | title }}</p>
               </div>
             </div>
           </div>

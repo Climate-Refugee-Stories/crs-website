@@ -5,6 +5,7 @@ image: "images/portfolio/item-1.png"
 client: "John Doe"
 project_url : "https://themefisher.com/"
 categories: ["north america", "south america", "oceania"]
+alt_cat: ["immigration"]
 description: "This is meta description."
 draft: false
 ---
@@ -17,6 +18,7 @@ ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate vel
 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
 mollit anim id est laborum.
 
+{{< carousel_archive >}}
 
 #### Project Details
 
