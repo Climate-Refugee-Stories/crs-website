@@ -3,6 +3,7 @@ $(window).on('load', function () {
 	$('.preloader').fadeOut(100);
 });
 
+
 (function ($) {
 	'use strict';
 
@@ -146,6 +147,8 @@ $(window).on('load', function () {
 
 	// Shuffle js filter and masonry
 	var containerEl = document.querySelector('.shuffle-wrapper');
+	// array used for filtering results
+	let evtInputArray = [];
 	if (containerEl) {
 		var Shuffle = window.Shuffle;
 		var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
@@ -154,13 +157,45 @@ $(window).on('load', function () {
 		});
 
 		jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
+			
+			// assign event to variable
 			var input = evt.currentTarget;
-			if (input.checked) {
-				myShuffle.filter(input.value);
+
+			if (input.value === "all") {
+				
+				// if they select all, then make empty so it returns all
+				evtInputArray = [];
+				// uncheck every other button as well (helps visually understand nothing else is selected)
+				document.querySelectorAll('input[name="shuffle-filter"]').forEach(toggle);
+
+			} else if (input.checked) {
+
+				// once user has selected another item ensure the all checkbox isn't "checked"
+				if (document.querySelector('input[name="shuffle-filter"]').checked){
+					document.querySelector('input[name="shuffle-filter"]').click();
+				}
+
+				// add to array so it will be retuned in filter results
+				evtInputArray.push(input.value);
+
+			} else if (input.checked === false) {
+
+				// if checked is false then remove value from array
+				evtInputArray.pop(input.value);
+
 			}
+
+			// what actually display results based on array
+			myShuffle.filter(evtInputArray);
 		});
 	}
 
 
 
 })(jQuery);
+
+function toggle(elChecked) {
+	if (elChecked.checked && elChecked.value !== "all") {
+		elChecked.click();
+	}
+}
