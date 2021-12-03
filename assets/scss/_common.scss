@@ -55,7 +55,7 @@
 }
 
 .tagline-circle {
-    border-radius: 10px;
+    border-radius: 8px;
     background: $primary-color;
     padding: 5% 23% 5% 5%;
     position: relative;
@@ -77,4 +77,34 @@
     background-position-x: center;
     background-position-y: 40%;
     transform: translate(60%, -50%);
+}
+
+.social-icons-home {
+    position: relative;
+}
+
+.social-icons-home a::before,
+.social-icons-home a::after {
+    content: "";
+
+    height: 3rem;
+    width: 3rem;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -23;
+    top: 50%;
+    left: 0;
+    transform: translate(2%, -50%);
+}
+.social-icons-home a::before{
+    background-color: $primary-color;
+    // carried over from template
+    box-shadow:  0 18px 39.1px 6.9px rgba(224,241,255,.34);
+}
+.social-icons-home a::after{
+    height: 2.5rem;
+    width: 2.5rem;
+    transform: translate(12%, -50%);
+    background-color: #fff
 }
