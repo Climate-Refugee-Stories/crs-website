@@ -97,11 +97,13 @@
     left: 0;
     transform: translate(2%, -50%);
 }
+
 .social-icons-home a::before{
     background-color: $primary-color;
     // carried over from template
     box-shadow:  0 18px 39.1px 6.9px rgba(224,241,255,.34);
 }
+
 .social-icons-home a::after{
     height: 2.5rem;
     width: 2.5rem;
