@@ -3,10 +3,11 @@ title: "Artwork Design"
 date: 2019-05-12T12:14:34+06:00
 image: "images/portfolio/item-1.png"
 client: "John Doe"
-project_url : "https://themefisher.com/"
+project_url: "https://themefisher.com/"
 categories: ["north america", "south america", "oceania"]
 alt_cat: ["immigration"]
-description: "This is meta description."
+description: |
+  This is an intro **desc**
 draft: false
 ---
 
@@ -17,8 +18,6 @@ et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam
 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
 mollit anim id est laborum.
-
-{{< carousel_archive >}}
 
 #### Project Details
 

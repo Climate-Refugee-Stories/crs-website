@@ -30,6 +30,7 @@
 					{{ $categories = $categories | append . }}
 					{{ end }}
 					{{ end }}
+					{{ $categories = $categories | append "extra immigration" }}
 					{{ range ( $categories | uniq ) }}
           <label class="btn btn-sm btn-primary">
             <input type="checkbox" name="shuffle-filter" value="{{ . | urlize }}" />{{ . | humanize }}
