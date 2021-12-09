@@ -5,6 +5,7 @@ image: "images/portfolio/item-5.png"
 client: "John Doe"
 project_url : "https://themefisher.com/"
 categories: ["Middle East"]
+alt_cat: []
 description: "This is meta description."
 draft: false
 ---

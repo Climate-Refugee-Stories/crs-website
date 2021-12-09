@@ -1,11 +1,14 @@
 # banner
 banner:
-  title : "A public history project about migration, borders, and the fight for climate justice"
+  title : "A public history project<br>about migration,<br>borders, and the fight for<br>climate justice"
 
 # about
 about:
   enable : true
-  content : "Climate Refugee Stories is a multimedia narrative, archiving, and education project that uplifts the stories of people around the world who have been displaced by direct or indirect impacts of climate change, and documents the ways communities are resilient in the face of overlapping crises--including the COVID-19 pandemic. &nbsp; [Artwork by Bo Thai]"
+  content :  |
+    Climate Refugee Stories is a multimedia narrative, archiving, and education project that uplifts the stories of people around the world who have been displaced by direct or indirect impacts of climate change, and documents the ways communities are resilient in the face of overlapping crises--including the COVID-19 pandemic. &nbsp; 
+  artist: |
+    [Artwork by Bo Thai]('https://climate-refugee-stories.github.io/crs-website/about/bo-daraphant/')
   button:
     enable : true
     label : "learn more"

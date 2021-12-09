@@ -3,12 +3,12 @@
   <!-- hero area -->
   <section class="hero-area bg-primary overflow-hidden" id="parallax">
     <div class="layer-bg w-100">
-      <img class="img-fluid w-100" src="{{`images/headers/Bo Thai Climate Refugees2.png` | relURL}}" alt="bg-shape">
+      <img class="img-fluid w-100" src="{{`images/headers/Bo Thai Climate Refugees.jpg` | relURL}}" alt="bg-shape">
     </div>
     <div class="main-title">
       <div class="container main-circle">
-        <div class="row">
-          <div class="col-lg-8 tagline-circle-div">
+        <div class="row align-items-center justify-content-center">
+          <div class="row align-items-start col-lg-8 tagline-circle-div">
             <h3 class="text-white text-center font-tertiary home-tagline tagline-circle">{{ site.Data.homepage.banner.title | safeHTML }}</h3>
           </div>
         </div>
@@ -17,7 +17,7 @@
       <!-- social icon -->
       <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
         {{ range site.Params.social }}
-        <li class="mb-3 social-icons-home"><a class="text-white" href="{{.URL | safeURL }}" target="_blank"><i class="{{.icon}}"></i></a></li>
+        <li class="mb-3 social-icons-home"><a class="text-primary" href="{{.URL | safeURL }}" target="_blank"><i class="{{.icon}}"></i></a></li>
         {{ end }}
       </ul>
       <!-- /social icon -->
@@ -33,6 +33,7 @@
         <div class="col-lg-10 mx-auto text-center">
           {{ with site.Data.homepage.about }}
           <p class="font-secondary lead text-dark">{{.content | markdownify}}</p>
+          <p class="font-secondary lead text-dark">{{.artist | markdownify}}</p>
           {{ if .button.enable }}
           {{ with .button }}
           <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>

@@ -36,7 +36,10 @@
               <i class="ti-folder"></i>
               <div class="ml-3">
                 <h4>Categories</h4>
-                <p>{{ delimit .Params.categories ", " | humanize }}</p>
+                {{ $tags := slice }}
+                {{ $tags = .Params.categories }}
+                {{ $tags = $tags | append .Params.alt_cat }}
+                <p>{{ delimit $tags ", " | title }}</p>
               </div>
             </div>
           </div>
@@ -54,7 +57,28 @@
         </div>
       </div>
       <div class="col-lg-11">
+        <h3>Intro</h3>
+        {{ .Description | markdownify }}
+      </div>
+      <div class="col-lg-11">
+        <h3>Media</h3>
+        <h4>Pictures</h4>
+        <div class="archive_gallery_container">
+          {{ range .Site.Data.archive }}
+            <figure class="archive_gallery_figure">
+              <img src="https://drive.google.com/uc?id={{ index . `Google Photo ID` }}" alt="{{ index . `Alt Text` }}" />
+              <figcaption class="caption">{{ .Description | truncate 40 }}</figcaption>
+            </figure>
+          {{ end }}
+        </div>
+        <h4>Videos</h4>
+      </div>
+      <div class="col-lg-11">
+        <h3>Read more...</h3>
         <div class="content">{{.Content}}</div>
+      </div>
+      <div class="col-lg-11">
+        <h3>Related</h3>
       </div>
     </div>
   </div>

@@ -6,7 +6,7 @@ date: 2021-10-20T12:14:34+06:00
 image: "images/blog/Climate-Refugees-Post/Climate-Refugees-Post-cover.png"
 thumbnail: "images/blog/Climate-Refugees-Post/Climate-Refugees-Post-thumb.png"
 image_caption: |
-    Image Credit: [Tina Shull](https://climate-refugee-stories.github.io/crs-website/about/tina-shull)
+    Image Credit: Steve Pavey, [Hope in Focus](https://www.stevepavey.com/index)
 description: "Who are Climate Refugees?"
 summary: "The International Organization for Migration (IOM) estimates that in 2019, 25 million people were displaced by climate change-related events."
 draft: false
