@@ -55,8 +55,9 @@
 .tagline-circle {
   border-radius: 8px;
   background: $primary-color;
-  padding: 5% 23% 5% 5%;
+  padding: 3% 20% 3% 3%;
   position: relative;
+  font-size: 35px;
 }
 
 .tagline-circle::before {
@@ -73,7 +74,7 @@
   background-size: 70%;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 40%;
+  background-position-y: 15%;
   transform: translate(60%, -50%);
 }
 
@@ -81,12 +82,16 @@
   position: relative;
 }
 
+.social-icons-home a {
+  width: 55px;
+}
+
 .social-icons-home a::before,
 .social-icons-home a::after {
   content: "";
 
-  height: 3rem;
-  width: 3rem;
+  height: 3.4rem;
+  width: 3.4rem;
   display: block;
   border-radius: 50%;
   position: absolute;
@@ -105,7 +110,7 @@
 .social-icons-home a::after {
   height: 2.5rem;
   width: 2.5rem;
-  transform: translate(12%, -50%);
+  transform: translate(21%, -50%);
   background-color: #fff;
 }
 
