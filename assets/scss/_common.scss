@@ -23,25 +23,29 @@
   }
 }
 
-.bg-shape-stories {
-  background: rgb(0, 152, 212);
+.bg-shape- {
+  
+  &stories {
+    background: rgb(0, 152, 212);
+  }
+  
+  &archive {
+    background: rgb(4, 192, 199);
+  }
+  
+  &resources {
+    background: rgb(0, 179, 140);
+  }
+  
+  &contact {
+    background: rgb(252, 147, 27);
+  }
+  
+  &about {
+    background: rgb(36, 89, 189);
+  }
 }
 
-.bg-shape-archive {
-  background: rgb(4, 192, 199);
-}
-
-.bg-shape-resources {
-  background: rgb(0, 179, 140);
-}
-
-.bg-shape-contact {
-    background: rgb(246, 118, 0);
-}
-
-.bg-shape-about {
-  background: rgb(36, 89, 189);
-}
 
 .main-title {
   display: grid;
@@ -58,60 +62,61 @@
   padding: 3% 20% 3% 3%;
   position: relative;
   font-size: 35px;
+
+  &::before {
+    content: "";
+    background-color: #fff;
+    height: 120%;
+    width: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-radius: 50%;
+    background-image: url("images/CRS Logo-transparent.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 15%;
+    transform: translate(60%, -50%);
+  }
 }
 
-.tagline-circle::before {
-  content: "";
-  background-color: #fff;
-  height: 120%;
-  width: 50%;
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  border-radius: 50%;
-  background-image: url("images/CRS Logo-transparent.png");
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 15%;
-  transform: translate(60%, -50%);
-}
 
 .social-icons-home {
   position: relative;
-}
 
-.social-icons-home a {
-  width: 55px;
-}
+  & a {
+    width: 55px;
 
-.social-icons-home a::before,
-.social-icons-home a::after {
-  content: "";
-
-  height: 3.4rem;
-  width: 3.4rem;
-  display: block;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -23;
-  top: 50%;
-  left: 0;
-  transform: translate(2%, -50%);
-}
-
-.social-icons-home a::before {
-  background-color: $primary-color;
-  // carried over from template
-  box-shadow: 0 18px 39.1px 6.9px rgba(224, 241, 255, 0.34);
-}
-
-.social-icons-home a::after {
-  height: 2.5rem;
-  width: 2.5rem;
-  transform: translate(21%, -50%);
-  background-color: #fff;
+    &::before,
+    &::after {
+      content: "";
+    
+      height: 3.4rem;
+      width: 3.4rem;
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -23;
+      top: 50%;
+      left: 0;
+      transform: translate(2%, -50%);
+    }
+    
+    &::before {
+      background-color: $primary-color;
+      // carried over from template
+      box-shadow: 0 18px 39.1px 6.9px rgba(224, 241, 255, 0.34);
+    }
+    
+    &::after {
+      height: 2.5rem;
+      width: 2.5rem;
+      transform: translate(21%, -50%);
+      background-color: #fff;
+    }
+  }
 }
 
 .archive_gallery_container {
@@ -120,14 +125,15 @@
   gap: 0.5rem 1rem;
   align-items: center;
   // justify-items: center;
+
+  & img {
+    max-height: 300px;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
-.archive_gallery_container img {
-  max-height: 300px;
-  object-fit: cover;
-  max-width: 100%;
-  height: auto;
-}
 // https://stackoverflow.com/a/61107170
 // https://docs.google.com/spreadsheets/d/14KVHigDGfs9yDVmw96mWSMAG2wRaFc7B9WtLuukm3Uk/gviz/tq?tqx=out:csv&sheet=Sheet1
 
