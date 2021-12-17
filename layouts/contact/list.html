@@ -31,28 +31,54 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">Follow Us</h2>
+        <h2 class="section-title">Get in Touch</h2>
       </div>
-      <div class="col-12">
-        <ul class="list-inline social-icons text-center">
-          {{ range site.Params.social }}
-          <li class="list-inline-item"><a href="{{.URL}}"  target="_blank"><i class="{{.icon}}"></i></a></li>
-          {{ end }}
-        </ul>
-        <div class="col-12 text-center">
-          <br/><br/>
-          <h4 class=""><strong>Sign up for our email newsletter</strong></h4>
-          <br/>
-          <div class="col-lg-3 col-10 mx-auto">
-            <a href="https://climaterefugeestories.substack.com/p/coming-soon?showWelcome=true"><button class="btn btn-primary w-100">Subscribe</button></a>
+      <div class="col-12 row" style="justify-content: center;">
+        <div class="col-6 border-right">
+          <ul class="list-inline social-icons text-center">
+            <h4 class="mb-4"><strong>Follow us on social media</strong></h4>
+            {{ range site.Params.social }}
+            <li class="list-inline-item"><a href="{{.URL}}"  target="_blank"><i class="{{.icon}}"></i></a></li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="col-6 text-center">
+          <h4 class="mb-4"><strong>Sign up for our email newsletter</strong></h4>
+          <div class="mx-auto">
+            <a href="https://climaterefugeestories.substack.com/p/coming-soon?showWelcome=true"><button class="btn btn-primary w-60">Subscribe</button></a>
+          </div>
+        </div>
+    </div>
+        <div class="row col-12 text-center">
+          <div class="col-lg-8 mx-auto">
+            <br/><br/>
+            <br/><br/>
+            <!-- <h4><strong>Send us a message</strong></h4> -->
+            <div class="bg-white rounded text-center p-5 shadow-down">
+              <h4 class="mb-80"><strong>Send us a message</strong></h4>
+              <form action="{{site.Params.contact.form_action}}" method="POST" class="row">
+                <div class="col-md-6">
+                  <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
+                </div>
+                <div class="col-12">
+                  <textarea name="message" id="message" class="form-control px-0 mb-4"
+                    placeholder="Type Message Here"></textarea>
+                </div>
+                <div class="col-lg-6 col-10 mx-auto">
+                  <button class="btn btn-primary w-80">send</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </div>
 </section>
 
-<section class="section">
+<!-- <section class="section">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -66,7 +92,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <section class="section">

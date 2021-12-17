@@ -459,7 +459,7 @@ textarea.form-control {
 }
 
 .hero-area {
-  padding: 250px 0 200px;
+  padding: 100px 0 150px;
   position: relative
 }
 
@@ -968,4 +968,12 @@ blockquote {
   font-size: 22px;
   line-height: 1.8;
   font-family: roboto, sans-serif
+}
+
+.homepage-story-map {
+  margin-bottom: 30px;
+}
+
+.hompage-abt-txt {
+  font-size: 22px;
 }
