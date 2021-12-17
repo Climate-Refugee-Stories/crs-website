@@ -45,19 +45,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 <div id="js-cookie-box" class="cookie-box cookie-box-hide cookie-msg-text">
 	Stay up to date with our newsletter!
-  <span class="btn btn-sm btn-primary ml-2"><a href="https://climaterefugeestories.substack.com/p/coming-soon?showWelcome=true" target="_blank">Subscribe</a></span>
-  <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2"><a href="">Dismiss</a></span>
+  <a href="https://climaterefugeestories.substack.com/p/coming-soon?showWelcome=true" target="_blank"><span id="js-cookie-sub" class="btn btn-sm btn-primary ml-2">Subscribe</span></a>
+  <a href=""><span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">Dismiss</span></a>
   <!-- Dismiss button <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">Dismiss</span> -->
 </div>
 <script>
 	(function ($) {
 		const cookieBox = document.getElementById('js-cookie-box');
 		const cookieButton = document.getElementById('js-cookie-button');
+    const cookieButtonSub = document.getElementById('js-cookie-sub');
 		if (!Cookies.get('cookie-box')) {
 			cookieBox.classList.remove('cookie-box-hide');
 			cookieButton.onclick = function () {
 				Cookies.set('cookie-box', true, {
 					expires: {{ site.Params.cookies.expire_days }}
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+      cookieButtonSub.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires: 6000
 				});
 				cookieBox.classList.add('cookie-box-hide');
 			};
