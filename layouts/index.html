@@ -32,7 +32,7 @@
       <div class="row">
         <div class="col-lg-10 mx-auto text-center">
           {{ with site.Data.homepage.about }}
-          <p class="font-secondary lead text-dark">{{.content | markdownify}}</p>
+          <p class="hompage-abt-txt">{{.content | markdownify}}</p>
           {{ if .button.enable }}
           {{ with .button }}
           <br/>
