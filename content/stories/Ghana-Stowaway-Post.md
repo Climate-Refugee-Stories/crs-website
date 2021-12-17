@@ -1,14 +1,14 @@
 ---
-title: "Stories"
-author: "Author"
-author_link: "#"
+title: "Ghana: \"I Have Been a Stowaway\""
+# author: "Author"
+# author_link: "#"
 date: 2021-10-15T12:14:34+10:00
-image: "images/blog/post-1.jpg"
-thumbnail: ""
+image: "images/blog/Ghana-Stowaway-Post/Ghana-Stowaway-Post-cover.png"
+thumbnail: "images/blog/Ghana-Stowaway-Post/Ghana-Stowaway-Post-thumb.png"
 image_caption: |
-    This is an image caption. Image credt: [John Doe](#)
-description: "This is meta description."
-summary: "This is a sentence preview of the story content, typically the first sentence of the main content of the article."
+    A fishing boat on [Azizakpe Island](https://www.voltarevival.org/post/introduction-to-azizakpe-island), Ghana. Image Credit: [Christine Wheatley](../../about/christine-wheatley/)
+description: "Fishing Boat on Azizakpe Island"
+summary: "NED Africa is producing an ethnographic film that captures stories of return migrants to coastal and island communities impacted by rising sea levels along Ghana's coast."
 draft: false
 ---
 
