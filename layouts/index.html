@@ -36,7 +36,8 @@
           <p class="font-secondary lead text-dark">{{.artist | markdownify}}</p>
           {{ if .button.enable }}
           {{ with .button }}
-          <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
+          <br/>
+          <a href="{{ .URL | absURL }}" class="btn btn-sm btn-primary">{{.label}}</a>
           {{ end }}
           {{ end }}
           {{ end }}
