@@ -3,7 +3,7 @@
 <title>Contact</title>
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
 <meta name=description content="This is meta description.">
-<meta name=generator content="Hugo 0.90.1">
+<meta name=generator content="Hugo 0.91.2">
 <style>:root{--primary-color:#054ca7}</style>
 <link rel=stylesheet href=https://climate-refugee-stories.github.io/crs-website/plugins/bootstrap/bootstrap.min.css>
 <link rel=stylesheet href=https://climate-refugee-stories.github.io/crs-website/plugins/slick/slick.css>
@@ -86,7 +86,7 @@
 <br><br>
 <div class="bg-white rounded text-center p-5 shadow-down">
 <h4 class=mb-80><strong>Send us a message</strong></h4>
-<form method=post class=row>
+<form action=mailto:climaterefugeestories@gmail.com method=get enctype=text/plain class=row>
 <div class=col-md-6>
 <input type=text id=name name=name placeholder="Full Name" class="form-control px-0 mb-4">
 </div>
@@ -97,7 +97,7 @@
 <textarea name=message id=message class="form-control px-0 mb-4" placeholder="Type Message Here"></textarea>
 </div>
 <div class="col-lg-6 col-10 mx-auto">
-<button class="btn btn-primary w-80">send</button>
+<input type=submit name=send value=Send class="btn btn-primary w-80">
 </div>
 </form>
 </div>
