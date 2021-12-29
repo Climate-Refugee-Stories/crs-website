@@ -9,7 +9,7 @@ image_caption: |
     "Statue of What?" in solidarity with Puerto Rico, artwork by [Bo Thai](../../about/bo-daraphant/)
 description: "Statue of What?"
 summary: "Coming Soon by Emma Crow-Willard & Roots of Unity Media"
-draft: false
+draft: true
 ---
 
 {{< center >}}
