@@ -44,14 +44,13 @@ Overall, we found that, over the last 30 years, many coastal and island communit
 
 ![NatGeo Logo](../../images/blog/Ghana-Stowaway-Post/Capture3.webp)
 &nbsp;
-#### TODO: insert photos
+
 {{< carousel >}}
-1-2vVFxAOeIb-DUhANPfjHCZ04zzMdXAe
-1Ws3dwIeqb9-tz0V0bwqkkRoG_KPnF2sL
-1ueADq-Yf1CNdyq49izTDKhfTBoRXvdTY
-1EzLgMKKzjxL7WjLltB7T8xYYmtWZBP-z
-1-2vVFxAOeIb-DUhANPfjHCZ04zzMdXAe
-1ueADq-Yf1CNdyq49izTDKhfTBoRXvdTY
+1HyHG4_czuvrJRWmJroNY_ekBGybFmden
+10Q_8i1vZxR3CNWYQTpwnrcKL97KXVdPv
+11jVWEZXHDBLKhVYtQzoUo3C9yNLUc7Nu
+1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg
+1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf
 {{< /carousel >}}
 &nbsp;
 
