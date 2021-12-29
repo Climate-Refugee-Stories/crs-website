@@ -14,4 +14,21 @@
   </section>
   <!-- /blog -->
 
+  <!-- TODO: story tags
+    <section>
+    <div class="container">
+      <div class="row">
+      <div class="col-lg-3 col-md-5 position-relative">
+        <h5 class="tagsTitle">Tags</h5>
+        <ul class="tags">
+          {{ range first 10 .Site.Taxonomies.tags.ByCount }}
+            <div class="btn mr-3 smallButton blueButton">
+            <li><a href="/tags{{ .Name | urlize }}" style="color:azure">{{ .Name }}</a></li>
+            </div>
+         {{ end }}
+        </ul>
+      </div>
+    </div>
+  </section>  -->
+
 {{ end }}
