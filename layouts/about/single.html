@@ -27,9 +27,17 @@
           <img src="{{.Params.image | absURL }}" alt="author"
             class="img-fluid w-100 rounded-lg border-thick border-white">
         </div>
-        <div class="social-icons">
-          <ul class="list-unstyled">
-            {{ with .Params.socials }}
+        <div class="">
+          <ul class="list-unstyled social-icons__box">
+            {{ $socials := .Params.socials }}
+            {{ if gt ($socials) 0 }}
+            {{ range $social_key, $social_val := $socials}}
+            <li>
+              <a class="text-primary social-icons__item" href="{{ $social_val }}" target="_blank">
+                <i class="ti-{{ $social_key }}"></i>
+              </a>
+            </li>
+            {{ end }}
             {{ end }}
           </ul>
         </div>
