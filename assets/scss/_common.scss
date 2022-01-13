@@ -157,3 +157,16 @@ html {
   margin-top: 0.5rem;
   align-self: start;
 }
+
+.social-icons {
+  &__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  &__item {
+    font-size: 1rem;
+  }
+}
