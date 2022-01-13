@@ -46,17 +46,9 @@ Overall, we found that, over the last 30 years, many coastal and island communit
 &nbsp;
 
 {{< carousel >}}
-1HyHG4_czuvrJRWmJroNY_ekBGybFmden|Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem quis repellat tempora cumque iusto quas [error](http://localhost:1313/crs-website/stories/navajo-sheep-post/)
-10Q_8i1vZxR3CNWYQTpwnrcKL97KXVdPv|Lorem, ipsum dolor sit amet consectetur adipisicing elit.[error](https://google.com)
+1HyHG4_czuvrJRWmJroNY_ekBGybFmden
+10Q_8i1vZxR3CNWYQTpwnrcKL97KXVdPv
 11jVWEZXHDBLKhVYtQzoUo3C9yNLUc7Nu
-1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf
-1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf
-1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem quis repellat tempora cumque iusto quas [error](http://localhost:1313/crs-website/stories/navajo-sheep-post/)
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf
-1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf
 1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg
 1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf
 {{< /carousel >}}
