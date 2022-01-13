@@ -10,7 +10,7 @@ recent_publications:
 recent_projects:
 socials:
   facebook: https://facebook.com
-  twitter: https://twitter.com
+  twitter-alt: https://twitter.com
   linkedin: https://linkedin.com
   world: https://elrey.casa/blog
   wordpress: https://wordpress.com
