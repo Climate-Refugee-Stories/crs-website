@@ -29,15 +29,15 @@ draft: false
 &nbsp;
 
 {{< carousel >}}
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](http://localhost:1313/crs-website/stories/navajo-sheep-post/)
-1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](http://localhost:1313/crs-website/stories/navajo-sheep-post/)
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](http://localhost:1313/crs-website/stories/navajo-sheep-post/)
-1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](http://localhost:1313/crs-website/stories/navajo-sheep-post/)
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](http://localhost:1313/crs-website/stories/navajo-sheep-post/)
-1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](http://localhost:1313/crs-website/stories/navajo-sheep-post/)
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](http://localhost:1313/crs-website/stories/navajo-sheep-post/)
-1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](http://localhost:1313/crs-website/stories/navajo-sheep-post/)
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](http://localhost:1313/crs-website/stories/navajo-sheep-post/)
+1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
 {{< /carousel >}}
 
 ---
