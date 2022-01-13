@@ -158,6 +158,38 @@ html {
   align-self: start;
 }
 
+.carousel {
+  &__container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem 1rem;
+    align-items: center;
+    // justify-items: center;
+    
+    & img {
+      max-height: 300px;
+      object-fit: cover;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    // min-height: 0;
+  }
+
+  &__caption {
+    margin-top: 0.5rem;
+    align-self: start;
+  }
+
+}
+
 .social-icons {
   &__box {
     display: flex;
@@ -170,3 +202,4 @@ html {
     font-size: 1rem;
   }
 }
+
