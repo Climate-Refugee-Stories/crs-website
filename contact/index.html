@@ -3,7 +3,7 @@
 <title>Contact</title>
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
 <meta name=description content="This is meta description.">
-<meta name=generator content="Hugo 0.91.2">
+<meta name=generator content="Hugo 0.92.0">
 <style>:root{--primary-color:#054ca7}</style>
 <link rel=stylesheet href=https://climate-refugee-stories.github.io/crs-website/plugins/bootstrap/bootstrap.min.css>
 <link rel=stylesheet href=https://climate-refugee-stories.github.io/crs-website/plugins/slick/slick.css>
@@ -86,15 +86,15 @@
 <br><br>
 <div class="bg-white rounded text-center p-5 shadow-down">
 <h4 class=mb-80><strong>Send us a message</strong></h4>
-<form action=https://formspree.io/f/mdobaknv method=post enctype=text/plain class=row>
+<form action=https://formspree.io/f/mdobaknv method=post class=row>
 <div class=col-md-6>
-<input type=text id=name name=name placeholder="Full Name" class="form-control px-0 mb-4">
+<input type=text id=name name=name placeholder="Full Name" class="form-control px-0 mb-4" required>
 </div>
 <div class=col-md-6>
-<input type=email id=email name=email placeholder="Email Address" class="form-control px-0 mb-4">
+<input type=email id=email name=email placeholder="Email Address" class="form-control px-0 mb-4" required>
 </div>
 <div class=col-12>
-<textarea name=message id=message class="form-control px-0 mb-4" placeholder="Type Message Here"></textarea>
+<textarea name=message id=message class="form-control px-0 mb-4" placeholder="Type Message Here" required></textarea>
 </div>
 <div class="col-lg-6 col-10 mx-auto">
 <input type=submit name=send value=Send class="btn btn-primary w-80">
