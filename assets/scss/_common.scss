@@ -159,41 +159,33 @@ html {
 }
 
 .carousel {
-  &__wrapper {
-    max-height: 55vh;
+  &__container {
+
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem 1rem;
     align-items: center;
-    justify-content: center;
-    grid-template-columns: 1fr;
-  }
-
-  &__text {
-    background: rgba($primary-color,.75) !important;
-    display: grid !important;
-    grid-template-columns: 1fr;
-    align-content: center;
-    justify-items: center;
-    padding-bottom: 0;
-
-    // & a {
-    //   color: 
-    //   &:visited, &:link {
-
-    //   }
-    //   &:hover, &:active{
-
-    //   }
-    // }
-  }
-
-  &-control {
-    &-next-icon {
-      // from bootstrap
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e")
-    }
-    &-prev-icon {
-      // from bootstrap
-      // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e")
+    // justify-items: center;
+    
+    & img {
+      max-height: 300px;
+      object-fit: cover;
+      max-width: 100%;
+      height: auto;
     }
   }
+
+  &__figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    // min-height: 0;
+  }
+
+  &__caption {
+    margin-top: 0.5rem;
+    align-self: start;
+  }
+
 }
