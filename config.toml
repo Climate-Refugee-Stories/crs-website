@@ -85,7 +85,7 @@ preloader = "images/preloader.gif" # use png, jpg, svg or gif format
 # contact
 [params.contact]
 enable = true
-form_action = "mailto:climaterefugeestories@gmail.com"
+form_action = "https://formspree.io/f/mdobaknv"
 
 # google map
 [params.map]
