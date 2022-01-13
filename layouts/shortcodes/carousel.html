@@ -10,7 +10,7 @@
   {{ $photo_str := . | printf "%s%s" $photo_str }}
 {{ end }}
 {{ $photo_uuid := (md5 $photo_str) }}
-  <div id="blogCarousel-{{ $photo_uuid }}" class="carousel slide" data-ride="carousel">
+  <div id="blogCarousel-{{ $photo_uuid }}" class="carousel slide" data-ride="false" data-pause="false">
     <ol class="carousel-indicators">
       {{ range $elem_index, $elem_val := (split (trim .Inner "\n") "\n") }}
       <li data-target="#blogCarousel-{{ $photo_uuid }}" data-slide-to="{{ $elem_index }}" class="{{ if eq $elem_index 0 }}active{{end}}"></li>

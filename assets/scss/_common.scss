@@ -168,11 +168,32 @@ html {
   }
 
   &__text {
-    background: rgba(0,0,0,.75) !important;
+    background: rgba($primary-color,.75) !important;
     display: grid !important;
     grid-template-columns: 1fr;
     align-content: center;
     justify-items: center;
     padding-bottom: 0;
+
+    // & a {
+    //   color: 
+    //   &:visited, &:link {
+
+    //   }
+    //   &:hover, &:active{
+
+    //   }
+    // }
+  }
+
+  &-control {
+    &-next-icon {
+      // from bootstrap
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e")
+    }
+    &-prev-icon {
+      // from bootstrap
+      // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e")
+    }
   }
 }
