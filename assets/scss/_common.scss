@@ -54,7 +54,11 @@ html {
 .main-title {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  width: 100%;
 }
 
 .main-circle {
@@ -64,7 +68,7 @@ html {
 .tagline-circle {
   border-radius: 8px;
   background: $primary-color;
-  padding: 3% 20% 3% 3%;
+  padding: 3% 16% 3% 3%;
   position: relative;
   font-size: 35px;
 
@@ -72,7 +76,7 @@ html {
     content: "";
     background-color: #fff;
     height: 120%;
-    width: 50%;
+    width: 45%;
     display: block;
     position: absolute;
     top: 50%;
@@ -82,7 +86,7 @@ html {
     background-size: 70%;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 15%;
+    background-position-y: 33%;
     transform: translate(60%, -50%);
   }
 }
@@ -203,3 +207,11 @@ html {
   }
 }
 
+.hero-area {
+  height: 100vh;
+  // TODO: make this variablized or something... (not local reference to url encoded path)
+  background-image: url("/crs-website/images/headers/Bo%20Thai%20Climate%20Refugees.jpg");
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}

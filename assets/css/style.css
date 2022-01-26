@@ -458,18 +458,6 @@ textarea.form-control {
   color: #fff;
 }
 
-.hero-area {
-  padding: 100px 0 150px;
-  position: relative
-}
-
-@media(max-width:767px) {
-  .hero-area {
-    padding: 200px 0 150px;
-    overflow: hidden
-  }
-}
-
 .hero-area h1 {
   position: relative;
   z-index: 2
