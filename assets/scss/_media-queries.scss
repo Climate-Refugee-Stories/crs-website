@@ -1,0 +1,59 @@
+@media(max-width:62em) {
+    html {
+        font-size: 80%;
+    }
+    h1,
+    .h1 {
+      font-size: 4rem;
+    }
+    h2,
+    .h2 {
+      font-size: 3.125rem;
+    }
+
+    .social-icons-home {
+        & a {
+            // font-size: 1.2rem;
+        }
+    }
+
+    .navigation {
+        padding: 20px;
+        background: var(--primary-color);
+
+        &.nav-bg {
+            padding: 15px 20px
+        }
+    }
+}
+
+@media (max-width: 50em) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 37em) {
+    html {
+        font-size: 60%;
+    }
+    .main-title {
+        gap: 2rem;
+    }
+    .tagline-circle {
+
+        padding: 3%;
+
+
+        &-div {
+            justify-content: center;
+        }
+
+        &::before {
+            top: -60%;
+            right: 50%;
+            height: 100%;
+            transform: translate(50%, -50%);
+        }
+    }
+}
