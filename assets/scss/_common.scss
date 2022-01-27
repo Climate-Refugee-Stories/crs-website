@@ -49,12 +49,211 @@ html {
     background: rgb(36, 89, 189);
   }
 }
+/* *********************************** */
+// re-usable components
 
+.section {
+  padding: 5rem 0;
+
+  &-title {
+    margin-bottom: 2.8rem;
+    font-family: bwnistaint-xbd;
+  }
+}
+
+.hover {
+  
+  &-shadow {
+    transition: .2s ease;
+
+    &:hover {
+      box-shadow: 0 1.125rem 2.5rem 0.5rem rgba(224, 241, 255, .54) !important;
+    }
+
+  }
+
+  &-wrapper {
+    overflow: hidden;
+
+    & img {
+      transition: .3s ease;
+      transform: scale(1.1);
+    }
+
+    &:hover {
+      & img {
+        transform: scale(1)
+      }
+
+      & .hover-overlay {
+        opacity: 1;
+        visibility: visible
+      }
+    } 
+  }
+
+  &-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .3);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease
+  }
+
+  &-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center
+  }
+}
+
+.btn {
+  font-size: 1.375rem;
+  font-family: playfair display, serif;
+  text-transform: capitalize;
+  padding: 1rem 2.75rem;
+  border-radius: 5px;
+  font-weight: 600;
+  border: 0;
+  position: relative;
+  z-index: 1;
+  transition: .2s ease;
+
+  &:focus {
+    outline: 0;
+    box-shadow: none !important;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+
+  &-sm {
+    font-size: 0.9375rem;
+    padding: 0.625rem 1.875rem;
+  }
+
+  &-xs {
+    padding: 0.3125rem 0.625rem;
+    font-size: 0.9375rem;
+  }
+
+  &-primary {
+    background: var(--primary-color);
+    color: #fff;
+
+    &.active {
+      opacity: .8;
+    }
+
+    &:active {
+      background: var(--primary-color) !important
+    }
+
+    &:hover {
+      background: var(--primary-color)
+    }
+
+    &.focus, &.active {
+      background: var(--primary-color) !important;
+      box-shadow: none !important
+    }
+  }
+
+  &-transparent {
+    background: transparent;
+    color: var(--primary-color);
+    font-weight: 700;
+ 
+    &:active, &:hover {
+      color: var(--primary-color)
+    }
+  }
+}
+
+.footer {
+  &-section {
+    padding-top: 12.5rem;
+    
+    & a {
+      color: #fff;
+      
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-bottom {
+    & a {
+      color: #999;
+      text-decoration: underline;
+    }
+  }
+}
+
+.section-on-footer {
+  margin-bottom: -12.5rem;
+}
+
+
+.navigation {
+  padding: 2.5rem 8.125rem;
+  transition: .3s ease;
+
+  &.nav-bg {
+    background-color: var(--primary-color);
+    padding: 0.9375rem 6.25rem;
+
+  }
+}
+
+.navbar .nav-item .nav-link {
+  font-family: bwnistaint-xbd;
+  text-transform: uppercase;
+  padding: 0.9375rem;
+}
+
+.navbar .nav-item.active .nav-link{
+  color: #fff017;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+
+/* *********************************** */
+// Home page section
+
+.homepage {
+  &-abt-txt {
+    font-size: 1.4rem;
+  }
+
+  &-story-map {
+    margin-bottom: 1.8rem;
+  }
+}
 
 .main-title {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  width: 100%;
+  align-content: center;
 }
 
 .main-circle {
@@ -64,15 +263,15 @@ html {
 .tagline-circle {
   border-radius: 8px;
   background: $primary-color;
-  padding: 3% 20% 3% 3%;
+  padding: 3% 16% 3% 3%;
   position: relative;
-  font-size: 35px;
+  font-size: 2.1875rem;
 
   &::before {
     content: "";
     background-color: #fff;
     height: 120%;
-    width: 50%;
+    width: 45%;
     display: block;
     position: absolute;
     top: 50%;
@@ -82,7 +281,7 @@ html {
     background-size: 70%;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 15%;
+    background-position-y: 33%;
     transform: translate(60%, -50%);
   }
 }
@@ -92,7 +291,14 @@ html {
   position: relative;
 
   & a {
-    width: 55px;
+    
+    line-height: 3.4375rem;
+    border-radius: 50%;
+    display: block;
+    font-size: 1.125rem;
+    text-align: center;
+    height: 3.125rem;
+    width: 3.4375rem;
 
     &::before,
     &::after {
@@ -123,6 +329,21 @@ html {
     }
   }
 }
+
+.hero-area {
+  height: 100vh;
+  // TODO: make this variablized or something... (not local reference to url encoded path)
+  background-image: url("/crs-website/images/headers/Bo%20Thai%20Climate%20Refugees.jpg");
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.twitter-timeline {
+  column-count: 2;
+}
+
+/* *********************************** */
 
 .archive_gallery_container {
   display: grid;
@@ -202,4 +423,3 @@ html {
     font-size: 1rem;
   }
 }
-

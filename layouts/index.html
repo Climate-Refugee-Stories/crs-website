@@ -1,10 +1,7 @@
 {{ define "main" }}
 
   <!-- hero area -->
-  <section class="hero-area bg-primary overflow-hidden" id="parallax">
-    <div class="layer-bg w-100">
-      <img class="img-fluid w-100" src="{{`images/headers/Bo Thai Climate Refugees.jpg` | relURL}}" alt="bg-shape">
-    </div>
+  <section class="hero-area" id="parallax">
     <div class="main-title">
       <div class="container main-circle">
         <div class="row align-items-center justify-content-center">
@@ -32,7 +29,7 @@
       <div class="row">
         <div class="col-lg-10 mx-auto text-center">
           {{ with site.Data.homepage.about }}
-          <p class="hompage-abt-txt">{{.content | markdownify}}</p>
+          <p class="homepage-abt-txt">{{.content | markdownify}}</p>
           {{ if .button.enable }}
           {{ with .button }}
           <br/>
