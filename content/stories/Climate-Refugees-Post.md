@@ -12,7 +12,7 @@ summary: "The International Organization for Migration (IOM) estimates that in 2
 draft: false
 ---
 
-The Internal Displacement Monitoring Centre (IDMC) [estimates](https://www.internal-displacement.org/database/displacement-data) that between 2008-2020, 283 million people have been displaced by weather-related “disasters” worldwide. More and more,   such displacements are being attributed to climate change.
+The Internal Displacement Monitoring Centre (IDMC) [estimates](https://www.internal-displacement.org/database/displacement-data) that between 2008-2020, 283 million people have been displaced by weather-related “disasters” worldwide. More and more, such displacements are being attributed to climate change.
 
 
 After World War II, the United Nations (UN) was created and established the Universal Declaration of Human Rights in 1948. In 1951, the UN adopted a Refugee Convention, and a follow-up Protocol in 1967, rooted in the declaration of human rights. The refugee convention established the basis for how “refugee” is [defined in international law](https://www.unhcr.org/5aa290937.pdf) today: a person who has a “well-founded fear of being persecuted” on the basis of race, religion, nationality, membership of a particular social group or political opinion.

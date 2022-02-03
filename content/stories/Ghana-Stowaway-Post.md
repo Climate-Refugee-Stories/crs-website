@@ -38,9 +38,8 @@ Overall, we found that, over the last 30 years, many coastal and island communit
 &nbsp;
 
 {{< center >}}
-##### **Climate Refugee Stories: Ghana is supported by National Geographic Society**
+**"Climate Refugee Stories: Ghana" is supported by National Geographic Society**
 {{< /center >}}
-&nbsp;
 
 ![NatGeo Logo](../../images/blog/Ghana-Stowaway-Post/Capture3.webp)
 &nbsp;
