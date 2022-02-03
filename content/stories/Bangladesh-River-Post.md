@@ -12,20 +12,6 @@ summary: "In 2017-8, Climate Refugee Stories project collaborator Saumaun Heiat 
 draft: false
 ---
 
-<!-- TO-DO: Center -->
-{{< center >}}
-#### ***Coming Soon: Stories from Dhaka, Bangladesh***  
-#### ***by Tanaya Dutta Gupta***
-{{< /center >}}
-&nbsp;
-
-
-<!-- TO-DO: Center -->
-{{< center >}}
-#### **Climate Refugee Stories: Bangladesh is supported by National Geographic Society**  
-![NatGeo Logo](../../images/blog/Bangladesh-River-Post/2Capture.webp)  
-{{< /center >}}
-
 In 2017-8, Climate Refugee Stories project collaborator [Saumaun Heiat](https://www.linkedin.com/in/saumaun-heiat-52560013a/) worked as a Program Support Officer for the International Organization for Migration in Dhaka, Bangladesh. Below, he writes about his experiences listening to the stories of Rohingya Muslim refugees in one of the world's largest refugee camps, Cox's Bazaar, on the southeastern coast of Bangladesh, and community members displaced by coastal erosion and relocated to Dhaka's Bhola Slum.  
 &nbsp; 
 &nbsp;
