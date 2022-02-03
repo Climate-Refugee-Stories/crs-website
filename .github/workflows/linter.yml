@@ -19,7 +19,9 @@ on:
   push:
     branches: [master]
   pull_request:
-    branches: [master]
+    branches: 
+      - "master"
+      - "!cms/**"
 
 ###############
 # Set the Job #
