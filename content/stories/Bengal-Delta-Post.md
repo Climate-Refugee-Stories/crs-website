@@ -2,13 +2,13 @@
 title: "The Bengal Delta: \"We Are Floating in the Middle\""
 author: "Author"
 author_link: "#"
-date: 2022-02-02T23:24:40-05:00
+date: 2021-10-20T12:20:34+08:00
 image: "images/blog/Bengal-Delta-Post/Bengal-Delta-Post-cover.png"
 thumbnail: "images/blog/Bengal-Delta-Post/Bengal-Delta-Post-thumb.png"
 image_caption: |
     Two school girls walk along an embankment damaged by a cyclone in Gabura, SW Bangladesh in 2020. Image credt: [Tanaya Dulta Gupta](http://localhost:1313/crs-website/about/tanaya-dutta-gupta/)
 description: "This is meta description."
-summary: "This is a sentence preview of the story content, typically the first sentence of the main content of the article."
+summary: "Sitting inside a room in one of the largest slums in Dhaka, her voice breaking with effort to keep tears at bay, 40-year-old Nafisa (pseudonym) shared her experience of migrating from rural Bangladesh."
 draft: false
 ---
 

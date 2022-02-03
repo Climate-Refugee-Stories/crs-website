@@ -6,7 +6,7 @@ thumbnail: "images/blog/Hurricane-Maria-Post/Hurricane-Maria-Post-thumb.png"
 image_caption: |
     Image Credit: [Emma Crow-Willard](http://localhost:1313/crs-website/about/emma-crow-willard/)
 description: "Statue of What?"
-summary: "Coming Soon by Emma Crow-Willard & Roots of Unity Media"
+summary: "Post-Hurricane Maria, I naively thought, not having been to Puerto Rico: \"Shouldn’t everyone leave? It’s in the path of hurricanes that are just going to get worse and it’s susceptible to rising sea levels.\""
 draft: false
 ---
 

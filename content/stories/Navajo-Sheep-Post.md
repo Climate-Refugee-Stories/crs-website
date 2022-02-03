@@ -8,7 +8,7 @@ thumbnail: "images/blog/Navajo-Sheep-Post/Navajo-Sheep-Post-thumb.png"
 image_caption: |
     Image credit: [Yoonbae Cho](https://unsplash.com/@yoonbae81?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/navajo-sheep?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 description: "Navajo Sheep"
-summary: "Coming Soon by Keanu Gorman"
+summary: "Dził Nitsaa means Big Mountain in Diné Bizaad (the Navajo Language). Dził Nitsaa is a sacred monument and a sanctuary for the people that have inhabited the mountain and its surrounding areas since time immemorial."
 draft: true
 ---
 
