@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo:  Climate-Refugee-Stories/crs-website  # Path to your Github repository
+  branch: master # Branch to update
+
+# use google drive not this upload
+media_folder: 'N/a'
+publish_mode: editorial_workflow
+
+collections:
+  - name: "stories"
+    label: "Stories"
+    folder: "content/stories"
+    create: true
+    slug: "{{ slug }}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Creation Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm:ssZ"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Cover Image", name: "image", widget: "string"}
+      - {label: "Cover Thumbnail", name: "thumbnail", widget: "string"}
+      - {label: "Image Caption", name: "image_caption", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown"}
