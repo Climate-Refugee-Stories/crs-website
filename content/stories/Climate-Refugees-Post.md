@@ -12,7 +12,7 @@ summary: "The International Organization for Migration (IOM) estimates that in 2
 draft: false
 ---
 
-The Internal Displacement Monitoring Centre (IDMC) [estimates](https://www.internal-displacement.org/database/displacement-data) that between 2008-2020, 283 million people have been displaced by weather-related “disasters” worldwide. More and more,   such displacements are being attributed to climate change. .
+The Internal Displacement Monitoring Centre (IDMC) [estimates](https://www.internal-displacement.org/database/displacement-data) that between 2008-2020, 283 million people have been displaced by weather-related “disasters” worldwide. More and more, such displacements are being attributed to climate change.
 
 
 After World War II, the United Nations (UN) was created and established the Universal Declaration of Human Rights in 1948. In 1951, the UN adopted a Refugee Convention, and a follow-up Protocol in 1967, rooted in the declaration of human rights. The refugee convention established the basis for how “refugee” is [defined in international law](https://www.unhcr.org/5aa290937.pdf) today: a person who has a “well-founded fear of being persecuted” on the basis of race, religion, nationality, membership of a particular social group or political opinion.
@@ -58,11 +58,16 @@ Could climate refugees be:
 - Migrants who face harsh environmental conditions and environmental racism on their journeys or after resettlement?
 - Anyone who identifies themselves as such?
 
-Here, we invite storytellers and audiences to debate and define climate refugees for themselves
+Climate Refugee Stories project contributor Tanaya Dutta Gupta writes:
+{{< center >}} 
+"When we think of violence, and people fleeing violence, we think of refugees. But
+what about internal migrants who, without crossing international borders, are nevertheless crossed by violent border-like effects and bordering processes, exacerbated by climate and other crises? Perhaps moving beyond debates around labels like “climate refugees” as a category of concern, to recognize climate refugee-ness as an emergent condition of concern can take us a step towards addressing such questions."
+{{< /center >}} 
 
-<!-- TO-DO: Center -->
-{{< center >}}
-And we ask:  
+Here, we invite storytellers and audiences to debate and define climate refugees for themselves.
+
+And we ask:
+{{< center >}}  
 > What does it take to move from a world rooted in violence, extraction, and domination to a world rooted in regeneration, resilience, and interdependence?
 {{< /center >}}
 

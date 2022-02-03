@@ -6,25 +6,11 @@ date: 2021-10-20T12:14:34+08:00
 image: "images/blog/Bangladesh-River-Post/Bangladesh-River-Post-cover.png"
 thumbnail: "images/blog/Bangladesh-River-Post/Bangladesh-River-Post-thumb.png"
 image_caption: |
-    A lane in Korail slum, Dhaka, Bangladesh. Image Credit: [Tanaya Dutta Gupta](https://climate-refugee-stories.github.io/crs-website/about/tanaya-dutta-gupta/)
+    Entryway to a home in Dhaka's Bhola Slum, 2017. Photo Credit: [Saumaun Heiat ](https://climate-refugee-stories.github.io/crs-website/about/saumaun-heiat/)
 description: "The River Took Everything."
-summary: "In 2017-8, Climate Refugee Stories project collaborator Saumaun Heiat worked as a Program Support Officer for the International Organization for Migration in Dhaka, Bangladesh."
+summary: "On August 25th, 2017, fresh waves of violence in Myanmar’s Rakhine state towards the Rohingya people began the unraveling of one of the worst humanitarian disasters of the 21st century thus far."
 draft: false
 ---
-
-<!-- TO-DO: Center -->
-{{< center >}}
-#### ***Coming Soon: Stories from Dhaka, Bangladesh***  
-#### ***by Tanaya Dutta Gupta***
-{{< /center >}}
-&nbsp;
-
-
-<!-- TO-DO: Center -->
-{{< center >}}
-#### **Climate Refugee Stories: Bangladesh is supported by National Geographic Society**  
-![NatGeo Logo](../../images/blog/Bangladesh-River-Post/2Capture.webp)  
-{{< /center >}}
 
 In 2017-8, Climate Refugee Stories project collaborator [Saumaun Heiat](https://www.linkedin.com/in/saumaun-heiat-52560013a/) worked as a Program Support Officer for the International Organization for Migration in Dhaka, Bangladesh. Below, he writes about his experiences listening to the stories of Rohingya Muslim refugees in one of the world's largest refugee camps, Cox's Bazaar, on the southeastern coast of Bangladesh, and community members displaced by coastal erosion and relocated to Dhaka's Bhola Slum.  
 &nbsp; 
@@ -59,22 +45,5 @@ The International Organization for Migration (IOM) is an intergovernmental organ
 {{< center >}}
 ***Read Saumaun's latest article [Iran's Dustbowl Migration](https://www.eonmag.org/irans-dustbowl-migration/) in Eon Magazine***
 {{< /center >}}
-  
----  
-&nbsp;
-
-#### **Documentary Film: Thirty Million**  
-
-> Thirty Million People. A statistic. But this statistic is made up of individuals.  
-
-> Bangladesh is often described as the most vulnerable country on the planet in the face of a changing climate. Find out why. Watch the short documentary film Thirty Million.
-
-{{< vimeo 170108444 >}}
-
-> Thirty Million is a 35 minute documentary on the effects sea-level rise and climate change will have on the people of Bangladesh. The country is widely considered the most vulnerable in the world to climate change. The title Thirty Million references a staggering statistic: 30 million people are expected to be displaced over the coming decades as the country is projected to lose 17% of its land as global sea levels rise by one metre.  
-
-In a [review of the film](https://www.downtoearth.org.in/reviews/thirty-million-a-documentary-on-bangladesh-and-that-sinking-feeling-54425), Subhojit Goswami says that it gives viewers a sinking, "realisation that climate-vulnerable Bangladesh is suffering because of what rest of the world is doing... One can feel the enormity of the situation by looking at instances of [land subsidence](https://oceanservice.noaa.gov/facts/subsidence.html) and resilience of the people who have built their homes, seen them washed away and rebuilt them again—20 or 30 times in their lifetime. Still, Bangladeshis don’t want to see themselves as victims." 
-  
-As environmental lawyer Monica Jahan Bose says in the film, “They are fighters, poets and singers. They don’t want to give up their land. They want to stay and fight.”
 
 ---
