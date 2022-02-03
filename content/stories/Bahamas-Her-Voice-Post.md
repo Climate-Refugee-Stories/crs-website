@@ -7,7 +7,7 @@ summary: In September 2019, Hurricane Dorian became one of the most intense
   storms to ever hit the Atlantic and the greatest natural disaster to ever make
   landfall on the islands of The Bahamas.
 thumbnail: images/blog/Bahamas-Her-Voice-Post/Bahamas-Her-Voice-Post-thumb.png
-title: 'Bahamas: "You Should Hear Her Voice"'
+title: 'Bahamas: "You Should Hear Her Voice "'
 date: 2022-02-03T06:56:36.628Z
 image: images/blog/Bahamas-Her-Voice-Post/Bahamas-Her-Voice-Post-cover.png
 description: Bahamian artist Dede Brown
