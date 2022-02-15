@@ -28,6 +28,9 @@
     .main-title {
         height: 50%;
     }
+    .contact__form {
+        height: 150rem;
+    }
 }
 
 @media (max-width: 50em) {
@@ -58,5 +61,16 @@
             height: 100%;
             transform: translate(50%, -50%);
         }
+    }
+    .contact__form {
+        height: 200rem;
+    }
+}
+
+@media (max-width: 25em) {
+    .contact__form {
+        width: 95%;
+        height: 225rem;
+        overflow: hidden;
     }
 }
