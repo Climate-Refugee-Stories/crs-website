@@ -20,7 +20,11 @@
 <!-- footer -->
 <footer class="bg-dark footer-section">
   <div class="footer-bottom border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">{{ site.Params.copyright | markdownify }}</p>
+    <p class="mb-0 text-light">
+      &copy; <span id='copyYear'>2021</span> Climate Refugee Stories<br>
+      Website created by <a href="https://linktr.ee/ldcllc">Lotus Digital Consulting, LLC.</a><br>
+      using the <a href="https://github.com/themefisher/kross-hugo">kross-hugo</a> theme
+    </p>
   </div>
 </footer>
 <!-- /footer -->
@@ -39,6 +43,13 @@
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
 
+{{ "<!-- Copyright update -->" | safeHTML }}
+<script>
+  // Set current year
+  const yearID = document.querySelector("#copyYear");
+  const currentYear = new Date().getFullYear();
+  yearID.textContent = currentYear;
+</script>
 
 <!-- cookie -->
 {{ if site.Params.cookies.enable }}
