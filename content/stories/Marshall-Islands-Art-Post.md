@@ -18,7 +18,7 @@ Small, low-lying island nations in the South Pacific are some of the most vulner
 
 As early as 1987, former President of the Republic of the Maldives Maumoon Abdul Gayoom spoke to the United Nations about the impacts of climate change the small nation was already experiencing.  At the [1989 Small States Conference on Sea Level Rise](https://www.sciencedirect.com/science/article/pii/S0016718509000335), Gayoom asked larger nations not to make decisions on behalf of small island states. He said:
 
-> “There must be a way out. Neither the Maldives nor any small island nation wants to drown.  That’s for sure.  Neither do we want our lands eroded, or our economies destroyed.  Nor do we want to become environmental refugees either.  We want to stand up and fight.  All we ask is that the more affluent nations and the international community in general, help us in this fight.”  \
+> “There must be a way out. Neither the Maldives nor any small island nation wants to drown.  That’s for sure.  Neither do we want our lands eroded, or our economies destroyed.  Nor do we want to become environmental refugees either.  We want to stand up and fight.  All we ask is that the more affluent nations and the international community in general, help us in this fight.”
   
 <!-- TO-DO: Figure out spacing & sizing -->
 &nbsp;

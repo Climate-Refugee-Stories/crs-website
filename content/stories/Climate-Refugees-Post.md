@@ -59,10 +59,8 @@ Could climate refugees be:
 - Anyone who identifies themselves as such?
 
 Climate Refugee Stories project contributor Tanaya Dutta Gupta writes:
-{{< center >}} 
-"When we think of violence, and people fleeing violence, we think of refugees. But
-what about internal migrants who, without crossing international borders, are nevertheless crossed by violent border-like effects and bordering processes, exacerbated by climate and other crises? Perhaps moving beyond debates around labels like “climate refugees” as a category of concern, to recognize climate refugee-ness as an emergent condition of concern can take us a step towards addressing such questions."
-{{< /center >}} 
+> When we think of violence, and people fleeing violence, we think of refugees. But
+what about internal migrants who, without crossing international borders, are nevertheless crossed by violent border-like effects and bordering processes, exacerbated by climate and other crises? Perhaps moving beyond debates around labels like “climate refugees” as a category of concern, to recognize climate refugee-ness as an emergent condition of concern can take us a step towards addressing such questions.
 
 Here, we invite storytellers and audiences to debate and define climate refugees for themselves.
 
