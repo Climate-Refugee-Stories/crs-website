@@ -37,7 +37,7 @@ Luis, a nursing student in Puerto Rico, graduated just before the hurricane and 
 &nbsp;
 {{< /center >}}
 
-![Statue of What?](../../images/blog/Bengal-Delta-Post/Lane-in-Korail-slum-Dhaka-March2020.jpg#caption "*"Statue of What?" artwork created in solidarity with Puerto Rico by [Bo Thai](https://illegal-drip.com/)*")
+![Statue of What?](../../images/blog/Bengal-Delta-Post/Lane-in-Korail-slum-Dhaka-March2020.jpg#caption "*"Statue of What?" artwork created in solidarity with Puerto Rico by [Bo Thai](../../about/bo-daraphant/)*")
 
 
 <!-- #### **Survivor Stories:**
