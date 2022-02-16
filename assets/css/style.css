@@ -14,13 +14,12 @@ VERSION: Versoin Number
 
 body {
   line-height: 1.2;
-  font-family: roboto, sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
-  color: #4c4c4c
+  color: #4c4c4c;
+  font-weight: 500;
 }
-
-
 
 
 body {
@@ -193,16 +192,14 @@ a:hover {
   overflow: hidden
 }
 
-.font-primary {
-  font-family: roboto, serif !important
-}
-
 .font-secondary {
   font-family: playfair display, serif !important
 }
 
 .font-tertiary {
-  font-family: bwnistaint-xbd !important
+  font-family: 'Red Hat Display' !important;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
 .bg-dark {
@@ -668,5 +665,5 @@ blockquote {
   color: #4c4c4c;
   font-size: 22px;
   line-height: 1.8;
-  font-family: roboto, sans-serif
+  /* font-family: roboto, sans-serif */
 }

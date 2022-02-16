@@ -30,23 +30,23 @@ html {
 .bg-shape- {
   
   &stories {
-    background: rgb(0, 152, 212);
+    background: rgb(0, 129, 180);
   }
   
   &archive {
-    background: rgb(4, 192, 199);
+    background: rgb(3, 163, 169);
   }
   
   &resources {
-    background: rgb(0, 179, 140);
+    background: rgb(0, 152, 119);
   }
   
   &contact {
-    background: rgb(246, 118, 0);
+    background: rgb(209, 100, 0);
   }
   
   &about {
-    background: rgb(36, 89, 189);
+    background: rgb(30, 75, 160);
   }
 }
 /* *********************************** */
@@ -57,7 +57,9 @@ html {
 
   &-title {
     margin-bottom: 2.8rem;
-    font-family: bwnistaint-xbd;
+    font-family: 'Red Hat Display' !important;
+    font-weight: 800;
+    letter-spacing: 2px;
   }
 }
 
@@ -126,6 +128,7 @@ html {
   position: relative;
   z-index: 1;
   transition: .2s ease;
+  letter-spacing: 1px;
 
   &:focus {
     outline: 0;
@@ -218,7 +221,8 @@ html {
 }
 
 .navbar .nav-item .nav-link {
-  font-family: bwnistaint-xbd;
+  font-family: 'Red Hat Display' !important;
+  font-weight: 600;
   text-transform: uppercase;
   padding: 0.9375rem;
 }
@@ -263,15 +267,19 @@ html {
 .tagline-circle {
   border-radius: 8px;
   background: $primary-color;
-  padding: 3% 16% 3% 3%;
+  padding: 3% 18% 3% 3%;
   position: relative;
   font-size: 2.1875rem;
+  font-family: 'Red Hat Display' !important;
+  font-weight: inherit;
+  line-height: 2.6rem;
+  letter-spacing: 1px;
 
   &::before {
     content: "";
     background-color: #fff;
     height: 120%;
-    width: 45%;
+    width: 50%;
     display: block;
     position: absolute;
     top: 50%;
@@ -422,4 +430,18 @@ html {
   &__item {
     font-size: 1rem;
   }
+}
+
+
+.contact__form {
+  width: 75%;
+  height: 90rem;
+  margin: 0;
+  display: inline-block;
+  border: 0;
+}
+
+.navbar_title {
+  letter-spacing: inherit;
+  font-weight: 600;
 }
