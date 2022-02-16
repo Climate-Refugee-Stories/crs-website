@@ -57,8 +57,9 @@ html {
 
   &-title {
     margin-bottom: 2.8rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-family: 'Red Hat Display' !important;
+    font-weight: 600;
+    letter-spacing: 2px;
   }
 }
 
@@ -219,9 +220,8 @@ html {
 }
 
 .navbar .nav-item .nav-link {
-  // font-family: bwnistaint-xbd;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-family: 'Red Hat Display' !important;
+  font-weight: 600;
   text-transform: uppercase;
   padding: 0.9375rem;
 }
@@ -436,4 +436,8 @@ html {
   margin: 0;
   display: inline-block;
   border: 0;
+}
+
+.navbar_title {
+  letter-spacing: inherit;
 }
