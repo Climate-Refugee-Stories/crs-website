@@ -266,12 +266,13 @@ html {
 .tagline-circle {
   border-radius: 8px;
   background: $primary-color;
-  padding: 3% 16% 3% 3%;
+  padding: 3% 18% 3% 3%;
   position: relative;
   font-size: 2.1875rem;
   font-family: 'Red Hat Display' !important;
   font-weight: inherit;
-  line-height: 2.8rem;
+  line-height: 2.6rem;
+  letter-spacing: 1px;
 
   &::before {
     content: "";
