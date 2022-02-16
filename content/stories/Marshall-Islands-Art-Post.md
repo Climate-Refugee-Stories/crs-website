@@ -6,7 +6,7 @@ date: 2021-10-20T12:14:34+07:00
 image: "images/blog/Marshall-Islands-Art-Post/Marshall-Islands-Art-Post-cover.png"
 thumbnail: "images/blog/Marshall-Islands-Art-Post/Marshall-Islands-Art-Post-thumb.png"
 image_caption: |
-  "Not 1 More" artwork by [Bo Thai](https://illegal-drip.com/), featuring musician and spoken-word artist Soultree
+  "Not 1 More" artwork by [Bo Thai](../../about/bo-daraphant/), featuring musician and spoken-word artist Soultree
 description: "This is meta description."
 summary: "Small, low-lying island nations in the South Pacific are some of the most vulnerable locations in the world to the impacts of climate change." 
 draft: false
