@@ -6,7 +6,7 @@ date: 2021-10-15T12:14:34+07:00
 image: "images/blog/Central-America-Caravan-Post/Central-America-Caravan-Post-cover.png"
 thumbnail: "images/blog/Central-America-Caravan-Post/Central-America-Caravan-Post-thumb.png"
 image_caption: |
-    A young member of the spring 2018 [refugee caravan](https://www.pueblosinfronteras.org/viacrucis.html) waves a Honduran flag atop the US-Mexico border wall in Playas Tijuana. Image Credit: [Tina Shull](https://climate-refugee-stories.github.io/crs-website/about/tina-shull)
+    A young member of the spring 2018 [refugee caravan](https://www.pueblosinfronteras.org/viacrucis.html) waves a Honduran flag atop the US-Mexico border wall in Playas Tijuana. Image Credit: [Tina Shull](../../about/tina-shull)
 description: "Central America: This Caravan is Yours"
 summary: "When the people of my country of Honduras decide to leave, they do not leave because they lack love for Honduras, but because the need demands it."
 draft: false

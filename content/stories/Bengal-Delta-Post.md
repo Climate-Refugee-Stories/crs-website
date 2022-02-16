@@ -6,7 +6,7 @@ date: 2021-10-20T12:20:34+08:00
 image: "images/blog/Bengal-Delta-Post/Bengal-Delta-Post-cover.png"
 thumbnail: "images/blog/Bengal-Delta-Post/Bengal-Delta-Post-thumb.png"
 image_caption: |
-    Two school girls walk along an embankment damaged by a cyclone in Gabura, SW Bangladesh in 2020. Image credt: [Tanaya Dulta Gupta](https://climate-refugee-stories.github.io/crs-website/about/tanaya-dutta-gupta/)
+    Two school girls walk along an embankment damaged by a cyclone in Gabura, SW Bangladesh in 2020. Image credt: [Tanaya Dulta Gupta](../../about/tanaya-dutta-gupta/)
 description: "This is meta description."
 summary: "Sitting inside a room in one of the largest slums in Dhaka, her voice breaking with effort to keep tears at bay, 40-year-old Nafisa (pseudonym) shared her experience of migrating from rural Bangladesh."
 draft: false
@@ -15,7 +15,7 @@ draft: false
 &nbsp;
 #### **"Climate Refugee Stories: Bangladesh"**
 ##### ***Produced by Tanaya Dutta Gupta and edited by Thor Morales***
-{{< youtube id="7i0j0UhcfGM" title="*The content in this film is under copyright, but Climate Refugee Stories may grant license for use. In most cases, not-for-profit educational use is available free of charge. To obtain permission to re-use any material from this film, you must [contact](https://www.climaterefugeestories.com/about) Climate Refugee Stories.*" class="vidcaption" >}} 
+{{< youtube id="7i0j0UhcfGM" title="*The content in this film is under copyright, but Climate Refugee Stories may grant license for use. In most cases, not-for-profit educational use is available free of charge. To obtain permission to re-use any material from this film, you must [contact](../../contact) Climate Refugee Stories.*" class="vidcaption" >}} 
 &nbsp;
 
 #### **Bengal Delta Region of Bangladesh and India**  
@@ -27,7 +27,7 @@ Sitting inside a room in one of the largest slums in Dhaka, her voice breaking w
 
 Nafisa’s ordeal is not an isolated experience. It conveys how, for people moving within Bangladesh and India, migration is not a linear move from rural to urban areas but consists of circular trajectories that may not follow a fixed seasonal rhythm. Rather, these circular movements can be characterized as erratic and uncertain, often occurring in uneven intervals.
 
-![A lane in Korail slum, Dhaka, Bangladesh](../../images/blog/Bengal-Delta-Post/Lane-in-Korail-slum-Dhaka-March2020.jpg#caption "*A lane in Korail slum, Dhaka, Bangladesh. Image Credit: [Tanaya Dutta Gupta](https://climate-refugee-stories.github.io/crs-website/about/tanaya-dutta-gupta/)*")
+![A lane in Korail slum, Dhaka, Bangladesh](../../images/blog/Bengal-Delta-Post/Lane-in-Korail-slum-Dhaka-March2020.jpg#caption "*A lane in Korail slum, Dhaka, Bangladesh. Image Credit: [Tanaya Dutta Gupta](../../about/tanaya-dutta-gupta/)*")
 
 What role might climate play in making people from this region variably mobile and immobile? And how might circular (im)mobility of people moving within their countries be related to experiences of insecurity and violence?
 

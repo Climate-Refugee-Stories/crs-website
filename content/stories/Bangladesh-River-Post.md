@@ -6,7 +6,7 @@ date: 2021-10-20T12:14:34+08:00
 image: "images/blog/Bangladesh-River-Post/Bangladesh-River-Post-cover.png"
 thumbnail: "images/blog/Bangladesh-River-Post/Bangladesh-River-Post-thumb.png"
 image_caption: |
-    Entryway to a home in Dhaka's Bhola Slum, 2017. Photo Credit: [Saumaun Heiat ](https://climate-refugee-stories.github.io/crs-website/about/saumaun-heiat/)
+    Entryway to a home in Dhaka's Bhola Slum, 2017. Photo Credit: [Saumaun Heiat ](../../about/saumaun-heiat/)
 description: "The River Took Everything."
 summary: "On August 25th, 2017, fresh waves of violence in Myanmar’s Rakhine state towards the Rohingya people began the unraveling of one of the worst humanitarian disasters of the 21st century thus far."
 draft: false

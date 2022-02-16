@@ -4,7 +4,7 @@ date: 2021-10-15T12:14:34+09:00
 image: "images/blog/Hurricane-Maria-Post/Hurricane-Maria-Post-cover.png"
 thumbnail: "images/blog/Hurricane-Maria-Post/Hurricane-Maria-Post-thumb.png"
 image_caption: |
-    Image Credit: [Emma Crow-Willard](https://climate-refugee-stories.github.io/crs-website/about/emma-crow-willard/)
+    Image Credit: [Emma Crow-Willard](../../about/emma-crow-willard/)
 description: "Statue of What?"
 summary: "Post-Hurricane Maria, I naively thought, not having been to Puerto Rico: \"Shouldn’t everyone leave? It’s in the path of hurricanes that are just going to get worse and it’s susceptible to rising sea levels.\""
 draft: false
