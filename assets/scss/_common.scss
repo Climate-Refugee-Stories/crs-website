@@ -221,7 +221,7 @@ html {
 .navbar .nav-item .nav-link {
   // font-family: bwnistaint-xbd;
   font-family: 'Lato', sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   padding: 0.9375rem;
 }
@@ -270,6 +270,7 @@ html {
   position: relative;
   font-size: 2.1875rem;
   font-family: 'Red Hat Display' !important;
+  font-weight: inherit;
 
   &::before {
     content: "";
