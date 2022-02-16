@@ -57,7 +57,8 @@ html {
 
   &-title {
     margin-bottom: 2.8rem;
-    font-family: bwnistaint-xbd;
+    font-family: lato;
+    font-weight: 700;
   }
 }
 
@@ -218,7 +219,9 @@ html {
 }
 
 .navbar .nav-item .nav-link {
-  font-family: bwnistaint-xbd;
+  // font-family: bwnistaint-xbd;
+  font-family: lato;
+  font-weight: 900;
   text-transform: uppercase;
   padding: 0.9375rem;
 }

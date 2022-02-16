@@ -192,16 +192,13 @@ a:hover {
   overflow: hidden
 }
 
-.font-primary {
-  font-family: roboto, serif !important
-}
-
 .font-secondary {
   font-family: playfair display, serif !important
 }
 
 .font-tertiary {
-  font-family: bwnistaint-xbd !important
+  font-family: lato !important;
+  font-weight: 700;
 }
 
 .bg-dark {
