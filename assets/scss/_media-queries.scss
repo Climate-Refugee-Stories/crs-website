@@ -1,3 +1,8 @@
+@media(max-width:75em) {
+    .tagline-circle {
+        padding-right: 8rem;
+    }
+}
 @media(max-width:62em) {
     html {
         font-size: 80%;
@@ -72,5 +77,11 @@
         width: 95%;
         height: 225rem;
         overflow: hidden;
+    }
+}
+
+@media (max-width: 25em) {
+    html {
+        font-size: 45%;
     }
 }
