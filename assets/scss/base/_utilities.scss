@@ -1,0 +1,50 @@
+.u-text {
+  &--center {
+    text-align: center !important;
+  }
+}
+
+.u-mb {
+  &--huge {
+    margin-top: 10rem !important;
+  }
+
+  &--big {
+    margin-bottom: 8rem !important;
+
+    // @include respond(tab-port) {
+    //   margin-bottom: 5rem !important;
+    // }
+
+  }
+
+  &--medium {
+    margin-bottom: 4rem !important;
+
+    // @include respond(tab-port) {
+    //   margin-bottom: 3rem !important;
+    // }
+  }
+
+  &--small {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+.u-mt {
+  &--huge {
+    margin-top: 10rem !important;
+  }
+
+  &--big {
+    margin-top: 8rem !important;
+  }
+
+  &--medium {
+    margin-top: 4rem !important;
+  }
+
+  &--small {
+    margin-top: 1.5rem !important;
+  }
+}
