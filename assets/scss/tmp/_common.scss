@@ -338,15 +338,6 @@ html {
   }
 }
 
-.hero-area {
-  height: 100vh;
-  // TODO: make this variablized or something... (not local reference to url encoded path)
-  background-image: url($hero_img);
-  background-size: cover;
-  background-position: bottom;
-  position: relative;
-}
-
 .twitter-timeline {
   column-count: 2;
 }
