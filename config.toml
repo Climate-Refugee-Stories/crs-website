@@ -114,3 +114,8 @@ URL = "https://www.instagram.com/climaterefugeestories/"
 #[[params.social]]
 #icon = "ti-dribbble"
 #URL = "#"
+
+# [module]
+#   [[module.mounts]]
+#     source = "./assets/js/node_modules/@fortawesome/fontawesome-free/js"
+#     target = "assets/external/js/fontawesome"

@@ -341,7 +341,7 @@ html {
 .hero-area {
   height: 100vh;
   // TODO: make this variablized or something... (not local reference to url encoded path)
-  background-image: url("/images/headers/Bo%20Thai%20Climate%20Refugees.jpg");
+  background-image: url($hero_img);
   background-size: cover;
   background-position: bottom;
   position: relative;

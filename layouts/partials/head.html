@@ -3,15 +3,10 @@
   <title>{{ .Title }}</title>
 
   {{ "<!-- mobile responsive meta -->" | safeHTML }}
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
   {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
-
-  {{ with site.Params.baidu_site_verification }}
-	{{ "<!-- baidu site verification -->" | safeHTML }}
-  <meta name="baidu-site-verification" content="{{ . }}" />
-  {{ end }}
 
   <style>
     :root{
@@ -19,28 +14,53 @@
     }
   </style>
 
-  {{ "<!-- plugins -->" | safeHTML }}
-  {{ range site.Params.plugins.css }}
-  <link rel="stylesheet" href="{{ .link | absURL }} ">
+  {{ "<!-- Stylesheet -->" | safeHTML }}
+  <!-- {{ $styles := resources.Get "css/style.css" }} -->
+    <!-- minify | 
+    fingerprint -->
+    <!-- <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}"> -->
+
+  {{ $options := (dict "enableSourceMap" true ) }}
+  <!-- defining outside the if block, so it can be accessed afterwards -->
+  {{ $styles := "" }}
+  {{ $hugo_scss_vars := resources.Get "scss/hugo_vars.scss" }}
+  {{ $main_scss := resources.Get "scss/main.scss" }}
+  {{ $scss := slice $hugo_scss_vars $main_scss | resources.Concat "scss/bundle.scss" }}
+
+  <!-- https://discourse.gohugo.io/t/how-to-use-hugo-template-variables-in-css/4464/33 -->
+  {{ $scss = $scss | resources.ExecuteAsTemplate "style.main.scss" . }}
+
+  {{ if hugo.IsProduction }}
+
+    {{ $options = merge $options (dict "outputStyle" "compressed") }}
+    {{ $styles = $scss | toCSS $options | minify | fingerprint }} 
+
+  {{ else }}
+
+    {{ $options = merge $options (dict "targetPath" "css/style.css" "outputStyle" "expanded") }}
+    {{ $styles = $scss | toCSS $options }} 
+
+  {{ end }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+
+  {{ "<!-- Main Script -->" | safeHTML }}
+
+  {{ $script := "" }}
+
+  {{ if hugo.IsProduction }}
+
+  {{ $options = merge $options (dict "minify" true ) }}
+  {{ $script = resources.Get "js/script.js" | js.Build $options | minify | fingerprint }}
+
+  {{ else }}
+
+  {{ $options = merge $options (dict "minify" false "targetPath" "js/main.js" ) }}
+  {{ $script = resources.Get "js/script.js" | js.Build $options }}
+
   {{ end }}
 
-  {{ "<!-- Main Stylesheet -->" | safeHTML }}
-  {{ $styles := resources.Get "css/style.css" |
-    minify | 
-    fingerprint
-  }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
-  {{ $styles := resources.Get "scss/main.scss"  |
-    resources.ExecuteAsTemplate "style.main.scss" . | 
-    toCSS | 
-    minify | 
-    fingerprint
-  }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+  <script defer src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
 
-  {{ "<!--Favicon-->" | safeHTML }}
-  <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
-  <link rel="icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
 
   {{ with site.Params.google_analytics_id }}
 	{{ "<!-- Global Site Tag (gtag.js) - Google Analytics -->" | safeHTML }}
