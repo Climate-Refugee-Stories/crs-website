@@ -1,0 +1,30 @@
+.navigation {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.2rem;
+    }
+
+    &__item {
+        display: inline-block;
+    }
+    
+    &__link {
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 1.2rem;
+        
+        &:link,
+        &:visited {
+            color: var(--color-white);
+        }
+        &:hover,
+        &:active {
+            color: var(--color-white-active);
+        }
+    }
+}

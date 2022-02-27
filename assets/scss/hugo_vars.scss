@@ -1,1 +1,2 @@
 $hero_img: "{{ (resources.Get `/images/headers/Bo Thai Climate Refugees.jpg`).Permalink | safeCSS  }}";
+$primary_color: {{ site.Params.theme_color }};
