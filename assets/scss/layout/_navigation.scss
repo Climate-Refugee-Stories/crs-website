@@ -1,7 +1,7 @@
 .navigation {
     font-size: 1.2rem;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: var(--bolder);
 
     &__list {
         display: flex;

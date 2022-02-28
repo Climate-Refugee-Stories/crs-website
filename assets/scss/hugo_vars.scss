@@ -1,2 +1,3 @@
 $hero_img: "{{ (resources.Get `/images/headers/Bo Thai Climate Refugees.jpg`).Permalink | safeCSS  }}";
 $primary_color: {{ site.Params.theme_color }};
+$logo_transparent: "{{ (resources.Get `images/CRS Logo-transparent.png`).Permalink | safeCSS  }}";

@@ -2,21 +2,27 @@
 
   <!-- hero area -->
   <section class="hero">
-    <div class="main-title">
-      <div class="container main-circle">
-        <div class="row align-items-center justify-content-center">
-          <div class="row align-items-start col-lg-8 tagline-circle-div">
-            <h3 class="text-white text-center home-tagline tagline-circle">{{ site.Data.homepage.banner.title | safeHTML }}</h3>
-          </div>
+    <div class="hero__content">
+      <div class="hero__tagline">
+        <div class="hero__tagline-container">
+          <p class="u-text--white hero__tagline-circle">{{ site.Data.homepage.banner.title | safeHTML }}</p>
         </div>
       </div>
 
       <!-- social icon -->
-      <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-        {{ range site.Params.social }}
-        <li class="mb-3 social-icons-home"><a class="text-primary" href="{{.URL | safeURL }}" target="_blank"><i class="{{.icon}}"></i></a></li>
-        {{ end }}
-      </ul>
+      <div class="hero_social-container">
+        <ul class="hero__social-list">
+          {{ range site.Params.social }}
+          <li class="mb-3 social-icons-home">
+            <a class="text-primary" href="{{.URL | safeURL }}" target="_blank">
+              <i class="u-text--white {{.icon}}">
+                test
+              </i>
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
       <!-- /social icon -->
     </div>
   </section>

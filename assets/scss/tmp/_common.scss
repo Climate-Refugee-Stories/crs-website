@@ -249,50 +249,6 @@ html {
   }
 }
 
-.main-title {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -15%);
-  width: 100%;
-  align-content: center;
-}
-
-.main-circle {
-  grid-column: 1/-1;
-}
-
-.tagline-circle {
-  border-radius: 8px;
-  background: $primary-color;
-  padding: 3% 18% 3% 3%;
-  position: relative;
-  font-size: 2.1875rem;
-  font-family: 'Red Hat Display' !important;
-  font-weight: inherit;
-  line-height: 2.6rem;
-  letter-spacing: 1px;
-
-  &::before {
-    content: "";
-    background-color: #fff;
-    height: 120%;
-    width: 45%;
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    border-radius: 50%;
-    background-image: url("images/CRS Logo-transparent.png");
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 33%;
-    transform: translate(60%, -50%);
-  }
-}
 
 
 .social-icons-home {

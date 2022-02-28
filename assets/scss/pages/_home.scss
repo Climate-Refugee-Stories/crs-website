@@ -3,4 +3,62 @@
   background-image: url($hero_img);
   background-size: cover;
   background-position: bottom;
+  position: relative;
+  text-align: center;
+
+  &__content {
+    @include center_item;
+    transform: translate(-50%, -30%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  &__tagline {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10rem;
+
+    &-circle {
+      border-radius: 8px;
+      background: $primary-color;
+      padding: 2rem 13rem 2rem 2rem;
+      position: relative;
+      line-height: 4rem;
+      letter-spacing: 1px;
+      font-size: 3.5rem;
+  
+      &::before {
+        content: "";
+        background-color: #fff;
+        height: 120%;
+        width: 45%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        border-radius: 50%;
+        background-image: url($logo_transparent);
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 33%;
+        transform: translate(60%, -50%);
+      }
+    }
+  }
+  
+  &__social {
+    &-container {
+      grid-column: 1;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      // margin-left: 1rem;
+    }
+  }
 }
