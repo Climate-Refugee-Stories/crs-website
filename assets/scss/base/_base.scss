@@ -14,7 +14,7 @@ html {
   font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
 }
 
-// ::selection {
-//   background-color: $color-primary;
-//   color: $color-white;
-// }
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}

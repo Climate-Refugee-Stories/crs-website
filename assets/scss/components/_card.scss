@@ -1,0 +1,56 @@
+.card {
+  flex: 1 0 25%;
+  padding: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: var(--shadow-light-1);
+  overflow: hidden;
+
+  &__img-link {
+    display: flex;
+    justify-content: center;
+    height: 30rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 3rem;
+    flex: 1;
+  }
+
+  &__title {
+    &:link,
+    &:visited {
+      color: var(--color-black);
+      font-size: 2rem;
+      transition: all 0.2s;
+      font-weight: 500;
+    }
+    &:hover,
+    &:active {
+      color: var(--color-primary);
+    }
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+  &__text {
+  }
+
+  &__btn {
+    align-self: center;
+  }
+}

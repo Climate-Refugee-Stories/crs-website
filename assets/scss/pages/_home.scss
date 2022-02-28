@@ -69,11 +69,32 @@
   }
 
   &map {
-    text-align: center;
   }
 }
 
 .about {
   padding: 0 8rem;
   font-size: 2.2rem;
+}
+
+.map {
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+  }
+
+  &__iframe {
+    border: 0;
+    width: 100%;
+    height: 50rem;
+  }
+
+  &__stories {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+  }
 }

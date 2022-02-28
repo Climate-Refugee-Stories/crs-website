@@ -7,9 +7,28 @@ body {
 }
 
 .heading {
+  color: var(--color-black);
   &--primary {
+    font-size: 8rem;
+  }
+
+  &--secondary {
+    font-size: 6rem;
+  }
+
+  &--tertiary {
+    font-size: 3rem;
+  }
+
+  &--quartenary {
     font-size: 2rem;
   }
+}
+
+.section-title {
+  margin-bottom: 4.5rem;
+  font-weight: var(--bold);
+  letter-spacing: 2px;
 }
 
 a {

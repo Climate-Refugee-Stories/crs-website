@@ -4,7 +4,7 @@ author: "Author"
 author_link: "#"
 date: 2021-10-20T12:20:34+08:00
 image: "images/blog/Bengal-Delta-Post/Bengal-Delta-Post-cover.png"
-thumbnail: "images/blog/Bengal-Delta-Post/Bengal-Delta-Post-thumb.png"
+thumbnail: "1V2urlvHUQWSTNG3wZRMuAFco6jE--WDJ"
 image_caption: |
     Two school girls walk along an embankment damaged by a cyclone in Gabura, SW Bangladesh in 2020. Image credt: [Tanaya Dulta Gupta](../../about/tanaya-dutta-gupta/)
 description: "This is meta description."

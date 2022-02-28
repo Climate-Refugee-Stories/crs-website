@@ -4,7 +4,7 @@ title: "Who are Climate Refugees?"
 # author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-20T12:14:34+06:00
 image: "images/blog/Climate-Refugees-Post/Climate-Refugees-Post-cover.png"
-thumbnail: "images/blog/Climate-Refugees-Post/Climate-Refugees-Post-thumb.png"
+thumbnail: "13ntjf7YdHe6o-3fzLFZ0tjcDurj5g4Dr"
 image_caption: |
     Image Credit: Steve Pavey, [Hope in Focus](https://www.stevepavey.com/index)
 description: "Who are Climate Refugees?"
@@ -71,4 +71,3 @@ And we ask:
 
 ![A Word cloud from CRSC](../../images/blog/Climate-Refugees-Post/3Capture.webp#caption "*A word cloud created from audience responses at a convening of the UC Critical Refugee Studies Collective at UCLA in April of 2018.
 Participants were asked to define the concept of climate refugees.*")
-
