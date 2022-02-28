@@ -1,11 +1,17 @@
 body {
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 400;
-  // line-height: 1.5;
+  line-height: 1.4;
   color: var(--color-grey-dark-1);
   font-size: 1.8rem;
 }
 
-.heading__primary {
-  font-size: 2rem;
+.heading {
+  &--primary {
+    font-size: 2rem;
+  }
+}
+
+a {
+  text-decoration: none;
 }

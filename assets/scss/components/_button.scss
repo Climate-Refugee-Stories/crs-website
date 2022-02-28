@@ -1,0 +1,28 @@
+.btn {
+  cursor: pointer;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: 0;
+  font-family: var(--fancy-font);
+  padding: 1.5rem 4rem;
+  transition: all 0.2s;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-weight: var(--bolder);
+
+  &:hover {
+    background-color: var(--color-primary-light);
+  }
+
+  &--sm {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+  }
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
