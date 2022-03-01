@@ -69,7 +69,7 @@
         -->
         {{ $final_array := slice }}
         {{ $intermid_array := slice }}
-        {{ $counter := 0 }}
+        {{ $counter := 1 }}
         {{ $total_counter := 0 }}
         {{ $page_title := .Title }}
         {{ $total_pics := 0 }}
@@ -126,7 +126,7 @@
               <!-- 
                 reseting all the intermediary values
                -->
-              {{ $counter = 0 }}
+              {{ $counter = 1 }}
               {{ $intermid_array = slice }}
 
             {{ else }}
@@ -141,16 +141,34 @@
         <!-- end range loop -->
         {{ end }}
 
-        <div class="archive_gallery_container">
-          {{ range .Site.Data.archive }}
+        
+        {{ if gt (len $final_array) 0 }}
+        <div class="slides">
+          {{ $slide_counter := 0 }}
+          {{ with $final_array }}
+          {{ range . }}
+          <div class="slide archive_gallery_container" style="transform: translateX({{ mul $slide_counter 100 }}%);">
+            {{ range . }}
             <figure class="archive_gallery_figure">
-              <!-- <img src="https://drive.google.com/uc?id={{ index . `Google Photo ID` }}" alt="{{ index . `Alt Text` }}" /> -->
-              <figcaption class="caption">{{ .Description | truncate 40 }}</figcaption>
+              <div class="archive_gallery_img" title="{{ .photo_alt_text | safeHTML }}"
+              style="background-image: url('https://drive.google.com/uc?id={{ .photo_id | safeURL }}');"
+                >&nbsp;</div>
+                <figcaption class="caption">{{ .photo_desc | safeHTML }}</figcaption>
             </figure>
+            {{ end }}
+          </div>
+          {{ $slide_counter = add $slide_counter 1}}
           {{ end }}
+          {{ end }}
+          <button class="slides__btn slides__btn--left">&larr;</button>
+          <button class="slides__btn slides__btn--right">&rarr;</button>
+          <div class="dots"></div>
         </div>
+        {{ end }}
+        
         <h4>Videos</h4>
-      </div>
+
+        </div>
       <div class="col-lg-11">
         <h3>Read more...</h3>
         <div class="content">{{.Content}}</div>
