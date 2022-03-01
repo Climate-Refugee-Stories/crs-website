@@ -63,10 +63,88 @@
       <div class="col-lg-11">
         <h3>Media</h3>
         <h4>Pictures</h4>
+        <!--
+          all variables used in hugo code, because scoping wouldn't allow
+            them to be properly added to if they started out inside the loop
+        -->
+        {{ $final_array := slice }}
+        {{ $intermid_array := slice }}
+        {{ $counter := 0 }}
+        {{ $total_counter := 0 }}
+        {{ $page_title := .Title }}
+        {{ $total_pics := 0 }}
+
+        <!-- 
+          getting the total amount of pictures for the current page
+         -->
+        {{ range .Site.Data.archive }}
+          {{ if eq $page_title (index . `Collection Title`) }}
+            {{ $total_pics = (add $total_pics 1) }}
+          {{ end }}
+        {{ end }}
+
+        <!-- 
+          starting to loop through all the pictures data
+         -->
+        {{ range .Site.Data.archive }}
+
+          <!-- 
+            check to make sure the pictures are for this page
+           -->
+          {{ if eq $page_title (index . `Collection Title`) }}
+
+            <!-- getting all necessary info out of data -->
+            {{ $photo_id := index . `Google Photo ID` }}
+            {{ $photo_alt_text := index . `Alt Text` }}
+            {{ $photo_desc := .Description | truncate 40 }}
+
+            <!-- 
+              adding to intermediary arrow, this is used to build the grouping
+              of pictures per carousel "slide", and each element can be
+              accessed by the dictionary keys specified inside of the arrays
+             -->
+            {{
+              $intermid_array = $intermid_array | append (
+                slice
+                (
+                  dict
+                    "photo_id" $photo_id
+                    "photo_alt_text" $photo_alt_text
+                    "photo_desc" $photo_desc
+                )
+              )
+            }}
+
+            <!-- adding to total counter to track how many imgs so far -->
+            {{ $total_counter = ( add $total_counter 1 ) }}
+
+            <!-- grouping number and end check to split up groups -->
+            {{ if or (eq $counter 6) (eq $total_counter $total_pics) }}
+
+              <!-- adding to final array -->
+              {{ $final_array = $final_array | append (slice $intermid_array) }}
+              <!-- 
+                reseting all the intermediary values
+               -->
+              {{ $counter = 0 }}
+              {{ $intermid_array = slice }}
+
+            {{ else }}
+
+              <!-- add counter in prep for grouping -->
+              {{ $counter = ( add $counter 1 ) }}
+
+            <!-- end grouping if -->
+            {{ end }}
+          <!-- end page check if -->
+          {{ end }}
+        <!-- end range loop -->
+        {{ end }}
+
         <div class="archive_gallery_container">
           {{ range .Site.Data.archive }}
             <figure class="archive_gallery_figure">
-              <img src="https://drive.google.com/uc?id={{ index . `Google Photo ID` }}" alt="{{ index . `Alt Text` }}" />
+              <!-- <img src="https://drive.google.com/uc?id={{ index . `Google Photo ID` }}" alt="{{ index . `Alt Text` }}" /> -->
               <figcaption class="caption">{{ .Description | truncate 40 }}</figcaption>
             </figure>
           {{ end }}
