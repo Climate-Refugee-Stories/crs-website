@@ -357,13 +357,13 @@ html {
   &_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem 1rem;
+    gap: 0.5rem 0.5rem;
     align-items: center;
     // justify-items: center;
   }
   &_img {
     height: 20rem;
-    width: 100%;
+    width: 96%;
     background-position: center;
     background-size: cover;
     border-radius: 5px;
@@ -393,7 +393,7 @@ html {
   position: relative;
   margin: 0 auto;
   max-width: 100%;
-  height: 55rem;
+  height: 50rem;
 }
 
 .slide {
@@ -403,7 +403,7 @@ html {
   height: 100%;
   align-items: flex-start;
   justify-content: center;
-  transition: transform 1s;
+  transition: transform 1.5s ease-in;
 }
 
 .slides__btn {
