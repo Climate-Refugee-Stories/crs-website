@@ -201,7 +201,8 @@ function toggle(elChecked) {
 }
 
 // slider
-const slider = function () {
+// inspired by: https://github.com/jonasschmedtmann/complete-javascript-course/blob/8201b01f2fcd274fb276c1c8e11e55847c6d451e/13-Advanced-DOM-Bankist/final/script.js#L207-L291
+function slider () {
   const slides = document.querySelectorAll('.slide');
   const btnLeft = document.querySelector('.slides__btn--left');
   const btnRight = document.querySelector('.slides__btn--right');
@@ -220,7 +221,7 @@ const slider = function () {
     });
   };
 
-  const activateDot = function (slide) {
+   function activateDot (slide) {
     document
       .querySelectorAll('.dots__dot')
       .forEach(dot => dot.classList.remove('dots__dot--active'));
@@ -230,14 +231,14 @@ const slider = function () {
       .classList.add('dots__dot--active');
   };
 
-  const goToSlide = function (slide) {
+   function goToSlide (slide) {
     slides.forEach(
       (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
     );
   };
 
   // Next slide
-  const nextSlide = function () {
+   function nextSlide () {
     if (curSlide === maxSlide - 1) {
       curSlide = 0;
     } else {
@@ -248,7 +249,7 @@ const slider = function () {
     activateDot(curSlide);
   };
 
-  const prevSlide = function () {
+   function prevSlide () {
     if (curSlide === 0) {
       curSlide = maxSlide - 1;
     } else {
@@ -258,7 +259,7 @@ const slider = function () {
     activateDot(curSlide);
   };
 
-  const init = function () {
+   function init () {
     goToSlide(0);
     createDots();
 
