@@ -151,7 +151,7 @@
           <div class="slide archive_gallery_container" style="transform: translateX({{ mul $slide_counter 100 }}%);" data-toggle="modal" data-target="#lightboxModal">
             {{ range . }}
             <figure class="archive_gallery_figure" data-picture="{{ $img_counter }}" data-toggle="modal" data-target="#lightboxModal">
-              <div class="archive_gallery_img" title="{{ .photo_alt_text | safeHTML }}" style="background-image: url('https://photos.smugmug.com/photos/{{ .photo_id | safeURL }}/0/S/{{ .photo_id | safeURL }}-S.jpg');" data-picture="{{ $img_counter }}" data-toggle="modal" data-target="#lightboxModal"
+              <div class="archive_gallery_img" title="{{ .photo_alt_text | safeHTML }}" style="background-image: url('https://drive.google.com/uc?id={{ .photo_id | safeURL }}');" data-picture="{{ $img_counter }}" data-toggle="modal" data-target="#lightboxModal"
                 >&nbsp;</div>
                 <figcaption class="caption" data-picture="{{ $img_counter }}" data-toggle="modal" data-target="#lightboxModal">{{ .photo_desc  | truncate 40 | safeHTML }}</figcaption>
             </figure>
@@ -174,8 +174,8 @@
                   {{ range . }}
                   {{ range . }}
                   <figure class="modal__slide" style="transform: translateX({{ mul $modal_img_counter 100 }}%);" >
-                    <img src="https://photos.smugmug.com/photos/{{ .photo_id | safeURL }}/0/X4/{{ .photo_id | safeURL }}-X4.jpg" alt="{{ .photo_alt_text | safeHTML }}" class="modal__img" >
-                    <figcaption class="caption align-self-center">{{ .photo_desc | safeHTML }}</figcaption>
+                    <img src="https://drive.google.com/uc?id={{ .photo_id | safeURL }}" alt="{{ .photo_alt_text | safeHTML }}" class="modal__img" >
+                    <figcaption class="caption align-self-center">{{ .photo_desc | markdownify }}</figcaption>
                   </figure>
                   {{ $modal_img_counter = add $modal_img_counter 1}}
                   {{ end }}

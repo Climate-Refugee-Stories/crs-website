@@ -491,6 +491,8 @@ html {
     
     & figcaption {
       margin: 1rem 2rem;
+      max-width: 60%;
+      text-align: center;
     }
   }
   &__img {
