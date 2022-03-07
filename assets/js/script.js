@@ -212,7 +212,7 @@ function slider () {
   const maxSlide = slides.length;
 
   // Functions
-  const createDots = function () {
+   function createDots() {
     slides.forEach(function (_, i) {
       dotContainer.insertAdjacentHTML(
         'beforeend',
@@ -285,3 +285,61 @@ function slider () {
   });
 };
 slider();
+
+// Lightbox
+// inspired by: https://github.com/jonasschmedtmann/complete-javascript-course/blob/8201b01f2fcd274fb276c1c8e11e55847c6d451e/13-Advanced-DOM-Bankist/final/script.js#L207-L291
+// & https://www.w3schools.com/howto/howto_js_lightbox.asp
+function lightbox () {
+  const slides = document.querySelectorAll('.modal__slide');
+  const btnLeft = document.querySelector('.modal__btn--left');
+  const btnRight = document.querySelector('.modal__btn--right');
+  const allImgs = document.querySelectorAll('.archive_gallery_figure')
+
+  let curSlide = 0;
+  const maxSlide = slides.length;
+
+  // Functions
+
+   function goToSlide (slide) {
+    console.log(slide)
+    slides.forEach(
+      (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+    );
+  };
+
+  // Next slide
+   function nextSlide () {
+    if (curSlide === maxSlide - 1) {
+      curSlide = 0;
+    } else {
+      curSlide++;
+    }
+    console.log(curSlide)
+
+    goToSlide(curSlide);
+  };
+
+   function prevSlide () {
+    if (curSlide === 0) {
+      curSlide = maxSlide - 1;
+    } else {
+      curSlide--;
+    }
+    console.log(curSlide)
+    goToSlide(curSlide);
+  };
+
+  // data-picture set by hugo on build
+  allImgs.forEach(function (imgObj, imgIndex) {
+    imgObj.addEventListener('click', function(e) {
+      curSlide = e.target.dataset.picture;
+      goToSlide(e.target.dataset.picture);
+  	  console.log(e.target.dataset.picture);
+    });
+  })
+  // Event handlers
+  btnRight.addEventListener('click', nextSlide);
+  btnLeft.addEventListener('click', prevSlide);
+
+};
+lightbox();

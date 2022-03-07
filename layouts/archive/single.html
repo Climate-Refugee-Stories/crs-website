@@ -96,7 +96,7 @@
             <!-- getting all necessary info out of data -->
             {{ $photo_id := index . `Google Photo ID` }}
             {{ $photo_alt_text := index . `Alt Text` }}
-            {{ $photo_desc := .Description | truncate 40 }}
+            {{ $photo_desc := .Description }}
 
             <!-- 
               adding to intermediary arrow, this is used to build the grouping
@@ -145,16 +145,17 @@
         {{ if gt (len $final_array) 0 }}
         <div class="slides">
           {{ $slide_counter := 0 }}
+          {{ $img_counter := 0 }}
           {{ with $final_array }}
           {{ range . }}
-          <div class="slide archive_gallery_container" style="transform: translateX({{ mul $slide_counter 100 }}%);">
+          <div class="slide archive_gallery_container" style="transform: translateX({{ mul $slide_counter 100 }}%);" data-toggle="modal" data-target="#lightboxModal">
             {{ range . }}
-            <figure class="archive_gallery_figure">
-              <div class="archive_gallery_img" title="{{ .photo_alt_text | safeHTML }}"
-              style="background-image: url('https://drive.google.com/uc?id={{ .photo_id | safeURL }}');"
+            <figure class="archive_gallery_figure" data-picture="{{ $img_counter }}" data-toggle="modal" data-target="#lightboxModal">
+              <div class="archive_gallery_img" title="{{ .photo_alt_text | safeHTML }}" style="background-image: url('https://photos.smugmug.com/photos/{{ .photo_id | safeURL }}/0/S/{{ .photo_id | safeURL }}-S.jpg');" data-picture="{{ $img_counter }}" data-toggle="modal" data-target="#lightboxModal"
                 >&nbsp;</div>
-                <figcaption class="caption">{{ .photo_desc | safeHTML }}</figcaption>
+                <figcaption class="caption" data-picture="{{ $img_counter }}" data-toggle="modal" data-target="#lightboxModal">{{ .photo_desc  | truncate 40 | safeHTML }}</figcaption>
             </figure>
+            {{ $img_counter = add $img_counter 1}}
             {{ end }}
           </div>
           {{ $slide_counter = add $slide_counter 1}}
@@ -163,6 +164,29 @@
           <button class="slides__btn slides__btn--left">&larr;</button>
           <button class="slides__btn slides__btn--right">&rarr;</button>
           <div class="dots"></div>
+          <!-- MODAL -->
+          <div class="modal fade" id="lightboxModal">
+            <div class="modal-dialog modal-dialog-centered modal__full">
+              <div class="modal-content flex-row">
+              <div class="modal__slides">
+              {{ $modal_img_counter := 0 }}
+              {{ with $final_array }}
+              {{ range . }}
+              {{ range . }}
+                  <figure class="modal__slide" style="transform: translateX({{ mul $modal_img_counter 100 }}%);" >
+                    <div class="modal__img" title="{{ .photo_alt_text | safeHTML }}" style="background-image: url('https://photos.smugmug.com/photos/{{ .photo_id | safeURL }}/0/X4/{{ .photo_id | safeURL }}-X4.jpg');">&nbsp;</div>
+                      <figcaption class="caption align-self-center">{{ .photo_desc | safeHTML }}</figcaption>
+                  </figure>
+              {{ $modal_img_counter = add $modal_img_counter 1}}
+              {{ end }}
+              {{ end }}
+              {{ end }}
+              <button class="slides__btn modal__btn--left">&larr;</button>
+              <button class="slides__btn modal__btn--right">&rarr;</button>
+              </div>
+              </div>
+            </div>
+          </div>
         </div>
         {{ end }}
         

@@ -359,6 +359,7 @@ html {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem 0.5rem;
     align-items: center;
+    cursor: pointer;
     // justify-items: center;
   }
   &_img {
@@ -403,7 +404,7 @@ html {
   height: 100%;
   align-items: flex-start;
   justify-content: center;
-  transition: transform 1.5s ease-in;
+  transition: transform 1s ease-in;
 }
 
 .slides__btn {
@@ -423,11 +424,13 @@ html {
     &--left {
       left: 1%;
       transform: translate(-50%, -50%);
+      outline: none !important;
     }
 
     &--right {
-      right: 3%;
-      transform: translate(50%, -50%);
+      right: 1%;
+      transform: translate(-50%, -50%);
+      outline: none !important;
     }
 }
 
@@ -462,6 +465,48 @@ html {
 .caption {
   margin-top: 0.5rem;
   align-self: start;
+}
+
+.modal {
+  &__full {
+    max-width: 90%;
+  }
+  &__slides {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 90vh;
+    flex: 1 1 100%;
+  }
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in;
+  }
+  &__img {
+    height: 90%;
+    width: 80%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+  }
+
+  &__btn--left {
+    left: 1%;
+    transform: translate(-50%,-50%);
+    outline: none !important;
+  }
+  &__btn--right {
+    right: 1%;
+    transform: translate(-50%,-50%);
+    outline: none !important;
+  }
 }
 
 .carousel {
