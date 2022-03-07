@@ -301,7 +301,6 @@ function lightbox () {
   // Functions
 
    function goToSlide (slide) {
-    console.log(slide)
     slides.forEach(
       (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
     );
@@ -314,7 +313,6 @@ function lightbox () {
     } else {
       curSlide++;
     }
-    console.log(curSlide)
 
     goToSlide(curSlide);
   };
@@ -325,7 +323,6 @@ function lightbox () {
     } else {
       curSlide--;
     }
-    console.log(curSlide)
     goToSlide(curSlide);
   };
 
@@ -334,7 +331,6 @@ function lightbox () {
     imgObj.addEventListener('click', function(e) {
       curSlide = e.target.dataset.picture;
       goToSlide(e.target.dataset.picture);
-  	  console.log(e.target.dataset.picture);
     });
   })
   // Event handlers

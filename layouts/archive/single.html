@@ -168,22 +168,22 @@
           <div class="modal fade" id="lightboxModal">
             <div class="modal-dialog modal-dialog-centered modal__full">
               <div class="modal-content flex-row">
-              <div class="modal__slides">
-              {{ $modal_img_counter := 0 }}
-              {{ with $final_array }}
-              {{ range . }}
-              {{ range . }}
+                <div class="modal__slides">
+                  {{ $modal_img_counter := 0 }}
+                  {{ with $final_array }}
+                  {{ range . }}
+                  {{ range . }}
                   <figure class="modal__slide" style="transform: translateX({{ mul $modal_img_counter 100 }}%);" >
-                    <div class="modal__img" title="{{ .photo_alt_text | safeHTML }}" style="background-image: url('https://photos.smugmug.com/photos/{{ .photo_id | safeURL }}/0/X4/{{ .photo_id | safeURL }}-X4.jpg');">&nbsp;</div>
-                      <figcaption class="caption align-self-center">{{ .photo_desc | safeHTML }}</figcaption>
+                    <img src="https://photos.smugmug.com/photos/{{ .photo_id | safeURL }}/0/X4/{{ .photo_id | safeURL }}-X4.jpg" alt="{{ .photo_alt_text | safeHTML }}" class="modal__img" >
+                    <figcaption class="caption align-self-center">{{ .photo_desc | safeHTML }}</figcaption>
                   </figure>
-              {{ $modal_img_counter = add $modal_img_counter 1}}
-              {{ end }}
-              {{ end }}
-              {{ end }}
-              <button class="slides__btn modal__btn--left">&larr;</button>
-              <button class="slides__btn modal__btn--right">&rarr;</button>
-              </div>
+                  {{ $modal_img_counter = add $modal_img_counter 1}}
+                  {{ end }}
+                  {{ end }}
+                  {{ end }}
+                  <button class="slides__btn modal__btn--left">&larr;</button>
+                  <button class="slides__btn modal__btn--right">&rarr;</button>
+                </div>
               </div>
             </div>
           </div>
