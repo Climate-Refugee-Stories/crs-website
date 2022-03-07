@@ -285,7 +285,7 @@ html {
     top: 50%;
     right: 0;
     border-radius: 50%;
-    background-image: url("images/CRS Logo-transparent.png");
+    background-image: url($transparent_logo);
     background-size: 70%;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -341,7 +341,7 @@ html {
 .hero-area {
   height: 100vh;
   // TODO: make this variablized or something... (not local reference to url encoded path)
-  background-image: url("/images/headers/Bo%20Thai%20Climate%20Refugees.jpg");
+  background-image: url($hero_img);
   background-size: cover;
   background-position: bottom;
   position: relative;
