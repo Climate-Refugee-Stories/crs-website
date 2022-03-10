@@ -61,6 +61,7 @@
   {{ end }}
 
   <script defer src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
 
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">

@@ -22,6 +22,7 @@ link = "plugins/bootstrap/bootstrap.min.js"
 [[params.plugins.js]]
 link = "plugins/slick/slick.min.js"
 [[params.plugins.js]]
+# https://vestride.github.io/Shuffle/
 link = "plugins/shuffle/shuffle.min.js"
 [[params.plugins.js]]
 link = "plugins/google-map/map.js"
