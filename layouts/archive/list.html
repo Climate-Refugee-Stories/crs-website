@@ -30,7 +30,7 @@
           <div class="dropdown dropright" style="flex: 1 1 25%;">
 
             {{ $category_id := md5 $k }}
-            <button class="btn btn-sm btn-primary dropdown-toggle w-100 rounded-0" type="button" id="{{ $category_id }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="{{ if eq $tag_counter 1 }}border-radius: 0.25rem 0 0 0.25rem !important{{ else if eq $tag_counter $tag_length }}border-radius: 0 0.25rem 0.25rem 0 !important{{ end }}">
+            <button class="btn-alt btn-sm btn-primary dropdown-toggle w-100 rounded-0" type="button" id="{{ $category_id }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="{{ if eq $tag_counter 1 }}border-radius: 0.25rem 0 0 0.25rem !important{{ else if eq $tag_counter $tag_length }}border-radius: 0 0.25rem 0.25rem 0 !important{{ end }}">
             {{ print $k | title }}
             </button>
             <div class="btn-group-toggle dropdown-menu p-0" aria-labelledby="{{ $category_id }}">
