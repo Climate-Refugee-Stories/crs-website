@@ -20,8 +20,7 @@ After World War II, the United Nations (UN) was created and established the Univ
 
 But there are limits to the definition of refugee in international law. For example, how is “persecution” defined?
 
-![Butterflies at US-Mexico border](../../images/blog/Climate-Refugees-Post/2Capture.webp#caption "Butterflies aloft at the US-Mexico border in Nogales, Arizona.
-Image Credit: Steve Pavey, [Hope in Focus](https://www.stevepavey.com/index)")
+![Refugee Stories World Map](../../images/blog/WhoAreClimateRefugees.JPG#caption "Artwork depicting Climate Refugee Stories sites at the US-Mexico Border, Puerto Rico, Ghana, and Bangladesh created by Monica Curca at, [Activate Labs](http://www.activatelabs.org/)")
 
 
 The Refugee Convention defines this narrowly, in political terms. People displaced by economic factors (such as poverty) or environmental disasters do not fall under this definition. However, political circumstances (such as histories of colonialism, war, and oppressive governments) are often inter-related with economic and environmental conditions.
