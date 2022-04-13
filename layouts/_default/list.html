@@ -6,9 +6,12 @@
   <section class="section">
     <div class="container">
       <div class="row">
-        {{ range .Data.Pages }}
+        {{ range (.Paginator 9).Pages }}
         {{ .Render "post" }}
         {{ end }}
+      </div>
+      <div class="row justify-content-center">
+        {{ template "_internal/pagination.html" . }}
       </div>
     </div>
   </section>
