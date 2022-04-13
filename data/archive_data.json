@@ -1,6 +1,7 @@
 [
   {
     "Collection Title":"Borders in US-Mexico",
+    "Type": "video",
     "Image Title":"Border Wall Art 1",
     "Alt Text":"A painted mural on the US-Mexico border wall depicts a pink fist raised in the air beside the words, \"Close Immigrant Prisons.\"",
     "Description":"Volunteers painted this message reading \"Close Immigrant Prisons\" on the Mexican side of the US-Mexico border wall near the Otay Mesa border crossing as part of artist Enrique Chiu\u2019s Brotherhood Mural project.",
@@ -17,9 +18,11 @@
     "Width":2016,
     "File Size":"1.3 MB",
     "Scanning Resolution (dpi\/ppi)":72.0,
-    "Google Photo ID":"1-2vVFxAOeIb-DUhANPfjHCZ04zzMdXAe"
+    "Google Photo ID":"1-2vVFxAOeIb-DUhANPfjHCZ04zzMdXAe",
+    "YT ID": "y4d8k4JTJfA"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Border Wall Art 2",
     "Alt Text":"A painted mural on the US-Mexico border wall depicts three figures walking through the border wall and onto a road that extends into the United States. One figure points to the road, while another is holding a camera.",
@@ -40,6 +43,7 @@
     "Google Photo ID":"1ueADq-Yf1CNdyq49izTDKhfTBoRXvdTY"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Border Wall Art 3",
     "Alt Text":"A painted mural on the US-Mexico border wall depicts a pink fist raised in the air beside the words, \"Close Immigrant Prisons.\"",
@@ -60,6 +64,7 @@
     "Google Photo ID":"1Ws3dwIeqb9-tz0V0bwqkkRoG_KPnF2sL"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Border Wall Art 4",
     "Alt Text":"A painted mural on the US-Mexico border wall depicts a person with a speech bubble made of water coming from their mouth. The person appears to be calling for water.",
@@ -80,6 +85,7 @@
     "Google Photo ID":"1EzLgMKKzjxL7WjLltB7T8xYYmtWZBP-z"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Caravan Art",
     "Alt Text":"Volunteers pose alongside refugee children holding paintings of the Honduras flag and of pollunators like butterflies to symbolize migration.",
@@ -100,6 +106,7 @@
     "Google Photo ID":"16VfdsYlCBB1Jw4qmrQeUFE8IJJdbYvJO"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Child With Honduran Flag Atop Border Wall",
     "Alt Text":"A refugee child sits on top of the US-Mexico border wall holding a Honduras flag.",
@@ -120,6 +127,7 @@
     "Google Photo ID":"1-B2LY8ld4yMPtlgCQJco56A0LVYzDdH_"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Enrique Chiu",
     "Alt Text":"Artist Enrique Chiu stands next to a self portrait mural on the US-Mexico border wall. The border wall extends behind him into the distance.",
@@ -140,6 +148,7 @@
     "Google Photo ID":"1i6zA1pNOkXNz4fytGWTf0bbsRheUAz4S"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Frank Deported Veteran",
     "Alt Text":"Frank, a deported US veteran, stands next to the US-Mexicio border wall wearing a shirt that says \"Stop Deporting US Veterans. Amnesty for all Deported Veterans.\"",
@@ -160,6 +169,7 @@
     "Google Photo ID":"1UV8b9O5pybgfIsbgZq56q_dQVYHcIrwN"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Garden Art 1",
     "Alt Text":"Paintings of flowers created by refugee children are displayed in a garden in front of the US-Mexico border wall in Playas, Tijuana.",
@@ -180,6 +190,7 @@
     "Google Photo ID":"12c8Cy0gRMVIhrAbcae4AAPVe-_mAaBUB"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Garden Art 2",
     "Alt Text":"Paintings created by refugee children are displayed in a garden in front of the US-Mexico border wall. The paintings are of pollunators like bees and butterflies to symbolize migration. ",
@@ -200,6 +211,7 @@
     "Google Photo ID":"1Bo5rdU9NiFb7xjkNcwbizAgsDNiY8A6I"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Garden Art 3",
     "Alt Text":"A painting created by a refugee child is displayed in a garden in front of the US-Mexico border wall. The painting is of a butterfly to symbolize migration. ",
@@ -220,6 +232,7 @@
     "Google Photo ID":"1EJJtewvBs6Abyys4Ua4MURrnAK-FcybU"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Leave No One Behind",
     "Alt Text":"A mural painted on the US-Mexico border wall by the US Deported Veterans group depicts a figure carrying another figure in front of a barbed-wire fence with the words, \"Leave No One Behind.\" On the other side of the wall, border wall prototypes are visible. ",
@@ -240,6 +253,7 @@
     "Google Photo ID":"10vm5wk54MLd0zY79CQRyPQuYfzUs4BXK"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Love Trumps Hate",
     "Alt Text":"A close-up section of the US-Mexico border wall has the American flag painted on it along with the words, \"Love Trumps Hate.\"",
@@ -260,6 +274,7 @@
     "Google Photo ID":"1BS8DgYthZ3NgmIPc8uHo2npHaYt_pwft"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Make a Wish",
     "Alt Text":"A pile of rocks in a garden in front of the US-Mexico border wall have have wishes written on them in Spanish and English. One rock says, \"Salud para mi familia y amigos.\" ",
@@ -280,6 +295,7 @@
     "Google Photo ID":"1veWwbIapsc4HGUHq4UHa_Mc2cTxSqBEm"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Mural de la Hermandad",
     "Alt Text":"Artist Enrique Chiu paints a self portait on the US-Mexico border wall next to a mural depicting a bird in a cubist design and the words \"#Mural de la Hermandad.\"",
@@ -300,6 +316,7 @@
     "Google Photo ID":"1ldIiXqwBBxO2To76CnLHzsGIur8Gy101"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"No ICE Border Wall",
     "Alt Text":"The Refugee Caravan holds a rally with many people gathered at the US-Mexico border wall in Playas Tijuana. ",
@@ -320,6 +337,7 @@
     "Google Photo ID":"1_GIXV3AsoC85xfXYoF14v4fDy050iY6a"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Parques No Muros",
     "Alt Text":"Kites fly in the sky over the US-Mexico border wall. The kites say \u201cRefugees Welcome Here\u201d and \u201cParques No Muros (Parks Not Walls).\u201d",
@@ -340,6 +358,7 @@
     "Google Photo ID":"1Zi6cNtbWpw9ajC0Y0KZkp8_Ivqabbivs"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Planting Garden",
     "Alt Text":"Young members of the Refugee Caravan plant vegetables and herbs in a garden near the US-Mexico border wall.",
@@ -360,6 +379,7 @@
     "Google Photo ID":"1652rJzPg5mycmy-hf6_oFQS6Jh3S8C62"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Refugees Welcome",
     "Alt Text":"A volunteer wearing a headscarf places a poster on the US-Mexico border wall in Tijuana. The top of the poster says \"Refugees Welcome\" in English and in Arabic.",
@@ -380,6 +400,7 @@
     "Google Photo ID":"1qJXgHQ7i9qJRBkssNO8ERihZTWBIIpml"
   },
   {
+    "Type": "picture",
     "Collection Title":"Borders in US-Mexico",
     "Image Title":"Ruben Deported Veteran",
     "Alt Text":"Deported US verteran Ruben Robles paints a peace dove within a soldier's helmet on the US-Mexico border wall.",

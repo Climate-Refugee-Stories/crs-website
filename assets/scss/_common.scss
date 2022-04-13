@@ -419,7 +419,7 @@ html {
 // .archive_gallery_figure div {
 // }
 
-.slides {
+.vid_slides, .slides {
   display: flex;
   overflow: hidden;
   position: relative;
@@ -428,7 +428,7 @@ html {
   height: 50rem;
 }
 
-.slide {
+.vid_slide, .slide {
   position: absolute;
   top: 0;
   width: 100%;
@@ -438,7 +438,7 @@ html {
   transition: transform 1s ease-in;
 }
 
-.slides__btn {
+.vid_slides__btn, .slides__btn {
     position: absolute;
     top: 45%;
     z-index: 10;
