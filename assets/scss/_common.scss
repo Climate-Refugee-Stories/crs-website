@@ -428,6 +428,10 @@ html {
   height: 50rem;
 }
 
+.vid_slide {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .vid_slide, .slide {
   position: absolute;
   top: 0;
@@ -465,7 +469,7 @@ html {
     }
 }
 
-.dots {
+.vid_dots, .dots {
   position: absolute;
   bottom: 1%;
   left: 50%;

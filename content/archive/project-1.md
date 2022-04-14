@@ -9,6 +9,9 @@ alt_cat:
   - storms
 description: |
   This is an intro **desc**
+related: |
+  - [homepage](https://google.com)
+  - [homepage](https://google.com)
 draft: false
 ---
 

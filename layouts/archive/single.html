@@ -56,11 +56,11 @@
           {{ end }}
         </div>
       </div>
-      <div class="col-lg-11">
+      <div class="col-lg-11 mt-5">
         <h3>Intro</h3>
         {{ .Description | markdownify }}
       </div>
-      <div class="col-lg-11">
+      <div class="col-lg-11 mt-5">
         <h3>Media</h3>
         <h4>Pictures</h4>
         <!--
@@ -78,7 +78,7 @@
           getting the total amount of pictures for the current page
          -->
         {{ range .Site.Data.archive_data }}
-          {{ if and (eq $page_title (index . `Collection Title`)) (eq "picture" (index . `Type`)) }}
+          {{ if and (eq $page_title (index . `Collection Title`)) (eq "picture" (index . `Type` | lower )) }}
             {{ $total_pics = (add $total_pics 1) }}
           {{ end }}
         {{ end }}
@@ -91,7 +91,7 @@
           <!-- 
             check to make sure the pictures are for this page
            -->
-          {{ if eq $page_title (index . `Collection Title`) }}
+          {{ if and (eq $page_title (index . `Collection Title`)) (eq "picture" (index . `Type` | lower )) }}
 
             <!-- getting all necessary info out of data -->
             {{ $photo_id := index . `Google Photo ID` }}
@@ -190,7 +190,7 @@
         </div>
         {{ end }}
         
-        <h4>Videos</h4>
+        <h4 class="mt-4">Videos</h4>
         <!--
           all variables used in hugo code, because scoping wouldn't allow
             them to be properly added to if they started out inside the loop
@@ -205,7 +205,7 @@
           getting the total amount of pictures for the current page
          -->
         {{ range .Site.Data.archive_data }}
-          {{ if and (eq $page_title (index . `Collection Title`)) (eq "video" (index . `Type` )) }}
+          {{ if and (eq $page_title (index . `Collection Title`)) (eq "video" (index . `Type` | lower )) }}
             {{ $total_vids = (add $total_vids 1) }}
           {{ end }}
         {{ end }}
@@ -218,12 +218,12 @@
           <!-- 
             check to make sure the pictures are for this page
            -->
-          {{ if and (eq $page_title (index . `Collection Title`)) (eq "video" (index . `Type` )) }}
+          {{ if and (eq $page_title (index . `Collection Title`)) (eq "video" (index . `Type` | lower )) }}
 
             <!-- getting all necessary info out of data -->
-            {{ $photo_id := index . `Google Photo ID` }}
-            {{ $photo_alt_text := index . `Alt Text` }}
-            {{ $photo_desc := .Description }}
+            {{ $vid_id := index . `Video ID` }}
+            {{ $alt_text := index . `Alt Text` }}
+            {{ $desc := .Description }}
 
             <!-- 
               adding to intermediary arrow, this is used to build the grouping
@@ -235,9 +235,9 @@
                 slice
                 (
                   dict
-                    "photo_id" $photo_id
-                    "photo_alt_text" $photo_alt_text
-                    "photo_desc" $photo_desc
+                    "vid_id" $vid_id
+                    "vid_alt_text" $alt_text
+                    "vid_desc" $desc
                 )
               )
             }}
@@ -246,7 +246,7 @@
             {{ $total_vids_counter = ( add $total_vids_counter 1 ) }}
 
             <!-- grouping number and end check to split up groups -->
-            {{ if or (eq $vid_counter 6) (eq $total_vids_counter $total_vids) }}
+            {{ if or (eq $vid_counter 4) (eq $total_vids_counter $total_vids) }}
 
               <!-- adding to final array -->
               {{ $final_video_array = $final_video_array | append (slice $intermid_vid_array) }}
@@ -276,13 +276,11 @@
           {{ with $final_video_array }}
           {{ range . }}
           
-          <div class="vid_slide archive_gallery_container" style="transform: translateX({{ mul $slide_vid_counter 100 }}%);" data-toggle="vid_modal" data-target="#lightboxVidModal">
+          <div class="vid_slide archive_gallery_container" style="transform: translateX({{ mul $slide_vid_counter 100 }}%);">
             {{ range . }}
-            <figure class="archive_gallery_figure" data-picture="{{ $vid_counter }}" data-toggle="vid_modal" data-target="#lightboxVidModal">
-              <div class="archive_gallery_img" title="{{ .photo_alt_text | safeHTML }}" style="background-image: url('https://drive.google.com/uc?id={{ .photo_id | safeURL }}');" data-picture="{{ $vid_counter }}" data-toggle="vid_modal" data-target="#lightboxVidModal"
-                >&nbsp;</div>
-                <figcaption class="caption" data-picture="{{ $vid_counter }}" data-toggle="vid_modal" data-target="#lightboxVidModal">{{ .photo_desc  | truncate 40 | safeHTML }}</figcaption>
-            </figure>
+              <div class="archive_gallery_img">
+                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/{{ .vid_id | safeURL }}?modestbranding=1&rel=0&playsinline=0&domain={{ trim $.Site.BaseURL `/` | safeURL }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
             {{ $vid_counter = add $vid_counter 1}}
             {{ end }}
           </div>
@@ -291,40 +289,18 @@
           {{ end }}
           <button class="vid_slides__btn vid_slides__btn--left">&larr;</button>
           <button class="vid_slides__btn vid_slides__btn--right">&rarr;</button>
-          <div class="dots"></div>
-          <!-- MODAL -->
-          <div class="modal fade" id="lightboxVidModal">
-            <div class="modal-dialog modal-dialog-centered modal__full">
-              <div class="modal-content flex-row">
-                <div class="modal__slides">
-                  {{ $modal_vid_counter := 0 }}
-                  {{ with $final_video_array }}
-                  {{ range . }}
-                  {{ range . }}
-                  <figure class="modal__slide" style="transform: translateX({{ mul $modal_vid_counter 100 }}%);" >
-                    <img src="https://drive.google.com/uc?id={{ .photo_id | safeURL }}" alt="{{ .photo_alt_text | safeHTML }}" class="modal__img" >
-                    <figcaption class="caption align-self-center">{{ .photo_desc | markdownify }}</figcaption>
-                  </figure>
-                  {{ $modal_vid_counter = add $modal_vid_counter 1}}
-                  {{ end }}
-                  {{ end }}
-                  {{ end }}
-                  <button class="slides__btn modal__btn--left">&larr;</button>
-                  <button class="slides__btn modal__btn--right">&rarr;</button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="vid_dots"></div>
         </div>
         {{ end }}
 
         </div>
-      <div class="col-lg-11">
+      <div class="col-lg-11 mt-5">
         <h3>Read more...</h3>
         <div class="content">{{.Content}}</div>
       </div>
-      <div class="col-lg-11">
+      <div class="col-lg-11 mt-5">
         <h3>Related</h3>
+        {{ .Params.related | markdownify }}
       </div>
     </div>
   </div>
