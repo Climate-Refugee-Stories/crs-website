@@ -25,5 +25,5 @@ socials:
 Project Director [Tina Shull](http://kristinashull.com/), PhD, is an Assistant Professor of Post-1960 US History at UNC Charlotte.
 She has taught and published widely in the fields of US foreign relations, immigration enforcement, and climate migration.
 As a 2016 Soros Justice Fellow at Freedom for Immigrants, she founded [IMM Print](https://imm-print.com/), a digital platform for people affected by immigration detention to share their stories.
-Her forthcbook with UNC Press, Detention Empire, explores the rise of immigration detention in the United States since the 1980s.
+Her forthcoming book with UNC Press, Detention Empire, explores the rise of immigration detention in the United States since the 1980s.
 Shull is also a National Geographic explorer and a Climate Reality Project leader.
