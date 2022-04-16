@@ -282,10 +282,12 @@
         {{ end }}
 
         </div>
+        {{ with .Content }}
       <div class="col-lg-11 mt-5">
         <h3>Read more...</h3>
-        <div class="content">{{.Content}}</div>
+        <div class="content">{{.}}</div>
       </div>
+      {{ end }}
       {{ with .Params.resources }}
       <div class="col-lg-11 mt-5">
         <h3>Resources</h3>
