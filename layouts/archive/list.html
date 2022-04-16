@@ -11,13 +11,13 @@
           <label class="btn btn-sm btn-primary active">
             <input type="checkbox" name="shuffle-filter" value="all" />All
           </label>
-					{{ $categories := slice }}
+					{{ $location := slice }}
 					{{ range .Data.Pages }}
-					{{ range .Params.categories }}
-					{{ $categories = $categories | append . }}
+					{{ range .Params.location }}
+					{{ $location = $location | append . }}
 					{{ end }}
 					{{ end }}
-					{{ range ( $categories | uniq ) }}
+					{{ range ( $location | uniq ) }}
           <label class="btn btn-sm btn-primary">
             <input type="checkbox" name="shuffle-filter" value="{{ . | lower | urlize }}" />{{ . | humanize }}
           </label>
@@ -49,7 +49,7 @@
     <div class="row shuffle-wrapper">
       {{ range .Data.Pages }}
       {{ $tags := slice }}
-      {{ $tags = .Params.categories }}
+      {{ $tags = .Params.location }}
       {{ $tags = $tags | append .Params.alt_cat }}
       <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{{range $index, $element:= $tags }}{{if ne $index 0}},{{end}}&quot;{{. | lower | urlize}}&quot;{{ end }}]">
         <div class="position-relative rounded hover-wrapper">

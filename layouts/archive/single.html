@@ -15,40 +15,28 @@
             <div class="project-meta">
               <i class="ti-calendar"></i>
               <div class="ml-3">
-                <h4>Date</h4>
+                <h4>Last Updated</h4>
                 <p>{{ .PublishDate.Format "Jan 02, 2006" }}</p>
               </div>
             </div>
           </div>
-          {{ with .Params.Client}}
-          <div class="col-sm-6 mb-5">
-            <div class="project-meta">
-              <i class="ti-user"></i>
-              <div class="ml-3">
-                <h4>Client</h4>
-                <p>{{. | markdownify}}</p>
-              </div>
-            </div>
-          </div>
-          {{ end }}
           <div class="col-sm-6 mb-5">
             <div class="project-meta">
               <i class="ti-folder"></i>
               <div class="ml-3">
-                <h4>Categories</h4>
+                <h4>Location</h4>
                 {{ $tags := slice }}
-                {{ $tags = .Params.categories }}
-                {{ $tags = $tags | append .Params.alt_cat }}
+                {{ $tags = $tags | append .Params.location }}
                 <p>{{ delimit $tags ", " | title }}</p>
               </div>
             </div>
           </div>
-          {{ with .Params.project_url}}
-          <div class="col-sm-6 mb-5">
+          {{ with .Params.related_stories}}
+          <div class="col-sm-12 mb-5">
             <div class="project-meta">
               <i class="ti-link"></i>
               <div class="ml-3">
-                <h4>Project Link</h4>
+                <h4>Related Stories</h4>
                 <p>{{. | markdownify}}</p>
               </div>
             </div>
@@ -62,7 +50,7 @@
       </div>
       <div class="col-lg-11 mt-5">
         <h3>Media</h3>
-        <h4>Pictures</h4>
+        <h4>Photographs</h4>
         <!--
           all variables used in hugo code, because scoping wouldn't allow
             them to be properly added to if they started out inside the loop
@@ -298,10 +286,12 @@
         <h3>Read more...</h3>
         <div class="content">{{.Content}}</div>
       </div>
+      {{ with .Params.resources }}
       <div class="col-lg-11 mt-5">
-        <h3>Related</h3>
-        {{ .Params.related | markdownify }}
+        <h3>Resources</h3>
+        {{ . | markdownify }}
       </div>
+      {{ end }}
     </div>
   </div>
 </section>

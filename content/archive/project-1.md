@@ -3,15 +3,30 @@ title: "Borders in US-Mexico"
 date: 2019-05-12T12:14:34+06:00
 image: "images/portfolio/item-1.png"
 client: "John Doe"
-project_url: "https://themefisher.com/"
-categories: ["north america", "south america", "oceania"]
+related_stories: |
+  - [The US-Mexico Border: “Over My Dead Body”](https://www.climaterefugeestories.com/stories/us-mexico-border-post/)
+  - [Central America: “This Caravan is Yours, Mr. Trump”](https://www.climaterefugeestories.com/stories/central-america-caravan-post/)
+location: ["north america"]
 alt_cat:
-  - storms
+  - united states
+  - mexico
+  - us-mexico
+  - borders
+  - art
+  - activism
+  - government
+  - deportation
+  - refugee
+  - caravan
+  - youth
+  - sustainability
 description: |
   This is an intro **desc**
-related: |
-  - [homepage](https://google.com)
-  - [homepage](https://google.com)
+resources: |
+
+# resources: |
+#   - [homepage](https://google.com)
+#   - [homepage](https://google.com)
 draft: false
 ---
 
