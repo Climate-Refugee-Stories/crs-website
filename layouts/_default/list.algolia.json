@@ -1,9 +1,18 @@
 {{/* Generates a valid Algolia search index */}}
+{{/* based off of https://forestry.io/blog/search-with-algolia-in-hugo/*/}}
+{{/* mods from here: https://discourse.gohugo.io/t/create-a-custom-id-for-each-post/270/7 */}}
 {{- $.Scratch.Add "index" slice -}}
+{{ $uuid := "" }}
+{{ $permalink_hash := "" }}
 {{- $section := $.Site.GetPage "section" .Section }}
 {{- range .Site.AllPages -}}
   {{- if or (and (.IsDescendant $section) (and (not .Draft) (not .Params.private))) $section.IsHome -}}
-    {{- $.Scratch.Add "index" (dict "objectID" .UniqueID "date" .Date.UTC.Unix "description" .Description "dir" .Dir "expirydate" .ExpiryDate.UTC.Unix "fuzzywordcount" .FuzzyWordCount "keywords" .Keywords "kind" .Kind "lang" .Lang "lastmod" .Lastmod.UTC.Unix "permalink" .Permalink "publishdate" .PublishDate "readingtime" .ReadingTime "relpermalink" .RelPermalink "summary" .Summary "title" .Title "type" .Type "url" .URL "weight" .Weight "wordcount" .WordCount "section" .Section "tags" .Params.Tags "categories" .Params.Categories "authors" .Params.Authors)}}
+    {{ with .File }}
+        {{ $uuid = .UniqueID }}
+    {{ end }}
+    {{ $permalink_hash = md5 .Permalink }}
+    {{ $uuid = default $permalink_hash $uuid }}
+    {{- $.Scratch.Add "index" (dict "objectID" $uuid "date" .Date.UTC.Unix "description" .Description "dir" .File.Dir "expirydate" .ExpiryDate.UTC.Unix "fuzzywordcount" .FuzzyWordCount "keywords" .Keywords "kind" .Kind "lang" .Lang "lastmod" .Lastmod.UTC.Unix "permalink" .Permalink "publishdate" .PublishDate "readingtime" .ReadingTime "relpermalink" .RelPermalink "summary" .Summary "title" .Title "type" .Type "url" .Permalink "weight" .Weight "wordcount" .WordCount "section" .Section "tags" .Params.Tags "categories" .Params.Categories "authors" .Params.Authors)}}
   {{- end -}}
 {{- end -}}
 {{- $.Scratch.Get "index" | jsonify -}}
