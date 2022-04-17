@@ -1,7 +1,7 @@
 {{- $id := .Get "id" | default (.Get 0) -}}
 {{- $alt := .Get "alt" | default (.Get 1) -}}
 <figure>
-  <img class="img-fluid" src="https://drive.google.com/uc?id={{ $id }}" alt="{{  $alt | markdownify }}" />
+  <img class="img-fluid" src="https://photos.smugmug.com/photos/{{ $id }}/0/S/{{ $id }}-S.png" alt="{{  $alt | markdownify }}" />
   {{ if $alt }}
   <figcaption>{{ $alt | markdownify }}</figcaption>
   {{ else }}
