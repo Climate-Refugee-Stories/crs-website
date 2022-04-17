@@ -4,7 +4,8 @@
 {{- $.Scratch.Add "index" slice -}}
 {{ $uuid := "" }}
 {{ $permalink_hash := "" }}
-{{- $section := $.Site.GetPage "section" .Section }}
+{{ $img_url := "" }}
+{{- $section := $.Site.GetPage "stories" .Section }}
 {{- range .Site.AllPages -}}
   {{- if or (and (.IsDescendant $section) (and (not .Draft) (not .Params.private))) $section.IsHome -}}
     {{ with .File }}
@@ -12,7 +13,9 @@
     {{ end }}
     {{ $permalink_hash = md5 .Permalink }}
     {{ $uuid = default $permalink_hash $uuid }}
-    {{- $.Scratch.Add "index" (dict "objectID" $uuid "date" .Date.UTC.Unix "description" .Description "dir" .File.Dir "expirydate" .ExpiryDate.UTC.Unix "fuzzywordcount" .FuzzyWordCount "keywords" .Keywords "kind" .Kind "lang" .Lang "lastmod" .Lastmod.UTC.Unix "permalink" .Permalink "publishdate" .PublishDate "readingtime" .ReadingTime "relpermalink" .RelPermalink "summary" .Summary "title" .Title "type" .Type "url" .Permalink "weight" .Weight "wordcount" .WordCount "section" .Section "tags" .Params.Tags "categories" .Params.Categories "authors" .Params.Authors)}}
+    {{ $img_url = .Params.thumbnail | absURL }}
+    {{- $.Scratch.Add "index" (dict "objectID" $uuid "date" .Date.UTC.Unix "description" .Description "dir" .File.Dir "expirydate" .ExpiryDate.UTC.Unix "fuzzywordcount" .FuzzyWordCount "keywords" .Keywords "kind" .Kind "lang" .Lang "lastmod" .Lastmod.UTC.Unix "permalink" .Permalink "publishdate" .PublishDate "readingtime" .ReadingTime "relpermalink" .RelPermalink "summary" .Summary "title" .Title "type" .Type "url" .Permalink "weight" .Weight "wordcount" .WordCount "section" .Section "tags" .Params.Tags "categories" .Params.Categories "authors" .Params.Authors "image" $img_url )}}
+
   {{- end -}}
 {{- end -}}
 {{- $.Scratch.Get "index" | jsonify -}}
