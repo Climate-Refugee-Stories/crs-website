@@ -6,6 +6,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-9 text-center mb-4 main-blog-image">
+          <!-- <img src="https://photos.smugmug.com/photos/{{ .Params.image }}/0/O/{{ .Params.image }}-O.png#caption" alt="{{.Title}}"> -->
           <img src="{{.Params.image | absURL }}#caption" alt="{{.Title}}">
           <p class="font-secondary"><i>{{ .Params.image_caption | markdownify }}</i></p>
           <!-- Possibly add back: by <span class="text-primary"><a href="{{ .Site.BaseURL }}about/{{ replace .Params.Author " " "-" | lower }}" target="_blank">{{ .Params.Author }}</a></span> -->
