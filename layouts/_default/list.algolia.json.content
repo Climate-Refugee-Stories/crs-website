@@ -1,0 +1,35 @@
+{{/* Generates a valid Algolia search index */}}
+{{/* based off of https://forestry.io/blog/search-with-algolia-in-hugo/*/}}
+{{/* mods from here: https://discourse.gohugo.io/t/create-a-custom-id-for-each-post/270/7 */}}
+{{- $.Scratch.Add "index" slice -}}
+{{ $uuid := "" }}
+{{ $permalink_hash := "" }}
+{{ $img_url := "" }}
+{{- $section := $.Site.GetPage "stories" .Section }}
+{{- range .Site.AllPages -}}
+  {{- if or (and (.IsDescendant $section) (and (not .Draft) (not .Params.private))) $section.IsHome -}}
+
+    {{- /* https://www.bennet.org/blog/site-search-jamstack-hugo-algolia/ */ -}}
+    {{- /* Split long posts into 1000-word chunks for less noise in results */ -}}
+    {{- $page := . -}}
+    {{- $chunked := slice -}}
+    {{- $post_len := len .PlainWords -}}
+    {{- range $i := (seq 0 1000 $post_len) -}}
+      {{- $chunked = $chunked | append (delimit (first 1000 (after $i $page.PlainWords) ) " " ) -}}
+    {{- end -}}
+
+    {{ with .File }}
+        {{ $uuid = .UniqueID }}
+    {{ end }}
+    {{ $permalink_hash = md5 .Permalink }}
+    {{ $uuid = default $permalink_hash $uuid }}
+    {{ $img_url = .Params.thumbnail | absURL }}
+
+    {{- /* Add each chunk to $index with different object IDs */ -}}
+    {{- range $i, $c := $chunked -}}
+        {{- $.Scratch.Add "index" (dict "objectID" (print $uuid "_" $i) "date" $page.Date.UTC.Unix "description" $page.Description "dir" $page.File.Dir "expirydate" $page.ExpiryDate.UTC.Unix "fuzzywordcount" $page.FuzzyWordCount "keywords" $page.Keywords "kind" $page.Kind "lang" $page.Lang "lastmod" $page.Lastmod.UTC.Unix "permalink" $page.Permalink "publishdate" $page.PublishDate "readingtime" $page.ReadingTime "relpermalink" $page.RelPermalink "summary" $page.Summary "title" $page.Title "type" $page.Type "url" $page.Permalink "weight" $page.Weight "wordcount" $page.WordCount "section" $page.Section "tags" $page.Params.Tags "categories" $page.Params.Categories "authors" $page.Params.Authors "image" $img_url "content" $c "order" $i )}}
+    {{end }}
+
+  {{- end -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}
