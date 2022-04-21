@@ -472,7 +472,11 @@ blockquote {
   /* background: #eaeaea; */
   border-left: 2px solid var(--primary-color);
   font-style: italic;
-  font-size: 22px
+  font-size: 1.35rem;
+}
+
+blockquote > p {
+  font-size: 1.35rem;
 }
 
 .content * {
