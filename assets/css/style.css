@@ -469,7 +469,7 @@ textarea.form-control {
 blockquote {
   display: inline-block;
   padding: 10px 20px;
-  background: #eaeaea;
+  /* background: #eaeaea; */
   border-left: 2px solid var(--primary-color);
   font-style: italic;
   font-size: 22px
