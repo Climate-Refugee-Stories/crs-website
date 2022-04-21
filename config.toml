@@ -32,6 +32,31 @@ link = "plugins/google-map/map.js"
 URL = "about"
 name = "About"
 weight = 1
+identifier = "about"
+
+[[menu.main]]
+URL = "about"
+name = "About Us"
+weight = 1
+parent = "about"
+
+[[menu.main]]
+name = "Partners"
+URL = "about/#partners"
+parent = "about"
+weight = 2
+
+[[menu.main]]
+name = "Our Team"
+URL = "about/#our-team"
+parent = "about"
+weight = 3
+
+[[menu.main]]
+name = "In The Media"
+URL = "about/#in-the-media"
+parent = "about"
+weight = 4
 
 [[menu.main]]
 URL = "stories"
