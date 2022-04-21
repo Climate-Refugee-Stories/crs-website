@@ -445,3 +445,13 @@ html {
   letter-spacing: inherit;
   font-weight: 600;
 }
+
+.page-link {
+  color: $primary-color;
+
+}
+.page-item {
+  &.active .page-link {
+    background-color: $primary-color;
+  }
+}
