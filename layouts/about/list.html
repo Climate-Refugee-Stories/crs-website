@@ -33,8 +33,8 @@
 <!-- /about -->
 
 <!-- Work Process -->
-{{ if site.Data.about.work_process.enable }}
 {{ with site.Data.about.work_process }}
+{{ if .enable }}
 <section class="section" id="{{ .title | urlize }}">
   <div class="container">
     <div class="row justify-content-around">
@@ -55,7 +55,7 @@
 <!-- ./Work Process -->
 
 <!-- CRS Team -->
-<section class="section bg-cover">
+<section class="section bg-cover" id="our-team">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
