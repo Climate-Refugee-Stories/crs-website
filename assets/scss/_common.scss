@@ -653,7 +653,7 @@ html {
   opacity: 1;
 }
 
-.dropdown-menu.show {
+.nav-link + .dropdown-menu.show {
   border: none;
   top: 85%;
 }
