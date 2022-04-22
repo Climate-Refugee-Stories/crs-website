@@ -20,10 +20,6 @@
 <script src="{{ .link | absURL }}"></script>
 {{ end }}
 
-{{ "<!-- Main Script -->" | safeHTML }}
-{{ $script := resources.Get "js/script.js" | minify}}
-<script src="{{ $script.Permalink }}"></script>
-
 {{ "<!-- Copyright update -->" | safeHTML }}
 <script>
   // Set current year

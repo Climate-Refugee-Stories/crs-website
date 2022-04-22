@@ -200,6 +200,229 @@ function toggle(elChecked) {
 	}
 }
 
+// slider
+// inspired by: https://github.com/jonasschmedtmann/complete-javascript-course/blob/8201b01f2fcd274fb276c1c8e11e55847c6d451e/13-Advanced-DOM-Bankist/final/script.js#L207-L291
+function slider () {
+  const slides = document.querySelectorAll('.slide');
+  const btnLeft = document.querySelector('.slides__btn--left');
+  const btnRight = document.querySelector('.slides__btn--right');
+  const dotContainer = document.querySelector('.dots');
+
+  let curSlide = 0;
+  const maxSlide = slides.length;
+
+  // Functions
+   function createDots() {
+    slides.forEach(function (_, i) {
+      dotContainer.insertAdjacentHTML(
+        'beforeend',
+        `<button class="dots__dot" data-slide="${i}"></button>`
+      );
+    });
+  };
+
+   function activateDot (slide) {
+    document
+      .querySelectorAll('.dots__dot')
+      .forEach(dot => dot.classList.remove('dots__dot--active'));
+
+    document
+      .querySelector(`.dots__dot[data-slide="${slide}"]`)
+      .classList.add('dots__dot--active');
+  };
+
+   function goToSlide (slide) {
+    slides.forEach(
+      (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+    );
+  };
+
+  // Next slide
+   function nextSlide () {
+    if (curSlide === maxSlide - 1) {
+      curSlide = 0;
+    } else {
+      curSlide++;
+    }
+
+    goToSlide(curSlide);
+    activateDot(curSlide);
+  };
+
+   function prevSlide () {
+    if (curSlide === 0) {
+      curSlide = maxSlide - 1;
+    } else {
+      curSlide--;
+    }
+    goToSlide(curSlide);
+    activateDot(curSlide);
+  };
+
+   function init () {
+    goToSlide(0);
+    createDots();
+
+    activateDot(0);
+  };
+  init();
+
+  // Event handlers
+  btnRight.addEventListener('click', nextSlide);
+  btnLeft.addEventListener('click', prevSlide);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') prevSlide();
+    e.key === 'ArrowRight' && nextSlide();
+  });
+
+  dotContainer.addEventListener('click', function (e) {
+    if (e.target.classList.contains('dots__dot')) {
+      const { slide } = e.target.dataset;
+      goToSlide(slide);
+      activateDot(slide);
+    }
+  });
+};
+slider();
+
+function vid_slider () {
+  const slides = document.querySelectorAll('.vid_slide');
+  const btnLeft = document.querySelector('.vid_slides__btn--left');
+  const btnRight = document.querySelector('.vid_slides__btn--right');
+  const dotContainer = document.querySelector('.vid_dots');
+
+  let curSlide = 0;
+  const maxSlide = slides.length;
+
+  // Functions
+   function createDots() {
+    slides.forEach(function (_, i) {
+      dotContainer.insertAdjacentHTML(
+        'beforeend',
+        `<button class="vid_dots__dot" data-slide="${i}"></button>`
+      );
+    });
+  };
+
+   function activateDot (slide) {
+    document
+      .querySelectorAll('.vid_dots__dot')
+      .forEach(dot => dot.classList.remove('vid_dots__dot--active'));
+
+    document
+      .querySelector(`.vid_dots__dot[data-slide="${slide}"]`)
+      .classList.add('vid_dots__dot--active');
+  };
+
+   function goToSlide (slide) {
+    slides.forEach(
+      (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+    );
+  };
+
+  // Next slide
+   function nextSlide () {
+    if (curSlide === maxSlide - 1) {
+      curSlide = 0;
+    } else {
+      curSlide++;
+    }
+
+    goToSlide(curSlide);
+    activateDot(curSlide);
+  };
+
+   function prevSlide () {
+    if (curSlide === 0) {
+      curSlide = maxSlide - 1;
+    } else {
+      curSlide--;
+    }
+    goToSlide(curSlide);
+    activateDot(curSlide);
+  };
+
+   function init () {
+    goToSlide(0);
+    createDots();
+
+    activateDot(0);
+  };
+  init();
+
+  // Event handlers
+  btnRight.addEventListener('click', nextSlide);
+  btnLeft.addEventListener('click', prevSlide);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') prevSlide();
+    e.key === 'ArrowRight' && nextSlide();
+  });
+
+  dotContainer.addEventListener('click', function (e) {
+    if (e.target.classList.contains('vid_dots__dot')) {
+      const { slide } = e.target.dataset;
+      goToSlide(slide);
+      activateDot(slide);
+    }
+  });
+};
+vid_slider();
+
+// Lightbox
+// inspired by: https://github.com/jonasschmedtmann/complete-javascript-course/blob/8201b01f2fcd274fb276c1c8e11e55847c6d451e/13-Advanced-DOM-Bankist/final/script.js#L207-L291
+// & https://www.w3schools.com/howto/howto_js_lightbox.asp
+function lightbox () {
+  const slides = document.querySelectorAll('.modal__slide');
+  const btnLeft = document.querySelector('.modal__btn--left');
+  const btnRight = document.querySelector('.modal__btn--right');
+  const allImgs = document.querySelectorAll('.archive_gallery_figure')
+
+  let curSlide = 0;
+  const maxSlide = slides.length;
+
+  // Functions
+
+   function goToSlide (slide) {
+    slides.forEach(
+      (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+    );
+  };
+
+  // Next slide
+   function nextSlide () {
+    if (curSlide === maxSlide - 1) {
+      curSlide = 0;
+    } else {
+      curSlide++;
+    }
+
+    goToSlide(curSlide);
+  };
+
+   function prevSlide () {
+    if (curSlide === 0) {
+      curSlide = maxSlide - 1;
+    } else {
+      curSlide--;
+    }
+    goToSlide(curSlide);
+  };
+
+  // data-picture set by hugo on build
+  allImgs.forEach(function (imgObj, imgIndex) {
+    imgObj.addEventListener('click', function(e) {
+      curSlide = e.target.dataset.picture;
+      goToSlide(e.target.dataset.picture);
+    });
+  })
+  // Event handlers
+  btnRight.addEventListener('click', nextSlide);
+  btnLeft.addEventListener('click', prevSlide);
+
+};
+lightbox();
 const { autocomplete, getAlgoliaResults } = window['@algolia/autocomplete-js'];
 window['@algolia/autocomplete-theme-classic'];
 const searchClient = algoliasearch(

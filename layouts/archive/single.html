@@ -15,71 +15,285 @@
             <div class="project-meta">
               <i class="ti-calendar"></i>
               <div class="ml-3">
-                <h4>Date</h4>
+                <h4>Last Updated</h4>
                 <p>{{ .PublishDate.Format "Jan 02, 2006" }}</p>
               </div>
             </div>
           </div>
-          {{ with .Params.Client}}
-          <div class="col-sm-6 mb-5">
-            <div class="project-meta">
-              <i class="ti-user"></i>
-              <div class="ml-3">
-                <h4>Client</h4>
-                <p>{{. | markdownify}}</p>
-              </div>
-            </div>
-          </div>
-          {{ end }}
           <div class="col-sm-6 mb-5">
             <div class="project-meta">
               <i class="ti-folder"></i>
               <div class="ml-3">
-                <h4>Categories</h4>
+                <h4>Location</h4>
                 {{ $tags := slice }}
-                {{ $tags = .Params.categories }}
-                {{ $tags = $tags | append .Params.alt_cat }}
+                {{ $tags = $tags | append .Params.location }}
                 <p>{{ delimit $tags ", " | title }}</p>
               </div>
             </div>
           </div>
-          {{ with .Params.project_url}}
-          <div class="col-sm-6 mb-5">
+          {{ with .Params.related_stories}}
+          <div class="col-sm-12 mb-5">
             <div class="project-meta">
               <i class="ti-link"></i>
               <div class="ml-3">
-                <h4>Project Link</h4>
-                <p>{{. | markdownify}}</p>
+                <h4>Related Stories</h4>
+                <h5>{{. | markdownify}}</h5>
               </div>
             </div>
           </div>
           {{ end }}
         </div>
       </div>
-      <div class="col-lg-11">
+      <div class="col-lg-11 mt-5">
         <h3>Intro</h3>
         {{ .Description | markdownify }}
       </div>
-      <div class="col-lg-11">
+      <div class="col-lg-11 mt-5">
         <h3>Media</h3>
-        <h4>Pictures</h4>
-        <div class="archive_gallery_container">
-          {{ range .Site.Data.archive }}
-            <figure class="archive_gallery_figure">
-              <img src="https://drive.google.com/uc?id={{ index . `Google Photo ID` }}" alt="{{ index . `Alt Text` }}" />
-              <figcaption class="caption">{{ .Description | truncate 40 }}</figcaption>
-            </figure>
+        <h4>Photographs</h4>
+        <!--
+          all variables used in hugo code, because scoping wouldn't allow
+            them to be properly added to if they started out inside the loop
+        -->
+        {{ $final_picture_array := slice }}
+        {{ $intermid_pic_array := slice }}
+        {{ $pic_counter := 1 }}
+        {{ $total_pics_counter := 0 }}
+        {{ $page_title := .Title }}
+        {{ $total_pics := 0 }}
+
+        <!-- 
+          getting the total amount of pictures for the current page
+         -->
+        {{ range .Site.Data.archive_data }}
+          {{ if and (eq $page_title (index . `Collection Title`)) (eq "picture" (index . `Type` | lower )) }}
+            {{ $total_pics = (add $total_pics 1) }}
           {{ end }}
+        {{ end }}
+
+        <!-- 
+          starting to loop through all the pictures data
+         -->
+        {{ range .Site.Data.archive_data }}
+
+          <!-- 
+            check to make sure the pictures are for this page
+           -->
+          {{ if and (eq $page_title (index . `Collection Title`)) (eq "picture" (index . `Type` | lower )) }}
+
+            <!-- getting all necessary info out of data -->
+            {{ $photo_id := index . `Google Photo ID` }}
+            {{ $photo_alt_text := index . `Alt Text` }}
+            {{ $photo_desc := .Description }}
+
+            <!-- 
+              adding to intermediary arrow, this is used to build the grouping
+              of pictures per carousel "slide", and each element can be
+              accessed by the dictionary keys specified inside of the arrays
+             -->
+            {{
+              $intermid_pic_array = $intermid_pic_array | append (
+                slice
+                (
+                  dict
+                    "photo_id" $photo_id
+                    "photo_alt_text" $photo_alt_text
+                    "photo_desc" $photo_desc
+                )
+              )
+            }}
+
+            <!-- adding to total counter to track how many imgs so far -->
+            {{ $total_pics_counter = ( add $total_pics_counter 1 ) }}
+
+            <!-- grouping number and end check to split up groups -->
+            {{ if or (eq $pic_counter 6) (eq $total_pics_counter $total_pics) }}
+
+              <!-- adding to final array -->
+              {{ $final_picture_array = $final_picture_array | append (slice $intermid_pic_array) }}
+              <!-- 
+                reseting all the intermediary values
+               -->
+              {{ $pic_counter = 1 }}
+              {{ $intermid_pic_array = slice }}
+
+            {{ else }}
+
+              <!-- add counter in prep for grouping -->
+              {{ $pic_counter = ( add $pic_counter 1 ) }}
+
+            <!-- end grouping if -->
+            {{ end }}
+          <!-- end page check if -->
+          {{ end }}
+        <!-- end range loop -->
+        {{ end }}
+
+        
+        {{ if gt (len $final_picture_array) 0 }}
+        <div class="slides">
+          {{ $slide_pic_counter := 0 }}
+          {{ $img_counter := 0 }}
+          {{ with $final_picture_array }}
+          {{ range . }}
+          <div class="slide archive_gallery_container" style="transform: translateX({{ mul $slide_pic_counter 100 }}%);" data-toggle="modal" data-target="#lightboxModal">
+            {{ range . }}
+            <figure class="archive_gallery_figure" data-picture="{{ $img_counter }}" data-toggle="modal" data-target="#lightboxModal">
+              <div class="archive_gallery_img" title="{{ .photo_alt_text | safeHTML }}" style="background-image: url('https://drive.google.com/uc?id={{ .photo_id | safeURL }}');" data-picture="{{ $img_counter }}" data-toggle="modal" data-target="#lightboxModal"
+                >&nbsp;</div>
+                <figcaption class="caption" data-picture="{{ $img_counter }}" data-toggle="modal" data-target="#lightboxModal">{{ .photo_desc  | truncate 40 | safeHTML }}</figcaption>
+            </figure>
+            {{ $img_counter = add $img_counter 1}}
+            {{ end }}
+          </div>
+          {{ $slide_pic_counter = add $slide_pic_counter 1}}
+          {{ end }}
+          {{ end }}
+          <button class="slides__btn slides__btn--left">&larr;</button>
+          <button class="slides__btn slides__btn--right">&rarr;</button>
+          <div class="dots"></div>
+          <!-- MODAL -->
+          <div class="modal fade" id="lightboxModal">
+            <div class="modal-dialog modal-dialog-centered modal__full">
+              <div class="modal-content flex-row">
+                <div class="modal__slides">
+                  {{ $modal_img_counter := 0 }}
+                  {{ with $final_picture_array }}
+                  {{ range . }}
+                  {{ range . }}
+                  <figure class="modal__slide" style="transform: translateX({{ mul $modal_img_counter 100 }}%);" >
+                    <img src="https://drive.google.com/uc?id={{ .photo_id | safeURL }}" alt="{{ .photo_alt_text | safeHTML }}" class="modal__img" >
+                    <figcaption class="caption align-self-center">{{ .photo_desc | markdownify }}</figcaption>
+                  </figure>
+                  {{ $modal_img_counter = add $modal_img_counter 1}}
+                  {{ end }}
+                  {{ end }}
+                  {{ end }}
+                  <button class="slides__btn modal__btn--left">&larr;</button>
+                  <button class="slides__btn modal__btn--right">&rarr;</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <h4>Videos</h4>
-      </div>
-      <div class="col-lg-11">
+        {{ end }}
+        
+        <h4 class="mt-4">Videos</h4>
+        <!--
+          all variables used in hugo code, because scoping wouldn't allow
+            them to be properly added to if they started out inside the loop
+        -->
+        {{ $final_video_array := slice }}
+        {{ $intermid_vid_array := slice }}
+        {{ $vid_counter := 1 }}
+        {{ $total_vids_counter := 0 }}
+        {{ $total_vids := 0 }}
+
+        <!-- 
+          getting the total amount of pictures for the current page
+         -->
+        {{ range .Site.Data.archive_data }}
+          {{ if and (eq $page_title (index . `Collection Title`)) (eq "video" (index . `Type` | lower )) }}
+            {{ $total_vids = (add $total_vids 1) }}
+          {{ end }}
+        {{ end }}
+
+        <!-- 
+          starting to loop through all the pictures data
+         -->
+        {{ range .Site.Data.archive_data }}
+
+          <!-- 
+            check to make sure the pictures are for this page
+           -->
+          {{ if and (eq $page_title (index . `Collection Title`)) (eq "video" (index . `Type` | lower )) }}
+
+            <!-- getting all necessary info out of data -->
+            {{ $vid_id := index . `Video ID` }}
+            {{ $alt_text := index . `Alt Text` }}
+            {{ $desc := .Description }}
+
+            <!-- 
+              adding to intermediary arrow, this is used to build the grouping
+              of pictures per carousel "slide", and each element can be
+              accessed by the dictionary keys specified inside of the arrays
+             -->
+            {{
+              $intermid_vid_array = $intermid_vid_array | append (
+                slice
+                (
+                  dict
+                    "vid_id" $vid_id
+                    "vid_alt_text" $alt_text
+                    "vid_desc" $desc
+                )
+              )
+            }}
+
+            <!-- adding to total counter to track how many imgs so far -->
+            {{ $total_vids_counter = ( add $total_vids_counter 1 ) }}
+
+            <!-- grouping number and end check to split up groups -->
+            {{ if or (eq $vid_counter 4) (eq $total_vids_counter $total_vids) }}
+
+              <!-- adding to final array -->
+              {{ $final_video_array = $final_video_array | append (slice $intermid_vid_array) }}
+              <!-- 
+                reseting all the intermediary values
+               -->
+              {{ $vid_counter = 1 }}
+              {{ $intermid_vid_array = slice }}
+
+            {{ else }}
+
+              <!-- add counter in prep for grouping -->
+              {{ $vid_counter = ( add $vid_counter 1 ) }}
+
+            <!-- end grouping if -->
+            {{ end }}
+          <!-- end page check if -->
+          {{ end }}
+        <!-- end range loop -->
+        {{ end }}
+
+        
+        {{ if gt (len $final_video_array) 0 }}
+        <div class="slides">
+          {{ $slide_vid_counter := 0 }}
+          {{ $vid_counter := 0 }}
+          {{ with $final_video_array }}
+          {{ range . }}
+          
+          <div class="vid_slide archive_gallery_container" style="transform: translateX({{ mul $slide_vid_counter 100 }}%);">
+            {{ range . }}
+              <div class="archive_gallery_img">
+                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/{{ .vid_id | safeURL }}?modestbranding=1&rel=0&playsinline=0&domain={{ trim $.Site.BaseURL `/` | safeURL }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            {{ $vid_counter = add $vid_counter 1}}
+            {{ end }}
+          </div>
+          {{ $slide_vid_counter = add $slide_vid_counter 1}}
+          {{ end }}
+          {{ end }}
+          <button class="vid_slides__btn vid_slides__btn--left">&larr;</button>
+          <button class="vid_slides__btn vid_slides__btn--right">&rarr;</button>
+          <div class="vid_dots"></div>
+        </div>
+        {{ end }}
+
+        </div>
+        {{ with .Content }}
+      <div class="col-lg-11 mt-5">
         <h3>Read more...</h3>
-        <div class="content">{{.Content}}</div>
+        <div class="content">{{.}}</div>
       </div>
-      <div class="col-lg-11">
-        <h3>Related</h3>
+      {{ end }}
+      {{ with .Params.resources }}
+      <div class="col-lg-11 mt-5">
+        <h3>Resources</h3>
+        {{ . | markdownify }}
       </div>
+      {{ end }}
     </div>
   </div>
 </section>

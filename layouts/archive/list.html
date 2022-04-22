@@ -7,8 +7,61 @@
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
-        <h2 class="section-title" style="text-align: center;">Coming Soon!</h1>
+        <div class="btn-group btn-group-toggle justify-content-center d-flex flex-wrap" data-toggle="buttons">
+          <label class="btn btn-sm btn-primary active">
+            <input type="checkbox" name="shuffle-filter" value="all" />All
+          </label>
+					{{ $location := slice }}
+					{{ range .Data.Pages }}
+					{{ range .Params.location }}
+					{{ $location = $location | append . }}
+					{{ end }}
+					{{ end }}
+					{{ range ( $location | uniq ) }}
+          <label class="btn btn-sm btn-primary">
+            <input type="checkbox" name="shuffle-filter" value="{{ . | lower | urlize }}" />{{ . | humanize }}
+          </label>
+          {{ end }}
+        </div>
+        <div class="btn-group btn-group-toggle justify-content-center d-flex flex-wrap mt-1 rounded" data-toggle="buttons">
+          {{ $tag_counter := 1 }}
+          {{ $tag_length := site.Data.archive.archive_tags | len }}
+          {{ range $k, $v := site.Data.archive.archive_tags }}
+          <div class="dropdown" style="flex: 1 1 25%;">
+
+            {{ $category_id := md5 $k }}
+            <button class="btn-alt btn-sm btn-primary dropdown-toggle w-100 rounded-0" data-display="static" type="button" id="{{ $category_id }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="{{ if eq $tag_counter 1 }}border-radius: 0.25rem 0 0 0.25rem !important{{ else if eq $tag_counter $tag_length }}border-radius: 0 0.25rem 0.25rem 0 !important{{ end }}">
+            {{ print $k | title }}
+            </button>
+            <div class="btn-group-toggle dropdown-menu dropdown-menu-right p-0" aria-labelledby="{{ $category_id }}">
+              {{ range $v }}
+              <label class="btn btn-sm dropdown-item not-fancy">
+                <input type="checkbox" name="shuffle-filter" value="{{ . | lower | urlize }}" />{{ . }}
+              </label>
+              {{ end }}
+            </div>
+          </div>
+          {{ $tag_counter = add $tag_counter 1 }}
+          {{ end }}
+        </div>
       </div>
+    </div>
+    <div class="row shuffle-wrapper">
+      {{ range .Data.Pages }}
+      {{ $tags := slice }}
+      {{ $tags = .Params.location }}
+      {{ $tags = $tags | append .Params.alt_cat }}
+      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{{range $index, $element:= $tags }}{{if ne $index 0}},{{end}}&quot;{{. | lower | urlize}}&quot;{{ end }}]">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="{{ .Permalink }}">learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
     </div>
   </div>
 </section>
