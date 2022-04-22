@@ -1,9 +1,10 @@
-# about
+# Resources Intro 
 about:
   enable: true
   content: | 
-    This page contains a range of resources to supplement our [**Stories**](../stories) and provide ways for students, educators, researchers, and community members to learn more and take action. Check back often as we will continue adding to our list, and [**Contact Us**](../contact) if you have any resources or actions to share.
+    These resources supplement our [**Stories**](../stories) and provide ways for students, educators, researchers, and community members to learn more and take action. Check back often as we will continue adding to our list, and [**Contact Us**](../contact) if you have any resources or actions to share. 
 
+#Climate Migration Syllabus section
 cms:
   enable: true
   title: "Climate Migration Syllabus"
@@ -14,24 +15,24 @@ cms:
     label: "visit the #ClimateMigrationSyllabus"
     URL: "https://climatemigrationsyllabus.com/"
 
-# K-12 Curriculum
+# K-12 Curriculum section
 hscurriculum: 
   enable: true
   title: "K-12 Curriculum"
   description: | 
-    Our curriculum includes a broad multi-unit “Climate-Induced Migration: A High School Curriculum'' and a range of K-12 curriculum units in a variety of disciplines developed and piloted by teachers in the Charlotte-Mecklenburg school district in North Carolina. These units are for educational purposes only and should be used with attribution to authors cited within. Curriculum developed with support from National Geographic Society and the Charlotte Teachers Institute.
+    Our curriculum includes a broad multi-unit “Climate-Induced Migration: A High School Curriculum'' and a range of K-12 curriculum units in a variety of disciplines developed and piloted by teachers in the Charlotte-Mecklenburg school district in North Carolina. Curriculum developed with support from National Geographic Society and the Charlotte Teachers Institute.
   button: 
     enable: true
-    label: "Click Here to Explore the Curriculum"
+    label: "View Our K-12 Curriculum"
     URL: "https://docs.google.com/document/d/1GBza9AWHM90CYvqrJIK__mHFbbHVdUZoX_OXcN-tk-0/edit?usp=sharing"
 
-
+#Take Action section
 take_action:
   enable: true
   title: "Take Action"
   description: |   
-    We have developed a range of resources for getting involved and helping raise awareness about climate migration, including a Press and Social Media Toolkit; Community Discussion Guide; information about migrant rights, divestment, and sustainability Campaigns; and a list of local, national, and international Organizations.
+    Get involved and help raise awareness about climate migration! Check out our Press and Social Media Toolkits, Community Discussion Guide, campaign information, and list of organizations.
   button: 
     enable: true
-    label: "Click Here to Explore the Resources"
+    label: "Click Here for Ways to Take Action"
     URL: "https://docs.google.com/document/d/1GBdJV2-DInJdXjVjbH4MQrmxNzbo_bYBpFxruZ-M5LM/edit?usp=sharing"
