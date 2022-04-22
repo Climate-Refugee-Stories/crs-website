@@ -82,7 +82,7 @@
 <!-- /team -->
 
 <!-- in the media -->
-{{ with site.GetPage "/about/in-the-media.md" }}
+{{ with site.GetPage "/about/crs-news.md" }}
 <section class="section">
   <div class="container">
     <div class="row justify-content-around">
@@ -94,6 +94,16 @@
       </div>
       <div class="col-9 content">
         {{ .Content }}
+        <div class="mx-auto text-center">
+        {{ with site.Data.about.see_more_news }}
+          {{ if .button.enable }}
+          {{ with .button }}
+          <br/>
+          <a href="{{ .URL | absURL }}" class="btn btn-transparent" target="_blank">{{.label}}</a>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </div>
       </div>
     </div>
   </div>
