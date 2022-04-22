@@ -2,9 +2,9 @@
   publish = "public"
   command = "hugo --minify --gc -e prod"
   
-# [build.environment]
+[build.environment]
 #   HUGO_VERSION = "0.87.0"
-#   HUGO_BASEURL = "/"
+  HUGO_BASEURL = "/"
 
 [[headers]]
   for = "/*" # This defines which paths this specific [[headers]] block will cover.
