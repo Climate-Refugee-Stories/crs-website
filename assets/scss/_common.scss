@@ -608,3 +608,8 @@ html {
   letter-spacing: inherit;
   font-weight: 600;
 }
+
+.dropdown-item:hover {
+  background: #007bff;
+  color: white;
+}
