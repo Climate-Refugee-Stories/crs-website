@@ -2,6 +2,8 @@
 work_process:
   enable : true
   title : "Partners"
+  about: |
+    This project is funded with support from the University of California’s Critical Refugee Studies Collective, the National Geographic Society, and the North Carolina Humanities Council.
   item:
   - icon : "images/partner-logos/National-Geographic-Logo.png"
     link: "https://www.nationalgeographic.com/"
@@ -34,3 +36,4 @@ see_more_news:
       enable: true
       label: "More CRS News"
       URL: "https://docs.google.com/document/d/1pJfXh9YsHorg04mO6Dqd4hyaTRxTUlo6yhSZqU8g6VE/edit?usp=sharing"
+

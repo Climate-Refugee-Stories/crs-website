@@ -19,20 +19,21 @@
 <!-- /about -->
 {{ end }}
 
-{{ if site.Data.resources.cms.enable }}
-{{ with site.Data.resources.cms }}
-<!-- CMS -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
-        <p>{{ .description | markdownify }}</p>
-        {{ if .button.enable }}
-        {{ with .button }}
-          <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
-        {{ end }}
-        {{ end }}
+  {{ if site.Data.resources.cms.enable }}
+  {{ with site.Data.resources.cms }}
+  <!-- CMS -->
+  <section class="section" id="{{ .title | urlize }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{ .title | markdownify }}</h2>
+          <p>{{ .description | markdownify }}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+            <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
+          {{ end }}
+          {{ end }}
+        </div>
       </div>
     </div>
   </div>
@@ -41,11 +42,10 @@
 {{ end }}
 <!-- /CMS -->
 
-
-{{ if site.Data.resources.hscurriculum.enable }}
-{{ with site.Data.resources.hscurriculum }}
-<!-- hs curriculum -->
-<section class="section">
+  {{ with site.Data.resources.hscurriculum }}
+  {{ if .enable }}
+  <!-- hs curriculum -->
+  <section class="section" id="{{ .title | urlize }}">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -65,9 +65,9 @@
 <!-- /hs curriculum -->
 
 <!-- take action -->
-{{ if site.Data.resources.take_action.enable }}
 {{ with site.Data.resources.take_action }}
-<section class="section">
+{{ if .enable }}
+  <section class="section" id="{{ .title | urlize }}">
 <div class="container">
   <div class="row justify-content-around">
     <div class="col-lg-12 text-center">

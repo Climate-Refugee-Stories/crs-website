@@ -35,12 +35,12 @@
 <!-- Work Process -->
 {{ if site.Data.about.work_process.enable }}
 {{ with site.Data.about.work_process }}
-<section class="section">
+<section class="section" id="{{ .title | urlize }}">
   <div class="container">
     <div class="row justify-content-around">
       <div class="col-lg-12 text-center">
         <h2 class="section-title">{{ .title | markdownify }}</h2>
-        <p>This project is funded with support from the University of California’s Critical Refugee Studies Collective, the National Geographic Society, and the North Carolina Humanities Council.</p>
+        <p>{{ .about }}</p>
       </div>
       {{ range .item }}
       <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
@@ -81,9 +81,10 @@
 </section>
 <!-- /team -->
 
+
 <!-- CRS News -->
 {{ with site.GetPage "/about/crs-news.md" }}
-<section class="section">
+<section class="section" id="{{ .Title | urlize }}">
   <div class="container">
     <div class="row justify-content-around">
       <div class="col-12 text-center">
