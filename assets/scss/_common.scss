@@ -470,3 +470,12 @@ html {
 .nav-item > .dropdown-menu {
   background: var(--primary-color);
 }
+
+.nav-link.dropdown-toggle::after {
+  opacity: 0;
+  transition: all .55s;
+}
+
+.nav-item.dropdown:hover > .nav-link.dropdown-toggle::after {
+  opacity: 1;
+}
