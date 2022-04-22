@@ -469,6 +469,11 @@ html {
 
 .nav-item > .dropdown-menu {
   background: var(--primary-color);
+
+  & .dropdown-item {
+    padding: 0.45rem 1.5rem;
+    border-radius: 5px;
+  }
 }
 
 .nav-link.dropdown-toggle::after {
@@ -478,4 +483,9 @@ html {
 
 .nav-item.dropdown:hover > .nav-link.dropdown-toggle::after {
   opacity: 1;
+}
+
+.dropdown-menu.show {
+  border: none;
+  top: 85%;
 }
