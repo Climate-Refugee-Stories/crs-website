@@ -456,12 +456,17 @@ html {
   }
 }
 
-.dropdown {
-  &-menu {
-    background: var(--primary-color);
-  }
+.nav-item .dropdown {
   &-item {
     margin-bottom: 0.5rem;
     color: white;
+
+    &:hover, &:active {
+      color: #212529;
+    }
   }
+}
+
+.nav-item > .dropdown-menu {
+  background: var(--primary-color);
 }
