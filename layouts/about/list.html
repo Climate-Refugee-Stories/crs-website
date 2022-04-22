@@ -54,8 +54,8 @@
 {{ end }}
 <!-- ./Work Process -->
 
-<!-- team -->
-<section class="section bg-cover" id="our-team">
+<!-- CRS Team -->
+<section class="section bg-cover">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -81,7 +81,8 @@
 </section>
 <!-- /team -->
 
-<!-- in the media -->
+
+<!-- CRS News -->
 {{ with site.GetPage "/about/crs-news.md" }}
 <section class="section" id="{{ .Title | urlize }}">
   <div class="container">
@@ -94,12 +95,22 @@
       </div>
       <div class="col-9 content">
         {{ .Content }}
+        <div class="mx-auto text-center">
+        {{ with site.Data.about.see_more_news }}
+          {{ if .button.enable }}
+          {{ with .button }}
+          <br/>
+          <a href="{{ .URL | absURL }}" class="btn btn-transparent" target="_blank">{{.label}}</a>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </div>
       </div>
     </div>
   </div>
 </section>
 {{ end }}
-<!-- /in the media -->
+<!-- /CRS News -->
 
 {{ if site.Data.about.clients_logo_slider.enable }}
 <section class="section">

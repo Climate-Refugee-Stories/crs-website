@@ -1,4 +1,4 @@
-# work process
+# Our Partners section
 work_process:
   enable : true
   title : "Partners"
@@ -30,8 +30,10 @@ work_process:
     link: "https://rootsofunitymedia.org/"
 
 
-# client logo slider
-clients_logo_slider:
-  enable : false
-  title : "My Clients"
-  # clients logo comes from 'data/homepage.yml' file
+# CRS News section
+see_more_news:
+  button: 
+      enable: true
+      label: "More CRS News"
+      URL: "https://docs.google.com/document/d/1pJfXh9YsHorg04mO6Dqd4hyaTRxTUlo6yhSZqU8g6VE/edit?usp=sharing"
+
