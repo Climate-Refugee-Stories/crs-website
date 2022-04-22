@@ -455,3 +455,13 @@ html {
     background-color: $primary-color;
   }
 }
+
+.dropdown {
+  &-menu {
+    background: var(--primary-color);
+  }
+  &-item {
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+}

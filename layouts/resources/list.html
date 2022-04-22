@@ -22,12 +22,12 @@
   {{ if site.Data.resources.cms.enable }}
   {{ with site.Data.resources.cms }}
   <!-- CMS -->
-  <section class="section">
+  <section class="section" id="{{ .title | urlize }}">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
           <h2 class="section-title">{{ .title | markdownify }}</h2>
-          <p>{{ site.Data.resources.cms.description | markdownify }}</p>
+          <p>{{ .description | markdownify }}</p>
           {{ if .button.enable }}
           {{ with .button }}
             <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
@@ -42,16 +42,17 @@
   {{ end }}
 
 
-  {{ if site.Data.resources.hscurriculum.enable }}
+  {{ with site.Data.resources.hscurriculum }}
+  {{ if .enable }}
   <!-- hs curriculum -->
-  <section class="section">
+  <section class="section" id="{{ .title | urlize }}">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="section-title">{{ site.Data.resources.hscurriculum.title | markdownify }}</h2>
-          <p>{{ site.Data.resources.hscurriculum.description | markdownify }}</p>
+          <h2 class="section-title">{{ .title | markdownify }}</h2>
+          <p>{{ .description | markdownify }}</p>
           <br /><br />
-          {{ with site.Data.resources.hscurriculum.curriculum }}
+          {{ with .curriculum }}
           {{ range . }}
             <h4 class="curriculum"><strong>{{ . | markdownify }}</strong></h4><br>
           {{ end }}
@@ -62,18 +63,19 @@
   </section>
   <!-- /hs curriculum -->
   {{ end }}
+  {{ end }}
 
 
   <!-- take action -->
-{{ if site.Data.resources.take_action.enable }}
 {{ with site.Data.resources.take_action }}
-<section class="section">
+{{ if .enable }}
+  <section class="section" id="{{ .title | urlize }}">
   <div class="container">
     <div class="row justify-content-around">
       <div class="col-lg-12 text-center">
         <h2 class="section-title">{{ .title | markdownify }}</h2>
-        <h3><strong>{{ site.Data.resources.take_action.bold_description | markdownify }}</strong></h3>      
-        <h3>{{ site.Data.resources.take_action.description | markdownify }}</h3>      
+        <h3><strong>{{ .bold_description | markdownify }}</strong></h3>      
+        <h3>{{ .description | markdownify }}</h3>      
       </div>
     </div>
   </div>
