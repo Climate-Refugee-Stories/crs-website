@@ -53,8 +53,8 @@ parent = "about"
 weight = 3
 
 [[menu.main]]
-name = "In The Media"
-URL = "about/#in-the-media"
+name = "CRS News"
+URL = "about/#crs-news"
 parent = "about"
 weight = 4
 
@@ -69,9 +69,29 @@ name = "Archive"
 weight = 3
 
 [[menu.main]]
-URL = "resources"
 name = "Resources"
 weight = 4
+identifier = "resources"
+
+[[menu.main]]
+name = "All Resources"
+URL = "resources"
+parent = "resources"
+
+[[menu.main]]
+name = "Climate Migration Syllabus"
+URL = "resources/#climate-migration-syllabus"
+parent = "resources"
+
+[[menu.main]]
+name = "K-12 Curriculum"
+URL = "resources/#k-12-curriculum"
+parent = "resources"
+
+[[menu.main]]
+name = "Take Action"
+URL = "resources/#take-action"
+parent = "resources"
 
 [[menu.main]]
 URL = "contact"
