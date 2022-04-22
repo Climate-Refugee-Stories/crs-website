@@ -1,15 +1,9 @@
 ---
-title: "In the Media"
+title: "CRS News"
 description: |
-    See below for a snapshot of what we have been up to--events, news, conference presentations, and more! [Click here](https://climaterefugeestories.substack.com) to sign up for our email newsletter.
+    See below for a snapshot of what we have been up to--events, news, conference presentations, and more! [Click here](https://climaterefugeestories.substack.com) to sign up for our email newsletter. View [All CRS News](https://docs.google.com/document/d/1pJfXh9YsHorg04mO6Dqd4hyaTRxTUlo6yhSZqU8g6VE/edit?usp=sharing).
 weight: 0
 draft: false
-image: 
-designation: ""
-work_area: ""
-location: ""
-recent_publications:
-recent_projects:
 ---
 
 #### **Climate Migration: Docu-Series Watch Party**
@@ -47,3 +41,6 @@ recent_projects:
 #### [**Climate Refugee Stories: Building an Archive of Resistance**](https://ehc.english.ucsb.edu/?p=21016)
 ![Nearly Carbon Neutral Conference](../images/about/in-the-media/Nearly-Carbon-Neutral-Conference.png#caption "Confronting the Climate Crisis with Systemic Alternatives in the Age of Coronavirus, A Nearly-Carbon Neutral Conference, UC Santa Barbara, October, 2021.")
 &nbsp;  
+  
+---
+

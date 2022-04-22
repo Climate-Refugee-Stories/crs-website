@@ -33,6 +33,31 @@ link = "plugins/google-map/map.js"
 URL = "about"
 name = "About"
 weight = 1
+identifier = "about"
+
+[[menu.main]]
+URL = "about"
+name = "About Us"
+weight = 1
+parent = "about"
+
+[[menu.main]]
+name = "Our Partners"
+URL = "about/#partners"
+parent = "about"
+weight = 2
+
+[[menu.main]]
+name = "Our Team"
+URL = "about/#our-team"
+parent = "about"
+weight = 3
+
+[[menu.main]]
+name = "CRS News"
+URL = "about/#crs-news"
+parent = "about"
+weight = 4
 
 [[menu.main]]
 URL = "stories"
@@ -45,9 +70,29 @@ name = "Archive"
 weight = 3
 
 [[menu.main]]
-URL = "resources"
 name = "Resources"
 weight = 4
+identifier = "resources"
+
+[[menu.main]]
+name = "All Resources"
+URL = "resources"
+parent = "resources"
+
+[[menu.main]]
+name = "Climate Migration Syllabus"
+URL = "resources/#climate-migration-syllabus"
+parent = "resources"
+
+[[menu.main]]
+name = "K-12 Curriculum"
+URL = "resources/#k-12-curriculum"
+parent = "resources"
+
+[[menu.main]]
+name = "Take Action"
+URL = "resources/#take-action"
+parent = "resources"
 
 [[menu.main]]
 URL = "contact"
@@ -115,3 +160,17 @@ URL = "https://www.instagram.com/climaterefugeestories/"
 #[[params.social]]
 #icon = "ti-dribbble"
 #URL = "#"
+
+# Algolia output config
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags", "description", "summary"]
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]

@@ -1,7 +1,5 @@
 ---
 title: "Marshall Islands: \"Art Stops the Damage\""
-# author: "Tina Shull"
-# author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-20T12:14:34+07:00
 image: "images/blog/Marshall-Islands-Art-Post/Marshall-Islands-Art-Post-cover.png"
 thumbnail: "images/blog/Marshall-Islands-Art-Post/Marshall-Islands-Art-Post-thumb.png"
@@ -10,6 +8,7 @@ image_caption: |
 description: "This is meta description."
 summary: "Small, low-lying island nations in the South Pacific are some of the most vulnerable locations in the world to the impacts of climate change." 
 draft: false
+weight: 0
 ---
 
 Small, low-lying island nations in the South Pacific are some of the most vulnerable locations in the world to the impacts of climate change.  The Maldives, Marshall Islands, Kiribati and Tuvalu have been key sites where debates over the concept of “climate refugees” have taken place.  Affected community members and activists have [resisted media narratives](https://link.springer.com/chapter/10.1007/978-3-319-70703-7_1) that depict them as victims and have taken a range of political and artistic responses.  These nations’ leaders and ambassadors have been some of the first to bring these questions to the international stage.

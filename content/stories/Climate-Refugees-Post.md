@@ -1,7 +1,5 @@
 ---
 title: "Who are Climate Refugees?"
-# author: "Tina Shull"
-# author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-20T12:14:34+06:00
 image: "images/blog/Climate-Refugees-Post/Climate-Refugees-Post-cover.png"
 thumbnail: "images/blog/Climate-Refugees-Post/Climate-Refugees-Post-thumb.png"
@@ -10,6 +8,7 @@ image_caption: |
 description: "Who are Climate Refugees?"
 summary: "The International Organization for Migration (IOM) estimates that in 2019, 25 million people were displaced by climate change-related events."
 draft: false
+weight: 1
 ---
 
 The Internal Displacement Monitoring Centre (IDMC) [estimates](https://www.internal-displacement.org/database/displacement-data) that between 2008-2020, 283 million people have been displaced by weather-related “disasters” worldwide. More and more, such displacements are being attributed to climate change.
@@ -20,8 +19,7 @@ After World War II, the United Nations (UN) was created and established the Univ
 
 But there are limits to the definition of refugee in international law. For example, how is “persecution” defined?
 
-![Butterflies at US-Mexico border](../../images/blog/Climate-Refugees-Post/2Capture.webp#caption "Butterflies aloft at the US-Mexico border in Nogales, Arizona.
-Image Credit: Steve Pavey, [Hope in Focus](https://www.stevepavey.com/index)")
+![Refugee Stories World Map](../../images/blog/WhoAreClimateRefugees.JPG#caption "Artwork depicting Climate Refugee Stories sites at the US-Mexico Border, Puerto Rico, Ghana, and Bangladesh created by Monica Curca at, [Activate Labs](http://www.activatelabs.org/)")
 
 
 The Refugee Convention defines this narrowly, in political terms. People displaced by economic factors (such as poverty) or environmental disasters do not fall under this definition. However, political circumstances (such as histories of colonialism, war, and oppressive governments) are often inter-related with economic and environmental conditions.

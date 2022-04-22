@@ -1,7 +1,5 @@
 ---
 title: "Ghana: \"I Have Been a Stowaway\""
-# author: "Author"
-# author_link: "#"
 date: 2021-10-15T12:14:34+10:00
 image: "images/blog/Ghana-Stowaway-Post/Ghana-Stowaway-Post-cover.png"
 thumbnail: "images/blog/Ghana-Stowaway-Post/Ghana-Stowaway-Post-thumb.png"
@@ -10,6 +8,7 @@ image_caption: |
 description: "Fishing Boat on Azizakpe Island"
 summary: "Located in West Africa, Ghana sits on the Atlantic Ocean where its coast stretches over a 330-mile distance. Seven percent of Ghana’s total land area lies along the coast and is home to over five million people."
 draft: false
+weight: 0
 ---
 
 &nbsp;

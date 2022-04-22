@@ -1,7 +1,5 @@
 ---
 title: "The Bengal Delta: \"We Are Floating in the Middle\""
-author: "Author"
-author_link: "#"
 date: 2021-10-20T12:20:34+08:00
 image: "images/blog/Bengal-Delta-Post/Bengal-Delta-Post-cover.png"
 thumbnail: "images/blog/Bengal-Delta-Post/Bengal-Delta-Post-thumb.png"
@@ -10,6 +8,7 @@ image_caption: |
 description: "This is meta description."
 summary: "Sitting inside a room in one of the largest slums in Dhaka, her voice breaking with effort to keep tears at bay, 40-year-old Nafisa (pseudonym) shared her experience of migrating from rural Bangladesh."
 draft: false
+weight: 0
 ---
 
 &nbsp;
