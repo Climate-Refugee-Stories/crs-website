@@ -53,8 +53,8 @@ parent = "about"
 weight = 3
 
 [[menu.main]]
-name = "In The Media"
-URL = "about/#in-the-media"
+name = "CRS News"
+URL = "about/#crs-news"
 parent = "about"
 weight = 4
 
