@@ -54,7 +54,7 @@
       {{ $tags = $tags | append .Params.alt_cat }}
       <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{{range $index, $element:= $tags }}{{if ne $index 0}},{{end}}&quot;{{. | lower | urlize}}&quot;{{ end }}]">
         <div class="position-relative rounded hover-wrapper">
-          <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+          <img src="https://photos.smugmug.com/photos/{{ .Params.thumbnail }}/0/S/{{ .Params.thumbnail }}-S.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
               <a class="btn btn-light btn-sm" href="{{ .Permalink }}">learn more</a>
