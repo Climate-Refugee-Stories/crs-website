@@ -1,8 +1,8 @@
 ---
 title: "Ghana: \"I Have Been a Stowaway\""
 date: 2021-10-15T12:14:34+10:00
-image: "images/blog/Ghana-Stowaway-Post/Ghana-Stowaway-Post-cover.png"
-thumbnail: "images/blog/Ghana-Stowaway-Post/Ghana-Stowaway-Post-thumb.png"
+image: "i-QDsbSvm"
+thumbnail: "i-xzzJ6cz"
 image_caption: |
     A fishing boat on [Azizakpe Island](https://www.voltarevival.org/post/introduction-to-azizakpe-island), Ghana. Image Credit: [Christine Wheatley](../../about/christine-wheatley/)
 description: "Fishing Boat on Azizakpe Island"
@@ -68,7 +68,9 @@ Recognizing that many of the individuals we spoke to who face displacement and e
 
 ***Christine Wheatley, PhD,** is Executive Director of NED Africa.*
 
-![Jonathan's Story](../../images/blog/Ghana-Stowaway-Post/Capture2.webp#caption "Jonathan's Story. Artwork by [Monica Curca](../../about/monica-curca/)")
+{{< smugmug i-5Mj6btc "Jonathan's Story">}}
+Jonathan's Story. Artwork by [Monica Curca](../../about/monica-curca/)
+{{</ smugmug >}}
 &nbsp;
 
 **NED Africa is producing an ethnographic film that captures stories of return migrants to coastal and island communities impacted by rising sea levels along Ghana's coast which covers a distance of over 300 miles and is home to 5 million residents.**
