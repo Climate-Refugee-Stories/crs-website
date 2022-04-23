@@ -1,8 +1,8 @@
 ---
 title: "The Navajo Nation: Sheep Stories"
 date: 2021-10-15T12:14:34+11:00
-image: images/blog/Navajo-Sheep-Post/Navajo-Sheep-Post-cover.png
-thumbnail: images/blog/Navajo-Sheep-Post/Navajo-Sheep-Post-thumb.png
+image: i-9N365bc
+thumbnail: i-9LX2nt8
 image_caption: |
   Image credit: [Yoonbae
   Cho](https://unsplash.com/@yoonbae81?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

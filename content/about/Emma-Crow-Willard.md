@@ -2,7 +2,7 @@
 title: "Emma Crow-Willard"
 weight: 4
 draft: false
-image: "images/team/Emma Crow-Willard.jpg"
+image: "i-LjLW4Hd"
 designation: "Puerto Rico"
 work_area: "US and Puerto Rico"
 location: "Denver, CO"

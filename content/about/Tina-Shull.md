@@ -2,7 +2,7 @@
 title: "Tina Shull"
 weight: 1
 draft: false
-image: "images/team/Tina Shull.jpg"
+image: "i-MZrTTPm"
 designation: "US & US-Mexico Border"
 work_area: "United States & US-Mexico Border"
 location: "Charlotte, NC"

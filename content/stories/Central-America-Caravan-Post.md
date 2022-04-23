@@ -1,8 +1,8 @@
 ---
 title: "Central America: \"This Caravan is Yours, Mr. Trump\""
 date: 2021-10-15T12:14:34+07:00
-image: "images/blog/Central-America-Caravan-Post/Central-America-Caravan-Post-cover.png"
-thumbnail: "images/blog/Central-America-Caravan-Post/Central-America-Caravan-Post-thumb.png"
+image: "i-JTbJ8QB"
+thumbnail: "i-XT48g7t"
 image_caption: |
     A young member of the spring 2018 [refugee caravan](https://www.pueblosinfronteras.org/viacrucis.html) waves a Honduran flag atop the US-Mexico border wall in Playas Tijuana. Image Credit: [Tina Shull](../../about/tina-shull)
 description: "Central America: This Caravan is Yours"
@@ -19,7 +19,9 @@ weight: 0
 {{< /center >}}
 
 &nbsp;
-![Members of the Viacrusis Migrantes](../../images/blog/Central-America-Caravan-Post/2Capture.webp#caption "Members of the Viacrusis Migrantes en la luche (\"Migrants in Struggle\" Refugee Caravan) in Mexico in April 2018. Image Credit: [Pueblo sin Fronteras](http://www.pueblosinfronteras.org/)")
+{{< smugmug i-znpg9px "Members of the Viacrusis Migrantes">}}
+Members of the Viacrusis Migrantes en la luche ("Migrants in Struggle" Refugee Caravan) in Mexico in April 2018. Image Credit: [Pueblo sin Fronteras](http://www.pueblosinfronteras.org/)
+{{</ smugmug >}}
 &nbsp;
 #### ***This Caravan is Yours, Mr. Trump***  
 [Español aquí](https://www.latinorebels.com/2018/04/10/la-caravana-es-suya-senor-trump/)  

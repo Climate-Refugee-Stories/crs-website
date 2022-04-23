@@ -1,8 +1,8 @@
 ---
 title: "Bahamas: \"You Should Hear Her Voice\""
 date: 2021-10-15T12:14:34+10:30
-image: "images/blog/Bahamas-Her-Voice-Post/Bahamas-Her-Voice-Post-cover.png"
-thumbnail: "images/blog/Bahamas-Her-Voice-Post/Bahamas-Her-Voice-Post-thumb.png"
+image: "i-LK6bxDS"
+thumbnail: "i-zw9nZWZ"
 image_caption: |
     Bahamian artist Dede Brown, photo from the artist's [webpage](https://www.dedebrown.com/)
 description: "Bahamian artist Dede Brown"
@@ -29,7 +29,9 @@ Many governments in the region have been perceived as unable to effectively pivo
 &nbsp;  
 &nbsp;  
 
-![National Art Gallery of the Bahamas](../../images/blog/Bahamas-Her-Voice-Post/Capture2.webp#caption "[\"Refuge\"](https://nagb.org.bs/events-and-exhibitions/2019/12/19/refuge) exhibit capturing community responses to Hurricane Dorian by artists Dede and Kristin Brown at the National Art Gallery of the Bahamas. Photo Credit: Sienna Leis")
+{{< smugmug i-gt58CNP "National Art Gallery of the Bahamas">}}
+["Refuge"](https://nagb.org.bs/events-and-exhibitions/2019/12/19/refuge) exhibit capturing community responses to Hurricane Dorian by artists Dede and Kristin Brown at the National Art Gallery of the Bahamas. Photo Credit: Sienna Leis
+{{</ smugmug >}}
 &nbsp;
 
 ---

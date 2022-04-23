@@ -1,8 +1,8 @@
 ---
 title: "Bangladesh: \"The River Took Everything\""
 date: 2021-10-20T12:14:34+08:00
-image: "images/blog/Bangladesh-River-Post/Bangladesh-River-Post-cover.png"
-thumbnail: "images/blog/Bangladesh-River-Post/Bangladesh-River-Post-thumb.png"
+image: "i-qxndG8t"
+thumbnail: "i-8tkK7Ws"
 image_caption: |
     Entryway to a home in Dhaka's Bhola Slum, 2017. Photo Credit: [Saumaun Heiat ](../../about/saumaun-heiat/)
 description: "The River Took Everything."

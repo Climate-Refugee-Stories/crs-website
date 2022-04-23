@@ -2,7 +2,7 @@
 title: "Hania Marien"
 weight: 9
 draft: false
-image: "images/team/Hania Marien.jpg"
+image: "i-8x2Cbnc"
 designation: "The United States"
 work_area: "United States & Education"
 location: "Cambridge, MA (Harvard University)"

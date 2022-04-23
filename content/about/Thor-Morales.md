@@ -2,7 +2,7 @@
 title: "Thor Morales"
 weight: 7
 draft: false
-image: "images/team/Thor Morales.jpg"
+image: "i-qPLBMHK"
 designation: "Mexico"
 work_area: "United States, Mexico, Global"
 location: "Washington, DC"

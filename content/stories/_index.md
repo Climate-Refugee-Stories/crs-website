@@ -3,7 +3,7 @@ title: "Stories"
 author: "Author"
 author_link: "#"
 date: 2020-01-01T12:14:34+06:00
-image: "images/blog/post-1.jpg"
+image: "images/stories/post-1.jpg"
 thumbnail: ""
 image_caption: |
     This is an image caption. Image credt: [John Doe](#)

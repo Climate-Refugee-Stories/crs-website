@@ -1,7 +1,8 @@
 ---
 title: "Borders in US-Mexico"
 date: 2019-05-12T12:14:34+06:00
-image: "images/portfolio/BorderWallArt2.jpg"
+image: "i-LHFC8kX"
+thumbnail: "i-LHFC8kX"
 related_stories: |
   - [The US-Mexico Border: “Over My Dead Body”](https://www.climaterefugeestories.com/stories/us-mexico-border-post/)
   - [Central America: “This Caravan is Yours, Mr. Trump”](https://www.climaterefugeestories.com/stories/central-america-caravan-post/)
@@ -30,5 +31,3 @@ resources: |
 #   - [homepage](https://google.com)
 draft: false
 ---
-
-

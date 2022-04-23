@@ -23,7 +23,7 @@
       </div>
       <div class="col-md-4 text-center drag-lg-top">
         <div class="shadow-down mb-4">
-          <img src="{{.Params.author_image | absURL }}" alt="author"
+          <img src="https://photos.smugmug.com/photos/{{.Params.author_image }}/0/O/{{.Params.author_image }}-O.png" alt="author"
             class="img-fluid w-100 rounded-lg border-thick border-white">
         </div>
       </div>
@@ -44,7 +44,7 @@
       </div>
       {{ range .item }}
       <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
-        <a href="{{ .link }}"><img src="{{ .icon | absURL }}" class="mb-4" alt="icon"></a>
+        <a href="{{ .link }}"><img src="https://photos.smugmug.com/photos/{{ .icon }}/0/O/{{ .icon }}-O.png" class="img-fluid mb-4" alt="icon"></a>
       </div>
       {{ end }}
     </div>
@@ -66,7 +66,7 @@
       <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
         <div class="card text-center">
           <a href="{{ .Permalink }}">
-            <img src="{{ .Params.image | absURL }}" class="card-img-top">
+            <img src="https://photos.smugmug.com/photos/{{ .Params.image }}/0/O/{{ .Params.image }}-O.png" class="card-img-top">
             <div class="card-body">
               <h4 class="card-title">{{.Title }}</h4>
               <p class="text-light font-secondary">{{.Params.designation }}</p>
