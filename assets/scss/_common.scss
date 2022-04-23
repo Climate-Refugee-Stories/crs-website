@@ -117,9 +117,40 @@ html {
   }
 }
 
+.btn-alt {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 0;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    &:hover {
+      text-decoration: none
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 .2rem rgba(0,123,255,.25)
+    }
+    &:not(:disabled):not(.disabled) {
+      cursor: pointer
+    }
+}
+
 .btn {
   font-size: 1.375rem;
-  font-family: playfair display, serif;
+  font-family: 'Playfair Display', serif;
   text-transform: capitalize;
   padding: 1rem 2.75rem;
   border-radius: 5px;
@@ -285,7 +316,7 @@ html {
     top: 50%;
     right: 0;
     border-radius: 50%;
-    background-image: url("images/CRS Logo-transparent.png");
+    background-image: url($transparent_logo);
     background-size: 70%;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -341,7 +372,7 @@ html {
 .hero-area {
   height: 100vh;
   // TODO: make this variablized or something... (not local reference to url encoded path)
-  background-image: url("/images/headers/Bo%20Thai%20Climate%20Refugees.jpg");
+  background-image: url($hero_img);
   background-size: cover;
   background-position: bottom;
   position: relative;
@@ -353,18 +384,21 @@ html {
 
 /* *********************************** */
 
-.archive_gallery_container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem 1rem;
-  align-items: center;
-  // justify-items: center;
-
-  & img {
-    max-height: 300px;
-    object-fit: cover;
-    max-width: 100%;
-    height: auto;
+.archive_gallery {
+  &_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem 0.5rem;
+    align-items: center;
+    cursor: pointer;
+    // justify-items: center;
+  }
+  &_img {
+    height: 20rem;
+    width: 96%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
   }
 }
 
@@ -375,16 +409,145 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
-  // min-height: 0;
+  & figcaption {
+    padding: 1rem;
+  }
 }
 
 // .archive_gallery_figure div {
 // }
 
+.vid_slides, .slides {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 50rem;
+}
+
+.vid_slide {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.vid_slide, .slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  transition: transform 1s ease-in;
+}
+
+.vid_slides__btn, .slides__btn {
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+    border: none;
+    font-family: inherit;
+    color: #333;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 3.25rem;
+    cursor: pointer;
+    background-color: transparent;
+
+    &--left {
+      left: 1%;
+      transform: translate(-50%, -50%);
+      outline: none !important;
+    }
+
+    &--right {
+      right: 1%;
+      transform: translate(-50%, -50%);
+      outline: none !important;
+    }
+}
+
+.vid_dots, .dots {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+
+  &__dot {
+    border: none;
+    background-color: #b9b9b9;
+    opacity: 0.7;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:not(:last-child) {
+      margin-right: 1.75rem;
+    }
+
+    &--active {
+      background-color: #888;
+      opacity: 1;
+    }
+  }
+}
+
 .caption {
   margin-top: 0.5rem;
   align-self: start;
+}
+
+.modal {
+  &__full {
+    max-width: 90%;
+  }
+  &__slides {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 90vh;
+    flex: 1 1 100%;
+  }
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in;
+    
+    & figcaption {
+      margin: 1rem 2rem;
+      max-width: 60%;
+      text-align: center;
+    }
+  }
+  &__img {
+    max-height: 80%;
+    max-width: 80%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+  }
+
+  &__btn--left {
+    left: 1%;
+    transform: translate(-50%,-50%);
+    outline: none !important;
+  }
+  &__btn--right {
+    right: 1%;
+    transform: translate(-50%,-50%);
+    outline: none !important;
+  }
 }
 
 .carousel {
@@ -444,4 +607,53 @@ html {
 .navbar_title {
   letter-spacing: inherit;
   font-weight: 600;
+}
+
+.dropdown-item:hover {
+  background: #007bff;
+  color: white;
+}
+.page-link {
+  color: $primary-color;
+
+}
+.page-item {
+  &.active .page-link {
+    background-color: $primary-color;
+  }
+}
+
+.nav-item .dropdown {
+  &-item {
+    margin-bottom: 0.5rem;
+    color: white;
+
+    &:hover, &:active {
+      color: #212529;
+      background: white;
+    }
+  }
+}
+
+.nav-item > .dropdown-menu {
+  background: var(--primary-color);
+
+  & .dropdown-item {
+    padding: 0.45rem 1.5rem;
+    border-radius: 5px;
+  }
+}
+
+.nav-link.dropdown-toggle::after {
+  opacity: 0;
+  transition: all .55s;
+}
+
+.nav-item.dropdown:hover > .nav-link.dropdown-toggle::after {
+  opacity: 1;
+}
+
+.nav-link + .dropdown-menu.show {
+  border: none;
+  top: 85%;
 }

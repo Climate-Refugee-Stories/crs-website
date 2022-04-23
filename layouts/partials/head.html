@@ -8,11 +8,6 @@
   {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
 
-  {{ with site.Params.baidu_site_verification }}
-	{{ "<!-- baidu site verification -->" | safeHTML }}
-  <meta name="baidu-site-verification" content="{{ . }}" />
-  {{ end }}
-
   <style>
     :root{
       --primary-color:{{ site.Params.theme_color }};
@@ -24,19 +19,59 @@
   <link rel="stylesheet" href="{{ .link | absURL }} ">
   {{ end }}
 
-  {{ "<!-- Main Stylesheet -->" | safeHTML }}
-  {{ $styles := resources.Get "css/style.css" |
-    minify | 
-    fingerprint
-  }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
-  {{ $styles := resources.Get "scss/main.scss"  |
-    resources.ExecuteAsTemplate "style.main.scss" . | 
-    toCSS | 
-    minify | 
-    fingerprint
-  }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+  {{ "<!-- Stylesheet -->" | safeHTML }}
+
+  {{ $options := (dict "enableSourceMap" true ) }}
+  <!-- defining outside the if block, so it can be accessed afterwards -->
+  {{ $styles := "" }}
+  {{ $main_css := resources.Get "css/style.css" }}
+  {{ $hugo_scss_vars := resources.Get "scss/hugo_vars.scss" }}
+  {{ $main_scss := resources.Get "scss/main.scss" }}
+  {{ $scss := slice $hugo_scss_vars $main_scss | resources.Concat "scss/bundle.scss" }}
+
+  <!-- https://discourse.gohugo.io/t/how-to-use-hugo-template-variables-in-css/4464/33 -->
+  {{ $scss = $scss | resources.ExecuteAsTemplate "style.main.scss" . }}
+
+  {{ if hugo.IsProduction }}
+
+    {{ $options = merge $options (dict "outputStyle" "compressed") }}
+    {{ $styles = $scss | toCSS $options }} 
+    {{ $styles = slice $main_css $main_scss | resources.Concat "css/bundle.css" }}
+    {{ $styles = slice $main_css $styles | resources.Concat "css/bundle.css" }}
+    {{ $styles = $styles | minify | fingerprint }}
+
+  {{ else }}
+
+    {{ $options = merge $options (dict "targetPath" "css/style.css" "outputStyle" "expanded") }}
+    {{ $styles = $scss | toCSS $options }} 
+    {{ $styles = slice $main_css $styles | resources.Concat "css/bundle.css" }}
+
+  {{ end }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+
+  {{ "<!-- Main Script -->" | safeHTML }}
+
+  {{ $script := "" }}
+
+  {{ if hugo.IsProduction }}
+
+  {{ $options = merge $options (dict "minify" true ) }}
+  {{ $script = resources.Get "js/script.js" | js.Build $options | minify | fingerprint }}
+
+  {{ else }}
+
+  {{ $options = merge $options (dict "minify" false "targetPath" "js/main.js" ) }}
+  {{ $script = resources.Get "js/script.js" | js.Build $options }}
+
+  {{ end }}
+
+  <script defer src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+
+  {{ "<!-- Search Script-->" | safeHTML }}
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic" />
 
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">

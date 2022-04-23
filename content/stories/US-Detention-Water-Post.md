@@ -1,16 +1,17 @@
 ---
-draft: false
-image_caption: >
+title: 'In US Detention: "That Water Had a Strange Smell"'
+date: 2021-10-15T12:14:34+08:00
+image: i-BJnfRRg
+thumbnail: i-ZfPDfGT
+image_caption: |
   [Abbas al Aboudi](https://www.refugee-artist.com/my-story), "Waiting," pen and
   ink on paper
+description: Water in US Detention
 summary: "On any given day, over 50,000 people are held in a network of over 200
   federal, local, and privately contracted detention facilities across the
   country, while over 400,000 people are deported each year. "
-title: 'In US Detention: "That Water Had a Strange Smell"'
-date: 2021-10-15T12:14:34+08:00
-image: images/blog/US-Detention-Water-Post/US-Detention-Water-Post-cover.png
-thumbnail: images/blog/US-Detention-Water-Post/US-Detention-Water-Post-thumb.png
-description: Water in US Detention
+draft: false
+weight: 0
 ---
 
 The United States maintains the largest immigration detention and deportation system in the world.  On any given day, over 50,000 people are held in a network of over 200 federal, local, and privately contracted detention facilities across the country, while over 400,000 people are deported each year. 
@@ -36,7 +37,9 @@ Environmental racism, as defined by environmental justice pioneer [Robert Bullar
 - Incarcerated people, and people at higher risk of policing and incarceration such as undocumented migrants, often experience the impacts of climate-related events, such as hurricanes and floods, in disproportionate and discriminatory ways.
 
 &nbsp;
-![Cuffs Too Tight](../../images/blog/US-Detention-Water-Post/2Capture.webp#caption "Read this report on the impacts of Hurricane Irma on detained immigrants by [Americans for Immigrant Justice](http://www.aijustice.org/cuffs_too_tight_the_shackling_and_evacuation_of_detained_immigrants_during_hurricane_irma)")  
+{{< smugmug i-vndFWF9 "Cuffs Too Tight" >}}
+Read this report on the impacts of Hurricane Irma on detained immigrants by [Americans for Immigrant Justice](http://www.aijustice.org/cuffs_too_tight_the_shackling_and_evacuation_of_detained_immigrants_during_hurricane_irma)
+{{</ smugmug >}}
 
 When Category 4 Hurricane Irma approached southern Florida in September of 2017, Immigration and Customs Enforcement (ICE) told the public it would not escalate immigration enforcement efforts. ICE released a memo on September 10, 2017. The memo—including generic language nearly identical to that found in a memo produced prior to Hurricane Harvey— stated the following: 
 > ICE and CBP also seek to provide for the safety and security of those in our custody and to protect them from bodily harm in the event of a hurricane or a major destructive storm. As such, ICE detainees from the Krome Detention Center, Monroe County Jail, Broward Transitional Center, and Glades Detention Center are being temporarily transferred to various other detention facilities outside the projected path of the hurricane. In the event of transfers, the detainee's attorney of record is notified, the Online Detainer Locator is updated, and the transfer is temporary in nature. 
@@ -77,7 +80,9 @@ Climate Refugee Stories collaborator and sociocultural anthropologist Maria Barb
 ##### **by Maria Barbero in the *Daily Beast***
  
 &nbsp; 
-![Hope and Prayers Artwork](../../images/blog/US-Detention-Water-Post/3Capture.webp#caption "Artwork drawn by a man in immigration detention in Louisiana in 2017. Image Credit: Tina Shull")
+{{< smugmug i-3dk7gSm "Hope and Prayers Artwork" >}}
+Artwork drawn by a man in immigration detention in Louisiana in 2017. Image Credit: Tina Shull
+{{</ smugmug >}}
 &nbsp; 
 
 <!-- TO-DO: Center -->

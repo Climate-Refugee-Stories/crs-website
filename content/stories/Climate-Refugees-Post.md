@@ -1,15 +1,14 @@
 ---
 title: "Who are Climate Refugees?"
-# author: "Tina Shull"
-# author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-20T12:14:34+06:00
-image: "images/blog/Climate-Refugees-Post/Climate-Refugees-Post-cover.png"
-thumbnail: "images/blog/Climate-Refugees-Post/Climate-Refugees-Post-thumb.png"
+image: "i-85z2pWP"
+thumbnail: "i-PzDGbN7"
 image_caption: |
     Image Credit: Steve Pavey, [Hope in Focus](https://www.stevepavey.com/index)
 description: "Who are Climate Refugees?"
 summary: "The International Organization for Migration (IOM) estimates that in 2019, 25 million people were displaced by climate change-related events."
 draft: false
+weight: 1
 ---
 
 The Internal Displacement Monitoring Centre (IDMC) [estimates](https://www.internal-displacement.org/database/displacement-data) that between 2008-2020, 283 million people have been displaced by weather-related “disasters” worldwide. More and more, such displacements are being attributed to climate change.
@@ -20,7 +19,9 @@ After World War II, the United Nations (UN) was created and established the Univ
 
 But there are limits to the definition of refugee in international law. For example, how is “persecution” defined?
 
-![Refugee Stories World Map](../../images/blog/WhoAreClimateRefugees.JPG#caption "Artwork depicting Climate Refugee Stories sites at the US-Mexico Border, Puerto Rico, Ghana, and Bangladesh created by Monica Curca at, [Activate Labs](http://www.activatelabs.org/)")
+{{< smugmug i-TGTc2wb "Refugee Stories World Map" >}}
+Artwork depicting Climate Refugee Stories sites at the US-Mexico Border, Puerto Rico, Ghana, and Bangladesh created by Monica Curca at, [Activate Labs](http://www.activatelabs.org/)
+{{</ smugmug >}}
 
 
 The Refugee Convention defines this narrowly, in political terms. People displaced by economic factors (such as poverty) or environmental disasters do not fall under this definition. However, political circumstances (such as histories of colonialism, war, and oppressive governments) are often inter-related with economic and environmental conditions.
@@ -68,6 +69,7 @@ And we ask:
 > What does it take to move from a world rooted in violence, extraction, and domination to a world rooted in regeneration, resilience, and interdependence?
 {{< /center >}}
 
-![A Word cloud from CRSC](../../images/blog/Climate-Refugees-Post/3Capture.webp#caption "*A word cloud created from audience responses at a convening of the UC Critical Refugee Studies Collective at UCLA in April of 2018.
-Participants were asked to define the concept of climate refugees.*")
-
+{{< smugmug i-d4GtSn2 "A Word cloud from CRSC">}}
+*A word cloud created from audience responses at a convening of the UC Critical Refugee Studies Collective at UCLA in April of 2018.
+Participants were asked to define the concept of climate refugees.*
+{{</ smugmug >}}

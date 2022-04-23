@@ -2,7 +2,7 @@
 title: "Saumaun Heiat"
 weight: 3
 draft: false
-image: "images/team/Saumaun Heiat.jpg"
+image: "i-55zf6D9"
 designation: "Bangladesh"
 work_area: "Bangladesh, Iran, Iraq, Syria, Yemen, Afghanistan"
 location: "Irvine, CA"

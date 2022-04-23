@@ -193,7 +193,7 @@ a:hover {
 }
 
 .font-secondary {
-  font-family: playfair display, serif !important
+  font-family: 'Playfair Display', serif !important;
 }
 
 .font-tertiary {
@@ -469,10 +469,14 @@ textarea.form-control {
 blockquote {
   display: inline-block;
   padding: 10px 20px;
-  background: #eaeaea;
+  /* background: #eaeaea; */
   border-left: 2px solid var(--primary-color);
   font-style: italic;
-  font-size: 22px
+  font-size: 1.35rem;
+}
+
+blockquote > p {
+  font-size: 1.35rem;
 }
 
 .content * {

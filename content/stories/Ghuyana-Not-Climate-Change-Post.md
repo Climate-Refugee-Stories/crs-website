@@ -1,15 +1,14 @@
 ---
 title: "Guyana: \"This Isn't Climate Change\""
-# author: "Author"
-# author_link: "#"
 date: 2021-10-15T12:14:34+11:30
-image: "images/blog/Guyana-Not-Climate-Change-Post/Guyana-Not-Climate-Change-Post-cover.png"
-thumbnail: "images/blog/Guyana-Not-Climate-Change-Post/Guyana-Not-Climate-Change-Post-thumb.png"
+image: "i-tcktnkG"
+thumbnail: "i-sBqSnCd"
 image_caption: |
     Essequibo Islands, West Dermerara, Guyana. Image Credit: Sienna Leis
 description: "Essequibo Islands, West Dermerara, Guyana."
 summary: "Known for its extreme rainy season, the lowlands of Guyana have been significantly impacted by flooding for more than 15 years."
 draft: false
+weight: 0
 ---
 
 **Known for its extreme rainy season**, the lowlands of Guyana have been significantly impacted by flooding for more than 15 years when the Mahaica Creek would flood over displacing residents to higher ground in Guyana. Yet, when asked about how climate change played a role in the destruction of the zone, residents were clear that climate change was not the cause. In addition to residents being displaced, crops were also destroyed and animals drowned. This represented loss of livelihood for most. 

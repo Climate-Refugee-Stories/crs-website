@@ -1,13 +1,14 @@
 ---
 title: "Puerto Rico: \"The Hurricane Wasn’t the Precise Problem\""
 date: 2021-10-15T12:14:34+09:00
-image: "images/blog/Hurricane-Maria-Post/Hurricane-Maria-Post-cover.png"
-thumbnail: "images/blog/Hurricane-Maria-Post/Hurricane-Maria-Post-thumb.png"
+image: "i-P3XpQsn"
+thumbnail: "i-pPMvvNB"
 image_caption: |
     Image Credit: [Emma Crow-Willard](../../about/emma-crow-willard/)
 description: "Statue of What?"
 summary: "Post-Hurricane Maria, I naively thought, not having been to Puerto Rico: \"Shouldn’t everyone leave? It’s in the path of hurricanes that are just going to get worse and it’s susceptible to rising sea levels.\""
 draft: false
+weight: 0
 ---
 
 &nbsp;
@@ -32,12 +33,13 @@ Luis, a nursing student in Puerto Rico, graduated just before the hurricane and 
 &nbsp;
 {{< center >}}
 **"Climate Refugee Stories: Puerto Rico" is supported by the National Geographic Society**
-
-![NatGeo Logo](../../images/blog/Hurricane-Maria-Post/Capture2.webp) 
-&nbsp;
 {{< /center >}}
+{{< smugmug i-kJG9M49 "National Geographic Logo" >}}
+{{</ smugmug >}}
 
-![Statue of What?](../../images/blog/Hurricane-Maria-Post/Capture1.webp#caption "*\"Statue of What?\" artwork created in solidarity with Puerto Rico by [Bo Thai](../../about/bo-daraphant/)*")
+{{< smugmug i-HcqgLL4 "Statue of What?" >}}
+*"Statue of What?" artwork created in solidarity with Puerto Rico by [Bo Thai](../../about/bo-daraphant/)*
+{{</ smugmug >}}
 
 
 <!-- #### **Survivor Stories:**

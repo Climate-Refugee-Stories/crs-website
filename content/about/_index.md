@@ -1,7 +1,7 @@
 ---
 title: "About"
 description: "This is meta description."
-author_image : "images/CRS Logo.png"
+author_image : "i-dbBQbMn"
 draft: false
 ---
 

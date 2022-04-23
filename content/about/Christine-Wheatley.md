@@ -2,7 +2,7 @@
 title: "Christine Wheatley"
 weight: 6
 draft: false
-image: "images/team/Christine Wheatley.jpg"
+image: "i-hxKnq5k"
 designation: "Ghana"
 work_area: "Ghana"
 location: "Hohoe, Ghana"

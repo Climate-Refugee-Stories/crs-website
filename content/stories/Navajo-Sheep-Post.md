@@ -1,6 +1,9 @@
 ---
-draft: false
-image_caption: >
+title: "The Navajo Nation: Sheep Stories"
+date: 2021-10-15T12:14:34+11:00
+image: i-9N365bc
+thumbnail: i-9LX2nt8
+image_caption: |
   Image credit: [Yoonbae
   Cho](https://unsplash.com/@yoonbae81?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
   on
@@ -8,11 +11,9 @@ image_caption: >
 summary: Dził Nitsaa means Big Mountain in Diné Bizaad (the Navajo Language).
   Dził Nitsaa is a sacred monument and a sanctuary for the people that have
   inhabited the mountain and its surrounding areas since time immemorial.
-title: "The Navajo Nation: Sheep Stories"
-date: 2021-10-15T12:14:34+11:00
-image: images/blog/Navajo-Sheep-Post/Navajo-Sheep-Post-cover.png
-thumbnail: images/blog/Navajo-Sheep-Post/Navajo-Sheep-Post-thumb.png
 description: Navajo Sheep
+draft: false
+weight: 0
 ---
 #### **Dził Nitsaa: a Place of Diné Resistance**
 

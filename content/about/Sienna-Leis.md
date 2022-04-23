@@ -2,7 +2,7 @@
 title: "Sienna Leis"
 weight: 8
 draft: false
-image: "images/team/Sienna Leis.jpg"
+image: "i-w7TFDKH"
 designation: "The Caribbean"
 work_area: "The Caribbean"
 location: "The Bahamas"
