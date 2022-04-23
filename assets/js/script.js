@@ -199,6 +199,104 @@ function toggle(elChecked) {
 		elChecked.click();
 	}
 }
+const { autocomplete, getAlgoliaResults } = window['@algolia/autocomplete-js'];
+window['@algolia/autocomplete-theme-classic'];
+const searchClient = algoliasearch(
+  'OIYH3FKG8E',
+  '823977bb091a6aa8c13d5c52edbb18f8'
+);
+  
+if (document.querySelectorAll('#autocomplete').length > 0) {
+
+  // https://web.archive.org/web/20210507081651/https://www.algolia.com/doc/ui-libraries/autocomplete/api-reference/autocomplete-js/autocomplete/
+  // https://web.archive.org/web/20210728231815/https://www.bennet.org/blog/site-search-jamstack-hugo-algolia/ 
+  
+  autocomplete({
+    container: '#autocomplete',
+    placeholder: 'Search for stories',
+    getSources({ query }) {
+      return [
+        {
+          sourceId: 'products',
+          getItems() {
+            return getAlgoliaResults({
+              searchClient,
+              queries: [
+                {
+                  indexName: 'prod_main_Sections',
+                  query,
+                  params: {
+                    hitsPerPage: 5,
+                  },
+                },
+              ],
+            });
+          },
+          templates: {
+            item({ item, components, html }) {
+              return html`<div class="aa-ItemWrapper">
+  			  <a href="${item.url}">
+                <div class="aa-ItemContent">
+                  <div class="aa-ItemIcon aa-ItemIcon--alignTop">
+                    <img
+                      src="${item.image}"
+                      alt="${item.title}"
+                      width="40"
+                      height="40"
+                    />
+                  </div>
+                  <div class="aa-ItemContentBody">
+                    <div class="aa-ItemContentTitle">
+                      ${components.Highlight({
+                        hit: item,
+                        attribute: 'title',
+                      })}
+                    </div>
+                    <div class="aa-ItemContentDescription">
+                      ${components.Snippet({
+                        hit: item,
+                        attribute: 'description',
+                      })}
+                    </div>
+                  </div>
+                  <div class="aa-ItemActions">
+                    <button
+                      class="aa-ItemActionButton aa-DesktopOnly aa-ActiveOnly"
+                      type="button"
+                      title="Select"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M18.984 6.984h2.016v6h-15.188l3.609 3.609-1.406 1.406-6-6 6-6 1.406 1.406-3.609 3.609h13.172v-4.031z"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      class="aa-ItemActionButton"
+                      type="button"
+                      title="Add to cart"
+                    >
+                    </button>
+                  </div>
+                </div>
+  			  </a>
+              </div>`;
+            },
+  		},
+  		getItemUrl({ item }) {
+            return item.url;
+          },
+        },
+      ];
+    },
+  });
+
+}
 
 // slider
 // inspired by: https://github.com/jonasschmedtmann/complete-javascript-course/blob/8201b01f2fcd274fb276c1c8e11e55847c6d451e/13-Advanced-DOM-Bankist/final/script.js#L207-L291
@@ -286,6 +384,60 @@ function slider () {
 };
 slider();
 
+// Lightbox
+// inspired by: https://github.com/jonasschmedtmann/complete-javascript-course/blob/8201b01f2fcd274fb276c1c8e11e55847c6d451e/13-Advanced-DOM-Bankist/final/script.js#L207-L291
+// & https://www.w3schools.com/howto/howto_js_lightbox.asp
+function lightbox () {
+  const slides = document.querySelectorAll('.modal__slide');
+  const btnLeft = document.querySelector('.modal__btn--left');
+  const btnRight = document.querySelector('.modal__btn--right');
+  const allImgs = document.querySelectorAll('.archive_gallery_figure')
+
+  let curSlide = 0;
+  const maxSlide = slides.length;
+
+  // Functions
+
+   function goToSlide (slide) {
+    slides.forEach(
+      (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+    );
+  };
+
+  // Next slide
+   function nextSlide () {
+    if (curSlide === maxSlide - 1) {
+      curSlide = 0;
+    } else {
+      curSlide++;
+    }
+
+    goToSlide(curSlide);
+  };
+
+   function prevSlide () {
+    if (curSlide === 0) {
+      curSlide = maxSlide - 1;
+    } else {
+      curSlide--;
+    }
+    goToSlide(curSlide);
+  };
+
+  // data-picture set by hugo on build
+  allImgs.forEach(function (imgObj, imgIndex) {
+    imgObj.addEventListener('click', function(e) {
+      curSlide = e.target.dataset.picture;
+      goToSlide(e.target.dataset.picture);
+    });
+  })
+  // Event handlers
+  btnRight.addEventListener('click', nextSlide);
+  btnLeft.addEventListener('click', prevSlide);
+
+};
+lightbox();
+
 function vid_slider () {
   const slides = document.querySelectorAll('.vid_slide');
   const btnLeft = document.querySelector('.vid_slides__btn--left');
@@ -369,57 +521,3 @@ function vid_slider () {
   });
 };
 vid_slider();
-
-// Lightbox
-// inspired by: https://github.com/jonasschmedtmann/complete-javascript-course/blob/8201b01f2fcd274fb276c1c8e11e55847c6d451e/13-Advanced-DOM-Bankist/final/script.js#L207-L291
-// & https://www.w3schools.com/howto/howto_js_lightbox.asp
-function lightbox () {
-  const slides = document.querySelectorAll('.modal__slide');
-  const btnLeft = document.querySelector('.modal__btn--left');
-  const btnRight = document.querySelector('.modal__btn--right');
-  const allImgs = document.querySelectorAll('.archive_gallery_figure')
-
-  let curSlide = 0;
-  const maxSlide = slides.length;
-
-  // Functions
-
-   function goToSlide (slide) {
-    slides.forEach(
-      (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
-    );
-  };
-
-  // Next slide
-   function nextSlide () {
-    if (curSlide === maxSlide - 1) {
-      curSlide = 0;
-    } else {
-      curSlide++;
-    }
-
-    goToSlide(curSlide);
-  };
-
-   function prevSlide () {
-    if (curSlide === 0) {
-      curSlide = maxSlide - 1;
-    } else {
-      curSlide--;
-    }
-    goToSlide(curSlide);
-  };
-
-  // data-picture set by hugo on build
-  allImgs.forEach(function (imgObj, imgIndex) {
-    imgObj.addEventListener('click', function(e) {
-      curSlide = e.target.dataset.picture;
-      goToSlide(e.target.dataset.picture);
-    });
-  })
-  // Event handlers
-  btnRight.addEventListener('click', nextSlide);
-  btnLeft.addEventListener('click', prevSlide);
-
-};
-lightbox();

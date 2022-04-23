@@ -1,7 +1,5 @@
 ---
 title: "Central America: \"This Caravan is Yours, Mr. Trump\""
-# author: "Tina Shull"
-# author_link: "http://localhost:1313/crs-website/about/tina-shull/"
 date: 2021-10-15T12:14:34+07:00
 image: "images/blog/Central-America-Caravan-Post/Central-America-Caravan-Post-cover.png"
 thumbnail: "images/blog/Central-America-Caravan-Post/Central-America-Caravan-Post-thumb.png"
@@ -10,6 +8,7 @@ image_caption: |
 description: "Central America: This Caravan is Yours"
 summary: "When the people of my country of Honduras decide to leave, they do not leave because they lack love for Honduras, but because the need demands it."
 draft: false
+weight: 0
 ---
 
 <!-- TO-DO: Center -->
