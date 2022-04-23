@@ -2,7 +2,7 @@
 title: "Tanaya Dutta Gupta"
 weight: 5
 draft: false
-image: "images/team/Tanaya Dutta Gupta.jpg"
+image: "i-kDgF3PR"
 designation: "India & Bangladesh"
 work_area: "Bangladesh and India"
 location: "Nairobi, Kenya"

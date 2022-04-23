@@ -2,7 +2,7 @@
 title: "Monica Curca"
 weight: 7
 draft: false
-image: "images/team/Monica Curca.png"
+image: "i-z3tdpj2"
 designation: "Central America & US-Mexico Border"
 work_area: "United States, US-Mexico Border, Global"
 location: "Washington, DC"

@@ -2,7 +2,7 @@
 title: "Ashley Harmon"
 weight: 100
 draft: false
-image: "images/team/Ashley-Harmon.png"
+image: "i-HPh56Jz"
 designation: "CRS Web Development"
 work_area: "Web Development"
 location: "The United States"

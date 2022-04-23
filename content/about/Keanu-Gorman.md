@@ -2,7 +2,7 @@
 title: "Keanu Gorman"
 weight: 10
 draft: false
-image: "images/team/Keanu Gorman.jpeg"
+image: "i-DLGLZ6g"
 designation: "Navajo Nation"
 work_area: "The Navajo Nation"
 location: "Cambridge, MA (Harvard University)"
