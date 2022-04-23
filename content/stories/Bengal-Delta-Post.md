@@ -50,5 +50,5 @@ Intersecting impacts of COVID-19 and cyclone Amphan created a peculiar juxtaposi
 **"Climate Refugee Stories: Bangladesh" is supported by National Geographic Society**
 {{< /center >}}
 
-![NatGeo Logo](../../images/blog/Bengal-Delta-Post/NatGeoLogo.webp)
+{{< smugmug i-kJG9M49 "National Geographic Logo" >}}
 &nbsp;

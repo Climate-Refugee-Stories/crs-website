@@ -1,9 +1,12 @@
 {{- $id := .Get "id" | default (.Get 0) -}}
 {{- $alt := .Get "alt" | default (.Get 1) -}}
+
+{{ if eq ($alt | len) 0 }}
+{{ $alt = .Inner | markdownify | plainify | truncate 40 }}
+{{ end }}
 <figure>
-  <img class="img-fluid" src="https://photos.smugmug.com/photos/{{ $id }}/0/O/{{ $id }}-O.png" alt="{{  $alt | markdownify }}" />
-  {{ if $alt }}
-  <figcaption>{{ $alt | markdownify }}</figcaption>
-  {{ else }}
+  <img class="img-fluid" src="https://photos.smugmug.com/photos/{{ $id }}/0/O/{{ $id }}-O.png" alt="{{ $alt | htmlEscape }}" />
+  {{ if .Inner }}
+  <figcaption>{{ .Inner | markdownify }}</figcaption>
   {{ end}}
 </figure>

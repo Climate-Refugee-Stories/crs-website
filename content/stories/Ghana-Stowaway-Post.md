@@ -84,7 +84,7 @@ We aim to use the film and storytelling to raise awareness of the impacts of cli
 **"Climate Refugee Stories: Ghana" is supported by National Geographic Society**
 {{< /center >}}
 
-![NatGeo Logo](../../images/blog/Ghana-Stowaway-Post/Capture3.webp)
+{{< smugmug i-kJG9M49 "National Geographic Logo" >}}
 &nbsp;
 
 ---

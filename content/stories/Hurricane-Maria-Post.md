@@ -33,10 +33,8 @@ Luis, a nursing student in Puerto Rico, graduated just before the hurricane and 
 &nbsp;
 {{< center >}}
 **"Climate Refugee Stories: Puerto Rico" is supported by the National Geographic Society**
-
-![NatGeo Logo](../../images/blog/Hurricane-Maria-Post/Capture2.webp) 
-&nbsp;
 {{< /center >}}
+{{< smugmug i-kJG9M49 "National Geographic Logo" >}}
 
 ![Statue of What?](../../images/blog/Hurricane-Maria-Post/Capture1.webp#caption "*\"Statue of What?\" artwork created in solidarity with Puerto Rico by [Bo Thai](../../about/bo-daraphant/)*")
 
