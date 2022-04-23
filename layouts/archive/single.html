@@ -67,7 +67,7 @@
           getting the total amount of pictures for the current page
          -->
         {{ range .Site.Data.archive_data }}
-          {{ if and (eq $page_title (index . `Collection Title`)) (eq "picture" (index . `Type` | lower )) }}
+          {{ if and (eq $page_title (index . `Collection Title`)) (eq "image" (index . `Media Type` | lower )) }}
             {{ $total_pics = (add $total_pics 1) }}
           {{ end }}
         {{ end }}
@@ -80,10 +80,10 @@
           <!-- 
             check to make sure the pictures are for this page
            -->
-          {{ if and (eq $page_title (index . `Collection Title`)) (eq "picture" (index . `Type` | lower )) }}
+          {{ if and (eq $page_title (index . `Collection Title`)) (eq "image" (index . `Media Type` | lower )) }}
 
             <!-- getting all necessary info out of data -->
-            {{ $photo_id := index . `Google Photo ID` }}
+            {{ $photo_id := index . `Photo ID` }}
             {{ $photo_alt_text := index . `Alt Text` }}
             {{ $photo_desc := .Description }}
 
@@ -140,7 +140,7 @@
           <div class="slide archive_gallery_container" style="transform: translateX({{ mul $slide_pic_counter 100 }}%);" data-toggle="modal" data-target="#lightboxModal">
             {{ range . }}
             <figure class="archive_gallery_figure" data-picture="{{ $img_counter }}" data-toggle="modal" data-target="#lightboxModal">
-              <div class="archive_gallery_img" title="{{ .photo_alt_text | safeHTML }}" style="background-image: url('https://drive.google.com/uc?id={{ .photo_id | safeURL }}');" data-picture="{{ $img_counter }}" data-toggle="modal" data-target="#lightboxModal"
+              <div class="archive_gallery_img" title="{{ .photo_alt_text | safeHTML }}" style="background-image: url('https://photos.smugmug.com/photos/{{ .photo_id | safeURL }}/0/S/{{ .photo_id | safeURL }}-S.png');" data-picture="{{ $img_counter }}" data-toggle="modal" data-target="#lightboxModal"
                 >&nbsp;</div>
                 <figcaption class="caption" data-picture="{{ $img_counter }}" data-toggle="modal" data-target="#lightboxModal">{{ .photo_desc  | truncate 40 | safeHTML }}</figcaption>
             </figure>
@@ -163,7 +163,7 @@
                   {{ range . }}
                   {{ range . }}
                   <figure class="modal__slide" style="transform: translateX({{ mul $modal_img_counter 100 }}%);" >
-                    <img src="https://drive.google.com/uc?id={{ .photo_id | safeURL }}" alt="{{ .photo_alt_text | safeHTML }}" class="modal__img" >
+                    <img src="https://photos.smugmug.com/photos/{{ .photo_id | safeURL }}/0/O/{{ .photo_id | safeURL }}-O.png" alt="{{ .photo_alt_text | safeHTML }}" class="modal__img" >
                     <figcaption class="caption align-self-center">{{ .photo_desc | markdownify }}</figcaption>
                   </figure>
                   {{ $modal_img_counter = add $modal_img_counter 1}}
@@ -194,7 +194,7 @@
           getting the total amount of pictures for the current page
          -->
         {{ range .Site.Data.archive_data }}
-          {{ if and (eq $page_title (index . `Collection Title`)) (eq "video" (index . `Type` | lower )) }}
+          {{ if and (eq $page_title (index . `Collection Title`)) (eq "video" (index . `Media Type` | lower )) }}
             {{ $total_vids = (add $total_vids 1) }}
           {{ end }}
         {{ end }}
@@ -207,7 +207,7 @@
           <!-- 
             check to make sure the pictures are for this page
            -->
-          {{ if and (eq $page_title (index . `Collection Title`)) (eq "video" (index . `Type` | lower )) }}
+          {{ if and (eq $page_title (index . `Collection Title`)) (eq "video" (index . `Media Type` | lower )) }}
 
             <!-- getting all necessary info out of data -->
             {{ $vid_id := index . `Video ID` }}
