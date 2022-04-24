@@ -9,6 +9,7 @@ description: "Statue of What?"
 summary: "Post-Hurricane Maria, I naively thought, not having been to Puerto Rico: \"Shouldn’t everyone leave? It’s in the path of hurricanes that are just going to get worse and it’s susceptible to rising sea levels.\""
 draft: false
 weight: 0
+visibleInCMS: true
 ---
 
 &nbsp;

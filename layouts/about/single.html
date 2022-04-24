@@ -31,10 +31,10 @@
           <ul class="list-unstyled social-icons__box">
             {{ $socials := .Params.socials }}
             {{ if gt ($socials) 0 }}
-            {{ range $social_key, $social_val := $socials}}
+            {{ range $socials}}
             <li>
-              <a class="text-primary social-icons__item" href="{{ $social_val }}" target="_blank">
-                <i class="ti-{{ $social_key }}"></i>
+              <a class="text-primary social-icons__item" href="{{ .link }}" target="_blank">
+                <i class="ti-{{ .icon }}"></i>
               </a>
             </li>
             {{ end }}
@@ -49,13 +49,13 @@
         {{ with .Params.recent_publications }}
           <strong>Recent Publications</strong><br>
           {{ range . }}
-            {{ . | markdownify }}<br>
+            {{ .content | markdownify }}<br>
           {{ end }}
         {{ end }}
         {{ with .Params.recent_projects }}
           <strong>Recent Projects</strong><br>
           {{ range . }}
-            {{ . | markdownify }}<br>
+            {{ .content | markdownify }}<br>
           {{ end }}
         {{ end }}
       </div>

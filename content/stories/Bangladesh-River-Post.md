@@ -9,6 +9,7 @@ description: "The River Took Everything."
 summary: "On August 25th, 2017, fresh waves of violence in Myanmar’s Rakhine state towards the Rohingya people began the unraveling of one of the worst humanitarian disasters of the 21st century thus far."
 draft: false
 weight: 0
+visibleInCMS: true
 ---
 
 In 2017-8, Climate Refugee Stories project collaborator [Saumaun Heiat](https://www.linkedin.com/in/saumaun-heiat-52560013a/) worked as a Program Support Officer for the International Organization for Migration in Dhaka, Bangladesh. Below, he writes about his experiences listening to the stories of Rohingya Muslim refugees in one of the world's largest refugee camps, Cox's Bazaar, on the southeastern coast of Bangladesh, and community members displaced by coastal erosion and relocated to Dhaka's Bhola Slum.  

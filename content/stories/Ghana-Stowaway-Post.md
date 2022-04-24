@@ -9,6 +9,7 @@ description: "Fishing Boat on Azizakpe Island"
 summary: "Located in West Africa, Ghana sits on the Atlantic Ocean where its coast stretches over a 330-mile distance. Seven percent of Ghana’s total land area lies along the coast and is home to over five million people."
 draft: false
 weight: 0
+visibleInCMS: true
 ---
 
 &nbsp;

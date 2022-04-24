@@ -8,6 +8,7 @@ image_caption: |
 description: "This is meta description."
 summary: "Small, low-lying island nations in the South Pacific are some of the most vulnerable locations in the world to the impacts of climate change." 
 draft: false
+visibleInCMS: true
 weight: 0
 ---
 

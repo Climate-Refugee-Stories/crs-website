@@ -95,13 +95,11 @@
       <div class="col-9 content">
         {{ .Content }}
         <div class="mx-auto text-center">
-        {{ with $see_more }}
-          {{ with .button }}
-          {{ if .enable }}
-          <br/>
-          <a href="{{ .URL | absURL }}" class="btn btn-transparent" target="_blank">{{.label}}</a>
-          {{ end }}
-          {{ end }}
+        {{ with .Params.button }}
+        {{ if .enable }}
+        <br/>
+        <a href="{{ .URL | absURL }}" class="btn btn-transparent" target="_blank">{{.label}}</a>
+        {{ end }}
         {{ end }}
         </div>
       </div>

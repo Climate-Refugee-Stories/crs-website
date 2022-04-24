@@ -12,6 +12,7 @@ summary: "On any given day, over 50,000 people are held in a network of over 200
   country, while over 400,000 people are deported each year. "
 draft: false
 weight: 0
+visibleInCMS: true
 ---
 
 The United States maintains the largest immigration detention and deportation system in the world.  On any given day, over 50,000 people are held in a network of over 200 federal, local, and privately contracted detention facilities across the country, while over 400,000 people are deported each year. 

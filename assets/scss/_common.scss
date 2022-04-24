@@ -658,7 +658,13 @@ html {
   top: 85%;
 }
 
+//  // for accessing content text in resources page
 // telling text to be dark when child elements
 .text-dark > * {
   color: #000;
+}
+
+.lead > * {
+  font-size: 1.25rem;
+  font-weight: 300;
 }

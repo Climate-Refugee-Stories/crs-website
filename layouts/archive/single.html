@@ -32,15 +32,17 @@
             </div>
           </div>
           {{ with .Params.related_stories}}
+          {{ range . }}
           <div class="col-sm-12 mb-5">
             <div class="project-meta">
               <i class="ti-link"></i>
               <div class="ml-3">
                 <h4>Related Stories</h4>
-                <h5>{{. | markdownify}}</h5>
+                <h5>{{.content | markdownify}}</h5>
               </div>
             </div>
           </div>
+          {{ end }}
           {{ end }}
         </div>
       </div>
@@ -292,7 +294,9 @@
       {{ with .Params.resources }}
       <div class="col-lg-11 mt-5">
         <h3>Resources</h3>
-        {{ . | markdownify }}
+        {{ range . }}
+        {{ .content | markdownify }}<br />
+        {{ end }}
       </div>
       {{ end }}
     </div>

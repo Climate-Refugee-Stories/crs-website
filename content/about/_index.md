@@ -33,12 +33,6 @@ partners:
 
   - logo : "i-px5KmcF"
     link: "https://rootsofunitymedia.org/"
-# CRS News section
-see_more_news:
-  button: 
-      enable: true
-      label: "More CRS News"
-      URL: "https://docs.google.com/document/d/1pJfXh9YsHorg04mO6Dqd4hyaTRxTUlo6yhSZqU8g6VE/edit?usp=sharing"
 ---
 
 **Climate Refugee Stories** is a multimedia narrative, archiving, and education project that uplifts the stories of people around the world who have been displaced by direct or indirect impacts of climate change, and documents the ways communities are resilient in the face of overlapping crises--including the COVID-19 pandemic.

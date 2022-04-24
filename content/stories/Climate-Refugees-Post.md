@@ -9,6 +9,7 @@ description: "Who are Climate Refugees?"
 summary: "The International Organization for Migration (IOM) estimates that in 2019, 25 million people were displaced by climate change-related events."
 draft: false
 weight: 1
+visibleInCMS: true
 ---
 
 The Internal Displacement Monitoring Centre (IDMC) [estimates](https://www.internal-displacement.org/database/displacement-data) that between 2008-2020, 283 million people have been displaced by weather-related “disasters” worldwide. More and more, such displacements are being attributed to climate change.
