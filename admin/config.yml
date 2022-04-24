@@ -13,7 +13,6 @@ collections:
     folder: "content/stories"
     create: true
     slug: "{{ slug }}"
-    filter: {field: "visibleInCMS", value: true}
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Creation Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm:ssZ"}
@@ -22,4 +21,3 @@ collections:
       - {label: "Cover Thumbnail", name: "thumbnail", widget: "string"}
       - {label: "Image Caption", name: "image_caption", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {name: "visibleInCMS", widget: hidden, default: true}
