@@ -127,6 +127,50 @@ collections:
                     label: Highlight text (with blue)?
                     widget: boolean
                     default: false
+      - name: about
+        label: "About"
+        file: content/about/_index.md
+        fields:
+          - name: description
+            label: metadata for page
+            widget: text
+          - name: draft
+            label: Draft?
+            widget: boolean
+          - <<: *title_defaults
+            label: Title at top of page
+          - name: body
+            label: Body
+            <<: *markdown_defaults
+          - name: partners
+            label: Partners
+            summary: All partner information
+            <<: *object_defaults
+            fields:
+              - name: enable
+                label: Enable on homepage?
+                widget: boolean
+              - name: about
+                label: Intro partner text
+                <<: *markdown_defaults
+              - name: item
+                label: Partners
+                summary: Partner logo & link
+                <<: *list_defaults
+                fields:
+                  - name: logo
+                    label: Partner Logo
+                    widget: string
+                  - name: link
+                    label: Link to partner's website
+                    widget: string
+          - name: see_more_news
+            label: CRS news section
+            summary: Bottom page CRS news information
+            <<: *object_defaults
+            fields:
+              - <<: *button_defaults
+                label: Button for CRS News
 
   - name: stories
     label: Stories
