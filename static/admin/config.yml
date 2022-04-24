@@ -1,3 +1,11 @@
+object_defaults: &object_defaults
+  widget: "object"
+  collapsed: true
+markdown_defaults: &markdown_defaults
+  widget: "markdown"
+  sanitize_preview: true
+
+
 backend:
   name: github
   repo:  Climate-Refugee-Stories/crs-website  # Path to your Github repository
@@ -8,17 +16,39 @@ media_folder: 'N/a'
 publish_mode: editorial_workflow
 
 collections:
-  - name: "stories"
-    label: "Stories"
-    folder: "content/stories"
+  - name: stories
+    label: Stories
+    folder: content/stories
     create: true
-    filter: {field: "visibleInCMS", value: true}
+    filter: 
+      field: visibleInCMS
+      value: true
     fields:
-      - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: "Creation Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm:ssZ"}
-      - {label: "Draft", name: "draft", widget: "boolean", default: true}
-      - {label: "Cover Image", name: "image", widget: "string"}
-      - {label: "Cover Thumbnail", name: "thumbnail", widget: "string"}
-      - {label: "Image Caption", name: "image_caption", widget: "markdown"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {name: "visibleInCMS", widget: hidden, default: true}
+      - label: Title
+        name: title
+        widget: string
+        required: true
+      - label: Creation Date
+        name: date
+        widget: datetime
+        date_format: DD/MM/YYYY
+        time_format: HH:mm:ssZ
+      - label: Draft
+        name: draft
+        widget: boolean
+        default: true
+      - label: Cover Image
+        name: image
+        widget: string
+      - label: Cover Thumbnail
+        name: thumbnail
+        widget: string
+      - label: Image Caption
+        name: image_caption
+        <<: *markdown_defaults
+      - label: Body
+        name: body
+        <<: *markdown_defaults
+      - name: visibleInCMS
+        widget: hidden
+        default: true
