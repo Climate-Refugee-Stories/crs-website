@@ -220,6 +220,14 @@ collections:
               - *icon_defaults
               - <<: *link_defaults
                 label: link for icon
+      - name: resources
+        label: "Resources"
+        file: content/resources/_index.md
+        fields:
+          - *page_intro_defaults
+          - *metadata_defaults
+          - *draft_defaults
+          - *content_defaults
 
   - name: stories
     label: Stories
