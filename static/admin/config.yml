@@ -10,6 +10,7 @@ list_defaults: &list_defaults
 markdown_defaults: &markdown_defaults
   widget: "markdown"
   sanitize_preview: true
+  minimal: true
 
 
 backend:
@@ -40,10 +41,8 @@ collections:
                 <<: *markdown_defaults
               - name: background_img
                 label: main background image
-                widget: string
               - name: logo
                 label: logo on top of background image
-                widget: string
 
           - name: about
             label: About Section
@@ -66,10 +65,8 @@ collections:
                   - &link_defaults
                     name: URL
                     label: Link for navigation
-                    widget: string
                   - name: label
                     label: Text for button
-                    widget: string
 
           - name: stories
             label: stories section
@@ -79,10 +76,8 @@ collections:
               - &title_defaults
                 name: title
                 label: Stories section title
-                widget: string
               - name: map
                 label: Map url (including https)
-                widget: string
               - <<: *link_defaults
                 label: url to link to stories page
 
@@ -121,7 +116,6 @@ collections:
                   - &icon_defaults
                     name: icon
                     label: Font Awesome Icon string
-                    widget: string
                   - <<: *md_content
                     label: Text for item
                   - name: highlighted
@@ -147,6 +141,7 @@ collections:
             name: body
             label: Content
             <<: *markdown_defaults
+            minimal: false
           - name: partners
             label: Partners
             summary: All partner information
@@ -165,10 +160,8 @@ collections:
                 fields:
                   - name: logo
                     label: Partner Logo
-                    widget: string
                   - name: link
                     label: Link to partner's website
-                    widget: string
       - name: stories
         label: "Stories"
         file: content/stories/_index.md
@@ -294,8 +287,6 @@ collections:
     fields:
       - label: Title
         name: title
-        widget: string
-        required: true
       - label: Creation Date
         name: date
         widget: datetime
@@ -304,13 +295,65 @@ collections:
       - *draft_defaults
       - label: Cover Image
         name: image
-        widget: string
       - label: Cover Thumbnail
         name: thumbnail
-        widget: string
       - label: Image Caption
         name: image_caption
+        required: false
         <<: *markdown_defaults
+      - &tags_default
+        label: Tags (Comma seperated)
+        name: tags
+        <<: *list_defaults
       - *order_defaults
+      - *content_defaults
+      - *cms_visible
+
+  - name: archive
+    label: Archive
+    folder: content/archive
+    filter: &ignore_index
+      field: visibleInCMS
+      value: true
+    create: true
+    fields:
+      - label: Title
+        name: title
+      - label: Last Updated
+        name: date
+        widget: datetime
+        date_format: DD/MM/YYYY
+        time_format: HH:mm:ssZ
+      - *draft_defaults
+      - *order_defaults
+      - <<: *tags_default
+        name: location
+        label: Locations (Comma seperated)
+      - <<: *tags_default
+        name: alt_cat
+        label: Alternative Categories (Comma seperated)
+      - label: Cover Image
+        name: image
+      - label: Thumbnail
+        name: thumbnail
+      - name: related_stories
+        label: Related Stories
+        <<: *list_defaults
+        summary: MD for related stories
+        fields:
+          - name: content
+            label: Related story in MD
+            <<: *markdown_defaults
+      - label: Description/Intro Text
+        name: description
+        <<: *markdown_defaults
+      - name: resources
+        label: Extra Resources
+        summary: extra resource
+        <<: *list_defaults
+        fields:
+          - name: content
+            label: Extra resources in MD
+            <<: *markdown_defaults
       - *content_defaults
       - *cms_visible
