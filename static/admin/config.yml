@@ -234,6 +234,12 @@ collections:
           - *page_intro_defaults
           - *metadata_defaults
           - *draft_defaults
+          - &order_defaults
+            name: weight
+            label: order
+            widget: number
+            value_type: int
+            default: 0
           - *content_defaults
 
   - name: stories
@@ -263,6 +269,7 @@ collections:
       - label: Image Caption
         name: image_caption
         <<: *markdown_defaults
+      - *order_defaults
       - *content_defaults
       - name: visibleInCMS
         widget: hidden
