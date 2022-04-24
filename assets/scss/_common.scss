@@ -657,3 +657,8 @@ html {
   border: none;
   top: 85%;
 }
+
+// telling text to be dark when child elements
+.text-dark > * {
+  color: #000;
+}

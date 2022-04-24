@@ -2,11 +2,6 @@
 title: "Resources"
 date: 2021-10-24T21:30:13-04:00
 draft: false
-about:
-  enable: true
-  content: | 
-    These resources supplement our [**Stories**](../stories) and provide ways for students, educators, researchers, and community members to learn more and take action. Check back often as we will continue adding to our list, and [**Contact Us**](../contact) if you have any resources or actions to share. 
-
 #Climate Migration Syllabus section
 cms:
   enable: true
@@ -40,3 +35,6 @@ take_action:
     label: "Click Here for Ways to Take Action"
     URL: "https://docs.google.com/document/d/1GBdJV2-DInJdXjVjbH4MQrmxNzbo_bYBpFxruZ-M5LM/edit?usp=sharing"
 ---
+
+These resources supplement our [**Stories**](../stories) and provide ways for students, educators, researchers, and community members to learn more and take action.
+Check back often as we will continue adding to our list, and [**Contact Us**](../contact) if you have any resources or actions to share.

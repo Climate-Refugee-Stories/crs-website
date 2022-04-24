@@ -3,22 +3,18 @@
 {{ partial "page-title.html" . }}
     
 
-{{ with .Params }}
-{{ with .about }}
-{{ if .enable }}
 <!-- about -->
 <section class="section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <p class="lead text-dark">{{.content | markdownify}}</p>
+      <div class="col-lg-10 mx-auto text-center lead text-dark">
+        {{ .Content }}
       </div>
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
 <!-- /about -->
+{{ with .Params }}
 
 {{ with .cms }}
 {{ if .enable }}
