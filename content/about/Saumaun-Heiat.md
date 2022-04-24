@@ -16,7 +16,7 @@ recent_publications:
 recent_projects:
 socials:
   - icon: linkedin
-    link: https://www.linkedin.com/in/saumaun-heiat-52560013a/
+    URL: https://www.linkedin.com/in/saumaun-heiat-52560013a/
 visibleInCMS: true
 ---
 

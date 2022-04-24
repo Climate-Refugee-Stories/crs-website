@@ -10,7 +10,7 @@ recent_publications:
 recent_projects:
 socials:
   - icon: world
-    link: https://www.illegal-drip.com/
+    URL: https://www.illegal-drip.com/
 visibleInCMS: true
 ---
 

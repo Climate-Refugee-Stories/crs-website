@@ -10,11 +10,11 @@ recent_publications:
 recent_projects:
 socials:
   - icon: world
-    link: https://bluelotus03.tech
+    URL: https://bluelotus03.tech
   - icon: github
-    link: https://github.com/bluelotus03
+    URL: https://github.com/bluelotus03
   - icon: linkedin
-    link: https://www.linkedin.com/in/ashharmon
+    URL: https://www.linkedin.com/in/ashharmon
 visibleInCMS: true
 ---
 

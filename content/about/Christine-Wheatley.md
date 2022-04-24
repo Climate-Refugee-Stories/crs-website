@@ -13,7 +13,7 @@ recent_projects:
         Carbon Negative Ghana](https://nedafrica.com/coconut-oil-processing-and-biogas-production-on-azizakpe-island/)
 socials:
   - icon: linkedin
-    link: https://www.linkedin.com/in/christine-wheatley-phd-6b9273b5/ 
+    URL: https://www.linkedin.com/in/christine-wheatley-phd-6b9273b5/ 
 visibleInCMS: true
 ---
 

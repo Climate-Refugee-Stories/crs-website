@@ -18,11 +18,11 @@ recent_publications:
 recent_projects:
 socials:
   - icon: linkedin
-    link: https://www.linkedin.com/in/tina-shull/ 
+    URL: https://www.linkedin.com/in/tina-shull/ 
   - icon: twitter-alt
-    link: https://twitter.com/kristinashull
+    URL: https://twitter.com/kristinashull
   - icon: world
-    link: https://www.kristinashull.com/
+    URL: https://www.kristinashull.com/
 visibleInCMS: true
 ---
 
