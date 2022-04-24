@@ -10,4 +10,5 @@ image_caption: |
 description: "This is meta description."
 summary: "This is a sentence preview of the story content, typically the first sentence of the main content of the article."
 draft: false
+visibleInCMS: false
 ---

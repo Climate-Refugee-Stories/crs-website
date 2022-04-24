@@ -9,6 +9,7 @@ description: "US-Mexico Border"
 summary: "Climate change not only contributes to conditions globally that drive migration to the United States, but it also exacerbates tensions along the US-Mexico border."
 draft: false
 weight: 0
+visibleInCMS: true
 ---
 
 Climate change not only contributes to conditions globally that drive migration to the United States, but it also exacerbates tensions along the US-Mexico border.  In his book [Storming the Wall: Climate Change, Migration, and Homeland Security](http://www.toddmillerwriter.com/storming-the-wall/), author Todd Miller documents how the US government has used the desert to its advantage in its formation of [policies to deter migration](https://www.theguardian.com/us-news/2016/dec/07/report-us-border-patrol-desert-weapon-immigrants-mexico).  "Operation Gatekeeper," launched in 1994 under the Clinton administration, ushered in a new era of border militarization and has pushed migration routes into hotter and more treacherous desert regions.  Human rights groups have documented at least [7,000 deaths](https://www.thenation.com/article/over-7000-bodies-have-been-found-at-the-us-mexican-border-since-the-nineties/) in the Sonoran desert, by conservative estimates, since the construction of a border wall along the US-Mexico border in the 1990s.

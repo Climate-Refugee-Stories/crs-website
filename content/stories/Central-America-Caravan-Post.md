@@ -9,6 +9,7 @@ description: "Central America: This Caravan is Yours"
 summary: "When the people of my country of Honduras decide to leave, they do not leave because they lack love for Honduras, but because the need demands it."
 draft: false
 weight: 0
+visibleInCMS: true
 ---
 
 <!-- TO-DO: Center -->
