@@ -12,7 +12,6 @@ collections:
     label: "Stories"
     folder: "content/stories"
     create: true
-    slug: "{{ slug }}"
     filter: {field: "visibleInCMS", value: true}
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
