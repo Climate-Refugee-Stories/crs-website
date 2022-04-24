@@ -8,9 +8,8 @@ work_area: "US and Puerto Rico"
 location: "Denver, CO"
 recent_publications:
 recent_projects:
-    - |
+    - content: |
         [La Fábrica de Ideas](https://www.filmindependent.org/programs/fiscal-sponsorship/la-fabrica-de-ideas/)
-visibleInCMS: true
 visibleInCMS: true
 ---
 

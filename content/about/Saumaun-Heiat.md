@@ -7,15 +7,16 @@ designation: "Bangladesh"
 work_area: "Bangladesh, Iran, Iraq, Syria, Yemen, Afghanistan"
 location: "Irvine, CA"
 recent_publications:
-    - |
-      [The Hazara community in Afghanistan is stuck in the middle between Iran and the Taliban](https://www.atlanticcouncil.org/blogs/iransource/the-hazara-community-in-afghanistan-is-stuck-in-the-middle-between-iran-and-the-taliban/), Atlantic Council
+    - content: |
+        [The Hazara community in Afghanistan is stuck in the middle between Iran and the Taliban](https://www.atlanticcouncil.org/blogs/iransource/the-hazara-community-in-afghanistan-is-stuck-in-the-middle-between-iran-and-the-taliban/), Atlantic Council
 
-    - |
-      [Iran’s Dustbowl Migration](https://www.eonmag.org/irans-dustbowl-migration/), Eon Magazine 
+    - content: |
+        [Iran’s Dustbowl Migration](https://www.eonmag.org/irans-dustbowl-migration/), Eon Magazine 
 
 recent_projects:
 socials:
-  linkedin: https://www.linkedin.com/in/saumaun-heiat-52560013a/
+  - icon: linkedin
+    link: https://www.linkedin.com/in/saumaun-heiat-52560013a/
 visibleInCMS: true
 ---
 

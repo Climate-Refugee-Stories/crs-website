@@ -9,7 +9,8 @@ location: "Los Angeles, CA"
 recent_publications:
 recent_projects:
 socials:
-  world: https://www.illegal-drip.com/
+  - icon: world
+    link: https://www.illegal-drip.com/
 visibleInCMS: true
 ---
 

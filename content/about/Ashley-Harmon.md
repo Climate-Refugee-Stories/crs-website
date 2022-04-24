@@ -9,9 +9,12 @@ location: "The United States"
 recent_publications:
 recent_projects:
 socials:
-  world: https://bluelotus03.tech
-  github: https://github.com/bluelotus03
-  linkedin: https://www.linkedin.com/in/ashharmon
+  - icon: world
+    link: https://bluelotus03.tech
+  - icon: github
+    link: https://github.com/bluelotus03
+  - icon: linkedin
+    link: https://www.linkedin.com/in/ashharmon
 visibleInCMS: true
 ---
 

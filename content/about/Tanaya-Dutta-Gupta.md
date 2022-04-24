@@ -7,7 +7,7 @@ designation: "India & Bangladesh"
 work_area: "Bangladesh and India"
 location: "Nairobi, Kenya"
 recent_publications:
-    - | 
+    - content: | 
         [Confronting Cascading Disasters, Building Resilience: Lessons from the Indian Sundarbans](https://www.orfonline.org/research/confronting-cascading-disasters-building-resilience-lessons-from-the-indian-sundarbans/), Observer Research Foundation  
 recent_projects:
 visibleInCMS: true

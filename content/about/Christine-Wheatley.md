@@ -8,11 +8,12 @@ work_area: "Ghana"
 location: "Hohoe, Ghana"
 recent_publications:
 recent_projects:
-    - | 
+    - content: | 
         [Coconut Oil Processing and Biogas Production on Azizakpe Island
         Carbon Negative Ghana](https://nedafrica.com/coconut-oil-processing-and-biogas-production-on-azizakpe-island/)
 socials:
-  linkedin: https://www.linkedin.com/in/christine-wheatley-phd-6b9273b5/ 
+  - icon: linkedin
+    link: https://www.linkedin.com/in/christine-wheatley-phd-6b9273b5/ 
 visibleInCMS: true
 ---
 
