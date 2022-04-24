@@ -1,5 +1,6 @@
 collapsed_defaults: &collapsed_defaults
   collapsed: true
+  minimize_collapsed: true
 object_defaults: &object_defaults
   widget: "object"
   <<: *collapsed_defaults
@@ -219,14 +220,15 @@ collections:
           - *page_intro_defaults
           - *metadata_defaults
           - *draft_defaults
-          - name: socials
+          - &social_defaults
+            name: socials
             label: Socials
             summary: social link + icons
             <<: *list_defaults
             fields:
               - *icon_defaults
               - <<: *link_defaults
-                label: link for icon
+                label: link for social website
       - name: resources
         label: "Resources"
         file: content/resources/_index.md
@@ -242,13 +244,53 @@ collections:
             default: 0
           - *content_defaults
 
+  - name: about
+    label: Team Member
+    folder: content/about
+    filter: &ignore_index
+      field: visibleInCMS
+      value: true
+    create: true
+    fields:
+      - label: Full Name
+        name: title
+      - *draft_defaults
+      - *order_defaults
+      - label: Team Photo
+        name: image
+      - label: Designation
+        name: designation
+      - name: work_area
+        label: Work Area
+      - name: location
+        label: Location
+      - name: recent_publications
+        label: Recent Publications
+        summary: publication
+        <<: *list_defaults
+        fields:
+          - name: content
+            label: Stylized (links) references
+            <<: *markdown_defaults
+      - name: recent_projects
+        label: Recent Projects
+        summary: project
+        <<: *list_defaults
+        fields:
+          - name: content
+            label: Stylized (links) references
+            <<: *markdown_defaults
+      - *social_defaults
+      - *content_defaults
+      - &cms_visible
+        name: visibleInCMS
+        widget: hidden
+        default: true
   - name: stories
     label: Stories
     folder: content/stories
     create: true
-    filter: 
-      field: visibleInCMS
-      value: true
+    <<: *ignore_index
     fields:
       - label: Title
         name: title
@@ -271,6 +313,4 @@ collections:
         <<: *markdown_defaults
       - *order_defaults
       - *content_defaults
-      - name: visibleInCMS
-        widget: hidden
-        default: true
+      - *cms_visible
