@@ -30,4 +30,5 @@ resources: |
 #   - [homepage](https://google.com)
 #   - [homepage](https://google.com)
 draft: false
+visibleInCMS: true
 ---
