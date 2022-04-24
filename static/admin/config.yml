@@ -168,6 +168,13 @@ collections:
                   - name: link
                     label: Link to partner's website
                     widget: string
+      - name: stories
+        label: "Stories"
+        file: content/stories/_index.md
+        fields:
+          - *page_intro_defaults
+          - *metadata_defaults
+          - *draft_defaults
       - name: crs_news
         label: "CRS News"
         file: content/about/crs-news.md
