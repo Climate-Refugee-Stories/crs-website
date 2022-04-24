@@ -294,7 +294,9 @@
       {{ with .Params.resources }}
       <div class="col-lg-11 mt-5">
         <h3>Resources</h3>
-        {{ . | markdownify }}
+        {{ range . }}
+        {{ .content | markdownify }}<br />
+        {{ end }}
       </div>
       {{ end }}
     </div>
