@@ -16,8 +16,8 @@ markdown_defaults: &markdown_defaults
 backend:
   name: github
   repo:  Climate-Refugee-Stories/crs-website  # Path to your Github repository
-  # branch: master # Branch to update
-  branch: feat/Content-Management-System
+  branch: master # Branch to update
+  # branch: feat/Content-Management-System
 
 # use google drive not this upload
 media_folder: 'N/a'
