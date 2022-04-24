@@ -139,7 +139,8 @@ collections:
             name: draft
             label: Draft?
             widget: boolean
-          - <<: *title_defaults
+          - &page_intro_defaults
+            <<: *title_defaults
             label: Title at top of page
           - &content_defaults
             name: body
@@ -180,6 +181,45 @@ collections:
           - *content_defaults
           - <<: *button_defaults
             label: More CRS News
+      - name: archive
+        label: "Archive"
+        file: content/archive/_index.md
+        fields:
+          - *page_intro_defaults
+          - *metadata_defaults
+          - *draft_defaults
+          - name: archive_tags
+            label: Archive tags
+            summary: All the archive tags
+            <<: *object_defaults
+            fields:
+              - name: impacts
+                label: All the impact tags
+                <<: *list_defaults
+              - name: location
+                label: All the location tags
+                <<: *list_defaults
+              - name: location type
+                label: All the location type tags
+                <<: *list_defaults
+              - name: themes
+                label: All the themes tags
+                <<: *list_defaults
+      - name: contact
+        label: "Contact"
+        file: content/contact/_index.md
+        fields:
+          - *page_intro_defaults
+          - *metadata_defaults
+          - *draft_defaults
+          - name: socials
+            label: Socials
+            summary: social link + icons
+            <<: *list_defaults
+            fields:
+              - *icon_defaults
+              - <<: *link_defaults
+                label: link for icon
 
   - name: stories
     label: Stories
