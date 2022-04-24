@@ -1412,6 +1412,10 @@ p {
   top: 85%;
 }
 
+.text-dark > * {
+  color: #000;
+}
+
 @media (max-width: 75em) {
   .tagline-circle {
     padding-right: 8rem;
