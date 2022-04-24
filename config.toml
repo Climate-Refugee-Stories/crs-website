@@ -102,10 +102,14 @@ weight = 5
 
 # default parameters
 [params]
+#########################
+# main menu
 home = "Home"
 logo = ""
+#########################
 # theme color
 theme_color = "#054ca7"
+#########################
 # contact info
 # phone = "+880 2544 658 256"
 email = "climaterefugeestories@gmail.com"
@@ -143,23 +147,6 @@ map_marker = "images/marker.png"
 [params.cookies]
 enable = true
 expire_days = 7
-
-# social site
-[[params.social]]
-icon = "ti-facebook"
-URL = "https://www.facebook.com/climaterefugeestories/"
-
-[[params.social]]
-icon = "ti-twitter-alt"
-URL = "https://twitter.com/ClimRefStories"
-
-[[params.social]]
-icon = "ti-instagram"
-URL = "https://www.instagram.com/climaterefugeestories/"
-
-#[[params.social]]
-#icon = "ti-dribbble"
-#URL = "#"
 
 # Algolia output config
 [outputFormats.Algolia]

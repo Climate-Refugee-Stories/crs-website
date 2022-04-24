@@ -34,14 +34,22 @@
         <h2 class="section-title">Get in Touch</h2>
       </div>
       <div class="col-12 row" style="justify-content: center;">
+        {{ with .Params.socials }}
         <div class="col-6 border-right">
           <ul class="list-inline social-icons text-center">
-            <h4 class="mb-4"><strong>Follow us on social media</strong></h4>
-            {{ range site.Params.social }}
-            <li class="list-inline-item"><a href="{{.URL}}"  target="_blank"><i class="{{.icon}}"></i></a></li>
+            <h4 class="mb-4">
+              <strong>Follow us on social media</strong>
+            </h4>
+            {{ range . }}
+            <li class="list-inline-item">
+              <a href="{{.URL}}"  target="_blank">
+                <i class="{{.icon}}"></i>
+              </a>
+            </li>
             {{ end }}
           </ul>
         </div>
+        {{ end }}
         <div class="col-6 text-center">
           <h4 class="mb-4"><strong>Sign up for our email newsletter</strong></h4>
           <div class="mx-auto">

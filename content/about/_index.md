@@ -3,6 +3,42 @@ title: "About"
 description: "This is meta description."
 author_image : "i-dbBQbMn"
 draft: false
+partners:
+  # enable on homepage
+  enable : true
+  title : "Partners"
+  about: |
+    This project is funded with support from the University of California’s Critical Refugee Studies Collective, the National Geographic Society, and the North Carolina Humanities Council.
+  item:
+  - logo : "i-kJG9M49"
+    link: "https://www.nationalgeographic.com/"
+
+  - logo : "i-gwqWqvk"
+    link: "https://criticalrefugeestudies.com/"
+
+  - logo : "i-ptfVcPP"
+    link: "https://nchumanities.org/"
+
+  - logo : "i-RBr5SKH"
+    link: "https://www.freedomforimmigrants.org/"
+
+  - logo : "i-48z3F4W"
+    link: "https://nedafrica.com/"
+
+  - logo : "i-cgztPXQ"
+    link: "http://www.activatelabs.org/"
+
+  - logo : "i-rZCZ2FC"
+    link: "https://www.pluspeace.org/"
+
+  - logo : "i-px5KmcF"
+    link: "https://rootsofunitymedia.org/"
+# CRS News section
+see_more_news:
+  button: 
+      enable: true
+      label: "More CRS News"
+      URL: "https://docs.google.com/document/d/1pJfXh9YsHorg04mO6Dqd4hyaTRxTUlo6yhSZqU8g6VE/edit?usp=sharing"
 ---
 
 **Climate Refugee Stories** is a multimedia narrative, archiving, and education project that uplifts the stories of people around the world who have been displaced by direct or indirect impacts of climate change, and documents the ways communities are resilient in the face of overlapping crises--including the COVID-19 pandemic.

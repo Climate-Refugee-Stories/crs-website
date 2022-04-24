@@ -1,2 +1,2 @@
-$hero_img: "https://photos.smugmug.com/photos/i-ptQrJ35/0/O/i-ptQrJ35-O.png";
-$transparent_logo: "https://photos.smugmug.com/photos/i-Dfx3zd6/0/O/i-Dfx3zd6-O.png";
+$hero_img: "https://photos.smugmug.com/photos/{{ (site.GetPage `/`).Params.banner.background_img }}/0/O/{{ (site.GetPage `/`).Params.banner.background_img }}-O.png";
+$transparent_logo: "https://photos.smugmug.com/photos/{{ (site.GetPage `/`).Params.banner.logo }}/0/O/{{ (site.GetPage `/`).Params.banner.logo }}-O.png";
