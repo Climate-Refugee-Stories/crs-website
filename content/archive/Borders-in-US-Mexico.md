@@ -26,13 +26,7 @@ description: |
   Explore media and documents relating to migration and environmental justice at the US-Mexico Border. This collection primarily features images of the US-Mexico border wall and the Binational Friendship Garden in Playas, Tijuana, and an interview with journalist Todd Miller. 
 
   Please see our copyright and permissions guide for usage information.
-# resources: |
-
 resources:
-  - content: |
-      [homepage](https://google.com)
-  - content: |
-      [homepage](https://google.com)
 draft: false
 visibleInCMS: true
 ---
