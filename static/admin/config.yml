@@ -1,6 +1,11 @@
+collapsed_defaults: &collapsed_defaults
+  collapsed: true
 object_defaults: &object_defaults
   widget: "object"
-  collapsed: true
+  <<: *collapsed_defaults
+list_defaults: &list_defaults
+  widget: "list"
+  <<: *collapsed_defaults
 markdown_defaults: &markdown_defaults
   widget: "markdown"
   sanitize_preview: true
@@ -38,29 +43,90 @@ collections:
               - name: logo
                 label: logo on top of background image
                 widget: string
+
           - name: about
             label: About Section
             summary: About text + button below hero section
             <<: *object_defaults
             fields:
-              - name: content
+              - &md_content
+                name: content
                 label: about text
                 <<: *markdown_defaults
-              - name: button
+              - &button_defaults
+                name: button
                 label: button
                 summary: button for about text
                 <<: *object_defaults
-                fields: &button_defaults
+                fields:
                   - name: enable
                     label: Enabled?
                     widget: boolean
-                  - name: URL
+                  - &link_defaults
+                    name: URL
                     label: Link for navigation
                     widget: string
                   - name: label
                     label: Text for button
                     widget: string
 
+          - name: stories
+            label: stories section
+            summary: Stories section + map
+            <<: *object_defaults
+            fields:
+              - &title_defaults
+                name: title
+                label: Stories section title
+                widget: string
+              - name: map
+                label: Map url (including https)
+                widget: string
+              - <<: *link_defaults
+                label: url to link to stories page
+
+          - name: archive
+            label: Archive
+            summary: Archive section options
+            <<: *object_defaults
+            fields:
+              - <<: *title_defaults
+                label: Archive section title
+              - name: item_show
+                label: Archive articles to show
+                widget: number
+                value_type: int
+                min: 0
+                max: 10
+
+          - name: resources
+            label: resources
+            summary: Resources section
+            <<: *object_defaults
+            fields:
+              - <<: *title_defaults
+                label: Resources section title
+              - <<: *button_defaults
+                summary: button for resources text
+              - name: item
+                label: items
+                <<: *list_defaults
+                max: 3
+                allow_add: false
+                summary: More info item
+                fields:
+                  - <<: *title_defaults
+                    label: Item title
+                  - &icon_defaults
+                    name: icon
+                    label: Font Awesome Icon string
+                    widget: string
+                  - <<: *md_content
+                    label: Text for item
+                  - name: highlighted
+                    label: Highlight text (with blue)?
+                    widget: boolean
+                    default: false
 
   - name: stories
     label: Stories
