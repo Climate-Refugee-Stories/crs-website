@@ -20,6 +20,7 @@ socials:
   linkedin: https://www.linkedin.com/in/tina-shull/ 
   twitter-alt: https://twitter.com/kristinashull
   world: https://www.kristinashull.com/
+visibleInCMS: true
 ---
 
 Project Director [Tina Shull](http://kristinashull.com/), PhD, is an Assistant Professor of Post-1960 US History at UNC Charlotte.
