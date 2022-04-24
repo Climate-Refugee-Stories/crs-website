@@ -9,13 +9,59 @@ markdown_defaults: &markdown_defaults
 backend:
   name: github
   repo:  Climate-Refugee-Stories/crs-website  # Path to your Github repository
-  branch: master # Branch to update
+  # branch: master # Branch to update
+  branch: feat/Content-Management-System
 
 # use google drive not this upload
 media_folder: 'N/a'
 publish_mode: editorial_workflow
 
 collections:
+  - name: "list_files"
+    label: "Main Pages"
+    files:
+      - name: homepage
+        label: "Homepage"
+        file: content/_index.md
+        fields:
+          - name: banner
+            label: Banner Section
+            summary: First section on homepage
+            <<: *object_defaults
+            fields:
+              - name: "title"
+                label: Title Section
+                <<: *markdown_defaults
+              - name: background_img
+                label: main background image
+                widget: string
+              - name: logo
+                label: logo on top of background image
+                widget: string
+          - name: about
+            label: About Section
+            summary: About text + button below hero section
+            <<: *object_defaults
+            fields:
+              - name: content
+                label: about text
+                <<: *markdown_defaults
+              - name: button
+                label: button
+                summary: button for about text
+                <<: *object_defaults
+                fields: &button_defaults
+                  - name: enable
+                    label: Enabled?
+                    widget: boolean
+                  - name: URL
+                    label: Link for navigation
+                    widget: string
+                  - name: label
+                    label: Text for button
+                    widget: string
+
+
   - name: stories
     label: Stories
     folder: content/stories
