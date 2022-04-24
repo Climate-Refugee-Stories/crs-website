@@ -26,8 +26,8 @@
         </div>
         <div class="btn-group btn-group-toggle justify-content-center d-flex flex-wrap mt-1 rounded" data-toggle="buttons">
           {{ $tag_counter := 1 }}
-          {{ $tag_length := site.Data.archive.archive_tags | len }}
-          {{ range $k, $v := site.Data.archive.archive_tags }}
+          {{ $tag_length := .Params.archive_tags | len }}
+          {{ range $k, $v := .Params.archive_tags }}
           <div class="dropdown" style="flex: 1 1 25%;">
 
             {{ $category_id := md5 $k }}
