@@ -20,9 +20,9 @@ description: Statue of What?
 ##### ***Produced and edited by Emma Crow-Willard***
 
 {{< youtube Ot88SZXgd7k >}}
-            *The content in this film is under copyright, but Climate Refugee Stories may grant license for use. In most cases, not-for-profit educational use is available free of charge. To obtain permission to re-use any material from this film, you must [contact](https://www.climaterefugeestories.com/about) Climate Refugee Stories.*
+*The content in this film is under copyright, but Climate Refugee Stories may grant license for use. In most cases, not-for-profit educational use is available free of charge. To obtain permission to re-use any material from this film, you must [contact](https://www.climaterefugeestories.com/about) Climate Refugee Stories.*
 
-            {{< /youtube >}}
+{{< /youtube >}}
 
 &nbsp;
 
@@ -67,7 +67,7 @@ i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stori
 i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
 i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
 i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|undefined
+i-kJG9M49|
 {{< /carousel >}}
 
 - - -
