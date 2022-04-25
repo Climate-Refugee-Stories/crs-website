@@ -8,6 +8,65 @@
 <body>
   <!-- TODO: load dynamically if fail to reach this -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js" ></script>
+  <script src="https://sharadcodes.github.io/hugo-shortcodes-netlify-cms/dist/hugo_shortcodes_netlify_cms.js"></script>
+  <script>
+    // modified from community ⬆
+    CMS.registerEditorComponent({
+        id: "youtube",
+        label: "Youtube",
+        fields: [{
+            name: "id",
+            label: "Youtube Video ID",
+            widget: "string"
+        }],
+        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+>}}\s+{{< \/youtube >}}/ms,
+        fromBlock: function(match) {
+            return {
+                id: match[1],
+            };
+        },
+        toBlock: function(obj) {
+            return `{{< youtube ${obj.id} >}}
+            {{< /youtube >}}`;
+        },
+        toPreview: function(obj) {
+            return `<img src="https://i3.ytimg.com/vi/${obj.id}/hqdefault.jpg" alt="Youtube Video"/>`;
+        },
+    });
+    CMS.registerEditorComponent({
+        id: "youtube_caption",
+        label: "Youtube Caption'ed",
+        fields: [
+          {
+            name: "id",
+            label: "Youtube Video ID",
+            widget: "string"
+          },
+          {
+            name: "caption",
+            label: "Video caption",
+            widget: "markdown",
+            sanitize_preview: true
+          }
+        ],
+        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+vidcaption\s+>}}\s+(.*?){{< \/youtube >}}/ms,
+        fromBlock: function(match) {
+            return {
+                id: match[1],
+                caption: match[2],
+            };
+        },
+        toBlock: function(obj) {
+            return `{{< youtube ${obj.id} >}}
+            ${obj.caption}
+            {{< /youtube >}}`;
+        },
+        toPreview: function(obj) {
+            return `<img src="https://i3.ytimg.com/vi/${obj.id}/hqdefault.jpg" alt="Youtube Video"/><br />
+            <b>Caption</b>: ${obj.caption}`;
+        },
+    });
+  </script>
   <!-- https://cdn.jsdelivr.net/npm/netlify-cms@^2.0.0/dist/netlify-cms.js -->
 </body>
 </html>
