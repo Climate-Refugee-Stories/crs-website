@@ -88,7 +88,7 @@
             required: false
           }
         ],
-        pattern: /{{< smugmug\s+(?<id>[A-Za-z0-9\-]+)\s+"(?<alt_text>.*?)"\s+>}}\s+(?<caption>.*?){{<(\s+|)\/ smugmug >}}/ms,
+        pattern: /{{< smugmug\s+(?<id>[A-Za-z0-9\-]+)\s+"(?<alt_text>.*?)"\s+>}}\s+(?<caption>.*?){{<[\s+|]\/[\s+|]smugmug >}}/ms,
         fromBlock: function(match) {
             return {
                 id: match[1],
@@ -132,6 +132,63 @@
             return `<div style="text-align: center;">
               ${obj.text}
             </div>`;
+        },
+    });
+    CMS.registerEditorComponent({
+        id: "carousel",
+        label: "Carousel",
+        fields: [
+          {
+            name: "all_items",
+            label: "All items for carousel",
+            widget: "list",
+            collapsed: true,
+            minimize_collapsed: true,
+            fields: [
+              {
+                name: "smugmug_id",
+                label: "Smugmug ID",
+              },
+              {
+                name: "caption",
+                label: "Image Caption",
+                widget: "markdown"
+              }
+            ]
+          }
+        ],
+        pattern: /{{< carousel\s+>}}\s+(?<text>.*?){{<(\s+|)\/(\s+|)carousel >}}/ms,
+        fromBlock: function(match) {
+            const text = match[1];
+            let retArray = [];
+
+            text.trim().split('\n').forEach(element => {
+              retArray.push(
+                {
+                  smugmug_id: element.split('|')[0],
+                  caption: element.split('|')[1],
+                }
+              );
+            });
+            return {
+              all_items: retArray
+            }
+        },
+        toBlock: function(obj) {
+            let retString = '{{< carousel >}}\n';
+            obj.all_items.forEach(element => {
+              retString += `${element.smugmug_id}|${element.caption}\n`;
+            });
+            retString += '{{< /carousel >}}';
+            return retString;
+        },
+        toPreview: function(obj) {
+            let retString = "";
+            obj.all_items.forEach(element => {
+              retString += `<img src="https://photos.smugmug.com/photos/${element.smugmug_id}/0/M/${element.smugmug_id}-M.png" alt="Smugmug Photo"/><br />
+              <b>Caption</b>: ${element.caption}`
+            });
+            return retString;
         },
     });
   </script>
