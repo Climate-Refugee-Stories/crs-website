@@ -15,7 +15,9 @@ visibleInCMS: true
 &nbsp;
 #### **"Climate Refugee Stories: Puerto Rico"**
 ##### ***Produced and edited by Emma Crow-Willard***
-{{< youtube id="Ot88SZXgd7k" title="*The content in this film is under copyright, but Climate Refugee Stories may grant license for use. In most cases, not-for-profit educational use is available free of charge. To obtain permission to re-use any material from this film, you must [contact](https://www.climaterefugeestories.com/about) Climate Refugee Stories.*" class="vidcaption" >}} 
+{{< youtube Ot88SZXgd7k vidcaption >}} 
+*The content in this film is under copyright, but Climate Refugee Stories may grant license for use. In most cases, not-for-profit educational use is available free of charge. To obtain permission to re-use any material from this film, you must [contact](https://www.climaterefugeestories.com/about) Climate Refugee Stories.*
+{{< /youtube >}}
 &nbsp;
 
 #### **Stories from Hurricane Maria**  
@@ -42,22 +44,22 @@ Luis, a nursing student in Puerto Rico, graduated just before the hurricane and 
 *"Statue of What?" artwork created in solidarity with Puerto Rico by [Bo Thai](../../about/bo-daraphant/)*
 {{</ smugmug >}}
 
-
-<!-- #### **Survivor Stories:**
+<!-- 
+#### **Survivor Stories:**
 ##### Click on their names to read their stories.
 
 &nbsp;
 
 {{< carousel >}}
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-{{< /carousel >}} -->
+i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+{{< /carousel >}}
 
----
+--- -->

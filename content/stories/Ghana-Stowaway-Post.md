@@ -69,7 +69,7 @@ Recognizing that many of the individuals we spoke to who face displacement and e
 
 ***Christine Wheatley, PhD,** is Executive Director of NED Africa.*
 
-{{< smugmug i-5Mj6btc "Jonathan's Story">}}
+{{< smugmug i-5Mj6btc "Jonathan's Story" >}}
 Jonathan's Story. Artwork by [Monica Curca](../../about/monica-curca/)
 {{</ smugmug >}}
 &nbsp;

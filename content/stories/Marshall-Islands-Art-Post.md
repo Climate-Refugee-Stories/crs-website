@@ -14,7 +14,7 @@ weight: 0
 
 Small, low-lying island nations in the South Pacific are some of the most vulnerable locations in the world to the impacts of climate change.  The Maldives, Marshall Islands, Kiribati and Tuvalu have been key sites where debates over the concept of “climate refugees” have taken place.  Affected community members and activists have [resisted media narratives](https://link.springer.com/chapter/10.1007/978-3-319-70703-7_1) that depict them as victims and have taken a range of political and artistic responses.  These nations’ leaders and ambassadors have been some of the first to bring these questions to the international stage.
 
-{{< smugmug i-QhXGQfL "Tokelauns protest against climate change">}}
+{{< smugmug i-QhXGQfL "Tokelauns protest against climate change" >}}
 Tokelauns protest against climate change during the Pacific Warrior Day of Action in 2014 Image Credit: [360 Pacific](http://350pacific.org/we-are-not-drowning-we-are-fighting/)
 {{</ smugmug >}}
 
@@ -51,10 +51,12 @@ Kathy Jetnil-Kijiner is a Marshallese poet and spoken-word artist.  She was chos
 
 In "History Project," Kathy Jetnil-Kijiner confronts the legacies of US occupation and atomic testing in the Marshall Islands:   
 {{< youtube DIIrrPyK0eU >}}  
+{{< /youtube >}}
 <br>
   
 Kathy Jetnil-Kijiner performed "Dear Matafele Peinem," a poem to her daughter, at the 2014 UN Climate Summit:  
 {{< youtube DJuRjy9k7GA >}}  
+{{< /youtube >}}
   
   ---  
 <!-- TO-DO: Figure out spacing & sizing -->  
@@ -67,6 +69,7 @@ They say:
 > “When I create music, I tap into my ancestors and things I learned from the Island.  When you’re there, every day you hear the wash of the ocean.  Every day, you are in tune with the rhythm of the earth.  That rhythm is gone in the U.S. When I do art, I tap into that rhythm.  I want to get the rhythm back and save it.  Even though we can’t go back, art stops the damage. It changes the world."
 
 {{< youtube gAYTg6eqHuk >}}
+{{< /youtube >}}
 *"Coqui Lullaby" Soultree official music video*  
 &nbsp;
     
@@ -76,6 +79,7 @@ Climate Refugee Stories art director and project collaborator Bo Daraphant sat d
  
 <!-- TO-DO: Combine clips to 1 interview or list out all the Qs and interview clips -->  
 {{< youtube uBpVOhHWSxI >}}  
+{{< /youtube >}}
 <!-- TO-DO: Maybe pick a favorite quote from the interview for below -->  
 > “I have never known a life without my culture and my country being colonized.”
 

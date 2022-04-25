@@ -21,7 +21,9 @@ Although it is considered a "civil" form of confinement, immigration detention l
 &nbsp;  
 &nbsp;
 
-{{< youtube id="7C1ubns4MUA" title="*Watch \"Exposed: The Injustice of Immigration Detention\" by Freedom for Immigrants*" class="vidcaption" >}}
+{{< youtube 7C1ubns4MUA vidcaption >}}
+*Watch "Exposed: The Injustice of Immigration Detention" by Freedom for Immigrants*
+{{< /youtube >}}
 &nbsp;
 
 <!-- TO-DO: Center -->

@@ -11,6 +11,7 @@ button:
 
 #### **Climate Migration: Docu-Series Watch Party**
 {{< youtube 1sGg8LDASKE >}}
+{{< /youtube >}}
 
 &nbsp;  
   
@@ -39,6 +40,7 @@ The Center for Eco-Justice Conference, ILIFF School of Theology, October 21-22, 
 
 #### **“Climate Refugee Stories,” led by Tina Shull, PhD, History, UNC Charlotte**
 {{< youtube le9eyI-56N8 >}}
+{{< /youtube >}}
 
 &nbsp;  
   
