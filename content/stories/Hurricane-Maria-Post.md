@@ -44,7 +44,7 @@ Luis, a nursing student in Puerto Rico, graduated just before the hurricane and 
 *"Statue of What?" artwork created in solidarity with Puerto Rico by [Bo Thai](../../about/bo-daraphant/)*
 {{</ smugmug >}}
 
-
+<!-- 
 #### **Survivor Stories:**
 ##### Click on their names to read their stories.
 
@@ -62,4 +62,4 @@ i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stori
 i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
 {{< /carousel >}}
 
----
+--- -->
