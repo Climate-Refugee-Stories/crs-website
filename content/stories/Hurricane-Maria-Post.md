@@ -45,21 +45,21 @@ Luis, a nursing student in Puerto Rico, graduated just before the hurricane and 
 {{</ smugmug >}}
 
 
-<!-- #### **Survivor Stories:**
+#### **Survivor Stories:**
 ##### Click on their names to read their stories.
 
 &nbsp;
 
 {{< carousel >}}
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
 1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
 1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
 1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
 1eiuT7UrJ6aPUNkNA2udBmOUzLS75qLvg|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-1pmgwh90w1RhRo0QdpzgXgUjHKq9wQxmf|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-{{< /carousel >}} -->
+i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+{{< /carousel >}}
 
 ---
