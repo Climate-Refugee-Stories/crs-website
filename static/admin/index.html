@@ -49,7 +49,7 @@
             sanitize_preview: true
           }
         ],
-        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+vidcaption\s+>}}\s+(.*?){{< \/youtube >}}/ms,
+        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+vidcaption\s+>}}\s+(.*?){{<(\s+|)\/youtube >}}/ms,
         fromBlock: function(match) {
             return {
                 id: match[1],
@@ -64,6 +64,74 @@
         toPreview: function(obj) {
             return `<img src="https://i3.ytimg.com/vi/${obj.id}/hqdefault.jpg" alt="Youtube Video"/><br />
             <b>Caption</b>: ${obj.caption}`;
+        },
+    });
+    CMS.registerEditorComponent({
+        id: "smugmug",
+        label: "Smugmug",
+        fields: [
+          {
+            name: "id",
+            label: "Smugmug Photo ID",
+            widget: "string"
+          },
+          {
+            name: "alt_text",
+            label: "Photo Alt text (accessibility)",
+            widget: "string",
+          },
+          {
+            name: "caption",
+            label: "Phtoto Caption",
+            widget: "markdown",
+            sanitize_preview: true,
+            required: false
+          }
+        ],
+        pattern: /{{< smugmug\s+(?<id>[A-Za-z0-9\-]+)\s+"(?<alt_text>.*?)"\s+>}}\s+(?<caption>.*?){{<(\s+|)\/ smugmug >}}/ms,
+        fromBlock: function(match) {
+            return {
+                id: match[1],
+                alt_text: match[2],
+                caption: match[3],
+            };
+        },
+        toBlock: function(obj) {
+            return `{{< smugmug ${obj.id} "${obj.alt_text}" >}}
+            ${obj.caption}
+            {{< /smugmug >}}`;
+        },
+        toPreview: function(obj) {
+            return `<img src="https://photos.smugmug.com/photos/${obj.id}/0/M/${obj.id}-M.png" alt="Smugmug Photo"/><br />
+            <b>Alt text</b>: ${obj.alt_text}<br />
+            <b>Caption</b>: ${obj.caption}`;
+        },
+    });
+    CMS.registerEditorComponent({
+        id: "center",
+        label: "Center Text",
+        fields: [
+          {
+            name: "text",
+            label: "Text to center",
+            widget: "markdown"
+          }
+        ],
+        pattern: /{{< center\s+>}}\s+(?<text>.*?){{<(\s+|)\/(\s+|)center >}}/ms,
+        fromBlock: function(match) {
+            return {
+                text: match[1],
+            };
+        },
+        toBlock: function(obj) {
+            return `{{< center >}}
+            ${obj.text}
+            {{< /center >}}`;
+        },
+        toPreview: function(obj) {
+            return `<div style="text-align: center;">
+              ${obj.text}
+            </div>`;
         },
     });
   </script>
