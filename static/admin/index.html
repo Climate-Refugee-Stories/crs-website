@@ -88,7 +88,7 @@
             required: false
           }
         ],
-        pattern: /{{< smugmug\s+(?<id>[A-Za-z0-9\-]+)\s+"(?<alt_text>.*?)"\s+>}}\s+(?<caption>.*?){{<[\s+|]\/[\s+|]smugmug >}}/ms,
+        pattern: /{{< smugmug\s+(?<id>[A-Za-z0-9\-]+)\s+"(?<alt_text>.*?)"\s+>}}\s+(?<caption>.*?){{<(\s+|)\/(\s+|)smugmug >}}/ms,
         fromBlock: function(match) {
             return {
                 id: match[1],
