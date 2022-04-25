@@ -70,7 +70,7 @@ And we ask:
 > What does it take to move from a world rooted in violence, extraction, and domination to a world rooted in regeneration, resilience, and interdependence?
 {{< /center >}}
 
-{{< smugmug i-d4GtSn2 "A Word cloud from CRSC">}}
+{{< smugmug i-d4GtSn2 "A Word cloud from CRSC" >}}
 *A word cloud created from audience responses at a convening of the UC Critical Refugee Studies Collective at UCLA in April of 2018.
 Participants were asked to define the concept of climate refugees.*
 {{</ smugmug >}}

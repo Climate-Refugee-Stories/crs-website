@@ -14,7 +14,7 @@ weight: 0
 
 Small, low-lying island nations in the South Pacific are some of the most vulnerable locations in the world to the impacts of climate change.  The Maldives, Marshall Islands, Kiribati and Tuvalu have been key sites where debates over the concept of “climate refugees” have taken place.  Affected community members and activists have [resisted media narratives](https://link.springer.com/chapter/10.1007/978-3-319-70703-7_1) that depict them as victims and have taken a range of political and artistic responses.  These nations’ leaders and ambassadors have been some of the first to bring these questions to the international stage.
 
-{{< smugmug i-QhXGQfL "Tokelauns protest against climate change">}}
+{{< smugmug i-QhXGQfL "Tokelauns protest against climate change" >}}
 Tokelauns protest against climate change during the Pacific Warrior Day of Action in 2014 Image Credit: [360 Pacific](http://350pacific.org/we-are-not-drowning-we-are-fighting/)
 {{</ smugmug >}}
 
