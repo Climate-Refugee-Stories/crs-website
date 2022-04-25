@@ -51,10 +51,12 @@ Kathy Jetnil-Kijiner is a Marshallese poet and spoken-word artist.  She was chos
 
 In "History Project," Kathy Jetnil-Kijiner confronts the legacies of US occupation and atomic testing in the Marshall Islands:   
 {{< youtube DIIrrPyK0eU >}}  
+{{< /youtube >}}
 <br>
   
 Kathy Jetnil-Kijiner performed "Dear Matafele Peinem," a poem to her daughter, at the 2014 UN Climate Summit:  
 {{< youtube DJuRjy9k7GA >}}  
+{{< /youtube >}}
   
   ---  
 <!-- TO-DO: Figure out spacing & sizing -->  
@@ -67,6 +69,7 @@ They say:
 > “When I create music, I tap into my ancestors and things I learned from the Island.  When you’re there, every day you hear the wash of the ocean.  Every day, you are in tune with the rhythm of the earth.  That rhythm is gone in the U.S. When I do art, I tap into that rhythm.  I want to get the rhythm back and save it.  Even though we can’t go back, art stops the damage. It changes the world."
 
 {{< youtube gAYTg6eqHuk >}}
+{{< /youtube >}}
 *"Coqui Lullaby" Soultree official music video*  
 &nbsp;
     
@@ -76,6 +79,7 @@ Climate Refugee Stories art director and project collaborator Bo Daraphant sat d
  
 <!-- TO-DO: Combine clips to 1 interview or list out all the Qs and interview clips -->  
 {{< youtube uBpVOhHWSxI >}}  
+{{< /youtube >}}
 <!-- TO-DO: Maybe pick a favorite quote from the interview for below -->  
 > “I have never known a life without my culture and my country being colonized.”
 

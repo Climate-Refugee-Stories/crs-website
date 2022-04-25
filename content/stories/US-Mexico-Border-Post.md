@@ -25,6 +25,7 @@ In this interview for Climate Refugee Stories conducted by Steve Pavey of [Hope 
 
 <!-- TO-DO: Combine clips to 1 interview or list out all the Qs and interview clips -->  
 {{< youtube y4d8k4JTJfA >}}  
+{{< /youtube >}}
 
 <!-- TO-DO: Maybe pick a favorite quote from the interview for below -->  
 > "My book itself is journalism, so it presents a problem, but it offers examples of how this is not necessarily inevitable."​  
@@ -60,10 +61,14 @@ It is unacceptable that death and disappearance are treated as accepted and norm
 As long as people are forced to risk their lives to enter this country, people will continue to provide aid, and as long as a culture of impunity exists for Border Patrol agents who engage in routine acts of cruelty, we will continue to document and expose the human rights abuses we witness daily in the borderlands.  
 &nbsp;
 
-{{< youtube id="eqaslbj5Th8" title="*\"Footage of Border Patrol Vandalism of Humanitarian Aid, 2010-2017\" by No More Deaths*" class="vidcaption" >}}
+{{< youtube eqaslbj5Th8 vidcaption >}}
+*"Footage of Border Patrol Vandalism of Humanitarian Aid, 2010-2017" by No More Deaths*
+{{< /youtube >}}
 &nbsp;
 
-{{< youtube id="dnmOOnRALfI" title="*Disappeared, \"Part 2, Interference with Humanitarian Aid\" by No More Deaths*" class="vidcaption" >}}  
+{{< youtube dnmOOnRALfI vidcaption >}}  
+*Disappeared, "Part 2, Interference with Humanitarian Aid" by No More Deaths*
+{{< /youtube >}}
 &nbsp;
 
 {{< smugmug i-rm577LW "Migrant Deaths and Humane Borders Water Stations Map" >}}
@@ -71,7 +76,9 @@ Organizations such as Humane Borders, [No More Deaths](http://www.nomoredeaths.o
 {{</ smugmug >}}
 &nbsp;
 
-{{< youtube id="yR9tARIVxvw" title="*\"Torn Apart,\" featuring Robin Reineke of the Colibri Center for Human Rights, by Human Rights Watch*" class="vidcaption" >}} 
+{{< youtube yR9tARIVxvw vidcaption >}} 
+*"Torn Apart," featuring Robin Reineke of the Colibri Center for Human Rights, by Human Rights Watch*
+{{< /youtube >}}
 &nbsp;
 
 {{< smugmug i-TwpRK9Z "Disappeared Report" >}}

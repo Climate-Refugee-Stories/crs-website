@@ -15,7 +15,9 @@ visibleInCMS: true
 &nbsp;
 #### **"Climate Refugee Stories: Puerto Rico"**
 ##### ***Produced and edited by Emma Crow-Willard***
-{{< youtube id="Ot88SZXgd7k" title="*The content in this film is under copyright, but Climate Refugee Stories may grant license for use. In most cases, not-for-profit educational use is available free of charge. To obtain permission to re-use any material from this film, you must [contact](https://www.climaterefugeestories.com/about) Climate Refugee Stories.*" class="vidcaption" >}} 
+{{< youtube Ot88SZXgd7k vidcaption >}} 
+*The content in this film is under copyright, but Climate Refugee Stories may grant license for use. In most cases, not-for-profit educational use is available free of charge. To obtain permission to re-use any material from this film, you must [contact](https://www.climaterefugeestories.com/about) Climate Refugee Stories.*
+{{< /youtube >}}
 &nbsp;
 
 #### **Stories from Hurricane Maria**  

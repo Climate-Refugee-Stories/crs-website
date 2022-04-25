@@ -15,7 +15,9 @@ visibleInCMS: true
 &nbsp;
 #### **"Climate Refugee Stories: Bangladesh"**
 ##### ***Produced by Tanaya Dutta Gupta and edited by Thor Morales***
-{{< youtube id="7i0j0UhcfGM" title="*The content in this film is under copyright, but Climate Refugee Stories may grant license for use. In most cases, not-for-profit educational use is available free of charge. To obtain permission to re-use any material from this film, you must [contact](../../contact) Climate Refugee Stories.*" class="vidcaption" >}} 
+{{< youtube 7i0j0UhcfGM vidcaption >}} 
+*The content in this film is under copyright, but Climate Refugee Stories may grant license for use. In most cases, not-for-profit educational use is available free of charge. To obtain permission to re-use any material from this film, you must [contact](../../contact) Climate Refugee Stories.*
+{{< /youtube >}}
 &nbsp;
 
 #### **Bengal Delta Region of Bangladesh and India**  
