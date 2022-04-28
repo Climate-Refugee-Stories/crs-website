@@ -6,7 +6,7 @@ draft: false
 partners:
   # enable on homepage
   enable : true
-  title : "Partners"
+  title : "Our Partners"
   about: |
     This project is funded with support from the University of California’s Critical Refugee Studies Collective, the National Geographic Society, and the North Carolina Humanities Council.
   item:

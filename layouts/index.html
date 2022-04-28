@@ -145,13 +145,15 @@
         </div>
         {{ range .item }}
         <div class="col-md-4 mb-4">
-          <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
-            <div class="card-body text-center px-4 py-5">
-              <i class="{{.icon }} icon mb-5 d-inline-block"></i>
-              <h4 class="mb-4">{{.title}}</h4>
-              <p>{{.content | markdownify}}</p>
+          <a href="{{ .URL | relURL }}">
+            <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
+              <div class="card-body text-center px-4 py-5">
+                <i class="{{.icon }} icon mb-5 d-inline-block"></i>
+                <h4 class="mb-4">{{.title}}</h4>
+                <p>{{.content | markdownify}}</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         {{ end }}
         <div class="col-12 text-center">

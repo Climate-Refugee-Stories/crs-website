@@ -32,26 +32,6 @@
 </section>
 <!-- /about -->
 
-<!-- Work Process -->
-{{ with .Params.partners }}
-<section class="section" id="{{ .title | urlize }}">
-  <div class="container">
-    <div class="row justify-content-around">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-title">{{ .title }}</h2>
-        <p>{{ .about }}</p>
-      </div>
-      {{ range .item }}
-      <div class="col-lg-3 col-md-4 hover-shadow pt-3  d-flex justify-content-center align-items-center">
-        <a href="{{ .link }}"><img src="https://photos.smugmug.com/photos/{{ .logo }}/0/O/{{ .logo }}-O.png" class="img-fluid mb-4" alt="icon"></a>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-<!-- ./Work Process -->
-
 <!-- CRS Team -->
 <section class="section bg-cover" id="our-team">
   <div class="container">
@@ -78,6 +58,26 @@
   </div>
 </section>
 <!-- /team -->
+
+<!-- Work Process -->
+{{ with .Params.partners }}
+<section class="section" id="{{ .title | urlize }}">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">{{ .title }}</h2>
+        <p>{{ .about }}</p>
+      </div>
+      {{ range .item }}
+      <div class="col-lg-3 col-md-4 hover-shadow pt-3  d-flex justify-content-center align-items-center">
+        <a href="{{ .link }}"><img src="https://photos.smugmug.com/photos/{{ .logo }}/0/O/{{ .logo }}-O.png" class="img-fluid mb-4" alt="icon"></a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- ./Work Process -->
 
 
 <!-- CRS News -->

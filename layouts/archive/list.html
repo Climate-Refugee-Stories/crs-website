@@ -12,7 +12,7 @@
             <input type="checkbox" name="shuffle-filter" value="all" />All
           </label>
 					{{ $location := slice }}
-					{{ $location = $location | append "asia" "africa" "middle east" "europe" "north america" }}
+					{{ $location = $location | append "asia" "africa" "middle east" "europe" "north america" "oceania" "south america" }}
 					{{ range .Data.Pages }}
 					{{ range .Params.location }}
 					{{ $location = $location | append . }}
