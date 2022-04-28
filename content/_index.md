@@ -25,18 +25,21 @@ resources:
     label : "learn more"
     URL : "resources"
   item:
-    - title : "High School Curriculum"
+    - title : "K-12 Curriculum"
       icon : "ti-ruler-pencil"
       content : "Gain a greater understanding of climate-induced migration, and how it fits within the broader phenomenon of human migration."
       highlighted : false
+      URL: resources/#k-12-curriculum
 
     - title : "Ways to Take Action"
       icon : "ti-clipboard"
       content : "Check out our Community Discussion Toolkit, Media Toolkit, Organizations, and more!"
       highlighted : true
+      URL: resources/#take-action
 
     - title : "Climate Migration Syllabus"
       icon : "ti-bookmark-alt"
       content : "A crowd-sourced, expanding set of resources for further reading, research, and action."
       highlighted : false
+      URL: resources/#climate-migration-syllabus
 ---
