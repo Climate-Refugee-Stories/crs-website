@@ -42,14 +42,14 @@ weight = 1
 parent = "about"
 
 [[menu.main]]
-name = "Our Partners"
-URL = "about/#partners"
+name = "Our Team"
+URL = "about/#our-team"
 parent = "about"
 weight = 2
 
 [[menu.main]]
-name = "Our Team"
-URL = "about/#our-team"
+name = "Our Partners"
+URL = "about/#partners"
 parent = "about"
 weight = 3
 
