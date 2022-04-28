@@ -17,7 +17,7 @@ backend:
   name: github
   repo:  Climate-Refugee-Stories/crs-website  # Path to your Github repository
   # branch: master # Branch to update
-  branch: final_visual_feedback
+  branch: dev
 
 # use google drive not this upload
 media_folder: 'N/a'
