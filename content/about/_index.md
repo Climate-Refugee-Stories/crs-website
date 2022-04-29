@@ -41,7 +41,7 @@ There are currently no legal protections for climate migrants in international l
  
 But there is hope. We invite storytellers and audiences to debate and define **climate refugees** for themselves - to explore the historical, political, economic, and environmental causes of migration in order to bridge movements for social and environmental justice.
 
-Learn more about our approach to [Ethical Storytelling](https://drive.google.com/file/d/1x75Omo3fhjdADClZyOVb-oO9BVIu9fDm/view?usp=sharing)  
+See our Permissions and [Usage Guide](#usage-guide) and learn more about our approach to [Ethical Storytelling](https://drive.google.com/file/d/1x75Omo3fhjdADClZyOVb-oO9BVIu9fDm/view?usp=sharing)  
 ​
 
 Visit our [**Stories**]({{< ref "/stories" >}}) and [**Archive**]({{< ref "/archive" >}})  
