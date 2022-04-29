@@ -81,16 +81,18 @@
 
 
 <!-- CRS News -->
-{{ $see_more := .Params.see_more_news }}
-{{ with site.GetPage "/about/crs-news" }}
+{{ range .Pages }}
+{{ if .Params.button }}
 <section class="section" id="{{ .Title | urlize }}">
   <div class="container">
     <div class="row justify-content-around">
       <div class="col-12 text-center">
         <h2 class="section-title">{{ .Title }}</h2>
+        {{ with .Description }}
         <div class="col-lg-9 mx-auto text-center">
-          <p> {{ .Description | markdownify }}</p><br/><br/>
+          <p> {{ . | markdownify }}</p><br/><br/>
         </div>
+        {{ end }}
       </div>
       <div class="col-9 content">
         {{ .Content }}
@@ -106,6 +108,7 @@
     </div>
   </div>
 </section>
+{{ end }}
 {{ end }}
 <!-- /CRS News -->
 

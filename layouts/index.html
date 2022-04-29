@@ -145,7 +145,7 @@
         </div>
         {{ range .item }}
         <div class="col-md-4 mb-4">
-          <a href="{{ .URL | relURL }}">
+          <a class="text-primary" href="{{ .URL | relURL }}">
             <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
               <div class="card-body text-center px-4 py-5">
                 <i class="{{.icon }} icon mb-5 d-inline-block"></i>
