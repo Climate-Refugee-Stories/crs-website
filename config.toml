@@ -60,6 +60,12 @@ parent = "about"
 weight = 4
 
 [[menu.main]]
+name = "Usage Guide"
+URL = "about/#usage-guide"
+parent = "about"
+weight = 5
+
+[[menu.main]]
 URL = "stories"
 name = "Stories"
 weight = 2
