@@ -419,6 +419,7 @@ html {
   overflow: hidden;
   & figcaption {
     padding: 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -511,6 +512,7 @@ html {
 .modal {
   &__full {
     max-width: 90%;
+    margin: auto;
   }
   &__slides {
     display: flex;
