@@ -5,9 +5,9 @@ image: "i-LHFC8kX"
 thumbnail: "i-LHFC8kX"
 related_stories:
   - content: |
-      [The US-Mexico Border: “Over My Dead Body”](https://www.climaterefugeestories.com/stories/us-mexico-border-post/)
+      [The US-Mexico Border: “Over My Dead Body”](../../stories/us-mexico-border-post/)
   - content: |
-      [Central America: “This Caravan is Yours, Mr. Trump”](https://www.climaterefugeestories.com/stories/central-america-caravan-post/)
+      [Central America: “This Caravan is Yours, Mr. Trump”](../../stories/central-america-caravan-post/)
 location: ["north america"]
 alt_cat:
   - united states
