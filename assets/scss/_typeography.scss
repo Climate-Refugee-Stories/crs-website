@@ -67,6 +67,7 @@ p {
     line-height: 1.8;
     // font-family: roboto, sans-serif
     @include mobile {
+      line-height: 1.3;
       font-size: 1.8rem;
     }
 }
