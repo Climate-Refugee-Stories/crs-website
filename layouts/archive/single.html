@@ -32,17 +32,17 @@
             </div>
           </div>
           {{ with .Params.related_stories}}
-          {{ range . }}
           <div class="col-sm-12 mb-5">
             <div class="project-meta">
               <i class="ti-link"></i>
               <div class="ml-3">
                 <h4>Related Stories</h4>
+                {{ range . }}
                 <h5>{{.content | markdownify}}</h5>
+                {{ end }}
               </div>
             </div>
           </div>
-          {{ end }}
           {{ end }}
         </div>
       </div>

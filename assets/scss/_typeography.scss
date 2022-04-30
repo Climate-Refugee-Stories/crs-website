@@ -37,6 +37,9 @@ h4,
 h5,
 .h5 {
   font-size: 1.125rem;
+  @include mobile {
+    font-size: 1.8rem;
+  }
 }
 
 h6,
