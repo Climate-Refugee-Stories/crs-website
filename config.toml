@@ -49,7 +49,7 @@ weight = 2
 
 [[menu.main]]
 name = "Our Partners"
-URL = "about/#partners"
+URL = "about/#our-partners"
 parent = "about"
 weight = 3
 
