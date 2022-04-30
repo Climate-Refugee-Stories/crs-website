@@ -212,6 +212,9 @@ html {
     background: transparent;
     color: var(--primary-color);
     font-weight: 700;
+    @include mobile {
+      font-size: 1.7rem;
+    }
  
     &:active, &:hover {
       color: var(--primary-color)
