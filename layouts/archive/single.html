@@ -270,7 +270,8 @@
           <div class="vid_slide archive_gallery_container" style="transform: translateX({{ mul $slide_vid_counter 100 }}%);">
             {{ range . }}
               <div class="archive_gallery_img">
-                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/{{ .vid_id | safeURL }}?modestbranding=1&rel=0&playsinline=0&domain={{ trim $.Site.BaseURL `/` | safeURL }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/{{ .vid_id | safeURL }}?modestbranding=1&rel=0&playsinline=0&domain={{ trim $.Site.BaseURL `/` | safeURL }}" title="YouTube video player: {{ .vid_alt_text }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption class="caption vid_caption">{{ .vid_desc  | truncate 40 | safeHTML }}</figcaption>
               </div>
             {{ $vid_counter = add $vid_counter 1}}
             {{ end }}

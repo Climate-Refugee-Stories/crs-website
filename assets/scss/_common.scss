@@ -419,7 +419,10 @@ html {
   overflow: hidden;
   & figcaption {
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    @include tablet {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -507,6 +510,16 @@ html {
 .caption {
   margin-top: 0.5rem;
   align-self: start;
+  @include tablet {
+    margin-top: 0.1rem;
+  }
+}
+
+.vid_caption {
+  font-size: 1rem;
+  @include tablet {
+    font-size: 1.5rem;
+  }
 }
 
 .modal {
