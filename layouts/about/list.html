@@ -86,7 +86,7 @@
 <section class="section" id="{{ .Title | urlize }}">
   <div class="container">
     <div class="row justify-content-around">
-      <div class="col-12 text-center">
+      <div class="col-lg-12 text-center">
         <h2 class="section-title">{{ .Title }}</h2>
         {{ with .Description }}
         <div class="col-lg-9 mx-auto text-center">
@@ -94,7 +94,7 @@
         </div>
         {{ end }}
       </div>
-      <div class="col-9 content">
+      <div class="col-lg-9 content">
         {{ .Content }}
         <div class="mx-auto text-center">
         {{ with .Params.button }}
