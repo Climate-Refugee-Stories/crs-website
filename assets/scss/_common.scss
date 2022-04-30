@@ -404,6 +404,12 @@ html {
   }
   &_img {
     height: 20rem;
+    @include tablet {
+      height: 18rem;
+    }
+    @include mobile {
+      height: 15rem;
+    }
     width: 96%;
     background-position: center;
     background-size: cover;
