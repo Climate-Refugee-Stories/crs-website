@@ -173,6 +173,9 @@ html {
   &-sm {
     font-size: 0.9375rem;
     padding: 0.625rem 1.875rem;
+    @include mobile {
+      font-size: 1.4rem;
+    }
   }
 
   &-xs {
