@@ -286,6 +286,11 @@ html {
 
   &-story-map {
     margin-bottom: 1.8rem;
+    width: 700px;
+    height: 550px;
+    @include mobile {
+      height: 400px;
+    }
   }
 }
 
