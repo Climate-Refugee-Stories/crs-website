@@ -273,6 +273,9 @@ html {
 .homepage {
   &-abt-txt {
     font-size: 1.4rem;
+    @include mobile {
+      font-size: 1.7rem;
+    }
   }
 
   &-story-map {
