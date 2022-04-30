@@ -37,7 +37,7 @@ identifier = "about"
 
 [[menu.main]]
 URL = "about"
-name = "About"
+name = "About Us"
 weight = 1
 parent = "about"
 
