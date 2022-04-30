@@ -9,6 +9,7 @@ description: "US-Mexico Border"
 summary: "Climate change not only contributes to conditions globally that drive migration to the United States, but it also exacerbates tensions along the US-Mexico border."
 draft: false
 weight: 0
+visibleInCMS: true
 ---
 
 Climate change not only contributes to conditions globally that drive migration to the United States, but it also exacerbates tensions along the US-Mexico border.  In his book [Storming the Wall: Climate Change, Migration, and Homeland Security](http://www.toddmillerwriter.com/storming-the-wall/), author Todd Miller documents how the US government has used the desert to its advantage in its formation of [policies to deter migration](https://www.theguardian.com/us-news/2016/dec/07/report-us-border-patrol-desert-weapon-immigrants-mexico).  "Operation Gatekeeper," launched in 1994 under the Clinton administration, ushered in a new era of border militarization and has pushed migration routes into hotter and more treacherous desert regions.  Human rights groups have documented at least [7,000 deaths](https://www.thenation.com/article/over-7000-bodies-have-been-found-at-the-us-mexican-border-since-the-nineties/) in the Sonoran desert, by conservative estimates, since the construction of a border wall along the US-Mexico border in the 1990s.
@@ -16,7 +17,7 @@ Climate change not only contributes to conditions globally that drive migration 
 In this interview for Climate Refugee Stories conducted by Steve Pavey of [Hope in Focus](https://www.stevepavey.com/), Todd Miller discusses his encounters with climate migrants from Central America and Mexico, and how climate change has contributed to the borderlands becoming what he calls a "de facto war zone."  Below, the Tucson-based organization *No More Deaths* reports on the US Border Patrol's abuses against migrants and advocates, and members of the indigenous Tohono O'odham nation call for solidarity across movements for climate and migrant justice, and indigenous land sovereignty.  
 &nbsp;
 
-{{< smugmug i-6HscjT3 "Storming the Wall by Todd Miller">}}
+{{< smugmug i-6HscjT3 "Storming the Wall by Todd Miller" >}}
 {{</ smugmug >}}
 &nbsp;
 
@@ -24,6 +25,7 @@ In this interview for Climate Refugee Stories conducted by Steve Pavey of [Hope 
 
 <!-- TO-DO: Combine clips to 1 interview or list out all the Qs and interview clips -->  
 {{< youtube y4d8k4JTJfA >}}  
+{{< /youtube >}}
 
 <!-- TO-DO: Maybe pick a favorite quote from the interview for below -->  
 > "My book itself is journalism, so it presents a problem, but it offers examples of how this is not necessarily inevitable."​  
@@ -59,10 +61,14 @@ It is unacceptable that death and disappearance are treated as accepted and norm
 As long as people are forced to risk their lives to enter this country, people will continue to provide aid, and as long as a culture of impunity exists for Border Patrol agents who engage in routine acts of cruelty, we will continue to document and expose the human rights abuses we witness daily in the borderlands.  
 &nbsp;
 
-{{< youtube id="eqaslbj5Th8" title="*\"Footage of Border Patrol Vandalism of Humanitarian Aid, 2010-2017\" by No More Deaths*" class="vidcaption" >}}
+{{< youtube eqaslbj5Th8 vidcaption >}}
+*"Footage of Border Patrol Vandalism of Humanitarian Aid, 2010-2017" by No More Deaths*
+{{< /youtube >}}
 &nbsp;
 
-{{< youtube id="dnmOOnRALfI" title="*Disappeared, \"Part 2, Interference with Humanitarian Aid\" by No More Deaths*" class="vidcaption" >}}  
+{{< youtube dnmOOnRALfI vidcaption >}}  
+*Disappeared, "Part 2, Interference with Humanitarian Aid" by No More Deaths*
+{{< /youtube >}}
 &nbsp;
 
 {{< smugmug i-rm577LW "Migrant Deaths and Humane Borders Water Stations Map" >}}
@@ -70,7 +76,9 @@ Organizations such as Humane Borders, [No More Deaths](http://www.nomoredeaths.o
 {{</ smugmug >}}
 &nbsp;
 
-{{< youtube id="yR9tARIVxvw" title="*\"Torn Apart,\" featuring Robin Reineke of the Colibri Center for Human Rights, by Human Rights Watch*" class="vidcaption" >}} 
+{{< youtube yR9tARIVxvw vidcaption >}} 
+*"Torn Apart," featuring Robin Reineke of the Colibri Center for Human Rights, by Human Rights Watch*
+{{< /youtube >}}
 &nbsp;
 
 {{< smugmug i-TwpRK9Z "Disappeared Report" >}}
@@ -83,7 +91,7 @@ Click to read [No More Deaths's report "Disappeared"](http://www.thedisappearedr
 #### ***Tohono O'odham Nation: Border Wall "Over My Dead Body"*** 
 &nbsp;
 
-{{< smugmug i-73sp8Ns "Over My Dead Body">}}
+{{< smugmug i-73sp8Ns "Over My Dead Body" >}}
 “It’s going to affect our sacred lands. It’s going to affect our ceremonial sites. It’s going to affect the environment. We have wildlife, and they have their own patterns of migration,” he said. “There are just so many things that are wrong with this. The whole idea behind it is just racist.” Tohono O'odham member Bradley Moreno in [The Guardian.](https://www.theguardian.com/us-news/2017/jan/26/donald-trump-border-wall-tohono-oodham-arizona-tribe)
 {{</ smugmug >}}
 &nbsp;

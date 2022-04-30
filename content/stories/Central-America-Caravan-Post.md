@@ -9,6 +9,7 @@ description: "Central America: This Caravan is Yours"
 summary: "When the people of my country of Honduras decide to leave, they do not leave because they lack love for Honduras, but because the need demands it."
 draft: false
 weight: 0
+visibleInCMS: true
 ---
 
 <!-- TO-DO: Center -->
@@ -19,7 +20,7 @@ weight: 0
 {{< /center >}}
 
 &nbsp;
-{{< smugmug i-znpg9px "Members of the Viacrusis Migrantes">}}
+{{< smugmug i-znpg9px "Members of the Viacrusis Migrantes" >}}
 Members of the Viacrusis Migrantes en la luche ("Migrants in Struggle" Refugee Caravan) in Mexico in April 2018. Image Credit: [Pueblo sin Fronteras](http://www.pueblosinfronteras.org/)
 {{</ smugmug >}}
 &nbsp;

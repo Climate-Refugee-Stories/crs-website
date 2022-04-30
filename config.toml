@@ -42,14 +42,14 @@ weight = 1
 parent = "about"
 
 [[menu.main]]
-name = "Our Partners"
-URL = "about/#partners"
+name = "Our Team"
+URL = "about/#our-team"
 parent = "about"
 weight = 2
 
 [[menu.main]]
-name = "Our Team"
-URL = "about/#our-team"
+name = "Our Partners"
+URL = "about/#our-partners"
 parent = "about"
 weight = 3
 
@@ -58,6 +58,12 @@ name = "CRS News"
 URL = "about/#crs-news"
 parent = "about"
 weight = 4
+
+[[menu.main]]
+name = "Usage Guide"
+URL = "about/#usage-guide"
+parent = "about"
+weight = 5
 
 [[menu.main]]
 URL = "stories"
@@ -102,10 +108,14 @@ weight = 5
 
 # default parameters
 [params]
+#########################
+# main menu
 home = "Home"
 logo = ""
+#########################
 # theme color
 theme_color = "#054ca7"
+#########################
 # contact info
 # phone = "+880 2544 658 256"
 email = "climaterefugeestories@gmail.com"
@@ -143,23 +153,6 @@ map_marker = "images/marker.png"
 [params.cookies]
 enable = true
 expire_days = 7
-
-# social site
-[[params.social]]
-icon = "ti-facebook"
-URL = "https://www.facebook.com/climaterefugeestories/"
-
-[[params.social]]
-icon = "ti-twitter-alt"
-URL = "https://twitter.com/ClimRefStories"
-
-[[params.social]]
-icon = "ti-instagram"
-URL = "https://www.instagram.com/climaterefugeestories/"
-
-#[[params.social]]
-#icon = "ti-dribbble"
-#URL = "#"
 
 # Algolia output config
 [outputFormats.Algolia]

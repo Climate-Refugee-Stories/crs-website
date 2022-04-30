@@ -9,6 +9,7 @@ description: "Who are Climate Refugees?"
 summary: "The International Organization for Migration (IOM) estimates that in 2019, 25 million people were displaced by climate change-related events."
 draft: false
 weight: 1
+visibleInCMS: true
 ---
 
 The Internal Displacement Monitoring Centre (IDMC) [estimates](https://www.internal-displacement.org/database/displacement-data) that between 2008-2020, 283 million people have been displaced by weather-related “disasters” worldwide. More and more, such displacements are being attributed to climate change.
@@ -69,7 +70,7 @@ And we ask:
 > What does it take to move from a world rooted in violence, extraction, and domination to a world rooted in regeneration, resilience, and interdependence?
 {{< /center >}}
 
-{{< smugmug i-d4GtSn2 "A Word cloud from CRSC">}}
+{{< smugmug i-d4GtSn2 "A Word cloud from CRSC" >}}
 *A word cloud created from audience responses at a convening of the UC Critical Refugee Studies Collective at UCLA in April of 2018.
 Participants were asked to define the concept of climate refugees.*
 {{</ smugmug >}}

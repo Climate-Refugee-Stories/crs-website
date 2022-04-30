@@ -8,6 +8,190 @@
 <body>
   <!-- TODO: load dynamically if fail to reach this -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js" ></script>
+  <script src="https://sharadcodes.github.io/hugo-shortcodes-netlify-cms/dist/hugo_shortcodes_netlify_cms.js"></script>
+  <script>
+    // modified from community ⬆
+    CMS.registerEditorComponent({
+        id: "youtube",
+        label: "Youtube",
+        fields: [{
+            name: "id",
+            label: "Youtube Video ID",
+            widget: "string"
+        }],
+        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+>}}\s+{{< \/youtube >}}/ms,
+        fromBlock: function(match) {
+            return {
+                id: match[1],
+            };
+        },
+        toBlock: function(obj) {
+            return `{{< youtube ${obj.id} >}}
+            {{< /youtube >}}`;
+        },
+        toPreview: function(obj) {
+            return `<img src="https://i3.ytimg.com/vi/${obj.id}/hqdefault.jpg" alt="Youtube Video"/>`;
+        },
+    });
+    CMS.registerEditorComponent({
+        id: "youtube_caption",
+        label: "Youtube Caption'ed",
+        fields: [
+          {
+            name: "id",
+            label: "Youtube Video ID",
+            widget: "string"
+          },
+          {
+            name: "caption",
+            label: "Video caption",
+            widget: "markdown",
+            sanitize_preview: true
+          }
+        ],
+        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+vidcaption\s+>}}\s+(.*?){{<(\s+|)\/youtube >}}/ms,
+        fromBlock: function(match) {
+            return {
+                id: match[1],
+                caption: match[2],
+            };
+        },
+        toBlock: function(obj) {
+            return `{{< youtube ${obj.id} >}}
+            ${obj.caption}
+            {{< /youtube >}}`;
+        },
+        toPreview: function(obj) {
+            return `<img src="https://i3.ytimg.com/vi/${obj.id}/hqdefault.jpg" alt="Youtube Video"/><br />
+            <b>Caption</b>: ${obj.caption}`;
+        },
+    });
+    CMS.registerEditorComponent({
+        id: "smugmug",
+        label: "Smugmug",
+        fields: [
+          {
+            name: "id",
+            label: "Smugmug Photo ID",
+            widget: "string"
+          },
+          {
+            name: "alt_text",
+            label: "Photo Alt text (accessibility)",
+            widget: "string",
+          },
+          {
+            name: "caption",
+            label: "Phtoto Caption",
+            widget: "markdown",
+            sanitize_preview: true,
+            required: false
+          }
+        ],
+        pattern: /{{< smugmug\s+(?<id>[A-Za-z0-9\-]+)\s+"(?<alt_text>.*?)"\s+>}}\s+(?<caption>.*?){{<(\s+|)\/(\s+|)smugmug >}}/ms,
+        fromBlock: function(match) {
+            return {
+                id: match[1],
+                alt_text: match[2],
+                caption: match[3],
+            };
+        },
+        toBlock: function(obj) {
+            return `{{< smugmug ${obj.id} "${obj.alt_text}" >}}
+            ${obj.caption}
+            {{< /smugmug >}}`;
+        },
+        toPreview: function(obj) {
+            return `<img src="https://photos.smugmug.com/photos/${obj.id}/0/M/${obj.id}-M.png" alt="Smugmug Photo"/><br />
+            <b>Alt text</b>: ${obj.alt_text}<br />
+            <b>Caption</b>: ${obj.caption}`;
+        },
+    });
+    CMS.registerEditorComponent({
+        id: "center",
+        label: "Center Text",
+        fields: [
+          {
+            name: "text",
+            label: "Text to center",
+            widget: "markdown"
+          }
+        ],
+        pattern: /{{< center\s+>}}\s+(?<text>.*?){{<(\s+|)\/(\s+|)center >}}/ms,
+        fromBlock: function(match) {
+            return {
+                text: match[1],
+            };
+        },
+        toBlock: function(obj) {
+            return `{{< center >}}
+            ${obj.text}
+            {{< /center >}}`;
+        },
+        toPreview: function(obj) {
+            return `<div style="text-align: center;">
+              ${obj.text}
+            </div>`;
+        },
+    });
+    CMS.registerEditorComponent({
+        id: "carousel",
+        label: "Carousel",
+        fields: [
+          {
+            name: "all_items",
+            label: "All items for carousel",
+            widget: "list",
+            collapsed: true,
+            minimize_collapsed: true,
+            fields: [
+              {
+                name: "smugmug_id",
+                label: "Smugmug ID",
+              },
+              {
+                name: "caption",
+                label: "Image Caption",
+                widget: "markdown"
+              }
+            ]
+          }
+        ],
+        pattern: /{{< carousel\s+>}}\s+(?<text>.*?){{<(\s+|)\/(\s+|)carousel >}}/ms,
+        fromBlock: function(match) {
+            const text = match[1];
+            let retArray = [];
+
+            text.trim().split('\n').forEach(element => {
+              retArray.push(
+                {
+                  smugmug_id: element.split('|')[0],
+                  caption: element.split('|')[1],
+                }
+              );
+            });
+            return {
+              all_items: retArray
+            }
+        },
+        toBlock: function(obj) {
+            let retString = '{{< carousel >}}\n';
+            obj.all_items.forEach(element => {
+              retString += `${element.smugmug_id}|${element.caption}\n`;
+            });
+            retString += '{{< /carousel >}}';
+            return retString;
+        },
+        toPreview: function(obj) {
+            let retString = "";
+            obj.all_items.forEach(element => {
+              retString += `<img src="https://photos.smugmug.com/photos/${element.smugmug_id}/0/M/${element.smugmug_id}-M.png" alt="Smugmug Photo"/><br />
+              <b>Caption</b>: ${element.caption}`
+            });
+            return retString;
+        },
+    });
+  </script>
   <!-- https://cdn.jsdelivr.net/npm/netlify-cms@^2.0.0/dist/netlify-cms.js -->
 </body>
 </html>

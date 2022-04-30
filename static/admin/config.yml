@@ -1,23 +1,360 @@
+collapsed_defaults: &collapsed_defaults
+  collapsed: true
+  minimize_collapsed: true
+object_defaults: &object_defaults
+  widget: "object"
+  <<: *collapsed_defaults
+list_defaults: &list_defaults
+  widget: "list"
+  <<: *collapsed_defaults
+markdown_defaults: &markdown_defaults
+  widget: "markdown"
+  sanitize_preview: true
+  minimal: true
+
+
 backend:
   name: github
   repo:  Climate-Refugee-Stories/crs-website  # Path to your Github repository
-  branch: master # Branch to update
+  # branch: master # Branch to update
+  branch: dev
 
 # use google drive not this upload
 media_folder: 'N/a'
 publish_mode: editorial_workflow
 
 collections:
-  - name: "stories"
-    label: "Stories"
-    folder: "content/stories"
+  - name: "list_files"
+    label: "Main Pages"
+    files:
+      - name: homepage
+        label: "Homepage"
+        file: content/_index.md
+        fields:
+          - name: banner
+            label: Banner Section
+            summary: First section on homepage
+            <<: *object_defaults
+            fields:
+              - name: "title"
+                label: Title Section
+                <<: *markdown_defaults
+              - name: background_img
+                label: main background image
+              - name: logo
+                label: logo on top of background image
+
+          - name: about
+            label: About Section
+            summary: About text + button below hero section
+            <<: *object_defaults
+            fields:
+              - &md_content
+                name: content
+                label: about text
+                <<: *markdown_defaults
+              - &button_defaults
+                name: button
+                label: button
+                summary: button for about text
+                <<: *object_defaults
+                fields:
+                  - name: enable
+                    label: Enabled?
+                    widget: boolean
+                  - &link_defaults
+                    name: URL
+                    label: Link for navigation
+                  - name: label
+                    label: Text for button
+
+          - name: stories
+            label: stories section
+            summary: Stories section + map
+            <<: *object_defaults
+            fields:
+              - &title_defaults
+                name: title
+                label: Stories section title
+              - name: map
+                label: Map url (including https)
+              - <<: *link_defaults
+                label: url to link to stories page
+
+          - name: archive
+            label: Archive
+            summary: Archive section options
+            <<: *object_defaults
+            fields:
+              - <<: *title_defaults
+                label: Archive section title
+              - name: item_show
+                label: Archive articles to show
+                widget: number
+                value_type: int
+                min: 0
+                max: 10
+
+          - name: resources
+            label: resources
+            summary: Resources section
+            <<: *object_defaults
+            fields:
+              - <<: *title_defaults
+                label: Resources section title
+              - <<: *button_defaults
+                summary: button for resources text
+              - name: item
+                label: items
+                <<: *list_defaults
+                max: 3
+                allow_add: false
+                summary: More info item
+                fields:
+                  - <<: *title_defaults
+                    label: Item title
+                  - &icon_defaults
+                    name: icon
+                    label: Font Awesome Icon string
+                  - <<: *md_content
+                    label: Text for item
+                  - name: highlighted
+                    label: Highlight text (with blue)?
+                    widget: boolean
+                    default: false
+                  - *link_defaults
+      - name: about
+        label: "About"
+        file: content/about/_index.md
+        fields:
+          - &metadata_defaults
+            name: description
+            label: metadata for page
+            widget: text
+          - &draft_defaults
+            name: draft
+            label: Draft?
+            widget: boolean
+          - &page_intro_defaults
+            <<: *title_defaults
+            label: Title at top of page
+          - &content_defaults
+            name: body
+            label: Content
+            <<: *markdown_defaults
+            minimal: false
+          - name: partners
+            label: Partners
+            summary: All partner information
+            <<: *object_defaults
+            fields:
+              - name: enable
+                label: Enable on homepage?
+                widget: boolean
+              - name: about
+                label: Intro partner text
+                <<: *markdown_defaults
+              - name: item
+                label: Partners
+                summary: Partner logo & link
+                <<: *list_defaults
+                fields:
+                  - name: logo
+                    label: Partner Logo
+                  - name: link
+                    label: Link to partner's website
+      - name: stories
+        label: "Stories"
+        file: content/stories/_index.md
+        fields:
+          - *page_intro_defaults
+          - *metadata_defaults
+          - *draft_defaults
+      - name: crs_news
+        label: "CRS News"
+        file: content/about/crs-news.md
+        fields:
+          - <<: *title_defaults
+            label: CRS News section title
+          - *draft_defaults
+          - name: description
+            label: section intro
+            <<: *markdown_defaults
+          - *content_defaults
+          - <<: *button_defaults
+            label: More CRS News
+      - name: archive
+        label: "Archive"
+        file: content/archive/_index.md
+        fields:
+          - *page_intro_defaults
+          - *metadata_defaults
+          - *draft_defaults
+          - name: archive_tags
+            label: Archive tags
+            summary: All the archive tags
+            <<: *object_defaults
+            fields:
+              - name: impacts
+                label: All the impact tags
+                <<: *list_defaults
+              - name: location
+                label: All the location tags
+                <<: *list_defaults
+              - name: location type
+                label: All the location type tags
+                <<: *list_defaults
+              - name: themes
+                label: All the themes tags
+                <<: *list_defaults
+      - name: contact
+        label: "Contact"
+        file: content/contact/_index.md
+        fields:
+          - *page_intro_defaults
+          - *metadata_defaults
+          - *draft_defaults
+          - &social_defaults
+            name: socials
+            label: Socials
+            summary: social link + icons
+            <<: *list_defaults
+            fields:
+              - *icon_defaults
+              - <<: *link_defaults
+                label: link for social website
+      - name: resources
+        label: "Resources"
+        file: content/resources/_index.md
+        fields:
+          - *page_intro_defaults
+          - *metadata_defaults
+          - *draft_defaults
+          - &order_defaults
+            name: weight
+            label: order
+            widget: number
+            value_type: int
+            default: 0
+          - *content_defaults
+
+  - name: about
+    label: Team Member
+    folder: content/about
+    filter: &ignore_index
+      field: visibleInCMS
+      value: true
     create: true
-    slug: "{{ slug }}"
     fields:
-      - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: "Creation Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm:ssZ"}
-      - {label: "Draft", name: "draft", widget: "boolean", default: true}
-      - {label: "Cover Image", name: "image", widget: "string"}
-      - {label: "Cover Thumbnail", name: "thumbnail", widget: "string"}
-      - {label: "Image Caption", name: "image_caption", widget: "markdown"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - label: Full Name
+        name: title
+      - *draft_defaults
+      - *order_defaults
+      - label: Team Photo
+        name: image
+      - label: Designation
+        name: designation
+      - name: work_area
+        label: Work Area
+      - name: location
+        label: Location
+      - name: recent_publications
+        label: Recent Publications
+        summary: publication
+        <<: *list_defaults
+        fields:
+          - name: content
+            label: Stylized (links) references
+            <<: *markdown_defaults
+      - name: recent_projects
+        label: Recent Projects
+        summary: project
+        <<: *list_defaults
+        fields:
+          - name: content
+            label: Stylized (links) references
+            <<: *markdown_defaults
+      - *social_defaults
+      - *content_defaults
+      - &cms_visible
+        name: visibleInCMS
+        widget: hidden
+        default: true
+  - name: stories
+    label: Stories
+    folder: content/stories
+    create: true
+    <<: *ignore_index
+    fields:
+      - label: Title
+        name: title
+      - label: Creation Date
+        name: date
+        widget: datetime
+        date_format: DD/MM/YYYY
+        time_format: HH:mm:ssZ
+      - *draft_defaults
+      - label: Cover Image
+        name: image
+      - label: Cover Thumbnail
+        name: thumbnail
+      - label: Image Caption
+        name: image_caption
+        required: false
+        <<: *markdown_defaults
+      - &tags_default
+        label: Tags (Comma seperated)
+        name: tags
+        <<: *list_defaults
+      - *order_defaults
+      - *content_defaults
+      - *cms_visible
+
+  - name: archive
+    label: Archive
+    folder: content/archive
+    filter: &ignore_index
+      field: visibleInCMS
+      value: true
+    create: true
+    fields:
+      - label: Title
+        name: title
+      - label: Last Updated
+        name: date
+        widget: datetime
+        date_format: DD/MM/YYYY
+        time_format: HH:mm:ssZ
+      - *draft_defaults
+      - *order_defaults
+      - <<: *tags_default
+        name: location
+        label: Locations (Comma seperated)
+      - <<: *tags_default
+        name: alt_cat
+        label: Alternative Categories (Comma seperated)
+      - label: Cover Image
+        name: image
+      - label: Thumbnail
+        name: thumbnail
+      - name: related_stories
+        label: Related Stories
+        <<: *list_defaults
+        summary: MD for related stories
+        fields:
+          - name: content
+            label: Related story in MD
+            <<: *markdown_defaults
+      - label: Description/Intro Text
+        name: description
+        <<: *markdown_defaults
+      - name: resources
+        label: Extra Resources
+        summary: extra resource
+        <<: *list_defaults
+        fields:
+          - name: content
+            label: Extra resources in MD
+            <<: *markdown_defaults
+      - *content_defaults
+      - *cms_visible

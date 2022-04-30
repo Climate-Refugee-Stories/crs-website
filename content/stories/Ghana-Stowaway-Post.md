@@ -9,6 +9,7 @@ description: "Fishing Boat on Azizakpe Island"
 summary: "Located in West Africa, Ghana sits on the Atlantic Ocean where its coast stretches over a 330-mile distance. Seven percent of Ghana’s total land area lies along the coast and is home to over five million people."
 draft: false
 weight: 0
+visibleInCMS: true
 ---
 
 &nbsp;
@@ -68,7 +69,7 @@ Recognizing that many of the individuals we spoke to who face displacement and e
 
 ***Christine Wheatley, PhD,** is Executive Director of NED Africa.*
 
-{{< smugmug i-5Mj6btc "Jonathan's Story">}}
+{{< smugmug i-5Mj6btc "Jonathan's Story" >}}
 Jonathan's Story. Artwork by [Monica Curca](../../about/monica-curca/)
 {{</ smugmug >}}
 &nbsp;

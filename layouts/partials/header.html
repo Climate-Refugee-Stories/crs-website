@@ -23,10 +23,10 @@
         {{ $active = or $active (eq .Name $current.Title) }}
         {{ if .HasChildren }}
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ .Name }}
           </a>
-          <div class="dropdown-menu" >
+          <div class="dropdown-menu text-center" >
             {{ range .Children }}
             <a class="dropdown-item" href="{{ .URL | relURL }}">{{ .Name }}</a>
             {{ end }}

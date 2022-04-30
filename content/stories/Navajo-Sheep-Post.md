@@ -14,6 +14,7 @@ summary: Dził Nitsaa means Big Mountain in Diné Bizaad (the Navajo Language).
 description: Navajo Sheep
 draft: false
 weight: 0
+visibleInCMS: true
 ---
 #### **Dził Nitsaa: a Place of Diné Resistance**
 

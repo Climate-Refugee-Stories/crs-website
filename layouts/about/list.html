@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="text-white font-tertiary">{{ .Title }}</h2>
+        <h1 class="text-white font-tertiary">{{ .Title }}</h1>
       </div>
     </div>
   </div>
@@ -31,28 +31,6 @@
   </div>
 </section>
 <!-- /about -->
-
-<!-- Work Process -->
-{{ with site.Data.about.work_process }}
-{{ if .enable }}
-<section class="section" id="{{ .title | urlize }}">
-  <div class="container">
-    <div class="row justify-content-around">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
-        <p>{{ .about }}</p>
-      </div>
-      {{ range .item }}
-      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
-        <a href="{{ .link }}"><img src="https://photos.smugmug.com/photos/{{ .icon }}/0/O/{{ .icon }}-O.png" class="img-fluid mb-4" alt="icon"></a>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- ./Work Process -->
 
 <!-- CRS Team -->
 <section class="section bg-cover" id="our-team">
@@ -81,38 +59,60 @@
 </section>
 <!-- /team -->
 
+<!-- Work Process -->
+{{ with .Params.partners }}
+<section class="section" id="{{ .title | urlize }}">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">{{ .title }}</h2>
+        <p>{{ .about }}</p>
+      </div>
+      {{ range .item }}
+      <div class="col-lg-3 col-md-4 hover-shadow pt-3  d-flex justify-content-center align-items-center">
+        <a href="{{ .link }}"><img src="https://photos.smugmug.com/photos/{{ .logo }}/0/O/{{ .logo }}-O.png" class="img-fluid mb-4" alt="icon"></a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- ./Work Process -->
+
 
 <!-- CRS News -->
-{{ with site.GetPage "/about/crs-news.md" }}
+{{ range .Pages }}
+{{ if .Params.button }}
 <section class="section" id="{{ .Title | urlize }}">
   <div class="container">
     <div class="row justify-content-around">
-      <div class="col-12 text-center">
+      <div class="col-lg-12 text-center">
         <h2 class="section-title">{{ .Title }}</h2>
+        {{ with .Description }}
         <div class="col-lg-9 mx-auto text-center">
-          <p> {{ .Description | markdownify }}</p><br/><br/>
+          <p> {{ . | markdownify }}</p><br/><br/>
         </div>
+        {{ end }}
       </div>
-      <div class="col-9 content">
+      <div class="col-lg-9 content">
         {{ .Content }}
         <div class="mx-auto text-center">
-        {{ with site.Data.about.see_more_news }}
-          {{ if .button.enable }}
-          {{ with .button }}
-          <br/>
-          <a href="{{ .URL | absURL }}" class="btn btn-transparent" target="_blank">{{.label}}</a>
-          {{ end }}
-          {{ end }}
-          {{ end }}
+        {{ with .Params.button }}
+        {{ if .enable }}
+        <br/>
+        <a href="{{ .URL | absURL }}" class="btn btn-transparent" target="_blank">{{.label}}</a>
+        {{ end }}
+        {{ end }}
         </div>
       </div>
     </div>
   </div>
 </section>
 {{ end }}
+{{ end }}
 <!-- /CRS News -->
 
-{{ if site.Data.about.clients_logo_slider.enable }}
+<!-- {{ if site.Data.about.clients_logo_slider.enable }}
 <section class="section">
   <div class="container">
     <div class="row">
@@ -123,6 +123,6 @@
     {{ partial "client-slider.html" . }}
   </div>
 </section>
-{{ end }}
+{{ end }} -->
 
 {{ end }}

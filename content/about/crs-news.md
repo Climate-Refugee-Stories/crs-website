@@ -2,12 +2,16 @@
 title: "CRS News"
 description: |
     See below for a snapshot of what we have been up to--events, news, conference presentations, and more! [Click here](https://climaterefugeestories.substack.com) to sign up for our email newsletter. View [All CRS News](https://docs.google.com/document/d/1pJfXh9YsHorg04mO6Dqd4hyaTRxTUlo6yhSZqU8g6VE/edit?usp=sharing).
-weight: 0
 draft: false
+button: 
+    enable: true
+    label: "More CRS News"
+    URL: "https://docs.google.com/document/d/1pJfXh9YsHorg04mO6Dqd4hyaTRxTUlo6yhSZqU8g6VE/edit?usp=sharing"
 ---
 
 #### **Climate Migration: Docu-Series Watch Party**
 {{< youtube 1sGg8LDASKE >}}
+{{< /youtube >}}
 
 &nbsp;  
   
@@ -36,6 +40,7 @@ The Center for Eco-Justice Conference, ILIFF School of Theology, October 21-22, 
 
 #### **“Climate Refugee Stories,” led by Tina Shull, PhD, History, UNC Charlotte**
 {{< youtube le9eyI-56N8 >}}
+{{< /youtube >}}
 
 &nbsp;  
   

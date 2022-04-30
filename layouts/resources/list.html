@@ -3,34 +3,27 @@
 {{ partial "page-title.html" . }}
     
 
-{{ if site.Data.resources.about.enable }}
 <!-- about -->
 <section class="section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        {{ with site.Data.resources.about }}
-        <p class="lead text-dark">{{.content | markdownify}}</p>
-        {{ end }}
+      <div class="col-lg-10 mx-auto text-center lead text-dark">
+        {{ .Content }}
       </div>
     </div>
   </div>
 </section>
 <!-- /about -->
-{{ end }}
-
-  {{ if site.Data.resources.cms.enable }}
-  {{ with site.Data.resources.cms }}
-  <!-- CMS -->
-  <section class="section" id="{{ .title | urlize }}">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
-          <p>{{ .description | markdownify }}</p>
-          {{ if .button.enable }}
-          {{ with .button }}
-            <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
+{{ range .Pages }}
+<section class="section" id="{{ .Title | urlize }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">{{ .Title }}</h2>
+          {{ .Content }}
+          {{ with .Params.button }}
+          {{ if .enable }}
+          <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
           {{ end }}
           {{ end }}
         </div>
@@ -39,52 +32,6 @@
   </div>
 </section>
 {{ end }}
-{{ end }}
-<!-- /CMS -->
 
-  {{ with site.Data.resources.hscurriculum }}
-  {{ if .enable }}
-  <!-- hs curriculum -->
-  <section class="section" id="{{ .title | urlize }}">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">{{.title | markdownify }}</h2>
-        <p>{{ .description | markdownify }}</p>
-        {{ if .button.enable }}
-        {{ with .button }}
-          <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
-        {{ end }}
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /hs curriculum -->
-
-<!-- take action -->
-{{ with site.Data.resources.take_action }}
-{{ if .enable }}
-  <section class="section" id="{{ .title | urlize }}">
-<div class="container">
-  <div class="row justify-content-around">
-    <div class="col-lg-12 text-center">
-      <h2 class="section-title">{{ .title | markdownify }}</h2>
-      <p>{{ site.Data.resources.take_action.description | markdownify }}</p>      
-      {{ if .button.enable }}
-      {{ with .button }}
-        <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
-      {{ end }}
-      {{ end }}
-    </div>
-  </div>
-</div>
-</section>
-{{ end }}
-{{ end }}
-<!-- ./take action -->
-
-
+<!-- /main -->
 {{ end }}

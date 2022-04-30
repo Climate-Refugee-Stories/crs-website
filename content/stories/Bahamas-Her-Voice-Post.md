@@ -9,6 +9,7 @@ description: "Bahamian artist Dede Brown"
 summary: "In September 2019, Hurricane Dorian became one of the most intense storms to ever hit the Atlantic and the greatest natural disaster to ever make landfall on the islands of The Bahamas."
 draft: false
 weight: 0
+visibleInCMS: true
 ---
 
 **In September 2019**, Hurricane Dorian became one of the most intense storms to ever hit the Atlantic and the greatest natural disaster to ever make landfall on the islands of The Bahamas causing approximately USD 3.4 billion in damages. While Dorian caused unprecedented environmental and infrastructure damages, it also exposed the structural weaknesses and vulnerabilities of the Bahamian society which created an imbroglio for governmental and non-governmental agencies striving to respond effectively and briskly following the storm. 
@@ -29,7 +30,7 @@ Many governments in the region have been perceived as unable to effectively pivo
 &nbsp;  
 &nbsp;  
 
-{{< smugmug i-gt58CNP "National Art Gallery of the Bahamas">}}
+{{< smugmug i-gt58CNP "National Art Gallery of the Bahamas" >}}
 ["Refuge"](https://nagb.org.bs/events-and-exhibitions/2019/12/19/refuge) exhibit capturing community responses to Hurricane Dorian by artists Dede and Kristin Brown at the National Art Gallery of the Bahamas. Photo Credit: Sienna Leis
 {{</ smugmug >}}
 &nbsp;

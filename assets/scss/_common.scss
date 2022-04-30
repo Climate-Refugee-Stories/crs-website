@@ -173,6 +173,12 @@ html {
   &-sm {
     font-size: 0.9375rem;
     padding: 0.625rem 1.875rem;
+    @include tablet {
+      font-size: 1.2rem;
+    }
+    @include mobile {
+      font-size: 1.5rem;
+    }
   }
 
   &-xs {
@@ -206,6 +212,9 @@ html {
     background: transparent;
     color: var(--primary-color);
     font-weight: 700;
+    @include mobile {
+      font-size: 1.7rem;
+    }
  
     &:active, &:hover {
       color: var(--primary-color)
@@ -273,10 +282,18 @@ html {
 .homepage {
   &-abt-txt {
     font-size: 1.4rem;
+    @include mobile {
+      font-size: 1.7rem;
+    }
   }
 
   &-story-map {
     margin-bottom: 1.8rem;
+    width: 700px;
+    height: 550px;
+    @include mobile {
+      height: 400px;
+    }
   }
 }
 
@@ -395,6 +412,12 @@ html {
   }
   &_img {
     height: 20rem;
+    @include tablet {
+      height: 18rem;
+    }
+    @include mobile {
+      height: 15rem;
+    }
     width: 96%;
     background-position: center;
     background-size: cover;
@@ -413,6 +436,10 @@ html {
   overflow: hidden;
   & figcaption {
     padding: 1rem;
+    font-size: 1rem;
+    @include tablet {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -500,11 +527,22 @@ html {
 .caption {
   margin-top: 0.5rem;
   align-self: start;
+  @include tablet {
+    margin-top: 0.1rem;
+  }
+}
+
+.vid_caption {
+  font-size: 1rem;
+  @include tablet {
+    font-size: 1.5rem;
+  }
 }
 
 .modal {
   &__full {
     max-width: 90%;
+    margin: auto;
   }
   &__slides {
     display: flex;
@@ -592,6 +630,9 @@ html {
   }
   &__item {
     font-size: 1rem;
+    @include mobile {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -656,4 +697,18 @@ html {
 .nav-link + .dropdown-menu.show {
   border: none;
   top: 85%;
+}
+
+//  // for accessing content text in resources page
+// telling text to be dark when child elements
+.text-dark > * {
+  color: #000;
+}
+
+.lead > * {
+  font-size: 1.25rem;
+  @include tablet {
+    font-size: 1.5rem;
+  }
+  font-weight: 300;
 }

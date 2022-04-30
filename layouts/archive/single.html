@@ -22,7 +22,7 @@
           </div>
           <div class="col-sm-6 mb-5">
             <div class="project-meta">
-              <i class="ti-folder"></i>
+              <i class="ti-location-pin"></i>
               <div class="ml-3">
                 <h4>Location</h4>
                 {{ $tags := slice }}
@@ -37,7 +37,9 @@
               <i class="ti-link"></i>
               <div class="ml-3">
                 <h4>Related Stories</h4>
-                <h5>{{. | markdownify}}</h5>
+                {{ range . }}
+                <h5>{{.content | markdownify}}</h5>
+                {{ end }}
               </div>
             </div>
           </div>
@@ -268,7 +270,8 @@
           <div class="vid_slide archive_gallery_container" style="transform: translateX({{ mul $slide_vid_counter 100 }}%);">
             {{ range . }}
               <div class="archive_gallery_img">
-                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/{{ .vid_id | safeURL }}?modestbranding=1&rel=0&playsinline=0&domain={{ trim $.Site.BaseURL `/` | safeURL }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/{{ .vid_id | safeURL }}?modestbranding=1&rel=0&playsinline=0&domain={{ trim $.Site.BaseURL `/` | safeURL }}" title="YouTube video player: {{ .vid_alt_text }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption class="caption vid_caption">{{ .vid_desc  | truncate 40 | safeHTML }}</figcaption>
               </div>
             {{ $vid_counter = add $vid_counter 1}}
             {{ end }}
@@ -292,7 +295,9 @@
       {{ with .Params.resources }}
       <div class="col-lg-11 mt-5">
         <h3>Resources</h3>
-        {{ . | markdownify }}
+        {{ range . }}
+        {{ .content | markdownify }}<br />
+        {{ end }}
       </div>
       {{ end }}
     </div>
