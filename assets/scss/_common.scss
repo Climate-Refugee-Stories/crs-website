@@ -696,5 +696,8 @@ html {
 
 .lead > * {
   font-size: 1.25rem;
+  @include tablet {
+    font-size: 1.5rem;
+  }
   font-weight: 300;
 }
