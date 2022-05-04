@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/redhatdisplay/v12/8vIf7wUr0m80wwYf0QCXZzYzUoTK8RZQvRd-D1NYbl6Wckg.ttf) format('truetype');
+}
