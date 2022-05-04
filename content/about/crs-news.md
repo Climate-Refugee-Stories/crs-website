@@ -19,7 +19,7 @@ button:
 &nbsp; 
 #### [**CTI Fellow Creates Original Curricula on Immigration and Climate Change**](https://charlotteteachers.org/2021/11/cti-fellow-creates-curricula-on-immigration-and-climate-change/)
 
-{{< smugmug i-vXvQGT2 "Students at Whitewater Middle School" >}}
+{{< smugmug i-vXvQGT2 `Students at Whitewater Middle School` >}}
 Students at Whitewater Middle School in Charlotte. Photo Credit: Mariella Fernandes, Charlotte Teachers Institute, November 16, 2021.
 {{</ smugmug >}}
 
@@ -29,7 +29,7 @@ Students at Whitewater Middle School in Charlotte. Photo Credit: Mariella Fernan
 &nbsp; 
 
 #### [**Shifting Climates - Shifting People**](https://www.iliff.edu/centerforecojustice/conference2021/)
-{{< smugmug i-D8NchNM "Eco-Justice Conference" >}}
+{{< smugmug i-D8NchNM `Eco-Justice Conference` >}}
 The Center for Eco-Justice Conference, ILIFF School of Theology, October 21-22, 2021.
 {{</ smugmug >}}
 
@@ -48,7 +48,7 @@ The Center for Eco-Justice Conference, ILIFF School of Theology, October 21-22, 
 &nbsp; 
 
 #### [**Climate Refugee Stories: Building an Archive of Resistance**](https://ehc.english.ucsb.edu/?p=21016)
-{{< smugmug i-nLssWJD "Nearly Carbon Neutral Conference" >}}
+{{< smugmug i-nLssWJD `Nearly Carbon Neutral Conference` >}}
 Confronting the Climate Crisis with Systemic Alternatives in the Age of Coronavirus, A Nearly-Carbon Neutral Conference, UC Santa Barbara, October, 2021.
 {{</ smugmug >}}
 &nbsp;  

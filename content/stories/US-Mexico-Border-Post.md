@@ -17,7 +17,7 @@ Climate change not only contributes to conditions globally that drive migration 
 In this interview for Climate Refugee Stories conducted by Steve Pavey of [Hope in Focus](https://www.stevepavey.com/), Todd Miller discusses his encounters with climate migrants from Central America and Mexico, and how climate change has contributed to the borderlands becoming what he calls a "de facto war zone."  Below, the Tucson-based organization *No More Deaths* reports on the US Border Patrol's abuses against migrants and advocates, and members of the indigenous Tohono O'odham nation call for solidarity across movements for climate and migrant justice, and indigenous land sovereignty.  
 &nbsp;
 
-{{< smugmug i-6HscjT3 "Storming the Wall by Todd Miller" >}}
+{{< smugmug i-6HscjT3 `Storming the Wall by Todd Miller` >}}
 {{</ smugmug >}}
 &nbsp;
 
@@ -33,7 +33,7 @@ In this interview for Climate Refugee Stories conducted by Steve Pavey of [Hope 
 ---  
 &nbsp;
 
-{{< smugmug i-dxhFsZV "No More Deaths" >}}
+{{< smugmug i-dxhFsZV `No More Deaths` >}}
 {{</ smugmug >}}
 &nbsp;
 
@@ -71,7 +71,7 @@ As long as people are forced to risk their lives to enter this country, people w
 {{< /youtube >}}
 &nbsp;
 
-{{< smugmug i-rm577LW "Migrant Deaths and Humane Borders Water Stations Map" >}}
+{{< smugmug i-rm577LW `Migrant Deaths and Humane Borders Water Stations Map` >}}
 Organizations such as Humane Borders, [No More Deaths](http://www.nomoredeaths.org/), and the [Colibri Center for Human Rights](http://www.colibricenter.org/) have documented increasing migrant deaths in the Arizona desert, revealing the deadly intersections of increasing immigration enforcement measures, such as Operation Gatekeeper and the construction of the border wall, and climate change. Image Credit: [Humane Borders](https://humaneborders.org/migrant-death-mapping/)
 {{</ smugmug >}}
 &nbsp;
@@ -81,7 +81,7 @@ Organizations such as Humane Borders, [No More Deaths](http://www.nomoredeaths.o
 {{< /youtube >}}
 &nbsp;
 
-{{< smugmug i-TwpRK9Z "Disappeared Report" >}}
+{{< smugmug i-TwpRK9Z `Disappeared Report` >}}
 Click to read [No More Deaths's report "Disappeared"](http://www.thedisappearedreport.org/)"
 {{</ smugmug >}}
 
@@ -91,7 +91,7 @@ Click to read [No More Deaths's report "Disappeared"](http://www.thedisappearedr
 #### ***Tohono O'odham Nation: Border Wall "Over My Dead Body"*** 
 &nbsp;
 
-{{< smugmug i-73sp8Ns "Over My Dead Body" >}}
+{{< smugmug i-73sp8Ns `Over My Dead Body` >}}
 “It’s going to affect our sacred lands. It’s going to affect our ceremonial sites. It’s going to affect the environment. We have wildlife, and they have their own patterns of migration,” he said. “There are just so many things that are wrong with this. The whole idea behind it is just racist.” Tohono O'odham member Bradley Moreno in [The Guardian.](https://www.theguardian.com/us-news/2017/jan/26/donald-trump-border-wall-tohono-oodham-arizona-tribe)
 {{</ smugmug >}}
 &nbsp;
@@ -99,7 +99,7 @@ Click to read [No More Deaths's report "Disappeared"](http://www.thedisappearedr
 #### [***Tohono O'odham Solidarity Project***](http://tiamatpublications.com/)
 &nbsp;
 
-{{< smugmug i-gV8LCSV "In order to move forward" >}}
+{{< smugmug i-gV8LCSV `In order to move forward` >}}
 {{</ smugmug >}}
 
 ---

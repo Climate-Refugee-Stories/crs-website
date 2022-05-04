@@ -14,7 +14,7 @@ weight: 0
 
 Small, low-lying island nations in the South Pacific are some of the most vulnerable locations in the world to the impacts of climate change.  The Maldives, Marshall Islands, Kiribati and Tuvalu have been key sites where debates over the concept of “climate refugees” have taken place.  Affected community members and activists have [resisted media narratives](https://link.springer.com/chapter/10.1007/978-3-319-70703-7_1) that depict them as victims and have taken a range of political and artistic responses.  These nations’ leaders and ambassadors have been some of the first to bring these questions to the international stage.
 
-{{< smugmug i-QhXGQfL "Tokelauns protest against climate change" >}}
+{{< smugmug i-QhXGQfL `Tokelauns protest against climate change` >}}
 Tokelauns protest against climate change during the Pacific Warrior Day of Action in 2014 Image Credit: [360 Pacific](http://350pacific.org/we-are-not-drowning-we-are-fighting/)
 {{</ smugmug >}}
 
@@ -28,7 +28,7 @@ As early as 1987, former President of the Republic of the Maldives Maumoon Abdul
 
 During World War II, the United States occupied the Marshall Islands as a trust territory and built a strategic military weapons base on Kwajalein Atoll.  The islands were then developed as a nuclear testing site, where the United States detonated 67 nuclear bomb tests between 1946-1958.  Residents were relocated, but Bikini and Rongelap Atolls became uninhabitable and radioactive fallout has poisoned Marshallese residents across the islands [for decades since](https://theconversation.com/bikini-islanders-still-deal-with-fallout-of-us-nuclear-tests-70-years-later-58567).  
 
-{{< smugmug i-Crnc86w "Marshall Islands" >}}
+{{< smugmug i-Crnc86w `Marshall Islands` >}}
 Image Credit: [SciDevNet](https://www.scidev.net/global/climate-change/multimedia/pacific-islands-threatened-waves-climate-change.html?)
 {{</ smugmug >}}
 
@@ -85,7 +85,7 @@ Climate Refugee Stories art director and project collaborator Bo Daraphant sat d
 
 &nbsp;
 
-{{< smugmug i-Rvpwpsk "Sampaguita - First Art Attempts" >}}
+{{< smugmug i-Rvpwpsk `Sampaguita - First Art Attempts` >}}
 Sampaguita is one of my first attempts at visual art that mixed ancient Pilipino text, Baybayin, passport imagery, blurred relationships with nation-states and individuals, wrapping paper, charcoal, and pencil. Source: [(Un)documenting](http://undocumenting.com/post/61601717049/stephanie)
 {{</ smugmug >}}
 
@@ -94,3 +94,4 @@ Sampaguita is one of my first attempts at visual art that mixed ancient Pilipino
 <!-- TO-DO: Figure out spacing & sizing -->  
 ##### ***Listen to "Stolen Lands" by Soultree on Soundcloud:***
 {{< smugmug i-hgmt9KV `"Stolen Lands" by Soultree` "https://soundcloud.com/elephant-rebellion/stolen-lands" >}}
+{{</ smugmug >}}
