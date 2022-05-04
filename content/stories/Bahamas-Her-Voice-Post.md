@@ -26,6 +26,7 @@ Many governments in the region have been perceived as unable to effectively pivo
 {{< center >}}
             ##### ***Coming Soon: Stories from Hurricane Dorian***
 
+            
             {{< /center >}}
 
 &nbsp;
@@ -34,11 +35,14 @@ Many governments in the region have been perceived as unable to effectively pivo
 &nbsp;\
 &nbsp;  
 
-{{< smugmug i-gt58CNP `National Art Gallery of the Bahamas` >}} ["Refuge"](https://nagb.org.bs/events-and-exhibitions/2019/12/19/refuge) exhibit capturing community responses to Hurricane Dorian by artists Dede and Kristin Brown at the National Art Gallery of the Bahamas. Photo Credit: Sienna Leis
- {{< /smugmug >}}
+{{< smugmug i-gt58CNP `National Art Gallery of the Bahamas` >}}
+ ["Refuge"](https://nagb.org.bs/events-and-exhibitions/2019/12/19/refuge) exhibit capturing community responses to Hurricane Dorian by artists Dede and Kristin Brown at the National Art Gallery of the Bahamas. Photo Credit: Sienna Leis
+ 
+{{< /smugmug >}}
 
 &nbsp;
 
-{{< smugmug i-gt58CNP `testing` >}} {{< /smugmug >}}
+{{< smugmug i-gt58CNP `testing` "https://google.com" >}}
+ {{< /smugmug >}}
 
 - - -
