@@ -1,32 +1,40 @@
 ---
-title: "Central America: \"This Caravan is Yours, Mr. Trump\""
-date: 2021-10-15T12:14:34+07:00
-image: "i-JTbJ8QB"
-thumbnail: "i-XT48g7t"
-image_caption: |
-    A young member of the spring 2018 [refugee caravan](https://www.pueblosinfronteras.org/viacrucis.html) waves a Honduran flag atop the US-Mexico border wall in Playas Tijuana. Image Credit: [Tina Shull](../../about/tina-shull)
-description: "Central America: This Caravan is Yours"
-summary: "When the people of my country of Honduras decide to leave, they do not leave because they lack love for Honduras, but because the need demands it."
+title: 'Central America: "This Caravan is Yours, Mr. Trump"'
 draft: false
+image_caption: >
+  A young member of the spring 2018 [refugee
+  caravan](https://www.pueblosinfronteras.org/viacrucis.html) waves a Honduran
+  flag atop the US-Mexico border wall in Playas Tijuana. Image Credit: [Tina
+  Shull](../../about/tina-shull)
+summary: When the people of my country of Honduras decide to leave, they do not
+  leave because they lack love for Honduras, but because the need demands it.
+date: 2021-10-15T12:14:34+07:00
+image: i-JTbJ8QB
+thumbnail: i-XT48g7t
 weight: 0
 visibleInCMS: true
+description: "Central America: This Caravan is Yours"
 ---
-
 <!-- TO-DO: Center -->
+
 {{< center >}}
 #### ***Coming Soon: Stories from the Migrant Caravan***   
 #### ***by Monica Curca and Thor Morales of Activate Labs***
 &nbsp;
+
 {{< /center >}}
 
 &nbsp;
+
+
 {{< smugmug i-znpg9px `Members of the Viacrusis Migrantes` >}}
 Members of the Viacrusis Migrantes en la luche ("Migrants in Struggle" Refugee Caravan) in Mexico in April 2018. Image Credit: [Pueblo sin Fronteras](http://www.pueblosinfronteras.org/)
 {{</ smugmug >}}
 &nbsp;
-#### ***This Caravan is Yours, Mr. Trump***  
-[Español aquí](https://www.latinorebels.com/2018/04/10/la-caravana-es-suya-senor-trump/)  
 
+#### ***This Caravan is Yours, Mr. Trump***
+
+[Español aquí](https://www.latinorebels.com/2018/04/10/la-caravana-es-suya-senor-trump/)  
 
 When the people of my country of Honduras decide to leave, they do not leave because they lack love for Honduras, but because the need demands it.  When these people begin their route north, their feelings are conflicted and painful.
 
@@ -58,10 +66,10 @@ Borders are used to generate fiefdoms and your success in exchange for the pain 
 
 You invented the borders because you are afraid of us.  You fear our people who will eventually rise up.  We can see beyond the ambiguities of your farce of equality that there is a HUMAN RIGHT, a gift from our people, confirmed in the harmonious relationships that we establish with our Mother Earth and Pachamama: a shared and common home.  
 
-*Chaco de la Pitoreta*  
-*(Hector Efrén Flores)*  
+*Chaco de la Pitoreta*\
+*(Hector Efrén Flores)*\
 *Poet and Cultural Representative in Honduras*  
 
 *Originally published by [Latino Rebels](http://www.latinorebels.com/2018/04/10/caravanisyours/), April 10, 2018*
 
----
+- - -
