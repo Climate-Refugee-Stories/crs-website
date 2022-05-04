@@ -13,29 +13,28 @@
     // modified from community ⬆
     CMS.registerEditorComponent({
         id: "youtube",
-        label: "Youtube",
+        label: "(CRS) Youtube",
         fields: [{
             name: "id",
             label: "Youtube Video ID",
             widget: "string"
         }],
-        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+>}}\s+{{< \/youtube >}}/ms,
+        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+>}}\s+{{<(\s+|)\/(\s+|)youtube >}}/ms,
         fromBlock: function(match) {
             return {
                 id: match[1],
             };
         },
         toBlock: function(obj) {
-            return `{{< youtube ${obj.id} >}}
-            {{< /youtube >}}`;
+            return `{{< youtube ${obj.id} >}}\n{{< /youtube >}}`;
         },
         toPreview: function(obj) {
-            return `<img src="https://i3.ytimg.com/vi/${obj.id}/hqdefault.jpg" alt="Youtube Video"/>`;
+            return `<img style="max-width: 100%;" src="https://i3.ytimg.com/vi/${obj.id}/hqdefault.jpg" alt="Youtube Video"/>`;
         },
     });
     CMS.registerEditorComponent({
         id: "youtube_caption",
-        label: "Youtube Caption'ed",
+        label: "(CRS) Youtube Caption'ed",
         fields: [
           {
             name: "id",
@@ -60,13 +59,13 @@
             return `{{< youtube ${obj.id} >}}\n${obj.caption}\n{{< /youtube >}}`;
         },
         toPreview: function(obj) {
-            return `<img src="https://i3.ytimg.com/vi/${obj.id}/hqdefault.jpg" alt="Youtube Video"/><br />
+            return `<img style="max-width: 100%;" src="https://i3.ytimg.com/vi/${obj.id}/hqdefault.jpg" alt="Youtube Video"/><br />
             <b>Caption</b>: ${obj.caption}`;
         },
     });
     CMS.registerEditorComponent({
         id: "smugmug",
-        label: "Smugmug",
+        label: "(CRS) Smugmug",
         fields: [
           {
             name: "id",
@@ -114,7 +113,7 @@
             return output;
         },
         toPreview: function(obj) {
-            return `<img src="https://photos.smugmug.com/photos/${obj.id}/0/M/${obj.id}-M.png" alt="Smugmug Photo"/><br />
+            return `<img style="max-width: 100%;" src="https://photos.smugmug.com/photos/${obj.id}/0/M/${obj.id}-M.png" alt="Smugmug Photo"/><br />
             <b>Alt text</b>: ${obj.alt_text}<br />
             <b>Link</b>: ${obj.link}<br />
             <b>Caption</b>: ${obj.caption}`;
@@ -122,7 +121,7 @@
     });
     CMS.registerEditorComponent({
         id: "center",
-        label: "Center Text",
+        label: "(CRS) Center Text",
         fields: [
           {
             name: "text",
@@ -147,7 +146,7 @@
     });
     CMS.registerEditorComponent({
         id: "carousel",
-        label: "Carousel",
+        label: "(CRS) Carousel",
         fields: [
           {
             name: "all_items",
@@ -196,7 +195,7 @@
         toPreview: function(obj) {
             let retString = "";
             obj.all_items.forEach(element => {
-              retString += `<img src="https://photos.smugmug.com/photos/${element.smugmug_id}/0/M/${element.smugmug_id}-M.png" alt="Smugmug Photo"/><br />
+              retString += `<img style="max-width: 100%;" src="https://photos.smugmug.com/photos/${element.smugmug_id}/0/M/${element.smugmug_id}-M.png" alt="Smugmug Photo"/><br />
               <b>Caption</b>: ${element.caption}`
             });
             return retString;
