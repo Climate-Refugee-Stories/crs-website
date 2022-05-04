@@ -1,26 +1,33 @@
 ---
-title: "The Bengal Delta: \"We Are Floating in the Middle\""
-date: 2021-10-20T12:20:34+08:00
-image: "i-LTMw4B6"
-thumbnail: "i-zD7SXBC"
-image_caption: |
-    Two school girls walk along an embankment damaged by a cyclone in Gabura, SW Bangladesh in 2020. Image credt: [Tanaya Dulta Gupta](../../about/tanaya-dutta-gupta/)
-description: "This is meta description."
-summary: "Sitting inside a room in one of the largest slums in Dhaka, her voice breaking with effort to keep tears at bay, 40-year-old Nafisa (pseudonym) shared her experience of migrating from rural Bangladesh."
+title: 'The Bengal Delta: "We Are Floating in the Middle"'
 draft: false
+image_caption: >
+  Two school girls walk along an embankment damaged by a cyclone in Gabura, SW
+  Bangladesh in 2020. Image credt: [Tanaya Dulta
+  Gupta](../../about/tanaya-dutta-gupta/)
+summary: Sitting inside a room in one of the largest slums in Dhaka, her voice
+  breaking with effort to keep tears at bay, 40-year-old Nafisa (pseudonym)
+  shared her experience of migrating from rural Bangladesh.
+date: 2021-10-20T12:20:34+08:00
+image: i-LTMw4B6
+thumbnail: i-zD7SXBC
 weight: 0
 visibleInCMS: true
+description: This is meta description.
 ---
-
 &nbsp;
+
 #### **"Climate Refugee Stories: Bangladesh"**
+
 ##### ***Produced by Tanaya Dutta Gupta and edited by Thor Morales***
-{{< youtube 7i0j0UhcfGM vidcaption >}} 
+
+{{< youtube 7i0j0UhcfGM >}} 
 *The content in this film is under copyright, but Climate Refugee Stories may grant license for use. In most cases, not-for-profit educational use is available free of charge. To obtain permission to re-use any material from this film, you must [contact](../../contact) Climate Refugee Stories.*
 {{< /youtube >}}
 &nbsp;
 
-#### **Bengal Delta Region of Bangladesh and India**  
+#### **Bengal Delta Region of Bangladesh and India**
+
 ##### ***by Tanaya Dutta Gupta***
 
 Sitting inside a room in one of the largest slums in Dhaka, her voice breaking with effort to keep tears at bay, 40-year-old Nafisa (pseudonym) shared her experience of migrating from rural Bangladesh:
@@ -30,8 +37,8 @@ Sitting inside a room in one of the largest slums in Dhaka, her voice breaking w
 Nafisa’s ordeal is not an isolated experience. It conveys how, for people moving within Bangladesh and India, migration is not a linear move from rural to urban areas but consists of circular trajectories that may not follow a fixed seasonal rhythm. Rather, these circular movements can be characterized as erratic and uncertain, often occurring in uneven intervals.
 
 {{< smugmug i-7XHvHqZ `A lane in Korail slum, Dhaka, Bangladesh` >}}
-*A lane in Korail slum, Dhaka, Bangladesh. Image Credit: [Tanaya Dutta Gupta](../../about/tanaya-dutta-gupta/)*
-{{</ smugmug >}}
+ *A lane in Korail slum, Dhaka, Bangladesh. Image Credit: [Tanaya Dutta Gupta](../../about/tanaya-dutta-gupta/)*
+{{< /smugmug >}}
 
 What role might climate play in making people from this region variably mobile and immobile? And how might circular (im)mobility of people moving within their countries be related to experiences of insecurity and violence?
 
@@ -48,13 +55,16 @@ Intersecting impacts of COVID-19 and cyclone Amphan created a peculiar juxtaposi
 “There is water in every direction, and we are floating in the middle.” Abir’s words describing a cyclone-damaged village during a global pandemic, echo an outcome of the structural violence that continue to shape human security and survival for such “floating” people in this era of shifting climates.
 
 *Read more about how the intersecting impacts of COVID-19 and climate change are compounding the vulnerabilities of coastal communities in the Bengal Delta region in [Confronting Cascading Disasters, Building Resilience: Lessons from the Indian Sundarbans](https://www.orfonline.org/research/confronting-cascading-disasters-building-resilience-lessons-from-the-indian-sundarbans/), by Tanaya Dutta Gupta, Amrita Chakraborty, and Anamitra Anurag Danda.*
-&nbsp;  
+&nbsp;\
 &nbsp; 
 
 {{< center >}}
 **"Climate Refugee Stories: Bangladesh" is supported by National Geographic Society**
+
 {{< /center >}}
 
 {{< smugmug i-kJG9M49 `National Geographic Logo` >}}
-{{</ smugmug >}}
+
+{{< /smugmug >}}
+
 &nbsp;
