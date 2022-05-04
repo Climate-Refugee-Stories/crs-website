@@ -1,26 +1,33 @@
 ---
-title: "Puerto Rico: \"The Hurricane Wasn’t the Precise Problem\""
-date: 2021-10-15T12:14:34+09:00
-image: "i-P3XpQsn"
-thumbnail: "i-pPMvvNB"
-image_caption: |
-    Image Credit: [Emma Crow-Willard](../../about/emma-crow-willard/)
-description: "Statue of What?"
-summary: "Post-Hurricane Maria, I naively thought, not having been to Puerto Rico: \"Shouldn’t everyone leave? It’s in the path of hurricanes that are just going to get worse and it’s susceptible to rising sea levels.\""
+title: 'Puerto Rico: "The Hurricane Wasn’t the Precise Problem"'
 draft: false
+image_caption: |
+  Image Credit: [Emma Crow-Willard](../../about/emma-crow-willard/)
+summary: 'Post-Hurricane Maria, I naively thought, not having been to Puerto
+  Rico: "Shouldn’t everyone leave? It’s in the path of hurricanes that are just
+  going to get worse and it’s susceptible to rising sea levels."'
+date: 2021-10-15T12:14:34+09:00
+image: i-P3XpQsn
+thumbnail: i-pPMvvNB
 weight: 0
 visibleInCMS: true
+description: Statue of What?
 ---
-
 &nbsp;
+
 #### **"Climate Refugee Stories: Puerto Rico"**
+
 ##### ***Produced and edited by Emma Crow-Willard***
-{{< youtube Ot88SZXgd7k vidcaption >}} 
+
+{{< youtube Ot88SZXgd7k >}}
 *The content in this film is under copyright, but Climate Refugee Stories may grant license for use. In most cases, not-for-profit educational use is available free of charge. To obtain permission to re-use any material from this film, you must [contact](https://www.climaterefugeestories.com/about) Climate Refugee Stories.*
 {{< /youtube >}}
+
+
 &nbsp;
 
-#### **Stories from Hurricane Maria**  
+#### **Stories from Hurricane Maria**
+
 ##### ***by Emma Crow-Willard***
 
 In May of 2019, I headed to Puerto Rico for the second time. I had been there for one week in August of 2018 to explore what stories needed to be told that hadn’t. Post-Hurricane Maria, I naively thought, not having been to Puerto Rico: “Shouldn’t everyone leave? It’s in the path of hurricanes that are just going to get worse and it’s susceptible to rising sea levels.” But when I arrived, I realized just how big the main island is (Puerto Rico is actually multiple islands). It is also an island of mountains, with its highest point reaching 4,390 feet. Most of the island would not be impacted by rising sea levels. A really bad hurricane only occurs once every twenty years or so, and the cost of living cannot be beat—it’s far cheaper than any of the states. Plus, it’s got the only tropical rainforest in the United States [National Forest System](https://www.fs.usda.gov/elyunque), beautiful weather and beaches, fresh mangoes falling from the trees, and everyone is so friendly. It kind of made me want to live there, too.
@@ -34,32 +41,36 @@ Luis, a nursing student in Puerto Rico, graduated just before the hurricane and 
 **Emma Crow-Willard, M.A.**, is a managing producer at Climate Now.
 
 &nbsp;
+
+
 {{< center >}}
 **"Climate Refugee Stories: Puerto Rico" is supported by the National Geographic Society**
 {{< /center >}}
+
+
 {{< smugmug i-kJG9M49 `National Geographic Logo` >}}
 {{</ smugmug >}}
 
 {{< smugmug i-HcqgLL4 `Statue of What?` >}}
-*"Statue of What?" artwork created in solidarity with Puerto Rico by [Bo Thai](../../about/bo-daraphant/)*
-{{</ smugmug >}}
+ *"Statue of What?" artwork created in solidarity with Puerto Rico by [Bo Thai](../../about/bo-daraphant/)*
+{{< /smugmug >}}
 
 <!-- 
-#### **Survivor Stories:**
+#### \*\*Survivor Stories:\*\*
 ##### Click on their names to read their stories.
 
 &nbsp;
 
 {{< carousel >}}
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|\[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|\[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|\[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|\[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|\[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|\[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|\[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|\[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
+i-kJG9M49|\[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
 {{< /carousel >}}
 
 --- -->
