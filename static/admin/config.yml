@@ -17,8 +17,8 @@ markdown_defaults: &markdown_defaults
 backend:
   name: github
   repo:  Climate-Refugee-Stories/crs-website  # Path to your Github repository
-  # branch: master # Branch to update
-  branch: dev
+  branch: master # Branch to update
+  # branch: dev
 
 # use google drive not this upload
 media_folder: 'N/a'
@@ -407,13 +407,3 @@ collections:
         sanitize_preview: true
         minimal: false
       - *cms_visible
-
-  - name: "config_file"
-    label: "Site Config"
-    files:
-      - name: hugo_config
-        label: "Site Config"
-        file: config.toml
-        fields:
-          - name: banner
-            label: Banner Section
