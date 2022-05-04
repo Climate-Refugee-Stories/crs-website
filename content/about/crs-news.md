@@ -3,6 +3,7 @@ title: "CRS News"
 description: |
     See below for a snapshot of what we have been up to--events, news, conference presentations, and more! [Click here](https://climaterefugeestories.substack.com) to sign up for our email newsletter. View [All CRS News](https://docs.google.com/document/d/1pJfXh9YsHorg04mO6Dqd4hyaTRxTUlo6yhSZqU8g6VE/edit?usp=sharing).
 draft: false
+altCMS: true
 button: 
     enable: true
     label: "More CRS News"
