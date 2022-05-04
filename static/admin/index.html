@@ -49,7 +49,7 @@
             sanitize_preview: true
           }
         ],
-        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+vidcaption\s+>}}\s+(.*?){{<(\s+|)\/youtube >}}/ms,
+        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+>}}\s+(?<vidcaption>.*?){{<(\s+|)\/(\s+|)youtube >}}/ms,
         fromBlock: function(match) {
             return {
                 id: match[1],
@@ -57,9 +57,7 @@
             };
         },
         toBlock: function(obj) {
-            return `{{< youtube ${obj.id} >}}
-            ${obj.caption}
-            {{< /youtube >}}`;
+            return `{{< youtube ${obj.id} >}}\n${obj.caption}\n{{< /youtube >}}`;
         },
         toPreview: function(obj) {
             return `<img src="https://i3.ytimg.com/vi/${obj.id}/hqdefault.jpg" alt="Youtube Video"/><br />
@@ -81,29 +79,44 @@
             widget: "string",
           },
           {
+            name: "link",
+            label: "Link on Photo",
+            required: false
+          },
+          {
             name: "caption",
-            label: "Phtoto Caption",
+            label: "Photo Caption",
             widget: "markdown",
             sanitize_preview: true,
             required: false
           }
         ],
-        pattern: /{{< smugmug\s+(?<id>[A-Za-z0-9\-]+)\s+"(?<alt_text>.*?)"\s+>}}\s+(?<caption>.*?){{<(\s+|)\/(\s+|)smugmug >}}/ms,
+        pattern: /{{< smugmug\s+(?<id>[A-Za-z0-9\-]+)\s+`(?<alt_text>.*?)`\s+("(?<link>http[\w\.\/\-\?\#\%\&\=:]+)"\s+|)>}}\s+(?<caption>.*?){{<(\s+|)\/(\s+|)smugmug >}}/ms,
         fromBlock: function(match) {
+            // console.log(match)
+            groups = match.groups
+            // return {
+            //     id: match[1],
+            //     alt_text: match[2],
+            //     caption: match[3],
+            // };
             return {
-                id: match[1],
-                alt_text: match[2],
-                caption: match[3],
+                id: groups['id'].trim(),
+                alt_text: groups['alt_text'].trim(),
+                link: groups['link'] ? groups['link'].trim(): '',
+                caption: groups['caption'] ? groups['caption'].trim(): '',
             };
         },
         toBlock: function(obj) {
-            return `{{< smugmug ${obj.id} "${obj.alt_text}" >}}
-            ${obj.caption}
-            {{< /smugmug >}}`;
+            var output = `{{< smugmug ${obj.id} \`${obj.alt_text}\``
+            output = obj.link ? output + ` "${obj.link}" >}}\n` : output +  ' >}}\n'
+            output = obj.caption ? output + ` ${obj.caption}\n{{< /smugmug >}}` : output + '\n{{< /smugmug >}}'
+            return output;
         },
         toPreview: function(obj) {
             return `<img src="https://photos.smugmug.com/photos/${obj.id}/0/M/${obj.id}-M.png" alt="Smugmug Photo"/><br />
             <b>Alt text</b>: ${obj.alt_text}<br />
+            <b>Link</b>: ${obj.link}<br />
             <b>Caption</b>: ${obj.caption}`;
         },
     });
@@ -124,9 +137,7 @@
             };
         },
         toBlock: function(obj) {
-            return `{{< center >}}
-            ${obj.text}
-            {{< /center >}}`;
+            return `{{< center >}}\n${obj.text}\n{{< /center >}}`;
         },
         toPreview: function(obj) {
             return `<div style="text-align: center;">
