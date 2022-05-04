@@ -49,11 +49,12 @@
             editor_components: []
           }
         ],
-        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+>}}\s+(?<vidcaption>.*?){{<(\s+|)\/(\s+|)youtube >}}/ms,
+        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+vidcaption\s+>}}\s+(?<vidcaption>.*?){{<(\s+|)\/(\s+|)youtube >}}/ms,
         fromBlock: function(match) {
+            groups = match.groups
             return {
-                id: match[1],
-                caption: match[2],
+                id: groups['id'],
+                caption: groups['vidcaption'],
             };
         },
         toBlock: function(obj) {
