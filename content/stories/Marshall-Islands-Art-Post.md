@@ -1,15 +1,17 @@
 ---
-title: "Marshall Islands: \"Art Stops the Damage\""
-date: 2021-10-20T12:14:34+07:00
-image: "i-bVBwvGw"
-thumbnail: "i-PqpnzTt"
-image_caption: |
-  "Not 1 More" artwork by [Bo Thai](../../about/bo-daraphant/), featuring musician and spoken-word artist Soultree
-description: "This is meta description."
-summary: "Small, low-lying island nations in the South Pacific are some of the most vulnerable locations in the world to the impacts of climate change." 
+title: 'Marshall Islands: "Art Stops the Damage"'
 draft: false
-visibleInCMS: true
+image_caption: >
+  "Not 1 More" artwork by [Bo Thai](../../about/bo-daraphant/), featuring
+  musician and spoken-word artist Soultree
+summary: Small, low-lying island nations in the South Pacific are some of the
+  most vulnerable locations in the world to the impacts of climate change.
+date: 2021-10-20T12:14:34+07:00
+image: i-bVBwvGw
+thumbnail: i-PqpnzTt
 weight: 0
+visibleInCMS: true
+description: This is meta description.
 ---
 
 Small, low-lying island nations in the South Pacific are some of the most vulnerable locations in the world to the impacts of climate change.  The Maldives, Marshall Islands, Kiribati and Tuvalu have been key sites where debates over the concept of “climate refugees” have taken place.  Affected community members and activists have [resisted media narratives](https://link.springer.com/chapter/10.1007/978-3-319-70703-7_1) that depict them as victims and have taken a range of political and artistic responses.  These nations’ leaders and ambassadors have been some of the first to bring these questions to the international stage.
@@ -49,16 +51,18 @@ Activism and artistic responses to climate change in the Marshall Islands recogn
 Kathy Jetnil-Kijiner is a Marshallese poet and spoken-word artist.  She was chosen to perform her poetry at the UN Climate Summit in New York City in 2014 as the "voice of civil society."  She is a co-founder of the nonprofit *[Jo Jikum](https://jojikum.org/)*, which empowers Marshallese youth to seek solutions to climate change.​
 
 
-In "History Project," Kathy Jetnil-Kijiner confronts the legacies of US occupation and atomic testing in the Marshall Islands:   
-{{< youtube DIIrrPyK0eU >}}  
+In "History Project," Kathy Jetnil-Kijiner confronts the legacies of US occupation and atomic testing in the Marshall Islands:
+
+{{< youtube DIIrrPyK0eU >}}
 {{< /youtube >}}
 <br>
   
-Kathy Jetnil-Kijiner performed "Dear Matafele Peinem," a poem to her daughter, at the 2014 UN Climate Summit:  
+Kathy Jetnil-Kijiner performed "Dear Matafele Peinem," a poem to her daughter, at the 2014 UN Climate Summit:
+
 {{< youtube DJuRjy9k7GA >}}  
 {{< /youtube >}}
-  
-  ---  
+
+---  
 <!-- TO-DO: Figure out spacing & sizing -->  
 &nbsp;
 #### ***Stephanie Camba: Soultree***  
