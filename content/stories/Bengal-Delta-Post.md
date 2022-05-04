@@ -29,7 +29,7 @@ Sitting inside a room in one of the largest slums in Dhaka, her voice breaking w
 
 Nafisa’s ordeal is not an isolated experience. It conveys how, for people moving within Bangladesh and India, migration is not a linear move from rural to urban areas but consists of circular trajectories that may not follow a fixed seasonal rhythm. Rather, these circular movements can be characterized as erratic and uncertain, often occurring in uneven intervals.
 
-{{< smugmug i-7XHvHqZ "A lane in Korail slum, Dhaka, Bangladesh" >}}
+{{< smugmug i-7XHvHqZ `A lane in Korail slum, Dhaka, Bangladesh` >}}
 *A lane in Korail slum, Dhaka, Bangladesh. Image Credit: [Tanaya Dutta Gupta](../../about/tanaya-dutta-gupta/)*
 {{</ smugmug >}}
 
@@ -55,5 +55,6 @@ Intersecting impacts of COVID-19 and cyclone Amphan created a peculiar juxtaposi
 **"Climate Refugee Stories: Bangladesh" is supported by National Geographic Society**
 {{< /center >}}
 
-{{< smugmug i-kJG9M49 "National Geographic Logo" >}}
+{{< smugmug i-kJG9M49 `National Geographic Logo` >}}
+{{</ smugmug >}}
 &nbsp;

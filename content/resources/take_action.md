@@ -1,7 +1,7 @@
 ---
 title: "Take Action"
-date: 2021-10-24T21:30:13-04:00
 draft: false
+visibleInCMS: true
 button: 
   enable: true
   label: "Click Here for Ways to Take Action"

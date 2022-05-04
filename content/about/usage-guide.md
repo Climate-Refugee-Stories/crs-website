@@ -1,6 +1,7 @@
 ---
 title: "Usage Guide"
 description:
+altCMS: true
 draft: false
 button:
     enable: false

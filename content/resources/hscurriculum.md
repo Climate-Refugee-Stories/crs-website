@@ -1,7 +1,7 @@
 ---
 title: "K-12 Curriculum"
-date: 2021-10-24T21:30:13-04:00
 draft: false
+visibleInCMS: true
 button: 
   enable: true
   label: "View Our K-12 Curriculum"

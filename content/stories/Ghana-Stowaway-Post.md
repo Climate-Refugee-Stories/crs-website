@@ -69,7 +69,7 @@ Recognizing that many of the individuals we spoke to who face displacement and e
 
 ***Christine Wheatley, PhD,** is Executive Director of NED Africa.*
 
-{{< smugmug i-5Mj6btc "Jonathan's Story" >}}
+{{< smugmug i-5Mj6btc `Jonathan's Story` >}}
 Jonathan's Story. Artwork by [Monica Curca](../../about/monica-curca/)
 {{</ smugmug >}}
 &nbsp;
@@ -87,7 +87,8 @@ We aim to use the film and storytelling to raise awareness of the impacts of cli
 **"Climate Refugee Stories: Ghana" is supported by National Geographic Society**
 {{< /center >}}
 
-{{< smugmug i-kJG9M49 "National Geographic Logo" >}}
+{{< smugmug i-kJG9M49 `National Geographic Logo` >}}
+{{</ smugmug >}}
 &nbsp;
 
 ---

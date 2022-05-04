@@ -40,7 +40,7 @@ Environmental racism, as defined by environmental justice pioneer [Robert Bullar
 - Incarcerated people, and people at higher risk of policing and incarceration such as undocumented migrants, often experience the impacts of climate-related events, such as hurricanes and floods, in disproportionate and discriminatory ways.
 
 &nbsp;
-{{< smugmug i-vndFWF9 "Cuffs Too Tight" >}}
+{{< smugmug i-vndFWF9 `Cuffs Too Tight` >}}
 Read this report on the impacts of Hurricane Irma on detained immigrants by [Americans for Immigrant Justice](http://www.aijustice.org/cuffs_too_tight_the_shackling_and_evacuation_of_detained_immigrants_during_hurricane_irma)
 {{</ smugmug >}}
 
@@ -83,7 +83,7 @@ Climate Refugee Stories collaborator and sociocultural anthropologist Maria Barb
 ##### **by Maria Barbero in the *Daily Beast***
  
 &nbsp; 
-{{< smugmug i-3dk7gSm "Hope and Prayers Artwork" >}}
+{{< smugmug i-3dk7gSm `Hope and Prayers Artwork` >}}
 Artwork drawn by a man in immigration detention in Louisiana in 2017. Image Credit: Tina Shull
 {{</ smugmug >}}
 &nbsp; 

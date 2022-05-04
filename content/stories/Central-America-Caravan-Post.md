@@ -20,7 +20,7 @@ visibleInCMS: true
 {{< /center >}}
 
 &nbsp;
-{{< smugmug i-znpg9px "Members of the Viacrusis Migrantes" >}}
+{{< smugmug i-znpg9px `Members of the Viacrusis Migrantes` >}}
 Members of the Viacrusis Migrantes en la luche ("Migrants in Struggle" Refugee Caravan) in Mexico in April 2018. Image Credit: [Pueblo sin Fronteras](http://www.pueblosinfronteras.org/)
 {{</ smugmug >}}
 &nbsp;
