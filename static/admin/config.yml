@@ -239,6 +239,34 @@ collections:
             default: 0
           - *content_defaults
 
+  - name: about_sections
+    label: About Sections (bottom)
+    folder: content/about
+    filter: 
+      field: altCMS
+      value: true
+    create: true
+    fields:
+      - label: Section Title
+        name: title
+      - *draft_defaults
+      - <<: *order_defaults
+        required: false
+      - <<: *md_content
+        label: Description
+        name: description
+        required: false
+      - *button_defaults
+      - name: altCMS
+        widget: hidden
+        default: true
+      - &special_md_content
+        name: body
+        label: Content
+        widget: "markdown"
+        sanitize_preview: true
+        minimal: false
+
   - name: about
     label: Team Member
     folder: content/about
@@ -276,12 +304,7 @@ collections:
             label: Stylized (links) references
             <<: *markdown_defaults
       - *social_defaults
-      - &special_md_content
-        name: body
-        label: Content
-        widget: "markdown"
-        sanitize_preview: true
-        minimal: false
+      - *special_md_content
       - &cms_visible
         name: visibleInCMS
         widget: hidden
@@ -290,7 +313,8 @@ collections:
     label: Stories
     folder: content/stories
     create: true
-    <<: *ignore_index
+    filter:
+      *ignore_index
     fields:
       - label: Title
         name: title
@@ -319,9 +343,8 @@ collections:
   - name: archive
     label: Archive
     folder: content/archive
-    filter: &ignore_index
-      field: visibleInCMS
-      value: true
+    filter:
+      *ignore_index
     create: true
     fields:
       - label: Title
@@ -363,4 +386,24 @@ collections:
             label: Extra resources in MD
             <<: *markdown_defaults
       - *special_md_content
+      - *cms_visible
+
+  - name: resources
+    label: Resources
+    folder: content/resources
+    filter:
+      *ignore_index
+    create: true
+    fields:
+      - label: Section Title
+        name: title
+      - *draft_defaults
+      - <<: *order_defaults
+        required: false
+      - *button_defaults
+      - name: body
+        label: Content
+        widget: "markdown"
+        sanitize_preview: true
+        minimal: false
       - *cms_visible
