@@ -22,8 +22,8 @@ Although it is considered a "civil" form of confinement, immigration detention l
 
 {{< youtube 7C1ubns4MUA >}}
 *Watch "Exposed: The Injustice of Immigration Detention" by Freedom for Immigrants*
-{{< /youtube >}}
 
+{{< /youtube >}}
 
 &nbsp;
 
@@ -31,6 +31,7 @@ Although it is considered a "civil" form of confinement, immigration detention l
 
 {{< center >}}
 #### **Coming Soon: Mapping Toxic Detention**  
+
 
 {{< /center >}}
 
@@ -46,10 +47,9 @@ Environmental racism, as defined by environmental justice pioneer [Robert Bullar
 
 &nbsp;
 
-
 {{< smugmug i-vndFWF9 `Cuffs Too Tight` >}}
-Read this report on the impacts of Hurricane Irma on detained immigrants by [Americans for Immigrant Justice](http://www.aijustice.org/cuffs_too_tight_the_shackling_and_evacuation_of_detained_immigrants_during_hurricane_irma)
-{{</ smugmug >}}
+ Read this report on the impacts of Hurricane Irma on detained immigrants by [Americans for Immigrant Justice](http://www.aijustice.org/cuffs_too_tight_the_shackling_and_evacuation_of_detained_immigrants_during_hurricane_irma)
+{{< /smugmug >}}
 
 When Category 4 Hurricane Irma approached southern Florida in September of 2017, Immigration and Customs Enforcement (ICE) told the public it would not escalate immigration enforcement efforts. ICE released a memo on September 10, 2017. The memo—including generic language nearly identical to that found in a memo produced prior to Hurricane Harvey— stated the following: 
 
@@ -66,23 +66,27 @@ Climate Refugee Stories collaborator and sociocultural anthropologist Maria Barb
 > “No, no. It’s better to stay quiet. If you are not quiet you can die.”\
 > \[Taken aback, the interviewer asked, “Did you say you could die?”]\
 > “Yes. You know that in America they don’t respect immigrants, it’s better to stay quiet.”\
-> – B. 
+> \- B. 
 >
-> They don’t talk anything. When you are going to arrive, after you arrive they talk, you are in Texas. Here you are not going to know where you are going. You know in the United States immigrants don’t get respect anywhere, anywhere. First, when we got to BTC they said you are going to New Mexico. You are going to Texas by plane and then you go to New Mexico by bus. Like that. You are not going to know anything. You know, America doesn’t respect immigrants. My family didn’t know anything of what happened over there. I didn’t tell them, I couldn’t tell them everything, of what you are living there, suffering, so much suffering. You can’t tell them. It was a secret.\
-> - B. 
+> They don’t talk anything. When you are going to arrive, after you arrive they talk, you are in Texas. Here you are not going to know where you are going. You know in the United States immigrants don’t get respect anywhere, anywhere. First, when we got to BTC they said you are going to New Mexico. You are going to Texas by plane and then you go to New Mexico by bus. Like that. You are not going to know anything. You know, America doesn’t respect immigrants. My family didn’t know anything of what happened over there. I didn’t tell them, I couldn’t tell them everything, of what you are living there, suffering, so much suffering. You can’t tell them. It was a secret.
+>
+> \- B. 
 >
 > They let you use the telephone. Use the telephone, they give you 5 minutes to talk. 5 minutes are over, you are not going to call anymore if you don’t have money. That’s how we lived in jail. For example, the first time I was in BTC they gave me 5 minutes. If I leave and come back, I don’t get anymore. They only give you one time 5 minutes, no more.\
-> - B.
+>
+> \- B.
 >
 > That experience, now I don’t like, not one American, I don’t like, I don’t like it. If I see Americans I don’t like it. Because they don’t respect people. Like, to lock a person up for 19 months, that is a lot of ruin, the American is very sad, very bad.\
 > The only experience I gained here, in the United States is to be able to communicate. Because I learned to speak Spanish in jail, and English in jail, that’s good. Don’t worry, life doesn’t end, I will continue, no problem.
-> - B.
+>
+> \- B.
 
 &nbsp;\
 ***I. was in ICE custody for 19 months***  
 
 > “I was transferred from Krome to New Mexico. . . . In that prison the water was not drinkable, nor the water we washed with; that water had a strange smell, when I washed with it my body turned white and I itched all over. What happened during the transfer was horrible. We had taken off in a plane that hadn’t yet reached normal altitude when there was a change in pressure that blocked everyone’s ears and a violent shaking, as if we were in a turbulent zone, but we had just taken off.  This went on for half an hour until we landed again and were told we would take off again in an hour.  That hour became 10 hours in the plane, shackled, and having had nothing to eat since morning.  We spent all day at the airport until around 6:30 PM, when they told us we couldn’t travel that day because the plan had problems and we had to go back to detention in New Mexico where another flight would be scheduled.  So we were taken back to detention in a minibus and finally transferred to BTC where I am now. All in all, the conditions we live under in detention are unacceptable. We live in hell because we have no rights.  Everything that’s written down about detainees’ rights is only words, because none of it is respected. . . . we are treated like criminals.”\
-> - I.
+>
+> \- I.
 
 &nbsp;\
 ***After being transferred from a southern Florida detention center, E. spent 19 days in a county jail in Louisiana***  
@@ -96,16 +100,17 @@ Climate Refugee Stories collaborator and sociocultural anthropologist Maria Barb
 
 &nbsp; 
 
-
 {{< smugmug i-3dk7gSm `Hope and Prayers Artwork` >}}
-Artwork drawn by a man in immigration detention in Louisiana in 2017. Image Credit: Tina Shull
-{{</ smugmug >}}
+ Artwork drawn by a man in immigration detention in Louisiana in 2017. Image Credit: Tina Shull
+{{< /smugmug >}}
+
 &nbsp; 
 
 <!-- TO-DO: Center -->
 
 {{< center >}}
 #### ***Coming Soon: More Resources on Prisons and Environmental Racism***  
+
 
 {{< /center >}}
 
