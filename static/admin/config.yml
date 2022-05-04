@@ -407,3 +407,13 @@ collections:
         sanitize_preview: true
         minimal: false
       - *cms_visible
+
+  - name: "config_file"
+    label: "Site Config"
+    files:
+      - name: hugo_config
+        label: "Site Config"
+        file: config.toml
+        fields:
+          - name: banner
+            label: Banner Section
