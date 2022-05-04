@@ -45,7 +45,8 @@
             name: "caption",
             label: "Video caption",
             widget: "markdown",
-            sanitize_preview: true
+            sanitize_preview: true,
+            editor_components: []
           }
         ],
         pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+>}}\s+(?<vidcaption>.*?){{<(\s+|)\/(\s+|)youtube >}}/ms,
@@ -87,10 +88,12 @@
             label: "Photo Caption",
             widget: "markdown",
             sanitize_preview: true,
+            editor_components: [],
             required: false
           }
         ],
-        pattern: /{{< smugmug\s+(?<id>[A-Za-z0-9\-]+)\s+`(?<alt_text>.*?)`\s+("(?<link>http[\w\.\/\-\?\#\%\&\=:]+)"\s+|)>}}\s+(?<caption>.*?){{<(\s+|)\/(\s+|)smugmug >}}/ms,
+        // link allowed characters based on this: https://stackoverflow.com/a/7109208
+        pattern: /{{< smugmug\s+(?<id>[A-Za-z0-9\-]+)\s+`(?<alt_text>.*?)`\s+("(?<link>http[\w\-\.\_\~\:\/\?\#\[\]\@\!\$\&\'\(\)\*\+\,\;\%\=]+)"\s+|)>}}\s+(?<caption>.*?){{<(\s+|)\/(\s+|)smugmug >}}/ms,
         fromBlock: function(match) {
             // console.log(match)
             groups = match.groups
@@ -126,6 +129,7 @@
           {
             name: "text",
             label: "Text to center",
+            editor_components: [],
             widget: "markdown"
           }
         ],
@@ -162,6 +166,7 @@
               {
                 name: "caption",
                 label: "Image Caption",
+                editor_components: [],
                 widget: "markdown"
               }
             ]

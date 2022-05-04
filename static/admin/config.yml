@@ -11,6 +11,7 @@ markdown_defaults: &markdown_defaults
   widget: "markdown"
   sanitize_preview: true
   minimal: true
+  editor_components: []
 
 
 backend:
@@ -275,7 +276,12 @@ collections:
             label: Stylized (links) references
             <<: *markdown_defaults
       - *social_defaults
-      - *content_defaults
+      - &special_md_content
+        name: body
+        label: Content
+        widget: "markdown"
+        sanitize_preview: true
+        minimal: false
       - &cms_visible
         name: visibleInCMS
         widget: hidden
@@ -307,7 +313,7 @@ collections:
         name: tags
         <<: *list_defaults
       - *order_defaults
-      - *content_defaults
+      - *special_md_content
       - *cms_visible
 
   - name: archive
@@ -356,5 +362,5 @@ collections:
           - name: content
             label: Extra resources in MD
             <<: *markdown_defaults
-      - *content_defaults
+      - *special_md_content
       - *cms_visible
