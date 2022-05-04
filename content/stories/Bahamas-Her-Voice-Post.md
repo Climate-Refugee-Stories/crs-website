@@ -24,8 +24,8 @@ Many governments in the region have been perceived as unable to effectively pivo
 &nbsp;
 
 {{< center >}}
-            ##### ***Coming Soon: Stories from Hurricane Dorian***
-            {{< /center >}}
+##### ***Coming Soon: Stories from Hurricane Dorian***
+{{< /center >}}
 
 &nbsp;
 
