@@ -13,29 +13,28 @@
     // modified from community ⬆
     CMS.registerEditorComponent({
         id: "youtube",
-        label: "Youtube",
+        label: "(CRS) Youtube",
         fields: [{
             name: "id",
             label: "Youtube Video ID",
             widget: "string"
         }],
-        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+>}}\s+{{< \/youtube >}}/ms,
+        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+>}}\s+{{<(\s+|)\/(\s+|)youtube >}}/ms,
         fromBlock: function(match) {
             return {
                 id: match[1],
             };
         },
         toBlock: function(obj) {
-            return `{{< youtube ${obj.id} >}}
-            {{< /youtube >}}`;
+            return `{{< youtube ${obj.id} >}}\n{{< /youtube >}}`;
         },
         toPreview: function(obj) {
-            return `<img src="https://i3.ytimg.com/vi/${obj.id}/hqdefault.jpg" alt="Youtube Video"/>`;
+            return `<img style="max-width: 100%;" src="https://i3.ytimg.com/vi/${obj.id}/hqdefault.jpg" alt="Youtube Video"/>`;
         },
     });
     CMS.registerEditorComponent({
         id: "youtube_caption",
-        label: "Youtube Caption'ed",
+        label: "(CRS) Youtube Caption'ed",
         fields: [
           {
             name: "id",
@@ -46,10 +45,11 @@
             name: "caption",
             label: "Video caption",
             widget: "markdown",
-            sanitize_preview: true
+            sanitize_preview: true,
+            editor_components: []
           }
         ],
-        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+vidcaption\s+>}}\s+(.*?){{<(\s+|)\/youtube >}}/ms,
+        pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+>}}\s+(?<vidcaption>.*?){{<(\s+|)\/(\s+|)youtube >}}/ms,
         fromBlock: function(match) {
             return {
                 id: match[1],
@@ -57,18 +57,16 @@
             };
         },
         toBlock: function(obj) {
-            return `{{< youtube ${obj.id} >}}
-            ${obj.caption}
-            {{< /youtube >}}`;
+            return `{{< youtube ${obj.id} >}}\n${obj.caption}\n{{< /youtube >}}`;
         },
         toPreview: function(obj) {
-            return `<img src="https://i3.ytimg.com/vi/${obj.id}/hqdefault.jpg" alt="Youtube Video"/><br />
+            return `<img style="max-width: 100%;" src="https://i3.ytimg.com/vi/${obj.id}/hqdefault.jpg" alt="Youtube Video"/><br />
             <b>Caption</b>: ${obj.caption}`;
         },
     });
     CMS.registerEditorComponent({
         id: "smugmug",
-        label: "Smugmug",
+        label: "(CRS) Smugmug",
         fields: [
           {
             name: "id",
@@ -81,39 +79,57 @@
             widget: "string",
           },
           {
+            name: "link",
+            label: "Link on Photo",
+            required: false
+          },
+          {
             name: "caption",
-            label: "Phtoto Caption",
+            label: "Photo Caption",
             widget: "markdown",
             sanitize_preview: true,
+            editor_components: [],
             required: false
           }
         ],
-        pattern: /{{< smugmug\s+(?<id>[A-Za-z0-9\-]+)\s+"(?<alt_text>.*?)"\s+>}}\s+(?<caption>.*?){{<(\s+|)\/(\s+|)smugmug >}}/ms,
+        // link allowed characters based on this: https://stackoverflow.com/a/7109208
+        pattern: /{{< smugmug\s+(?<id>[A-Za-z0-9\-]+)\s+`(?<alt_text>.*?)`\s+("(?<link>http[\w\-\.\_\~\:\/\?\#\[\]\@\!\$\&\'\(\)\*\+\,\;\%\=]+)"\s+|)>}}\s+(?<caption>.*?){{<(\s+|)\/(\s+|)smugmug >}}/ms,
         fromBlock: function(match) {
+            // console.log(match)
+            groups = match.groups
+            // return {
+            //     id: match[1],
+            //     alt_text: match[2],
+            //     caption: match[3],
+            // };
             return {
-                id: match[1],
-                alt_text: match[2],
-                caption: match[3],
+                id: groups['id'].trim(),
+                alt_text: groups['alt_text'].trim(),
+                link: groups['link'] ? groups['link'].trim(): '',
+                caption: groups['caption'] ? groups['caption'].trim(): '',
             };
         },
         toBlock: function(obj) {
-            return `{{< smugmug ${obj.id} "${obj.alt_text}" >}}
-            ${obj.caption}
-            {{< /smugmug >}}`;
+            var output = `{{< smugmug ${obj.id} \`${obj.alt_text}\``
+            output = obj.link ? output + ` "${obj.link}" >}}\n` : output +  ' >}}\n'
+            output = obj.caption ? output + ` ${obj.caption}\n{{< /smugmug >}}` : output + '\n{{< /smugmug >}}'
+            return output;
         },
         toPreview: function(obj) {
-            return `<img src="https://photos.smugmug.com/photos/${obj.id}/0/M/${obj.id}-M.png" alt="Smugmug Photo"/><br />
+            return `<img style="max-width: 100%;" src="https://photos.smugmug.com/photos/${obj.id}/0/M/${obj.id}-M.png" alt="Smugmug Photo"/><br />
             <b>Alt text</b>: ${obj.alt_text}<br />
+            <b>Link</b>: ${obj.link}<br />
             <b>Caption</b>: ${obj.caption}`;
         },
     });
     CMS.registerEditorComponent({
         id: "center",
-        label: "Center Text",
+        label: "(CRS) Center Text",
         fields: [
           {
             name: "text",
             label: "Text to center",
+            editor_components: [],
             widget: "markdown"
           }
         ],
@@ -124,9 +140,7 @@
             };
         },
         toBlock: function(obj) {
-            return `{{< center >}}
-            ${obj.text}
-            {{< /center >}}`;
+            return `{{< center >}}\n${obj.text}\n{{< /center >}}`;
         },
         toPreview: function(obj) {
             return `<div style="text-align: center;">
@@ -136,7 +150,7 @@
     });
     CMS.registerEditorComponent({
         id: "carousel",
-        label: "Carousel",
+        label: "(CRS) Carousel",
         fields: [
           {
             name: "all_items",
@@ -152,6 +166,7 @@
               {
                 name: "caption",
                 label: "Image Caption",
+                editor_components: [],
                 widget: "markdown"
               }
             ]
@@ -185,7 +200,7 @@
         toPreview: function(obj) {
             let retString = "";
             obj.all_items.forEach(element => {
-              retString += `<img src="https://photos.smugmug.com/photos/${element.smugmug_id}/0/M/${element.smugmug_id}-M.png" alt="Smugmug Photo"/><br />
+              retString += `<img style="max-width: 100%;" src="https://photos.smugmug.com/photos/${element.smugmug_id}/0/M/${element.smugmug_id}-M.png" alt="Smugmug Photo"/><br />
               <b>Caption</b>: ${element.caption}`
             });
             return retString;
