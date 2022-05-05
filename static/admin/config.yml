@@ -197,6 +197,20 @@ collections:
               - name: themes
                 label: All the themes tags
                 <<: *list_defaults
+      - name: resources
+        label: "Resources"
+        file: content/resources/_index.md
+        fields:
+          - *page_intro_defaults
+          - *metadata_defaults
+          - *draft_defaults
+          - &order_defaults
+            name: weight
+            label: order
+            widget: number
+            value_type: int
+            default: 0
+          - *content_defaults
       - name: contact
         label: "Contact"
         file: content/contact/_index.md
@@ -213,20 +227,6 @@ collections:
               - *icon_defaults
               - <<: *link_defaults
                 label: link for social website
-      - name: resources
-        label: "Resources"
-        file: content/resources/_index.md
-        fields:
-          - *page_intro_defaults
-          - *metadata_defaults
-          - *draft_defaults
-          - &order_defaults
-            name: weight
-            label: order
-            widget: number
-            value_type: int
-            default: 0
-          - *content_defaults
 
   - name: about
     label: Team Member
@@ -293,11 +293,11 @@ collections:
         label: Description
         name: description
         required: false
-      - *button_defaults
       - name: altCMS
         widget: hidden
         default: true
       - *special_md_content
+      - *button_defaults
 
   - name: stories
     label: Stories
