@@ -8,7 +8,7 @@
 
 {{ partial "page-title.html" . }}
 
-{{ if site.Params.map.enable }}
+<!-- {{ if site.Params.map.enable }}
 <section class="section pb-0">
   <div class="container">
     <div class="row">
@@ -17,7 +17,6 @@
       </div>
       <div class="col-12">
         {{ with site.Params.map }}
-        {{"<!-- Google Map -->" | safeHTML}}
         <div class="shadow" id="map" data-latitude="{{ .map_latitude }}" data-longitude="{{ .map_longitude }}"
           data-marker="{{ .map_marker | absURL }}" data-marker-name="{{ site.Title }}" style="height: 400px;"></div>
         {{ end }}
@@ -25,20 +24,21 @@
     </div>
   </div>
 </section>
-{{ end }}
+{{ end }} -->
 
 <section class="section">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">Get in Touch</h2>
+        <h2 class="section-title">{{ .Params.contact_title }}</h2>
       </div>
       <div class="col-12 row" style="justify-content: center;">
+        {{ $socials_text := .Params.socials_text }}
         {{ with .Params.socials }}
         <div class="col-6 border-right">
           <ul class="list-inline social-icons text-center">
             <h4 class="mb-4">
-              <strong>Follow us on social media</strong>
+              <strong>{{ $socials_text }}</strong>
             </h4>
             {{ range . }}
             <li class="list-inline-item">
@@ -50,21 +50,29 @@
           </ul>
         </div>
         {{ end }}
+        {{ $newsletter_text := .Params.newsletter_text }}
+        {{ with .Params.newsletter_button }}
+        {{ if .enable }}
         <div class="col-6 text-center">
-          <h4 class="mb-4"><strong>Sign up for our email newsletter</strong></h4>
+          <h4 class="mb-4"><strong>{{ $newsletter_text }}</strong></h4>
           <div class="mx-auto">
-            <a href="https://climaterefugeestories.substack.com/p/coming-soon?showWelcome=true"><button class="btn btn-primary w-60">Subscribe</button></a>
+            <a href="{{ .URL }}"><button class="btn btn-primary w-60">{{ .label }}</button></a>
           </div>
         </div>
-    </div>
+      </div>
+        {{ end }}
+        {{ end }}
+        {{ $form_text := .Params.form_text }}
+        {{ with .Params.form_button }}
+        {{ if .enable }}
         <div class="row col-12 text-center">
           <div class="col-lg-8 mx-auto">
             <br/><br/>
             <br/><br/>
             <!-- <h4><strong>Send us a message</strong></h4> -->
             <div class="bg-white rounded text-center p-5 shadow-down">
-              <h4 class="mb-80"><strong>Send us a message</strong></h4>
-              <form action="{{site.Params.contact.form_action}}" method="POST" class="row">
+              <h4 class="mb-80"><strong>{{ $form_text }}</strong></h4>
+              <form action="{{ .URL }}" method="POST" class="row">
                 <div class="col-md-6">
                   <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4" required>
                 </div>
@@ -76,12 +84,14 @@
                     placeholder="Type Message Here" required></textarea>
                 </div>
                 <div class="col-lg-6 col-10 mx-auto">
-                  <input type="submit" name="send" value="Send" class="btn btn-primary w-80"/>
+                  <input type="submit" name="send" value="{{ .label }}" class="btn btn-primary w-80"/>
                 </div>
               </form>
             </div>
           </div>
         </div>
+        {{ end }}
+        {{ end }}
       </div>
   </div>
 </section>
@@ -106,8 +116,8 @@
 <section class="section">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">Get Involved</h2>
-        <iframe class="contact__form" src="https://docs.google.com/forms/d/e/1FAIpQLSfBrrMWkMs_zvikNMEb1P-4HbIl1QyXSPjJDKH7eoRokkczpA/viewform?embedded=true" 
+        <h2 class="section-title">{{ .Params.google_form_title }}</h2>
+        <iframe class="contact__form" src="{{ .Params.google_form_link }}" 
         >Loading…</iframe>
     </div>
     </div>
