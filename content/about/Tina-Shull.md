@@ -17,11 +17,11 @@ recent_publications:
       *Journal of American Ethnic History*
 recent_projects:
 socials:
-  - icon: linkedin
+  - icon: ti-linkedin
     URL: https://www.linkedin.com/in/tina-shull/ 
-  - icon: twitter-alt
+  - icon: ti-twitter-alt
     URL: https://twitter.com/kristinashull
-  - icon: world
+  - icon: ti-world
     URL: https://www.kristinashull.com/
 visibleInCMS: true
 ---

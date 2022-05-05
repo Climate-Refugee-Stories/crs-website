@@ -9,11 +9,11 @@ location: "The United States"
 recent_publications:
 recent_projects:
 socials:
-  - icon: world
+  - icon: ti-world
     URL: https://bluelotus03.tech
-  - icon: github
+  - icon: ti-github
     URL: https://github.com/bluelotus03
-  - icon: linkedin
+  - icon: ti-linkedin
     URL: https://www.linkedin.com/in/ashharmon
 visibleInCMS: true
 ---

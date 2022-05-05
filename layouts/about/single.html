@@ -34,7 +34,7 @@
             {{ range $socials}}
             <li>
               <a class="text-primary social-icons__item" href="{{ .link }}" target="_blank">
-                <i class="ti-{{ .icon }}"></i>
+                <i class="{{ .icon }}"></i>
               </a>
             </li>
             {{ end }}
