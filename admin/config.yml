@@ -81,8 +81,6 @@ collections:
                 label: Stories section title
               - name: map
                 label: Map url (including https)
-              - <<: *link_defaults
-                label: url to link to stories page
 
           - name: archive
             label: Archive
