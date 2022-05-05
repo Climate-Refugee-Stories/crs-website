@@ -1,4 +1,5 @@
 ---
+title: Home
 banner:
   title: "A public history project<br>about migration,<br>borders, and the fight for<br>climate justice"
   background_img: i-ptQrJ35
