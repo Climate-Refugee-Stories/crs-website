@@ -34,6 +34,7 @@ Luis, a nursing student in Puerto Rico, graduated just before the hurricane and 
 **Emma Crow-Willard, M.A.**, is a managing producer at Climate Now.
 
 &nbsp;
+
 {{< center >}}
 **"Climate Refugee Stories: Puerto Rico" is supported by the National Geographic Society**
 {{< /center >}}

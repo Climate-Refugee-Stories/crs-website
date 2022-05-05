@@ -66,6 +66,7 @@ what about internal migrants who, without crossing international borders, are ne
 Here, we invite storytellers and audiences to debate and define climate refugees for themselves.
 
 And we ask:
+
 {{< center >}}  
 > What does it take to move from a world rooted in violence, extraction, and domination to a world rooted in regeneration, resilience, and interdependence?
 {{< /center >}}

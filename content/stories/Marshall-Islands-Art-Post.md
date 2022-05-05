@@ -49,12 +49,14 @@ Activism and artistic responses to climate change in the Marshall Islands recogn
 Kathy Jetnil-Kijiner is a Marshallese poet and spoken-word artist.  She was chosen to perform her poetry at the UN Climate Summit in New York City in 2014 as the "voice of civil society."  She is a co-founder of the nonprofit *[Jo Jikum](https://jojikum.org/)*, which empowers Marshallese youth to seek solutions to climate change.​
 
 
-In "History Project," Kathy Jetnil-Kijiner confronts the legacies of US occupation and atomic testing in the Marshall Islands:   
+In "History Project," Kathy Jetnil-Kijiner confronts the legacies of US occupation and atomic testing in the Marshall Islands:
+
 {{< youtube DIIrrPyK0eU >}}  
 {{< /youtube >}}
 <br>
   
-Kathy Jetnil-Kijiner performed "Dear Matafele Peinem," a poem to her daughter, at the 2014 UN Climate Summit:  
+Kathy Jetnil-Kijiner performed "Dear Matafele Peinem," a poem to her daughter, at the 2014 UN Climate Summit:
+
 {{< youtube DJuRjy9k7GA >}}  
 {{< /youtube >}}
   
