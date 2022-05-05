@@ -5,8 +5,8 @@ altCMS: true
 draft: false
 button:
     enable: false
-    label: "More CRS News"
-    URL: "https://docs.google.com/document/d/1pJfXh9YsHorg04mO6Dqd4hyaTRxTUlo6yhSZqU8g6VE/edit?usp=sharing"
+    label:
+    URL:
 ---
 Climate Refugee Stories and our partners strongly believe in free and open access to knowledge. We want the stories and content we share here to be accessible, easy to share and reuse.
 
