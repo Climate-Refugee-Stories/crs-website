@@ -152,6 +152,8 @@ collections:
               - name: enable
                 label: Enable on homepage?
                 widget: boolean
+              - <<: *title_defaults
+                label: Partner's title
               - name: about
                 label: Intro partner text
                 <<: *markdown_defaults
