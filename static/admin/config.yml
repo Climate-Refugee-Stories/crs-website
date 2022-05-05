@@ -118,7 +118,7 @@ collections:
                     label: Item title
                   - &icon_defaults
                     name: icon
-                    label: Font Awesome Icon string
+                    label: Themify Icon string
                   - <<: *md_content
                     label: Text for item
                   - name: highlighted
@@ -173,19 +173,6 @@ collections:
           - *page_intro_defaults
           - *metadata_defaults
           - *draft_defaults
-      - name: crs_news
-        label: "CRS News"
-        file: content/about/crs-news.md
-        fields:
-          - <<: *title_defaults
-            label: CRS News section title
-          - *draft_defaults
-          - name: description
-            label: section intro
-            <<: *markdown_defaults
-          - *content_defaults
-          - <<: *button_defaults
-            label: More CRS News
       - name: archive
         label: "Archive"
         file: content/archive/_index.md
@@ -241,34 +228,6 @@ collections:
             default: 0
           - *content_defaults
 
-  - name: about_sections
-    label: About Sections (bottom)
-    folder: content/about
-    filter: 
-      field: altCMS
-      value: true
-    create: true
-    fields:
-      - label: Section Title
-        name: title
-      - *draft_defaults
-      - <<: *order_defaults
-        required: false
-      - <<: *md_content
-        label: Description
-        name: description
-        required: false
-      - *button_defaults
-      - name: altCMS
-        widget: hidden
-        default: true
-      - &special_md_content
-        name: body
-        label: Content
-        widget: "markdown"
-        sanitize_preview: true
-        minimal: false
-
   - name: about
     label: Team Member
     folder: content/about
@@ -306,11 +265,40 @@ collections:
             label: Stylized (links) references
             <<: *markdown_defaults
       - *social_defaults
-      - *special_md_content
+      - &special_md_content
+        name: body
+        label: Content
+        widget: "markdown"
+        sanitize_preview: true
+        minimal: false
       - &cms_visible
         name: visibleInCMS
         widget: hidden
         default: true
+
+  - name: about_sections
+    label: About Sections (bottom)
+    folder: content/about
+    filter: 
+      field: altCMS
+      value: true
+    create: true
+    fields:
+      - label: Section Title
+        name: title
+      - *draft_defaults
+      - <<: *order_defaults
+        required: false
+      - <<: *md_content
+        label: Description
+        name: description
+        required: false
+      - *button_defaults
+      - name: altCMS
+        widget: hidden
+        default: true
+      - *special_md_content
+
   - name: stories
     label: Stories
     folder: content/stories
