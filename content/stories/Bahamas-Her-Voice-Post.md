@@ -14,7 +14,7 @@ weight: 0
 visibleInCMS: true
 description: Bahamian artist Dede Brown
 ---
-**In September 2019**, Hurricane Dorian became one of the most intense storms to ever hit the Atlantic and the greatest natural disaster to ever make landfall on the islands of The Bahamas causing approximately USD 3.4 billion in damages. While Dorian caused unprecedented environmental and infrastructure damages, it also exposed the structural weaknesses and vulnerabilities of the Bahamian society which created an imbroglio for governmental and non-governmental agencies striving to respond effectively and briskly following the storm.. 
+**In September 2019**, Hurricane Dorian became one of the most intense storms to ever hit the Atlantic and the greatest natural disaster to ever make landfall on the islands of The Bahamas causing approximately USD 3.4 billion in damages. While Dorian caused unprecedented environmental and infrastructure damages, it also exposed the structural weaknesses and vulnerabilities of the Bahamian society which created an imbroglio for governmental and non-governmental agencies striving to respond effectively and briskly following the storm.
 
 With Dorian, The Bahamas gained its first recognized climate refugees as many were forced to leave the islands of Abaco and Grand Bahama Island for places unknown as their homes, as they knew them, were destroyed. While Dorian left 74 officially dead, there were many more who lost everything in the aftermath. 
 
@@ -25,6 +25,7 @@ Many governments in the region have been perceived as unable to effectively pivo
 
 {{< center >}}
 ##### ***Coming Soon: Stories from Hurricane Dorian***
+
 
 {{< /center >}}
 
