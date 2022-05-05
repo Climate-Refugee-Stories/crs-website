@@ -219,7 +219,7 @@ collections:
           - *metadata_defaults
           - *draft_defaults
           - name: contact_title
-            label: Contact Section Titel
+            label: Contact Section Title
           - name: socials_text
             label: Text above social icons
           - &social_defaults
