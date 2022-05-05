@@ -59,7 +59,7 @@ collections:
               - &button_defaults
                 name: button
                 label: button
-                summary: button for about text
+                summary: options for button
                 <<: *object_defaults
                 fields:
                   - name: enable
@@ -218,6 +218,10 @@ collections:
           - *page_intro_defaults
           - *metadata_defaults
           - *draft_defaults
+          - name: contact_title
+            label: Contact Section Titel
+          - name: socials_text
+            label: Text above social icons
           - &social_defaults
             name: socials
             label: Socials
@@ -227,6 +231,20 @@ collections:
               - *icon_defaults
               - <<: *link_defaults
                 label: link for social website
+          - name: newsletter_text
+            label: Text above newsletter
+          - <<: *button_defaults
+            name: newsletter_button
+            label: Newsletter Button
+          - name: form_text
+            label: Text above the form
+          - <<: *button_defaults
+            name: form_button
+            label: Contact Form Button
+          - name: google_form_title
+            label: text above google form
+          - name: google_form_link
+            label: Link for the Google form
 
   - name: about
     label: Team Member

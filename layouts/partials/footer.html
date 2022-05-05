@@ -33,7 +33,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 <div id="js-cookie-box" class="cookie-box cookie-box-hide cookie-msg-text">
 	Stay up to date with our newsletter!
-  <a href="https://climaterefugeestories.substack.com/p/coming-soon?showWelcome=true" target="_blank"><span id="js-cookie-sub" class="btn btn-sm btn-primary ml-2">Subscribe</span></a>
+  <a href="{{ (site.GetPage `/contact`).Params.newsletter_button.URL }}" target="_blank"><span id="js-cookie-sub" class="btn btn-sm btn-primary ml-2">Subscribe</span></a>
   <a href=""><span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">Dismiss</span></a>
   <!-- Dismiss button <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">Dismiss</span> -->
 </div>
