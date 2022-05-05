@@ -32,6 +32,8 @@ collections:
         label: "Homepage"
         file: content/_index.md
         fields:
+          - name: title
+            label: Page Title
           - name: banner
             label: Banner Section
             summary: First section on homepage
