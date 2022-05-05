@@ -15,7 +15,6 @@ about:
 stories:
   map: https://unccharlotte.maps.arcgis.com/apps/Embed/index.html?webmap=9fbe51f045714ea3bfe7cddcf8b5ee04&extent=-180,-66.8537,180,78.2462&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light
   title : "Stories"
-  URL : "stories"
 archive:
   title : "Archive"
   item_show : 5
