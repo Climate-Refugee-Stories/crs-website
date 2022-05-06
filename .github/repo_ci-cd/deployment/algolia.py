@@ -37,10 +37,6 @@ def main():
     api_key = getenv("ALGOLIA_API_KEY")
     index_name = getenv("ALGOLIA_INDEX_NAME")
 
-    if all([app_id, api_key, index_name]):
-        print('one of the environment variables failed to be found')
-        s_exit(1)
-
     # if running in CI or doing local development
     env = getenv("CI") or None
     base_dir = Path(getenv("GITHUB_WORKSPACE")) if env else get_base_dirs()
