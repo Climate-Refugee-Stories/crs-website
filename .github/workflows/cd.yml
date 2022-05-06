@@ -92,6 +92,7 @@ jobs:
     name: Actions to update Algolia after site's been deployed
     runs-on: ubuntu-latest
     needs: prod
+    # https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment#using-an-environment
     environment: production
     container:
       image: docker.io/python:3-slim
@@ -118,6 +119,7 @@ jobs:
 
       - name: Update Algolia index
         run: cd .github/repo_ci-cd/deployment/ && pipenv run ./algolia.py
+        # https://docs.github.com/en/actions/security-guides/encrypted-secrets#using-encrypted-secrets-in-a-workflow
         env:
           ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
           ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
