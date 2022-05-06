@@ -15,13 +15,6 @@
     .h2 {
       font-size: 3.125rem;
     }
-
-    .social-icons-home {
-        & a {
-            // font-size: 1.2rem;
-        }
-    }
-
     .navigation {
         padding: 20px;
         background: var(--primary-color);
@@ -54,7 +47,6 @@
     .tagline-circle {
 
         padding: 3%;
-
 
         &-div {
             justify-content: center;

@@ -183,7 +183,7 @@ if (document.querySelectorAll('#autocomplete').length > 0) {
 
 }
 
-// archive picture slider
+// Archive picture slider
 // inspired by: https://github.com/jonasschmedtmann/complete-javascript-course/blob/8201b01f2fcd274fb276c1c8e11e55847c6d451e/13-Advanced-DOM-Bankist/final/script.js#L207-L291
 function slider () {
   const slides = document.querySelectorAll('.slide');
@@ -308,7 +308,7 @@ function lightbox () {
     goToSlide(curSlide);
   };
 
-  // data-picture set by hugo on build
+  // Data-picture set by hugo on build
   allImgs.forEach(function (imgObj, imgIndex) {
     imgObj.addEventListener('click', function(e) {
       curSlide = e.target.dataset.picture;
