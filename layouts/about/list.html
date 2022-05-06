@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<!-- page title -->
+<!-- Page Title -->
 <section class="page-title-alt position-relative overflow-hidden bg-shape-about">
   <div class="container">
     <div class="row">
@@ -10,9 +10,9 @@
     </div>
   </div>
  </section>
-<!-- /page title -->
+<!-- /Page Title -->
 
-<!-- about -->
+<!-- About Us -->
 <section class="section pt-5">
   <div class="container">
     <div class="row">
@@ -28,9 +28,9 @@
     </div>
   </div>
 </section>
-<!-- /about -->
+<!-- /About Us -->
 
-<!-- CRS Team -->
+<!-- Our Team -->
 <section class="section bg-cover" id="our-team">
   <div class="container">
     <div class="row">
@@ -55,9 +55,9 @@
     </div>
   </div>
 </section>
-<!-- /team -->
+<!-- /Our Team -->
 
-<!-- Work Process -->
+<!-- Our Partners -->
 {{ with .Params.partners }}
 <section class="section" id="{{ .title | urlize }}">
   <div class="container">
@@ -75,10 +75,9 @@
   </div>
 </section>
 {{ end }}
-<!-- ./Work Process -->
+<!-- /Our Partners -->
 
-
-<!-- CRS News -->
+<!-- Bottom Sections (CRS News, Usage Guide, and any others that get added) -->
 {{ range .Pages }}
 {{ if .Params.button }}
 <section class="section" id="{{ .Title | urlize }}">
@@ -108,6 +107,6 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- /CRS News -->
+<!-- Bottom Sections -->
 
 {{ end }}

@@ -1,4 +1,4 @@
-<!-- footer -->
+<!-- Footer -->
 <footer class="bg-dark footer-section">
   <div class="footer-bottom border-top text-center border-dark py-5">
     <p class="mb-0 text-light">
@@ -8,7 +8,7 @@
     </p>
   </div>
 </footer>
-<!-- /footer -->
+<!-- /Footer -->
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
 {{ range site.Params.plugins.js}}
@@ -17,20 +17,19 @@
 
 {{ "<!-- Copyright update -->" | safeHTML }}
 <script>
-  // Set current year
+  // Set Current Year
   const yearID = document.querySelector("#copyYear");
   const currentYear = new Date().getFullYear();
   yearID.textContent = currentYear;
 </script>
 
-<!-- cookie -->
+<!-- Cookie -->
 {{ if site.Params.cookies.enable }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 <div id="js-cookie-box" class="cookie-box cookie-box-hide cookie-msg-text">
 	Stay up to date with our newsletter!
   <a href="{{ (site.GetPage `/contact`).Params.newsletter_button.URL }}" target="_blank"><span id="js-cookie-sub" class="btn btn-sm btn-primary ml-2">Subscribe</span></a>
   <a href=""><span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">Dismiss</span></a>
-  <!-- Dismiss button <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">Dismiss</span> -->
 </div>
 <script>
 	(function ($) {
@@ -55,7 +54,7 @@
 	})(jQuery);
 </script>
 
-<!-- cookie style -->
+<!-- Cookie Style -->
 <style>
 .cookie-box {
   position: fixed;

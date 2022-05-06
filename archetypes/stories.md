@@ -3,7 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 author: "Author"
 author_link: "#"
 date: {{ .Date }}
-image: "images/stories/post-1.jpg"
+image: "images/stories/default-img.jpg"
 thumbnail: ""
 image_caption: |
     This is an image caption. Image credt: [John Doe](#)

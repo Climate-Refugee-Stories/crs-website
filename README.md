@@ -1,3 +1,3 @@
-# crs-website
+# Climate Refugee Stories
 
-(In-Progress) This is the official website for Climate Refugee Stories.
+This is the official website for Climate Refugee Stories!

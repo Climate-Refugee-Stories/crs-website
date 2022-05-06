@@ -8,12 +8,15 @@
 
 {{ partial "page-title.html" . }}
 
+<!-- Main Content -->
 <section class="section">
   <div class="container">
     <div class="row">
+      <!-- Section Title -->
       <div class="col-12 text-center">
         <h2 class="section-title">{{ .Params.contact_title }}</h2>
       </div>
+      <!-- Social Media -->
       <div class="col-12 row" style="justify-content: center;">
         {{ $socials_text := .Params.socials_text }}
         {{ with .Params.socials }}
@@ -32,6 +35,7 @@
           </ul>
         </div>
         {{ end }}
+        <!-- Email Newsletter -->
         {{ $newsletter_text := .Params.newsletter_text }}
         {{ with .Params.newsletter_button }}
         {{ if .enable }}
@@ -44,6 +48,7 @@
       </div>
         {{ end }}
         {{ end }}
+        <!-- "Send us a message" Form (Formspree) -->
         {{ $form_text := .Params.form_text }}
         {{ with .Params.form_button }}
         {{ if .enable }}
@@ -76,24 +81,7 @@
       </div>
   </div>
 </section>
-
-<!-- <section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Contact Us</h2>
-      </div>
-      <div class="col-12">
-        <div class="col-12 text-center">
-          <h4 class=""><strong><span style="font-size:24px;">&#9993;</span> climaterefugeestories@gmail.com</strong></h4>
-          <br/>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
+<!-- Get Involved Form (Google) -->
 <section class="section">
     <div class="row">
       <div class="col-12 text-center">
@@ -104,6 +92,7 @@
     </div>
   </div>
 </section>
+<!-- Main Content -->
 
 {{- partial "footer.html" . -}}
 </body>

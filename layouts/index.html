@@ -1,7 +1,7 @@
 {{ define "main" }}
 
   {{ with .Params }}
-  <!-- hero area -->
+  <!-- Hero Area -->
   {{ with .banner }}
   <section class="hero-area" id="parallax">
     <div class="main-title">
@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <!-- social icon -->
+      <!-- Social Icons -->
       <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
         {{ with (site.GetPage `/contact`).Params.socials }}
         {{ range . }}
@@ -25,14 +25,14 @@
         {{ end }}
         {{ end }}
       </ul>
-      <!-- /social icon -->
+      <!-- /Social Icons  -->
     </div>
   </section>
   {{ end }}
-  <!-- /hero area -->
+  <!-- /Hero Area -->
 
   {{ with .about }}
-  <!-- about -->
+  <!-- Intro Paragraph -->
   <section class="section">
     <div class="container">
       <div class="row">
@@ -49,10 +49,10 @@
     </div>
   </section>
   {{ end }}
-  <!-- /about -->
+  <!-- /Intro Paragraph -->
 
   {{ with .stories }}
-  <!-- blog -->
+  <!-- Stories -->
   <section class="section">
     <div class="container">
       <div class="row">
@@ -67,7 +67,7 @@
       </div>
     </div>
   </section>
-  <!-- /stories -->
+  <!-- /Stories -->
   {{ end }}
 
 
@@ -96,11 +96,11 @@
       </div>
     </div>
   </section>
-  <!-- /archive -->
+  <!-- /Archive -->
   {{ end }}
 
   {{ with .resources }}
-  <!-- Resources/Toolkit -->
+  <!-- Resources -->
   <section class="section">
     <div class="container">
       <div class="row">
@@ -130,7 +130,7 @@
       </div>
     </div>
   </section>
-  <!-- /services -->
+  <!-- /Resources -->
   {{ end }}
 
   <!-- Partners -->
@@ -155,7 +155,7 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- ./Partners -->
+<!-- /Partners -->
 
 <!-- Twitter Feed -->
 <section class="section">
@@ -170,9 +170,9 @@
     </div>
   </div>
 </section>
-<!-- ./Twitter Feed -->
+<!-- /Twitter Feed -->
 
-<!-- ending with .Params -->
+<!-- Ending with .Params -->
 {{ end }}
 
 <!-- Ending main section definition -->

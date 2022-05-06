@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<!-- page title -->
+<!-- Page Title -->
 <section class="page-title-alt bg-primary position-relative overflow-hidden">
   <div class="container">
     <div class="row">
@@ -13,20 +13,23 @@
   <img src="{{`images/illustrations/dots-group-sm.svg`| relURL}}" alt="illustrations" class="bg-shape-2">
   <img src="{{`images/illustrations/dots-group-cyan.svg`| relURL}}" alt="illustrations" class="bg-shape-5">
 </section>
-<!-- /page title -->
+<!-- /Page Title -->
 
-<!-- about -->
+<!-- Main Content -->
 <section class="section pt-5">
   <div class="container">
     <div class="row">
+      <!-- About Text -->
       <div class="col-md-8">
         {{ .Content }}
       </div>
+      <!-- Headshot -->
       <div class="col-md-4 text-left drag-lg-top">
         <div class="shadow-down mb-4">
           <img src="https://photos.smugmug.com/photos/{{ .Params.image }}/0/O/{{ .Params.image }}-O.png" alt="author"
             class="img-fluid w-100 rounded-lg border-thick border-white">
         </div>
+        <!-- Social Icons -->
         <div class="">
           <ul class="list-unstyled social-icons__box">
             {{ $socials := .Params.socials }}
@@ -41,16 +44,19 @@
             {{ end }}
           </ul>
         </div>
+        <!-- Location & Work Area -->
         <strong>Location:</strong> {{ .Params.location }}<br>
         <strong>Work Area:</strong> {{ .Params.work_area }}<br>
       </div>
       <div class="col-md-8">
+        <!-- Publications -->
         {{ with .Params.recent_publications }}
           <strong>Recent Publications</strong><br>
           {{ range . }}
             {{ .content | markdownify }}<br>
           {{ end }}
         {{ end }}
+        <!-- Projects -->
         {{ with .Params.recent_projects }}
           <strong>Recent Projects</strong><br>
           {{ range . }}
@@ -61,6 +67,5 @@
     </div>
   </div>
 </section>
-<!-- /about -->
-
+<!-- /Main Content -->
 {{ end }}

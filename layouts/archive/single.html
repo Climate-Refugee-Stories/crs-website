@@ -2,7 +2,7 @@
 
 {{ partial "page-title-post.html" . }}
 
-<!-- portfolio -->
+<!-- Archive Collection -->
 <section class="section">
   <div class="container">
     <div class="row">
@@ -131,7 +131,6 @@
           {{ end }}
         <!-- end range loop -->
         {{ end }}
-
         
         {{ if gt (len $final_picture_array) 0 }}
         <div class="slides">
@@ -258,7 +257,6 @@
           {{ end }}
         <!-- end range loop -->
         {{ end }}
-
         
         {{ if gt (len $final_video_array) 0 }}
         <div class="slides">
@@ -303,6 +301,6 @@
     </div>
   </div>
 </section>
-<!-- /portfolio -->
+<!-- /Archive Collection -->
 
 {{ end }}
