@@ -42,7 +42,6 @@ jobs:
     name: Deploy to prod
     runs-on: ubuntu-latest
     needs: prod_prep
-    environment: production
     container:
       image: registry.gitlab.com/pages/hugo/hugo_extended:latest
 
@@ -89,6 +88,7 @@ jobs:
     name: Actions to update Algolia after site's been deployed
     runs-on: ubuntu-latest
     needs: prod
+    environment: production
     container:
       image: docker.io/python:3-slim
 
