@@ -1,13 +1,11 @@
 ---
-
 name: Deploy Website
 
 on:
   push:
     branches:
-     - master
+      - master
   workflow_dispatch:
- 
 
 jobs:
   prod:
@@ -28,11 +26,7 @@ jobs:
         with:
           submodules: true
 
-      # - name: Prep script
-      #   run: |
-      #     sed 's/GITHUBTOKEN/${{ env.GITHUB_TOKEN }}/g' .github/repo_ci-cd/deployment/deploy.sh
-
-      - name: Deploy
+      - name: Deploy to Github Pages
         run: bash .github/repo_ci-cd/deployment/deploy.sh
         env:
           GITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -45,4 +39,43 @@ jobs:
         #   githubToken: ${{ secrets.GITHUB_TOKEN }}
         # env:
         #   HUGO_ARGS: --gc --minify --cleanDestinationDir
-          # CNAME: incovatesolutions.com
+        # CNAME: <domain>
+
+  auto_actions:
+    name: Actions around the prod deployment
+    runs-on: ubuntu-latest
+    needs: prod
+    container:
+      image: docker.io/python:3-slim
+
+    steps:
+      # - name: Prep env
+      #   run: |
+      #     set -ex
+      #     apk add --update --no-cache openssl git bash &&
+      #     rm -rf /var/cache/apk/*
+
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          ref: "gh-pages"
+
+      - name: Install pipenv
+        run: pip install pipenv
+
+      - uses: actions/setup-python@v3
+        with:
+          python-version: "3.x"
+          cache: "pipenv"
+
+      - run: cd .github/repo_ci-cd/deployment/ && pipenv install
+
+      - name: Update Algolia index
+        run: cd .github/repo_ci-cd/deployment/ && pipenv run ./csv_to_json.py > ../../../data/archive_data.json
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Adding archive data to gh-pages branch
+
+      - name: Update Algolia index
+        run: cd .github/repo_ci-cd/deployment/ && pipenv run ./algolia.py
