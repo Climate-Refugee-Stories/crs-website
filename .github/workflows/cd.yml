@@ -112,4 +112,8 @@ jobs:
           name: algolia-data
 
       - name: Update Algolia index
-        run: set && cd .github/repo_ci-cd/deployment/ && pipenv run ./algolia.py
+        run: cd .github/repo_ci-cd/deployment/ && pipenv run ./algolia.py
+        env:
+          ALGOLIA_API_KEY: ${{secrets.ALGOLIA_API_KEY}}
+          ALGOLIA_APP_ID: ${{secrets.ALGOLIA_APP_ID}}
+          ALGOLIA_INDEX_NAME: ${{secrets.ALGOLIA_INDEX_NAME}}
