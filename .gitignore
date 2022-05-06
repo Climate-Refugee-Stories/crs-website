@@ -13,3 +13,6 @@ hugo.darwin
 hugo.linux
 
 # End of https://www.toptal.com/developers/gitignore/api/hugo
+
+# for doing local development with secrets
+.env

@@ -1,18 +1,49 @@
 ---
-
 name: Deploy Website
 
 on:
   push:
     branches:
-     - master
+      - master
   workflow_dispatch:
- 
 
 jobs:
+  prod_prep:
+    name: Actions creating the Archive data file (archive_data.json)
+    runs-on: ubuntu-latest
+    container:
+      image: docker.io/python:3-slim
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        # with:
+        #   ref: "gh-pages"
+
+      - name: Install pipenv
+        run: pip install pipenv
+
+      - uses: actions/setup-python@v3
+        with:
+          python-version: "3.x"
+          cache: "pipenv"
+
+      - name: installing pipenv packages
+        run: cd .github/repo_ci-cd/deployment/ && pipenv sync
+
+      - name: Update Archive data
+        run: cd .github/repo_ci-cd/deployment/ && pipenv run ./csv_to_json.py > "${GITHUB_WORKSPACE}/data/archive_data.json"
+
+      - name: uploading archive data
+        uses: actions/upload-artifact@v3
+        with:
+          name: archive-data
+          path: data/archive_data.json
+
   prod:
     name: Deploy to prod
     runs-on: ubuntu-latest
+    needs: prod_prep
     container:
       image: registry.gitlab.com/pages/hugo/hugo_extended:latest
 
@@ -28,11 +59,13 @@ jobs:
         with:
           submodules: true
 
-      # - name: Prep script
-      #   run: |
-      #     sed 's/GITHUBTOKEN/${{ env.GITHUB_TOKEN }}/g' .github/repo_ci-cd/deployment/deploy.sh
+      - name: downloading archive data
+        uses: actions/download-artifact@v3
+        with:
+          name: archive-data
+          path: data/archive_data.json
 
-      - name: Deploy
+      - name: Deploy to Github Pages
         run: bash .github/repo_ci-cd/deployment/deploy.sh
         env:
           GITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -45,4 +78,40 @@ jobs:
         #   githubToken: ${{ secrets.GITHUB_TOKEN }}
         # env:
         #   HUGO_ARGS: --gc --minify --cleanDestinationDir
-          # CNAME: incovatesolutions.com
+        # CNAME: <domain>
+
+      - name: uploading algolia data
+        uses: actions/upload-artifact@v3
+        with:
+          name: algolia-data
+          path: /tmp/gh-pages/algolia.json
+
+  auto_actions:
+    name: Actions to update Algolia after site's been deployed
+    runs-on: ubuntu-latest
+    needs: prod
+    container:
+      image: docker.io/python:3-slim
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Install pipenv
+        run: pip install pipenv
+
+      - uses: actions/setup-python@v3
+        with:
+          python-version: "3.x"
+          cache: "pipenv"
+
+      - name: installing pipenv packages
+        run: cd .github/repo_ci-cd/deployment/ && pipenv sync
+
+      - name: downloading algolia data
+        uses: actions/download-artifact@v3
+        with:
+          name: algolia-data
+
+      - name: Update Algolia index
+        run: cd .github/repo_ci-cd/deployment/ && pipenv run ./algolia.py
