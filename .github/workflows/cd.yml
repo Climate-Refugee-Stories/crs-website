@@ -29,10 +29,10 @@ jobs:
           cache: "pipenv"
 
       - name: installing pipenv packages
-        run: pushd .github/repo_ci-cd/deployment/ && pipenv sync && popd
+        run: cd .github/repo_ci-cd/deployment/ && pipenv sync
 
       - name: Update Archive data
-        run: pushd .github/repo_ci-cd/deployment/ && pipenv run ./csv_to_json.py > "${GITHUB_WORKSPACE}/data/archive_data.json" && popd
+        run: cd .github/repo_ci-cd/deployment/ && pipenv run ./csv_to_json.py > "${GITHUB_WORKSPACE}/data/archive_data.json"
 
       - name: uploading archive data
         uses: actions/upload-artifact@v3
@@ -106,7 +106,7 @@ jobs:
           cache: "pipenv"
 
       - name: installing pipenv packages
-        run: pushd .github/repo_ci-cd/deployment/ && pipenv sync && popd
+        run: cd .github/repo_ci-cd/deployment/ && pipenv sync
 
       - name: downloading algolia data
         uses: actions/download-artifact@v3
