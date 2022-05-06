@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 dask = {extras = ["dataframe"], version = "*"}
+requests = "*"
+aiohttp = "*"
 
 [dev-packages]
 
