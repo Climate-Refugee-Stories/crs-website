@@ -5,6 +5,10 @@ on:
   push:
     branches:
       - master
+    paths-ignore:
+      - ".github/"
+      - ".git*"
+      - "README.md"
   workflow_dispatch:
 
 jobs:
