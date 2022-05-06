@@ -46,8 +46,6 @@
     background: rgb(30, 75, 160);
   }
 }
-/* ************************************/
-// re-usable components
 
 .section {
   padding: 5rem 0;
@@ -385,7 +383,6 @@
 
 .hero-area {
   height: 100vh;
-  // TODO: make this variablized or something... (not local reference to url encoded path)
   background-image: url($hero_img);
   background-size: cover;
   background-position: bottom;
@@ -396,8 +393,6 @@
   column-count: 2;
 }
 
-/* *********************************** */
-
 .archive_gallery {
   &_container {
     display: grid;
@@ -405,7 +400,6 @@
     gap: 0.5rem 0.5rem;
     align-items: center;
     cursor: pointer;
-    // justify-items: center;
   }
   &_img {
     height: 20rem;
@@ -439,9 +433,6 @@
     }
   }
 }
-
-// .archive_gallery_figure div {
-// }
 
 .vid_slides, .slides {
   display: flex;
@@ -592,7 +583,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem 1rem;
     align-items: center;
-    // justify-items: center;
     
     & img {
       max-height: 300px;
@@ -607,7 +597,6 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    // min-height: 0;
   }
 
   &__caption {
@@ -696,7 +685,7 @@
   top: 85%;
 }
 
-//  // for accessing content text in resources page
+// for accessing content text in resources page
 // telling text to be dark when child elements
 .text-dark > * {
   color: #000;
