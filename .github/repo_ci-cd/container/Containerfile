@@ -1,4 +1,4 @@
 FROM docker.io/python:3-slim
-COPY deployment /app_deployment
+COPY .github/repo_ci-cd/deployment/ /app_deployment
 WORKDIR /app_deployment
 RUN pip install pipenv && pipenv sync --system
