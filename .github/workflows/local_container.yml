@@ -1,0 +1,61 @@
+# based on:
+# https://github.com/redhat-actions/push-to-registry/blob/7e7aa10ef219c67d5e20beb5d68604e738aab28e/.github/workflows/ghcr-push.yaml
+name: Build Repo Container
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - ".github/repo_ci-cd/"
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 * *'
+
+jobs:
+  push-ghcr:
+    name: Build and push image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      # Checkout push-to-registry action github repository
+      - name: Checkout Push to Registry action
+        uses: actions/checkout@v2
+
+      # Build image using Buildah action
+      - name: Build Image
+        id: build_image
+        uses: redhat-actions/buildah-build@v2
+        with:
+          image: ${{ env.IMAGE_NAME }}
+          tags: ${{ env.IMAGE_TAGS }}
+          containerfiles: |
+            .github/repo_ci-cd/container/Containerfile
+          oci: true
+        env:
+            IMAGE_NAME: crs-deploy
+            IMAGE_TAGS: latest ${{ github.sha }} ${{ steps.date.outputs.date }}
+
+
+      # Push the image to GHCR (Image Registry)
+      - name: Push To GHCR
+        uses: redhat-actions/push-to-registry@v2
+        id: push
+        with:
+          image: ${{ steps.build_image.outputs.image }}
+          tags: ${{ steps.build_image.outputs.tags }}
+          registry: ${{ env.IMAGE_REGISTRY }}
+          username: ${{ env.REGISTRY_USER }}
+          password: ${{ env.REGISTRY_PASSWORD }}
+          extra-args: |
+            --disable-content-trust
+        env:
+            IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
+            REGISTRY_USER: ${{ github.actor }}
+            REGISTRY_PASSWORD: ${{ github.token }}
+
+      - name: Echo outputs
+        run: |
+          echo "${{ toJSON(steps.push.outputs) }}"
