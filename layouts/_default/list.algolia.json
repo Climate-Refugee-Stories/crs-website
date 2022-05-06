@@ -13,8 +13,7 @@
     {{ end }}
     {{ $permalink_hash = md5 .Permalink }}
     {{ $uuid = default $permalink_hash $uuid }}
-    {{ $img_url = .Params.thumbnail | absURL }}
-    {{- $.Scratch.Add "index" (dict "objectID" $uuid "date" .Date.UTC.Unix "description" .Description "dir" .File.Dir "expirydate" .ExpiryDate.UTC.Unix "fuzzywordcount" .FuzzyWordCount "keywords" .Keywords "kind" .Kind "lang" .Lang "lastmod" .Lastmod.UTC.Unix "permalink" .Permalink "publishdate" .PublishDate "readingtime" .ReadingTime "relpermalink" .RelPermalink "summary" .Summary "title" .Title "type" .Type "url" .Permalink "weight" .Weight "wordcount" .WordCount "section" .Section "tags" .Params.Tags "categories" .Params.Categories "authors" .Params.Authors "image" $img_url )}}
+    {{- $.Scratch.Add "index" (dict "objectID" $uuid "date" .Date.UTC.Unix "description" .Description "dir" .File.Dir "expirydate" .ExpiryDate.UTC.Unix "fuzzywordcount" .FuzzyWordCount "keywords" .Keywords "kind" .Kind "lang" .Lang "lastmod" .Lastmod.UTC.Unix "permalink" .Permalink "publishdate" .PublishDate "readingtime" .ReadingTime "relpermalink" .RelPermalink "summary" .Summary "title" .Title "type" .Type "url" .Permalink "weight" .Weight "wordcount" .WordCount "section" .Section "tags" .Params.Tags "categories" .Params.Categories "authors" .Params.Authors "image" (printf "https://photos.smugmug.com/photos/%s/0/Th/%s-Th.png" .Params.thumbnail .Params.thumbnail) )}}
 
   {{- end -}}
 {{- end -}}
