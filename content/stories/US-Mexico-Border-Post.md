@@ -23,11 +23,9 @@ In this interview for Climate Refugee Stories conducted by Steve Pavey of [Hope 
 
 #### ***An Interview with Todd Miller, author of Storming the Wall***
 
-<!-- TO-DO: Combine clips to 1 interview or list out all the Qs and interview clips -->  
 {{< youtube y4d8k4JTJfA >}}  
 {{< /youtube >}}
 
-<!-- TO-DO: Maybe pick a favorite quote from the interview for below -->  
 > "My book itself is journalism, so it presents a problem, but it offers examples of how this is not necessarily inevitable."​  
 
 ---  

@@ -26,7 +26,6 @@ Although it is considered a "civil" form of confinement, immigration detention l
 {{< /youtube >}}
 &nbsp;
 
-<!-- TO-DO: Center -->
 {{< center >}}
 #### **Coming Soon: Mapping Toxic Detention**  
 {{< /center >}}
@@ -90,7 +89,6 @@ Artwork drawn by a man in immigration detention in Louisiana in 2017. Image Cred
 {{</ smugmug >}}
 &nbsp; 
 
-<!-- TO-DO: Center -->
 {{< center >}}
 #### ***Coming Soon: More Resources on Prisons and Environmental Racism***  
 {{< /center >}}

@@ -1,6 +1,3 @@
-html {
-  // font-size: 62.5%;
-}
 
 .main-blog-image {
   @include normal-image-processing {
@@ -49,7 +46,7 @@ html {
     background: rgb(30, 75, 160);
   }
 }
-/* *********************************** */
+/* ************************************/
 // re-usable components
 
 .section {

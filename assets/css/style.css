@@ -1,8 +1,3 @@
-/*!------------------------------------------------------------------
-[MAIN STYLESHEET]
-PROJECT: Project Name
-VERSION: Versoin Number
--------------------------------------------------------------------*/
 @import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
 
 @font-face {
@@ -20,7 +15,6 @@ body {
   color: #4c4c4c;
   font-weight: 500;
 }
-
 
 body {
   background-color: #fff;
@@ -44,12 +38,6 @@ body {
   align-items: center;
   justify-content: center
 }
-
-/* ol,
-ul {
-  list-style-type: none;
-  margin: 0
-} */
 
 img {
   vertical-align: middle;
@@ -257,7 +245,6 @@ textarea.form-control {
   border: 0
 }
 
-
 .hero-area h1 {
   position: relative;
   z-index: 2
@@ -391,8 +378,6 @@ textarea.form-control {
   color: #fff
 }
 
-
-
 .testimonial-content strong {
   color: #2bfdff;
   font-weight: 400
@@ -469,7 +454,6 @@ textarea.form-control {
 blockquote {
   display: inline-block;
   padding: 10px 20px;
-  /* background: #eaeaea; */
   border-left: 2px solid var(--primary-color);
   font-style: italic;
   font-size: 1.35rem;
@@ -482,16 +466,6 @@ blockquote > p {
 .content * {
   margin-bottom: 20px
 }
-
-/*  from template author
-.content strong {
-  font-family: playfair display, serif;
-  font-size: 22px;
-  font-weight: 400;
-  color: #000;
-  display: inherit;
-  line-height: 1.5
-} */
 
 .page-title-alt {
   padding: 290px 0 60px
@@ -669,5 +643,4 @@ blockquote > p {
   color: #4c4c4c;
   font-size: 22px;
   line-height: 1.8;
-  /* font-family: roboto, sans-serif */
 }

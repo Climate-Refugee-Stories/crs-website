@@ -41,7 +41,6 @@ The International Organization for Migration (IOM) is an intergovernmental organ
 
 ***Saumaun Heiat*** *is currently a Humanitarian Assistance Fellow at Project Concern International. He holds a Master’s degree in International Relations and Affairs from George Washington University and a B.A. in International Studies and Political Science from UC Irvine.*
 
-<!-- TO-DO: Center -->
 {{< center >}}
 ***Read Saumaun's latest article [Iran's Dustbowl Migration](https://www.eonmag.org/irans-dustbowl-migration/) in Eon Magazine***
 {{< /center >}}

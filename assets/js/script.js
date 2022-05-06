@@ -3,7 +3,6 @@ $(window).on('load', function () {
 	$('.preloader').fadeOut(100);
 });
 
-
 (function ($) {
 	'use strict';
 
@@ -19,14 +18,14 @@ $(window).on('load', function () {
 		});
 	});
 
-	// background color
+	// Background color
 	$('[data-color]').each(function () {
 		$(this).css({
 			'background-color': $(this).data('color')
 		});
 	});
 
-	// progress bar
+	// Progress bar
 	$('[data-progress]').each(function () {
 		$(this).css({
 			'bottom': $(this).data('progress')
@@ -82,7 +81,6 @@ $(window).on('load', function () {
 			mouseParallax('l8', c8left, c8top, x, y, 25);
 			mouseParallax('l9', c9left, c9top, x, y, 40);
 		};
-
 	};
 
 	function mouseParallax(id, left, top, mouseX, mouseY, speed) {
@@ -104,7 +102,6 @@ $(window).on('load', function () {
 		arrows: false,
 		adaptiveHeight: true
 	});
-
 
 	// clients logo slider
 	$('.client-logo-slider').slick({

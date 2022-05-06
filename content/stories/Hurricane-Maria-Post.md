@@ -44,23 +44,3 @@ Luis, a nursing student in Puerto Rico, graduated just before the hurricane and 
 {{< smugmug i-HcqgLL4 `Statue of What?` >}}
 *"Statue of What?" artwork created in solidarity with Puerto Rico by [Bo Thai](../../about/bo-daraphant/)*
 {{</ smugmug >}}
-
-<!-- 
-#### **Survivor Stories:**
-##### Click on their names to read their stories.
-
-&nbsp;
-
-{{< carousel >}}
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-i-kJG9M49|[Jane Doe](https://climate-refugee-stories.github.io/crs-website/stories/marshall-islands-art-post/)
-{{< /carousel >}}
-
---- -->
