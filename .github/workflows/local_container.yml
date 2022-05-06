@@ -6,7 +6,7 @@ on:
     branches:
       - master
     paths:
-      - ".github/repo_ci-cd/"
+      - ".github/repo_ci-cd/**"
   workflow_dispatch:
   schedule:
     - cron: '0 0 1 * *'
