@@ -12,7 +12,6 @@ weight: 0
 visibleInCMS: true
 ---
 
-<!-- TO-DO: Center -->
 {{< center >}}
 #### ***Coming Soon: Stories from the Migrant Caravan***   
 #### ***by Monica Curca and Thor Morales of Activate Labs***

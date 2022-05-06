@@ -1,9 +1,9 @@
 {{ define "main" }}
 
   {{ with .Params }}
-  <!-- hero area -->
+  <!-- Hero Area -->
   {{ with .banner }}
-  <section class="hero-area" id="parallax">
+  <section class="hero-area">
     <div class="main-title">
       <div class="container main-circle">
         <div class="row align-items-center justify-content-center">
@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <!-- social icon -->
+      <!-- Social Icons -->
       <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
         {{ with (site.GetPage `/contact`).Params.socials }}
         {{ range . }}
@@ -25,14 +25,14 @@
         {{ end }}
         {{ end }}
       </ul>
-      <!-- /social icon -->
+      <!-- /Social Icons  -->
     </div>
   </section>
   {{ end }}
-  <!-- /hero area -->
+  <!-- /Hero Area -->
 
   {{ with .about }}
-  <!-- about -->
+  <!-- Intro Paragraph -->
   <section class="section">
     <div class="container">
       <div class="row">
@@ -49,61 +49,25 @@
     </div>
   </section>
   {{ end }}
-  <!-- /about -->
-
-
-<!--   {{ if site.Data.homepage.skill.enable }}
-  {{ with site.Data.homepage.skill }}-->
-  <!-- skills --><!--
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
-        </div>
-        {{ range .item }}
-        <div class="col-lg-3 col-sm-6 mb-4">
-          <div class="card shadow text-center">
-            <div class="position-relative rounded-top progress-wrapper" data-color="{{.color}}">
-              <div class="wave" data-progress="{{.progress}}"></div>
-            </div>
-            <div class="card-footer bg-white">
-              <h4 class="card-title">{{.title }} ({{.progress}})</h4>
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </section>-->
-  <!-- /skills -->
- <!--  {{ end }}
-  {{ end }} -->
+  <!-- /Intro Paragraph -->
 
   {{ with .stories }}
-  <!-- blog -->
+  <!-- Stories -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
           <h2 class="section-title">{{ .title }}</h2>
         </div>
-          <!-- <iframe width="700" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Climate Refugee Stories" class="col-12 text-center homepage-story-map"
-          src="//unccharlotte.maps.arcgis.com/apps/Embed/index.html?webmap=7483a9da78ef4e32b49b074a9d79e951&extent=-170.332,-44.5905,45.8789,61.939&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light">
-          </iframe> -->
           <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="CRS Home Page" class="col-12 text-center homepage-story-map"
           src="{{ .map }}"></iframe>
-
-
-          <!-- story map image: <a href="{{ .URL | absURL }}"><img src="{{ .story_image | absURL }}" class="img-fluid mb-20"></a> -->
-        
         {{ range first 3 (where site.RegularPages "Section" "stories")}}
         {{ .Render "post" }}
         {{ end }}
       </div>
     </div>
   </section>
-  <!-- /stories -->
+  <!-- /Stories -->
   {{ end }}
 
 
@@ -132,11 +96,11 @@
       </div>
     </div>
   </section>
-  <!-- /archive -->
+  <!-- /Archive -->
   {{ end }}
 
   {{ with .resources }}
-  <!-- Resources/Toolkit -->
+  <!-- Resources -->
   <section class="section">
     <div class="container">
       <div class="row">
@@ -166,44 +130,8 @@
       </div>
     </div>
   </section>
-  <!-- /services -->
+  <!-- /Resources -->
   {{ end }}
-
-  <!-- {{ if site.Data.homepage.testimonial.enable }}
-  {{ with site.Data.homepage.testimonial }} -->
-  <!-- testimonial -->
-  <!-- <section class="section bg-primary position-relative testimonial-bg-shapes">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title text-white mb-5">{{ .title | markdownify }}</h2>
-        </div>
-        <div class="col-lg-10 mx-auto testimonial-slider">
-          {{ range .item }}-->
-          <!-- slider-item -->
-          <!-- <div class="text-center testimonial-content">
-            <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-            <p class="text-white mb-4">{{.content | markdownify}}</p>
-            <img class="img-fluid rounded-circle mb-4 d-inline-block" src="{{.image | absURL }}" alt="client-image">
-            <h4 class="text-white">{{.name }}</h4>
-            <h6 class="text-light mb-4">{{ .designation }}</h6>
-          </div>
-          {{ end }}
-        </div>
-      </div>
-    </div> -->
-    <!-- bg shapes -->
-    <!-- <img src="{{`images/backgrounds/map.png` | relURL }}" alt="map" class="img-fluid bg-map">
-    <img src="{{`images/illustrations/dots-group-v.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-1">
-    <img src="{{`images/illustrations/leaf-orange.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-2">
-    <img src="{{`images/illustrations/dots-group-sm.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-3">
-    <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-4">
-    <img src="{{`images/illustrations/leaf-cyan.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-5">
-  </section> -->
-  <!-- /testimonial -->
- <!--  {{ end }}
-  {{ end }} -->
-
 
   <!-- Partners -->
 {{ with (site.GetPage `/about`).Params.partners }}
@@ -227,9 +155,9 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- ./Partners -->
+<!-- /Partners -->
 
-<!-- TODO: Make horizontal -->
+<!-- Twitter Feed -->
 <section class="section">
   <div class="container">
     <div class="row justify-content-around">
@@ -242,8 +170,9 @@
     </div>
   </div>
 </section>
+<!-- /Twitter Feed -->
 
-<!-- ending with .Params -->
+<!-- Ending with .Params -->
 {{ end }}
 
 <!-- Ending main section definition -->

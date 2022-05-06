@@ -22,7 +22,6 @@ As early as 1987, former President of the Republic of the Maldives Maumoon Abdul
 
 > “There must be a way out. Neither the Maldives nor any small island nation wants to drown.  That’s for sure.  Neither do we want our lands eroded, or our economies destroyed.  Nor do we want to become environmental refugees either.  We want to stand up and fight.  All we ask is that the more affluent nations and the international community in general, help us in this fight.”
   
-<!-- TO-DO: Figure out spacing & sizing -->
 &nbsp;
 ##### ***Histories of Colonialism*** 
 
@@ -42,7 +41,7 @@ Mark Stege, who grew up in Majuro, Marshall Islands, and is the director of the 
 Activism and artistic responses to climate change in the Marshall Islands recognize connections between the ecological and cultural damage inflicted by histories of colonialism, and the disproportionate impacts of climate change that small island nations like the Marshall Islands face.  
 
 ---  
-<!-- TO-DO: Figure out spacing & sizing -->
+
 &nbsp;
 ##### ***Kathy Jetnil-Kijiner***  
   
@@ -61,7 +60,7 @@ Kathy Jetnil-Kijiner performed "Dear Matafele Peinem," a poem to her daughter, a
 {{< /youtube >}}
   
   ---  
-<!-- TO-DO: Figure out spacing & sizing -->  
+ 
 &nbsp;
 #### ***Stephanie Camba: Soultree***  
   
@@ -75,14 +74,14 @@ They say:
 *"Coqui Lullaby" Soultree official music video*  
 &nbsp;
     
-<!-- TO-DO: Figure out spacing & sizing -->  
+  
 ##### ***An Interview with Soultree***  
 Climate Refugee Stories art director and project collaborator Bo Daraphant sat down with Soultree in 2017 to discuss their art, activism, and climate migration:
  
-<!-- TO-DO: Combine clips to 1 interview or list out all the Qs and interview clips -->  
+ 
 {{< youtube uBpVOhHWSxI >}}  
 {{< /youtube >}}
-<!-- TO-DO: Maybe pick a favorite quote from the interview for below -->  
+
 > “I have never known a life without my culture and my country being colonized.”
 
 &nbsp;
@@ -92,8 +91,7 @@ Sampaguita is one of my first attempts at visual art that mixed ancient Pilipino
 {{</ smugmug >}}
 
 &nbsp;
-
-<!-- TO-DO: Figure out spacing & sizing -->  
+  
 ##### ***Listen to "Stolen Lands" by Soultree on Soundcloud:***
 {{< smugmug i-hgmt9KV `"Stolen Lands" by Soultree` "https://soundcloud.com/elephant-rebellion/stolen-lands" >}}
 {{</ smugmug >}}

@@ -3,11 +3,11 @@
   command = "hugo --minify --gc -e prod"
   
 [build.environment]
-#   HUGO_VERSION = "0.87.0"
   HUGO_BASEURL = "/"
 
 [[headers]]
-  for = "/*" # This defines which paths this specific [[headers]] block will cover.
+  # This defines which paths this specific [[headers]] block will cover.
+  for = "/*"
 
 [headers.values]
   X-Frame-Options = "DENY"

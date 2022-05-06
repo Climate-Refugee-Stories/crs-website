@@ -3,7 +3,7 @@ tmp/
 # Edit at https://www.toptal.com/developers/gitignore?templates=hugo
 
 ### Hugo ###
-# Generated files by hugo
+# Generated files by Hugo
 /public/
 /resources/_gen/
 

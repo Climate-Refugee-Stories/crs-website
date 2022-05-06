@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<!-- page title -->
+<!-- Page Title -->
 <section class="page-title-alt position-relative overflow-hidden bg-shape-about">
   <div class="container">
     <div class="row">
@@ -9,12 +9,10 @@
       </div>
     </div>
   </div>
-  <!-- background shapes -->
-  <!-- <img src="{{`images/illustrations/leaf-bg.png`| relURL}}" alt="illustrations" class="bg-shape-1 w-100 bg-shape-about"> -->
-</section>
-<!-- /page title -->
+ </section>
+<!-- /Page Title -->
 
-<!-- about -->
+<!-- About Us -->
 <section class="section pt-5">
   <div class="container">
     <div class="row">
@@ -30,9 +28,9 @@
     </div>
   </div>
 </section>
-<!-- /about -->
+<!-- /About Us -->
 
-<!-- CRS Team -->
+<!-- Our Team -->
 <section class="section bg-cover" id="our-team">
   <div class="container">
     <div class="row">
@@ -57,9 +55,9 @@
     </div>
   </div>
 </section>
-<!-- /team -->
+<!-- /Our Team -->
 
-<!-- Work Process -->
+<!-- Our Partners -->
 {{ with .Params.partners }}
 <section class="section" id="{{ .title | urlize }}">
   <div class="container">
@@ -77,10 +75,9 @@
   </div>
 </section>
 {{ end }}
-<!-- ./Work Process -->
+<!-- /Our Partners -->
 
-
-<!-- CRS News -->
+<!-- Bottom Sections (CRS News, Usage Guide, and any others that get added) -->
 {{ range .Pages }}
 {{ if .Params.button }}
 <section class="section" id="{{ .Title | urlize }}">
@@ -110,19 +107,6 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- /CRS News -->
-
-<!-- {{ if site.Data.about.clients_logo_slider.enable }}
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">{{ site.Data.about.clients_logo_slider.title | markdownify }}</h2>
-      </div>
-    </div>
-    {{ partial "client-slider.html" . }}
-  </div>
-</section>
-{{ end }} -->
+<!-- Bottom Sections -->
 
 {{ end }}
