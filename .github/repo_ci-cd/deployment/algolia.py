@@ -39,7 +39,7 @@ def main():
 
     # if running in CI or doing local development
     env = getenv("CI") or None
-    base_dir = Path("/tmp/gh-pages") if env else get_base_dirs()
+    base_dir = Path(getenv("GITHUB_WORKSPACE")) if env else get_base_dirs()
     algolia_file = Path(base_dir / "algolia.json")
 
     records = j_loads(algolia_file.read_text())
