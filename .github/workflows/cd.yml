@@ -40,7 +40,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: archive-data
-          path: data/archive_data.json
+          path: data/
 
   prod:
     name: Deploy to prod
@@ -65,7 +65,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: archive-data
-          path: data/archive_data.json
+          path: data/
 
       - name: Deploy to Github Pages
         run: bash .github/repo_ci-cd/deployment/deploy.sh
