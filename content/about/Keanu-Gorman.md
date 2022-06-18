@@ -1,14 +1,13 @@
 ---
-title: "Keanu Gorman"
-weight: 10
+title: Keana Gorman
 draft: false
-image: "i-DLGLZ6g"
-designation: "Navajo Nation"
-work_area: "The Navajo Nation"
-location: "Cambridge, MA (Harvard University)"
-recent_publications:
-recent_projects:
+weight: 10
+image: i-DLGLZ6g
+designation: Navajo Nation
+work_area: The Navajo Nation
+location: Cambridge, MA (Harvard University)
+recent_publications: null
+recent_projects: null
 visibleInCMS: true
 ---
-
-Keanu Gorman is a Diné (Navajo) translator, poet, and researcher. They are an A.B. candidate at Harvard College studying History & Literature with an Ethnicity, Migration, and Rights secondary. Their research focuses on Diné lifeways, culture, history, and language. Currently, they are working on research related to Indigenous Language Revitalization(s).
+Keana Gorman is a Diné (Navajo) translator, poet, and researcher. She is an A.B. candidate at Harvard College studying History & Literature with an Ethnicity, Migration, and Rights secondary. Keana's research focuses on Diné lifeways, culture, history, and language. Currently, she is working on research related to Indigenous Language Revitalization(s).
