@@ -1,24 +1,27 @@
 ---
 title: "The Navajo Nation: Sheep Stories"
-date: 2021-10-15T12:14:34+11:00
-image: i-9N365bc
-thumbnail: i-9LX2nt8
-image_caption: |
+draft: false
+image_caption: >
   Image credit: [Yoonbae
+
   Cho](https://unsplash.com/@yoonbae81?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
   on
+
   [Unsplash](https://unsplash.com/s/photos/navajo-sheep?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 summary: Dził Nitsaa means Big Mountain in Diné Bizaad (the Navajo Language).
   Dził Nitsaa is a sacred monument and a sanctuary for the people that have
   inhabited the mountain and its surrounding areas since time immemorial.
-description: Navajo Sheep
-draft: false
+date: 2021-10-15T12:14:34+11:00
+image: i-9N365bc
+thumbnail: i-9LX2nt8
 weight: 0
 visibleInCMS: true
+description: Navajo Sheep
 ---
 #### **Dził Nitsaa: a Place of Diné Resistance**
 
-##### ***by Keanu Gorman***
+##### ***by Keana Gorman***
 
 Dził Nitsaa means Big Mountain in Diné Bizaad (the Navajo Language). Dził Nitsaa is a sacred monument and a sanctuary for the people that have inhabited the mountain and its surrounding areas since time immemorial. It is located in Northeastern Arizona, nearly at the heart of what is today known as the Navajo reservation. Diné (Navajo) and Hopi people have shared and occupied this territory for centuries. 
 
@@ -48,15 +51,14 @@ Sheep are connected to the Diné matriarchal stewardship of land. “the centra
 
 The Blessing Way prayers maintain this relationship between Diné and the land and its resources.
 
-
-
-***Keanu Gorman** is a Diné (Navajo) translator, poet, and researcher. They are an A.B. candidate at Harvard College studying History & Literature with an Ethnicity, Migration, and Rights secondary. Their research focuses on Diné lifeways, culture, history, and language. Currently, they are working on research related to Indigenous Language Revitalization(s).*
+**\*Keana Gorman** is a Diné (Navajo) translator, poet, and researcher. She is an A.B. candidate at Harvard College studying History & Literature with an Ethnicity, Migration, and Rights secondary. Keana's research focuses on Diné lifeways, culture, history, and language. Currently, she is working on research related to Indigenous Language Revitalization(s).*
 
 {{< center >}}
-
 #### **Coming Soon: Diné Oral Histories**
 
+
 {{< /center >}}
+
 &nbsp;
 
 - - -
