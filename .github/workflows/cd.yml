@@ -71,7 +71,7 @@ jobs:
         run: bash .github/repo_ci-cd/deployment/deploy.sh
         env:
           GITHUBTOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ARGZ: --gc --minify --cleanDestinationDir -e prod
+          ARGZ: --gc --minify --cleanDestinationDir
           GH_PAGES: gh-pages
           #DEBUG: 'true'
 
