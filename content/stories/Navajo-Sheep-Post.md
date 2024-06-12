@@ -1,5 +1,5 @@
 ---
-title: "The Navajo Nation: Sheep Stories"
+title: 'Navajoland: "The Most Powerful are Our Traditional Ways"'
 draft: false
 image_caption: >
   Image credit: [Yoonbae
@@ -19,6 +19,16 @@ weight: 0
 visibleInCMS: true
 description: Navajo Sheep
 ---
+
+
+{{< center >}}
+#### **Coming Soon: 
+Uranium Mining Legacies: Diné Resistance Against the Nuclear Beast by Keana Gorman**
+
+
+{{< /center >}}
+
+
 #### **Dził Nitsaa: a Place of Diné Resistance**
 
 ##### ***by Keana Gorman***
@@ -55,6 +65,7 @@ The Blessing Way prayers maintain this relationship between Diné and the land 
 
 {{< center >}}
 #### **Coming Soon: Diné Oral Histories**
+
 
 
 {{< /center >}}
