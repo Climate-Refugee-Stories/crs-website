@@ -62,7 +62,7 @@ jobs:
           submodules: true
 
       - name: downloading archive data
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: archive-data
           path: data/
@@ -113,7 +113,7 @@ jobs:
         run: cd .github/repo_ci-cd/deployment/ && pipenv sync
 
       - name: downloading algolia data
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: algolia-data
 
