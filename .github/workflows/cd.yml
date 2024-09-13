@@ -16,7 +16,7 @@ jobs:
     name: Actions creating the Archive data file (archive_data.json)
     runs-on: ubuntu-latest
     container:
-      image: docker.io/python:3-slim
+      image: docker.io/python:3.11-slim
 
     steps:
       - name: Checkout Code
@@ -95,7 +95,7 @@ jobs:
     # https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment#using-an-environment
     environment: production
     container:
-      image: docker.io/python:3-slim
+      image: docker.io/python:3.11-slim
 
     steps:
       - name: Checkout Code
