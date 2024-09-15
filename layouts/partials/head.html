@@ -36,7 +36,7 @@
 
     {{ $options = merge $options (dict "outputStyle" "compressed") }}
     {{ $styles = $scss | toCSS $options }} 
-    {{ $styles = slice $main_css $main_scss | resources.Concat "css/bundle.css" }}
+    {{ $styles = slice $main_css $styles | resources.Concat "css/bundle.css" }}
     {{ $styles = slice $main_css $styles | resources.Concat "css/bundle.css" }}
     {{ $styles = $styles | minify | fingerprint }}
 

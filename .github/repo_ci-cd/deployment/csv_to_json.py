@@ -22,10 +22,10 @@ def main():
         'Photo ID': 'object',
     }
     # csv_df = dd.read_csv(args.csv_input,dtype = data_types).compute()
-    csv_df = dd.read_csv(urlpath=file_url,dtype = data_types).compute()
+    csv_df = dd.read_csv(path=file_url,dtype = data_types).compute()
     # https://stackoverflow.com/a/49551419
     # strips out leading and trailing whitespace for strings
-    csv_df = csv_df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+    csv_df = csv_df.map(lambda x: x.strip() if isinstance(x, str) else x)
     print(csv_df.to_json(orient='records', indent=2,))
 
 if __name__ == "__main__":
