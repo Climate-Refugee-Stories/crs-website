@@ -1,7 +1,7 @@
 ---
 title: "Charlotte, NC: Climates of Inequality"
 date: 2024-06-12T22:12:39.576Z
-draft: true
+draft: false
 image: i-RdrSKD8
 thumbnail: i-zHnBfxK
 weight: 0
