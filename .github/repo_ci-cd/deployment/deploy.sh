@@ -5,13 +5,42 @@
 set -${-//[sc]/}e${DEBUG+xv}o pipefail
 
 
+function pagefind_setup(){
+  if [[ $(command -v pagefind) ]] ; then
+    :
+  else
+    tmp_dir="$(mktemp -d)"
+    os_version="$(uname -o | tr '[[:upper:]]' '[[:lower:]]')"
+    if [[ "${os_version}" == 'linux' ]] ; then
+      other_os_info='unknown'
+      other_other_os_info='-musl'
+    elif [[ "${os_version}" == 'darwin' ]] ; then
+      other_os_info='darwin'
+      os_version='apple'
+    else
+      printf 'IDK what this is...: %s\n' "${os_version}"
+    fi
+    curl -o "${tmp_dir}/pagefind.tgz" -fsSL "https://github.com/CloudCannon/pagefind/releases/download/v1.1.1/pagefind-v1.1.1-$(uname -m)-${other_os_info}-${os_version}${other_other_os_info:-}.tar.gz"
+    tar -C "${tmp_dir}" -xzvf "${tmp_dir}/pagefind.tgz"
+    if [ "$EUID" -ne 0 ]; then
+      sudo install "${tmp_dir}/pagefind" /usr/local/bin/
+    else
+      install "${tmp_dir}/pagefind" /usr/local/bin/
+    fi
+  fi
+}
 
+function pagefind_deploy(){
+  pagefind --site "${1}" --glob 'stories/**/*.{html}'
+}
 
 function version_info(){
 
   echo -e "\n${BOLD}Versions:${PLAIN}"
   echo -ne "${BOLD}Hugo: ${PLAIN}"
   hugo version
+  echo -ne "${BOLD}Pagefind: ${PLAIN}"
+  pagefind --version
   # echo -ne "${BOLD}Pygments: ${PLAIN}"
   # pygmentize -V
   # echo -ne "${BOLD}Asciidoctor: ${PLAIN}"
@@ -27,27 +56,29 @@ function version_info(){
 
 function everything(){
 
+  gh_base_dir='/tmp/gh-pages'
   echo -e "\n${BOLD}Setting up Git${PLAIN}"
   git config --global user.name "${GITHUB_ACTOR}"
   git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
   echo "machine github.com login ${GITHUB_ACTOR} password ${GITHUBTOKEN}" > ~/.netrc
 
   git clone --depth=1 --single-branch --branch "${GH_PAGES}" "https://github.com/${REPO}.git" /tmp/gh-pages
-  rm -rf /tmp/gh-pages/*
+  rm -rf "${gh_base_dir}"/*
 
 
   echo -e "\n${BOLD}Generating Site ${NAME} at commit ${GITHUB_SHA}${PLAIN}"
   cd ${CD}
   hugo mod get
-  hugo ${ARGZ} -d /tmp/gh-pages/
+  hugo ${ARGZ} -d "${gh_base_dir}"
+  pagefind_deploy "${gh_base_dir}/public"
 
   if [[ -f CNAME ]] ; then
-    cp -v CNAME /tmp/gh-pages/
+    cp -v CNAME "${gh_base_dir}"
   fi
 
 
   echo -e "\n${BOLD}Commiting${PLAIN}"
-  cd /tmp/gh-pages
+  cd "${gh_base_dir}"
 
   [ -n "${INPUT_CNAME}" ] && \
   echo "${INPUT_CNAME}" > CNAME
@@ -93,6 +124,7 @@ function main(){
 
   PLAIN='\033[0m'
   BOLD='\033[1;37m'
+  pagefind_setup
   version_info
   input_check
   everything
