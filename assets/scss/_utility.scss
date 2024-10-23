@@ -9,3 +9,26 @@
 .not-fancy {
     font-family: 'Red Hat Display', sans-serif !important;
 }
+
+.search {
+    &-row {
+        max-height: 5rem;
+        margin: 1rem 0 3rem 0;
+    }
+
+    &-box {
+        z-index: 999;
+        max-height: 30rem;
+        overflow: auto;
+        background: white;
+        padding: 1rem;
+
+        // &:hover,
+        // &:focus {
+        //     border: .5px solid black;
+        // }
+
+        // & .pagefind-ui__drawer {
+        // }
+    }
+}
