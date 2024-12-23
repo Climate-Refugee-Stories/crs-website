@@ -18,5 +18,5 @@ function main(){
 
 # https://elrey.casa/bash/scripting/main
 if [[ "${0}" = "${BASH_SOURCE[0]:-bash}" ]] ; then
-  main "${@}"
+  main "${@:-}"
 fi

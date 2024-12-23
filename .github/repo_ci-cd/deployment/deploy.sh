@@ -20,7 +20,11 @@ function pagefind_setup(){
     else
       printf 'IDK what this is...: %s\n' "${os_version}"
     fi
-    curl -o "${tmp_dir}/pagefind.tgz" -fsSL "https://github.com/CloudCannon/pagefind/releases/download/v1.1.1/pagefind-v1.1.1-$(uname -m)-${other_os_info}-${os_version}${other_other_os_info:-}.tar.gz"
+    os_arch="$(uname -m)"
+    if [[ "${os_arch}" == 'arm64' ]] ; then
+      os_arch='aarch64'
+    fi
+    curl -o "${tmp_dir}/pagefind.tgz" -fsSL "https://github.com/CloudCannon/pagefind/releases/download/v1.1.1/pagefind-v1.1.1-${os_arch}-${other_os_info}-${os_version}${other_other_os_info:-}.tar.gz"
     tar -C "${tmp_dir}" -xzvf "${tmp_dir}/pagefind.tgz"
     if [ "$EUID" -ne 0 ]; then
       sudo install "${tmp_dir}/pagefind" /usr/local/bin/
