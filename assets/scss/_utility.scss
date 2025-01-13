@@ -9,3 +9,64 @@
 .not-fancy {
     font-family: 'Red Hat Display', sans-serif !important;
 }
+
+.search {
+    &-row {
+        max-height: 5rem;
+        margin: 0 0 3rem 0;
+    }
+
+    // adding box shadow to differentiate when search box is active
+    &-box:not(:has(.pagefind-ui__hidden.pagefind-ui__drawer)) {
+        z-index: 999;
+        max-height: 30rem;
+        overflow: auto;
+        background: white;
+        border: 0.5px solid rgba(236, 236, 236, 1);
+        box-shadow: 0px 2px 1.9px -1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        padding: 0 .5rem .25rem .5rem;
+
+    }
+}
+
+// differentiate when search box is active
+.search-box:not(:has(.pagefind-ui__hidden.pagefind-ui__drawer)) .pagefind-ui__search {
+    &-input {
+        border-color: rgba(128, 126, 163, 0.8) !important;
+        color: rgb(38, 38, 39);
+    }
+}
+
+// adding customization to make search box sticky & reimplement search icon
+#pagefind-custom_div {
+    position: sticky;
+    top: 0;
+    background-color: var(--pagefind-ui-background);
+    z-index: 999;
+
+    &::before {
+        // from pagefind CSS search icon
+        background-color: var(--pagefind-ui-text);
+        width: calc(18px * var(--pagefind-ui-scale));
+        height: calc(18px * var(--pagefind-ui-scale));
+        top: calc(23px * var(--pagefind-ui-scale));
+        left: calc(20px * var(--pagefind-ui-scale));
+        content: "";
+        position: sticky;
+        position: absolute;
+        display: block;
+        opacity: .7;
+        -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.7549 11.255H11.9649L11.6849 10.985C12.6649 9.845 13.2549 8.365 13.2549 6.755C13.2549 3.165 10.3449 0.255005 6.75488 0.255005C3.16488 0.255005 0.254883 3.165 0.254883 6.755C0.254883 10.345 3.16488 13.255 6.75488 13.255C8.36488 13.255 9.84488 12.665 10.9849 11.685L11.2549 11.965V12.755L16.2549 17.745L17.7449 16.255L12.7549 11.255ZM6.75488 11.255C4.26488 11.255 2.25488 9.245 2.25488 6.755C2.25488 4.26501 4.26488 2.255 6.75488 2.255C9.24488 2.255 11.2549 4.26501 11.2549 6.755C11.2549 9.245 9.24488 11.255 6.75488 11.255Z' fill='%23000000'/%3E%3C/svg%3E%0A");
+        mask-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.7549 11.255H11.9649L11.6849 10.985C12.6649 9.845 13.2549 8.365 13.2549 6.755C13.2549 3.165 10.3449 0.255005 6.75488 0.255005C3.16488 0.255005 0.254883 3.165 0.254883 6.755C0.254883 10.345 3.16488 13.255 6.75488 13.255C8.36488 13.255 9.84488 12.665 10.9849 11.685L11.2549 11.965V12.755L16.2549 17.745L17.7449 16.255L12.7549 11.255ZM6.75488 11.255C4.26488 11.255 2.25488 9.245 2.25488 6.755C2.25488 4.26501 4.26488 2.255 6.75488 2.255C9.24488 2.255 11.2549 4.26501 11.2549 6.755C11.2549 9.245 9.24488 11.255 6.75488 11.255Z' fill='%23000000'/%3E%3C/svg%3E%0A");
+        -webkit-mask-size: 100%;
+        mask-size: 100%;
+        z-index: 9;
+        pointer-events: none
+    }
+}
+
+.pagefind-ui.pagefind-ui--reset>.pagefind-ui__form::before {
+    // hide the built-in pagefind-ui icon
+    opacity: 0;
+}

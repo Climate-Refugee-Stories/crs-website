@@ -1,3 +1,25 @@
 <div class="col-12 justify-content-end d-flex">
-    <div id="autocomplete" class="col-lg-4 mb-5"></div>
+    <div id="search" class="col-lg-4 search-box"></div>
 </div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        // give error (fails) for some reason when not wrapped in setTimeout
+        // Uncaught TypeError: Failed to execute 'appendChild' on 'Node': parameter 1 is not of type 'Node'.
+        setTimeout(function () {
+            // add elements to a sub-div to aggregate and sticky scroll
+            if (document.querySelectorAll('.pagefind-ui__form > div > .pagefind-ui__search-input').length == 0) {
+                // creating an HTML fragment to add underneath the  pagefind form
+                var fragment = document.createDocumentFragment();
+                // wrapping with div
+                fragment.appendChild(document.createElement("div"));
+                // setting ID to make easily addressible
+                fragment.children[0].id = "pagefind-custom_div";
+                // selecting input & button to put into the div
+                fragment.children[0].appendChild(document.querySelectorAll('.pagefind-ui__search-input')[0]);
+                fragment.children[0].appendChild(document.querySelectorAll('.pagefind-ui__search-clear')[0]);
+                // prepend (i.e. insert as first element under the form) the new div
+                document.querySelectorAll('.pagefind-ui__form')[0].prepend(fragment);
+            };
+        }, 0)
+    });
+</script>
