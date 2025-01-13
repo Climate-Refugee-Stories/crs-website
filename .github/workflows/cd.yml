@@ -20,10 +20,11 @@ jobs:
       image: registry.gitlab.com/pages/hugo/hugo_extended:0.113.0
 
     steps:
+      # https://github.com/curl/curl/issues/11917#issuecomment-1733083079
       - name: Prep env
         run: |
           set -ex
-          apk add --update --no-cache openssl git bash curl &&
+          apk add --update --no-cache openssl git bash curl libcurl &&
           rm -rf /var/cache/apk/*
 
       - name: Checkout Code
