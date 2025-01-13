@@ -74,7 +74,7 @@ function everything(){
   cd ${CD}
   hugo mod get
   hugo ${ARGZ} -d "${gh_base_dir}"
-  pagefind_deploy "${gh_base_dir}/public"
+  pagefind_deploy "${gh_base_dir}"
 
   if [[ -f CNAME ]] ; then
     cp -v CNAME "${gh_base_dir}"
