@@ -24,7 +24,8 @@ jobs:
       - name: Prep env
         run: |
           set -ex
-          apk add --update --no-cache openssl git bash curl libcurl &&
+          apk add --update --no-cache openssl git bash curl &&
+          apk add --upgrade curl libcurl &&
           rm -rf /var/cache/apk/*
 
       - name: Checkout Code
