@@ -2,6 +2,11 @@
 title: "Archive"
 description: "This is meta description."
 draft: false
+
+banner:
+  title: "Our Archives"
+  background_img: "i-ptQrJ35"
+
 archive_tags:
   impacts:
     - Storms
