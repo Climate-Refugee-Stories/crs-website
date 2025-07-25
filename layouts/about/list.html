@@ -30,12 +30,12 @@
 </section>
 <!-- /About Us -->
 
-<!-- Our Team -->
-<section class="section bg-cover" id="our-team">
+<!-- Contributors -->{{/* section title change by zed */}}
+<section class="section bg-cover" id="contributors">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">Our Team</h2>
+        <h2 class="section-title">Contributors</h2>
       </div>
       {{ range .Pages }}
       {{ if .Params.image }}
@@ -55,7 +55,7 @@
     </div>
   </div>
 </section>
-<!-- /Our Team -->
+<!-- /Contributors -->
 
 <!-- Our Partners -->
 {{ with .Params.partners }}
