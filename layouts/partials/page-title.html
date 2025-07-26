@@ -9,3 +9,13 @@
   </div>
 </section>
 <!-- /Page Title -->
+
+<--Page Banner-->
+  {{ with .Params.banner }}
+<header class="hero-area" style="background-image: url('https://photos.smugmug.com/photos/{{ .background_img }}/0/O/{{ .background_img }}-O.png');">
+  <div class="container text-center text-white">
+    <h1>{{ .title }}</h1>
+  </div>
+</header>
+{{ end }}
+<!-- /Page Banner -->
