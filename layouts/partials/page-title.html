@@ -9,3 +9,16 @@
   </div>
 </section>
 <!-- /Page Title -->
+{{ with .Params.banner }}
+<header class="hero-area" style="background-image: url('https://photos.smugmug.com/photos/{{ .background_img }}/0/O/{{ .background_img }}-O.png'); background-size: cover; background-position: center;">
+  <div class="container text-center text-white">
+    <h1>{{ .title }}</h1>
+  </div>
+</header>
+{{ else }}
+<header class="hero-area bg-light">
+  <div class="container text-center">
+    <h1>{{ .Title }}</h1>
+  </div>
+</header>
+{{ end }}
