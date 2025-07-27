@@ -1,5 +1,8 @@
 ---
 title: "Archive"
+banner:
+  title: "Archives"
+  background_img: i-ptQrJ35
 description: "This is meta description."
 draft: false
 archive_tags:
