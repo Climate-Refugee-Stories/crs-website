@@ -2,7 +2,7 @@
 title: "Archive"
 banner:
   title: "Archive"
-  background_img: i-ptQrJ35
+  background: i-ptQrJ35
 description: "This is meta description."
 draft: false
 archive_tags:
