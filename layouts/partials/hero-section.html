@@ -1,0 +1,29 @@
+<!-- layouts/partials/hero-section.html -->
+{{ with .Params.banner }}
+<section class="hero-area" style="background-image: url('{{ .image | relURL }}'); background-size: cover; background-position: center;">
+  <div class="main-title">
+    <div class="container main-circle">
+      <div class="row align-items-center justify-content-center">
+        <div class="row align-items-start col-lg-8 tagline-circle-div">
+          <h3 class="text-white text-center home-tagline tagline-circle">{{ .title | safeHTML }}</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+      {{ with (site.GetPage `/contact`).Params.socials }}
+      {{ range . }}
+      <li class="mb-3 social-icons-home">
+        <a class="text-primary" href="{{.URL | safeURL }}" target="_blank">
+          <i class="{{.icon}}"></i>
+        </a>
+      </li>
+      {{ end }}
+      {{ end }}
+    </ul>
+    <!-- /Social Icons  -->
+  </div>
+</section>
+{{ end }}
+
