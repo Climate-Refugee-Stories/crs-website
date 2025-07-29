@@ -1,11 +1,25 @@
-<!-- Page Title -->
-<section class="page-title position-relative overflow-hidden bg-shape-{{ index (last 2 (split (.Permalink | relURL | string) `/`)) 0 }}">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="text-white font-tertiary">{{.Title}}</h1>
+{{ $img := .Params.banner.background_img }}
+{{ $title := or .Params.banner.title .Title }}
+
+{{ if $img }}
+  <section class="page-title position-relative overflow-hidden" style="background-image: url('https://photos.smugmug.com/photos/{{ $img }}/0/O/{{ $img }}-O.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+          <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="text-white font-tertiary">{{ $title }}</h1>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- /Page Title -->
+  </section>
+{{ else }}
+  <section class="page-title position-relative overflow-hidden bg-shape-{{ index (last 2 (split (.Permalink | relURL | string) `/`)) 0 }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="text-white font-tertiary">{{ $title }}</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
