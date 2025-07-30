@@ -1,29 +1,25 @@
-@import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
-
-@font-face {
-  font-family: bwnistaint-xbd;
-  src: url(../fonts/BwNistaInt-xBd.woff) format("woff");
-  font-style: normal;
-  font-display: swap
-}
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
 
 body {
-  line-height: 1.2;
-  font-family: 'Red Hat Display', sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font-family: 'Lora', serif;
+  background-color: #EEE8B2;
+  line-height: 1.6;
   font-size: 15px;
-  color: #4c4c4c;
-  font-weight: 500;
+  color: #081B1B; /* body text color */
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
-body {
-  background-color: #fff;
-  overflow-x: hidden
+h1, h2, h3, h4, h5, h6 {
+  color: #C18D52; /* heading color */
+  font-weight: 700;
+  font-family: 'Lora', serif;
 }
 
 ::selection {
   background: var(--primary-color);
-  color: #fff
+  color: #fff;
 }
 
 .preloader {
