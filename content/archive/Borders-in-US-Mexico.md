@@ -3,6 +3,7 @@ title: "Borders in US-Mexico"
 date: 2019-05-12T12:14:34+06:00
 image: "i-LHFC8kX"
 thumbnail: "i-LHFC8kX"
+tags: ["United States", "Mexico", "Youth", "Borders"]
 related_stories:
   - content: |
       [The US-Mexico Border: “Over My Dead Body”](../../stories/us-mexico-border-post/)
