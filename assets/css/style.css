@@ -1,29 +1,38 @@
-@import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
+/*@import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
 
 @font-face {
   font-family: bwnistaint-xbd;
   src: url(../fonts/BwNistaInt-xBd.woff) format("woff");
   font-style: normal;
   font-display: swap
-}
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 
 body {
-  line-height: 1.2;
-  font-family: 'Red Hat Display', sans-serif;
+ line-height: 1.2;
+  font-family: 'Lora', serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
-  color: #4c4c4c;
-  font-weight: 500;
+  color: #081B1B;        /* Body font color */
+  font-weight: 400;
+  background-color: #EEE8B2;  /* New background color */
+  overflow-x: hidden;
 }
 
 body {
-  background-color: #fff;
+  background-color: #EEE8B2 /*#fff;
   overflow-x: hidden
 }
 
 ::selection {
   background: var(--primary-color);
-  color: #fff
+  color: #EEE8B2 /*#fff8*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #C18D52;
+  font-family: 'Lora', serif;
 }
 
 .preloader {
@@ -32,7 +41,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: #EEE8B2/*#fff*/;
   z-index: 999999;
   display: flex;
   align-items: center;
@@ -181,11 +190,14 @@ a:hover {
 }
 
 .font-secondary {
-  font-family: 'Playfair Display', serif !important;
+  font-family: 'Lora', serif !important;
+  color: #C18D52;
 }
 
+
 .font-tertiary {
-  font-family: 'Red Hat Display' !important;
+  font-family: 'Lora', serif !important;
+  color: #C18D52;
   font-weight: 800;
   letter-spacing: 2px;
 }
