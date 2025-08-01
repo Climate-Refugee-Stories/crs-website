@@ -13,12 +13,14 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var grid = document.querySelector('#masonry-grid');
-    new Masonry(grid, {
-      itemSelector: '.masonry-item',
-      percentPosition: true,
-      gutter: 16
-    });
+if (grid) {
+  new Masonry(grid, {
+    itemSelector: '.masonry-item',
+    percentPosition: true,
+    gutter: 16
   });
+}
+    });
 </script>
 <!-- /Footer -->
 
