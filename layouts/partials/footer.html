@@ -8,64 +8,59 @@
     </p>
   </div>
 </footer>
+
+<!-- JS Plugins -->
+{{ range site.Params.plugins.js }}
+<script src="{{ .link | absURL }}"></script>
+{{ end }}
+
 <!-- Masonry JS (after jQuery) -->
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var grid = document.querySelector('#masonry-grid');
-if (grid) {
-  new Masonry(grid, {
-    itemSelector: '.masonry-item',
-    percentPosition: true,
-    gutter: 16
+    var grid = document.querySelector(".row");
+    if (grid && grid.querySelector(".masonry-item")) {
+      new Masonry(grid, {
+        itemSelector: '.masonry-item',
+        percentPosition: true,
+        gutter: 16
+      });
+    }
   });
-}
-    });
 </script>
-<!-- /Footer -->
 
-{{ "<!-- JS Plugins -->" | safeHTML }}
-{{ range site.Params.plugins.js}}
-<script src="{{ .link | absURL }}"></script>
-{{ end }}
-
-{{ "<!-- Copyright update -->" | safeHTML }}
+<!-- Copyright update -->
 <script>
-  // Set Current Year
   const yearID = document.querySelector("#copyYear");
   const currentYear = new Date().getFullYear();
-  yearID.textContent = currentYear;
+  if (yearID) yearID.textContent = currentYear;
 </script>
 
 <!-- Cookie -->
 {{ if site.Params.cookies.enable }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 <div id="js-cookie-box" class="cookie-box cookie-box-hide cookie-msg-text">
-	Stay up to date with our newsletter!
-  <a href="{{ (site.GetPage `/contact`).Params.newsletter_button.URL }}" target="_blank"><span id="js-cookie-sub" class="btn btn-sm btn-primary ml-2">Subscribe</span></a>
-  <a href=""><span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">Dismiss</span></a>
+  Stay up to date with our newsletter!
+  <a href="{{ (site.GetPage `/contact`).Params.newsletter_button.URL }}" target="_blank">
+    <span id="js-cookie-sub" class="btn btn-sm btn-primary ml-2">Subscribe</span>
+  </a>
+  <a href="#">
+    <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">Dismiss</span>
+  </a>
 </div>
 <script>
-	(function ($) {
-		const cookieBox = document.getElementById('js-cookie-box');
-		const cookieButton = document.getElementById('js-cookie-button');
+  (function () {
+    const cookieBox = document.getElementById('js-cookie-box');
+    const cookieButton = document.getElementById('js-cookie-button');
     const cookieButtonSub = document.getElementById('js-cookie-sub');
-		if (!Cookies.get('cookie-box')) {
-			cookieBox.classList.remove('cookie-box-hide');
-			cookieButton.onclick = function () {
-				Cookies.set('cookie-box', true, {
-					expires: {{ site.Params.cookies.expire_days }}
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
-      cookieButtonSub.onclick = function () {
-				Cookies.set('cookie-box', true, {
-					expires: 6000
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
-		}
-	})(jQuery);
+    if (!Cookies.get('cookie-box')) {
+      cookieBox.classList.remove('cookie-box-hide');
+      cookieButton.onclick = cookieButtonSub.onclick = function () {
+        Cookies.set('cookie-box', true, { expires: {{ site.Params.cookies.expire_days | default 30 }} });
+        cookieBox.classList.add('cookie-box-hide');
+      };
+    }
+  })();
 </script>
 
 <!-- Cookie Style -->
@@ -76,24 +71,15 @@ if (grid) {
   right: 0;
   bottom: 0;
   text-align: center;
-  font-size:15pt;
+  font-size: 15pt;
   z-index: 9999;
   padding: 1rem 2rem;
   background: rgb(71, 71, 71);
   transition: all .75s cubic-bezier(.19, 1, .22, 1);
   color: #fdfdfd;
 }
-
-.cookie-box a {
-  color: white;
-}
-
-.cookie-box a:hover {
-  color: rgb(204, 204, 204);
-}
-
-.cookie-box-hide {
-  display: none;
-}
+.cookie-box a { color: white; }
+.cookie-box a:hover { color: rgb(204, 204, 204); }
+.cookie-box-hide { display: none; }
 </style>
 {{ end }}
