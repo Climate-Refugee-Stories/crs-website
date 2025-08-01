@@ -1,11 +1,18 @@
-{{ $alt_cat := index .Params.alt_cat 0 | default "General" }}
-{{ $colorMap := dict "Bangladesh" "border-green" "Ghana" "border-yellow" "Puerto Rico" "border-red" "Mexico" "border-orange" "United States" "border-blue" "Central America" "border-teal" }}
+{{ $region := index .Params.region 0 | default "General" }}
+{{ $colorMap := dict
+  "Bangladesh" "border-green"
+  "Ghana" "border-yellow"
+  "Puerto Rico" "border-red"
+  "Mexico" "border-orange"
+  "United States" "border-blue"
+  "Central America" "border-teal"
+}}
 
-{{ $borderColor := index $colorMap $alt_cat | default "border-gray" }}
+{{ $borderColor := index $colorMap $region | default "border-gray" }}
 
-<div class="col-md-4 mb-4">
+<div class="col-md-4 mb-4 masonry-item">
   <div class="story-card {{ $borderColor }}">
-    <div class="ribbon">{{ $alt_cat }}</div>
+    <div class="ribbon">{{ $region }}</div>
     <img src="https://photos.smugmug.com/photos/{{ .Params.thumbnail }}/0/S/{{ .Params.thumbnail }}-S.png" class="img-fluid rounded" alt="{{ .Title }}">
     <div class="p-3">
       <h5 class="mb-2">{{ .Title }}</h5>
