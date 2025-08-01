@@ -674,3 +674,27 @@ blockquote > p {
 .border-blue { border-color: #2196F3; }
 .border-teal { border-color: #009688; }
 .border-gray { border-color: #9E9E9E; }
+
+/* Masonry Grid Styles */
+.masonry-container {
+  column-count: 3;
+  column-gap: 1.5rem;
+  padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .masonry-container {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .masonry-container {
+    column-count: 1;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
