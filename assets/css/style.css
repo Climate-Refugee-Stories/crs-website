@@ -644,3 +644,49 @@ blockquote > p {
   font-size: 22px;
   line-height: 1.8;
 }
+
+.story-card {
+  border-left: 6px solid transparent;
+  border-radius: 0.75rem;
+  background-color: white;
+  transition: box-shadow 0.3s ease;
+  padding: 1.25rem;
+}
+
+.story-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* Dynamic Border Colors */
+.border-south-asia    { border-color: #1f77b4; }
+.border-latin-america { border-color: #d62728; }
+.border-africa        { border-color: #2ca02c; }
+.border-middle-east   { border-color: #9467bd; }
+.border-urban         { border-color: #ff7f0e; }
+.border-flooding      { border-color: #17becf; }
+.border-health        { border-color: #e377c2; }
+.border-ngos          { border-color: #8c564b; }
+
+/* Ribbon Tag */
+.ribbon {
+  position: absolute;
+  top: 1rem;
+  left: -1rem;
+  transform: rotate(-45deg);
+  background-color: #ccc;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.25rem 1rem;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Ribbon Color Matches */
+.ribbon-south-asia    { background-color: #1f77b4; }
+.ribbon-latin-america { background-color: #d62728; }
+.ribbon-africa        { background-color: #2ca02c; }
+.ribbon-middle-east   { background-color: #9467bd; }
+.ribbon-urban         { background-color: #ff7f0e; }
+.ribbon-flooding      { background-color: #17becf; }
+.ribbon-health        { background-color: #e377c2; }
+.ribbon-ngos          { background-color: #8c564b; }
