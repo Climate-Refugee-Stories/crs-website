@@ -15,3 +15,8 @@
     </div>
   </div>
 </section>
+{{ $region := index .Params.alt_cat 0 | lower | urlize }}
+
+<div class="story-card border-{{ $region }}">
+  <!-- your image, title, excerpt, button -->
+</div>
