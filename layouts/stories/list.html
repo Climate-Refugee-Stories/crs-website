@@ -1,17 +1,23 @@
+{{ define "main" }}
 <section class="section">
   <div class="container">
-    <div class="row search-row">
-      {{ partial "search.html" . }}
-    </div>
-    <div class="row" id="masonry-grid">
-      {{ range (.Paginator 9).Pages }}
-        <div class="col-lg-4 col-md-6 mb-4 masonry-item">
-          {{ .Render "post" }}
+    <h2 class="mb-5 story-title text-dark">Stories</h2>
+
+    <div class="row" style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+      {{ range .Pages }}
+        {{ $region := .Params.region | default "gray" }}
+        <div class="col-lg-4 col-md-6">
+          <div class="story-card border-{{ $region }}">
+            <div class="ribbon">{{ $region | title }}</div>
+            <div class="p-4">
+              <h3 class="font-secondary mb-3"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+              <p>{{ .Summary | plainify | truncate 120 }}</p>
+              <a href="{{ .RelPermalink }}" class="text-primary">Read More →</a>
+            </div>
+          </div>
         </div>
       {{ end }}
     </div>
-    <div class="row justify-content-center mt-5">
-      {{ template "_internal/pagination.html" . }}
-    </div>
   </div>
 </section>
+{{ end }}
