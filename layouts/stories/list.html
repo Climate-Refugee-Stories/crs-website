@@ -1,3 +1,27 @@
+{{ $region := index .Params.alt_cat 0 | lower | urlize }}
+<div class="col-md-4 mb-4">
+  <div class="story-card border-{{ $region }} position-relative p-3 h-100">
+
+    <!-- Optional Ribbon Badge -->
+    <div class="ribbon ribbon-{{ $region }}">{{ index .Params.alt_cat 0 }}</div>
+
+    <!-- Image -->
+    {{ with .Params.thumbnail }}
+    <img src="https://photos.smugmug.com/photos/{{ . }}/0/S/{{ . }}-S.png" alt="Thumbnail" class="img-fluid rounded mb-3 w-100">
+    {{ end }}
+
+    <!-- Title -->
+    <h5 class="font-weight-bold">{{ .Title }}</h5>
+
+    <!-- Excerpt -->
+    <p>{{ .Summary }}</p>
+
+    <!-- Button -->
+    <a href="{{ .Permalink }}" class="btn btn-outline-primary btn-sm">Read More</a>
+
+  </div>
+</div>
+
 <section class="section">
   <div class="container">
     <div class="row search-row">
@@ -15,8 +39,3 @@
     </div>
   </div>
 </section>
-{{ $region := index .Params.alt_cat 0 | lower | urlize }}
-
-<div class="story-card border-{{ $region }}">
-  <!-- your image, title, excerpt, button -->
-</div>
