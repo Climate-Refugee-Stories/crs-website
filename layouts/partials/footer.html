@@ -18,7 +18,7 @@
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var grid = document.querySelector(".row");
+    var grid = document.querySelector("#masonry-grid");
     if (grid && grid.querySelector(".masonry-item")) {
       new Masonry(grid, {
         itemSelector: '.masonry-item',
