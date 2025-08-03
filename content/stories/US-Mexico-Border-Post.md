@@ -1,7 +1,7 @@
 ---
 title: "The US-Mexico Border: \"Over My Dead Body\""
 date: 2021-10-15T12:14:34+06:00
-region: ["Refugees","Familiy","Activism","Government","Deportation","Health"]
+region: ["Mexcio", "North America"]
 image: i-54VGQjB
 thumbnail: i-6hMZsS2
 image_caption: |
