@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700";
 
+@font-face {
+  font-family: bwnistaint-xbd;
+  src: url(../fonts/BwNistaInt-xBd.woff) format("woff");
+  font-style: normal;
+  font-display: swap
+}
 
 body {
   line-height: 1.2;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #4c4c4c;
@@ -11,13 +17,8 @@ body {
 }
 
 body {
-  background-color: #E9D7C0;
+  background-color: #fff;
   overflow-x: hidden
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #C18D52; /* Sandstone for headings */
-  font-family: 'Quicksand', sans-serif;
 }
 
 ::selection {
@@ -108,7 +109,7 @@ a:hover {
 }
 
 .bg-gray {
-  background: #E9D7C0 !important
+  background: #eaeaea !important
 }
 
 .text-primary {
@@ -180,17 +181,17 @@ a:hover {
 }
 
 .font-secondary {
-  font-family: 'Quicksand', serif !important;
+  font-family: 'Playfair Display', serif !important;
 }
 
 .font-tertiary {
-  font-family: 'Quicksand' !important;
+  font-family: 'Red Hat Display' !important;
   font-weight: 800;
   letter-spacing: 2px;
 }
 
 .bg-dark {
-  background-color: #E9D7C0 !important
+  background-color: #222 !important
 }
 
 .slick-dots {
