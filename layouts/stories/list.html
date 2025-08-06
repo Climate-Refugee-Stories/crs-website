@@ -1,54 +1,43 @@
 {{ define "main" }}
 
-  {{ with .Params.banner }}
-  <section class="hero-area" style="background-image: url('{{ .background_img | relURL }}'); background-size: cover; background-position: center;">
-    <div class="main-title">
-      <div class="container main-circle">
-        <div class="row align-items-center justify-content-center">
-          <div class="row align-items-start col-lg-8 tagline-circle-div">
-            <h3 class="text-white text-center home-tagline tagline-circle">{{ .title | safeHTML }}</h3>
-          </div>
+
+{{ with .Params.banner }}
+<section class="hero-area" style="background-image: url('{{ .background_img | relURL }}'); background-size: cover; background-position: center;">
+  <div class="main-title">
+    <div class="container main-circle">
+      <div class="row align-items-center justify-content-center">
+        <div class="row align-items-start col-lg-8 tagline-circle-div">
+          <h3 class="text-white text-center home-tagline tagline-circle">{{ .title | safeHTML }}</h3>
         </div>
       </div>
+    </div>
 
-      <!-- Social Icons -->
-      <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-        {{ with (site.GetPage `/contact`).Params.socials }}
-          {{ range . }}
-          <li class="mb-3 social-icons-home">
-            <a class="text-primary" href="{{.URL | safeURL }}" target="_blank">
-              <i class="{{.icon}}"></i>
-            </a>
-          </li>
-          {{ end }}
+    <!-- Social Icons -->
+    <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+      {{ with (site.GetPage `/contact`).Params.socials }}
+        {{ range . }}
+        <li class="mb-3 social-icons-home">
+          <a class="text-primary" href="{{.URL | safeURL }}" target="_blank">
+            <i class="{{.icon}}"></i>
+          </a>
+        </li>
         {{ end }}
-      </ul>
-    </div>
-  </section>
-  {{ end }}
-
-<section class="section">
-  <div class="container">
-    <div class="row" id="masonry-grid">
-      {{ range (.Paginator 9).Pages }}
-        {{ $region := index .Params.region 0 | default "gray" }}
-        <div class="col-lg-4 col-md-6 mb-4 masonry-item">
-          <div class="story-card border-{{ $region }}">
-            <div class="ribbon">{{ $region | title }}</div>
-            <img src="https://photos.smugmug.com/photos/{{ .Params.thumbnail }}/0/S/{{ .Params.thumbnail }}-S.png" class="img-fluid rounded" alt="{{ .Title }}">
-            <div class="p-3">
-              <h5 class="mb-2">{{ .Title }}</h5>
-              <p>{{ .Summary }}</p>
-              <a href="{{ .RelPermalink }}" class="btn btn-sm btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
       {{ end }}
-    </div>
-
-    <div class="row justify-content-center mt-5">
-      {{ template "_internal/pagination.html" . }}
-    </div>
+    </ul>
   </div>
 </section>
 {{ end }}
+
+ <section class="section">
+      <div class="container">
+      <div class="row search-row">
+          {{ partial "search.html" . }}
+      </div>
+      <div class="row">
+        {{ range (.Paginator 9).Pages }}
+        {{ .Render "post" }}
+        {{ end }}
+      </div>
+      <div class="row justify-content-center mt-5">
+        {{ template "_internal/pagination.html" . }}
+      </div>
