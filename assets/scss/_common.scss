@@ -24,7 +24,28 @@
   }
 }
 
-
+.bg-shape- {
+  
+  &stories {
+    background: rgb(0, 129, 180);
+  }
+  
+  &archive {
+    background: rgb(3, 163, 169);
+  }
+  
+  &resources {
+    background: rgb(0, 152, 119);
+  }
+  
+  &contact {
+    background: rgb(209, 100, 0);
+  }
+  
+  &about {
+    background: rgb(30, 75, 160);
+  }
+}
 .section {
   padding: 5rem 0;
 
