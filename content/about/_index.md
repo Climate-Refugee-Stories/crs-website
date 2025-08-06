@@ -1,7 +1,10 @@
 ---
 title: "About"
+banner:
+  title: "About"
+  background_img: i-ptQrJ35
 description: "This is meta description."
-author_image : "i-dbBQbMn"
+*/author_image : "i-dbBQbMn"*/
 draft: false
 partners:
   # enable on homepage
