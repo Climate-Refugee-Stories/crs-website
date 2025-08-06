@@ -1,5 +1,8 @@
 ---
 title: "Contact"
+banner:
+  title: "Contact"
+  background_img: i-ptQrJ35
 description: "This is meta description."
 draft: false
 contact_title: Get in Touch
