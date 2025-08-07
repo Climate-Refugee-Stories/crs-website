@@ -52,6 +52,24 @@
   <!-- /Intro Paragraph -->
 
   {{ with .stories }}
+  <!-- Intro Paragraph -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <p class="homepage-abt-txt">{{.content | markdownify}}</p>
+          {{ with .button }}
+          {{ if .enable }}
+          <br/>
+          <a href="{{ .URL | absURL }}" class="btn btn-sm btn-primary">{{.label}}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  <!-- /Intro Paragraph -->
   <!-- Stories -->
   <section class="section">
     <div class="container">
