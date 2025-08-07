@@ -15,9 +15,22 @@ about:
 stories:
   map: https://unccharlotte.maps.arcgis.com/apps/Embed/index.html?webmap=9fbe51f045714ea3bfe7cddcf8b5ee04&extent=-180,-66.8537,180,78.2462&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light
   title : "Stories"
+  about:
+  content: |
+    Climate Refugee Stories (description of the stories significance and collaboration. Just tell people what these stories are e.g. a colelction of handwritten, self prompted...idk. Pulling from your current language: These stories are documents of the ways communities are resilient in the face of overlapping crises–including the COVID-19 pandemic. We invited storytellers to use various mediums to define climate refugees for themselves and our audiences. We invite you to read these stories which explore the historical, political, economic, and environmental causes of migration in order to bridge movements for social and environmental justice.)
+  button:
+    enable : true
+    label : "learn more"
+    URL : "stories"
 archive:
   title : "Archive"
-  item_show : 5
+  about:
+  content: |
+    Climate Refugee Stories (description of the archive structure so users know how to navigate it)
+  button:
+    enable : true
+    label : "learn more"
+    URL : "archive"
 resources:
   title : "Resources"
   button:
