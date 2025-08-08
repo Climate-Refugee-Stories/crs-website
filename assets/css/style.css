@@ -642,45 +642,79 @@ blockquote > p {
 }
 
 .site-footer {
-  background-color: #081B1B;
+  background-color: #0b3d3d;
   color: #fff;
-  padding: 40px 20px;
-  font-size: 16px;
+  padding: 40px 20px 20px;
+  font-size: 0.9rem;
 }
 
-.footer-top {
+.footer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
-  margin-bottom: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.footer-logo img {
-  max-width: 180px;
+.footer-about, .footer-links, .footer-social {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-logo {
+  max-width: 150px;
   margin-bottom: 10px;
 }
 
-.footer-nav ul {
+.footer-links ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-nav a,
-.footer-social a {
-  color: #C18D52;
+.footer-links li {
+  margin-bottom: 5px;
+}
+
+.footer-links a {
+  color: #fff;
   text-decoration: none;
 }
 
-.footer-nav a:hover,
-.footer-social a:hover {
+.footer-links a:hover {
   text-decoration: underline;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.newsletter-form {
+  margin-top: 10px;
+}
+
+.newsletter-form input {
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.newsletter-form button {
+  padding: 8px 12px;
+  background-color: #ffd200;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .footer-bottom {
   text-align: center;
-  border-top: 1px solid #444;
-  padding-top: 20px;
-  font-size: 14px;
-  color: #ccc;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 10px;
+  margin-top: 20px;
+  font-size: 0.8rem;
 }
