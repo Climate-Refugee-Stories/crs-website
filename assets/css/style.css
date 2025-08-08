@@ -640,3 +640,47 @@ blockquote > p {
   font-size: 22px;
   line-height: 1.8;
 }
+
+.site-footer {
+  background-color: #081B1B;
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 16px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  max-width: 180px;
+  margin-bottom: 10px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav a,
+.footer-social a {
+  color: #C18D52;
+  text-decoration: none;
+}
+
+.footer-nav a:hover,
+.footer-social a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
