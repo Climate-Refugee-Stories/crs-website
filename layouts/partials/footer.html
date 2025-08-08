@@ -1,12 +1,14 @@
 <!-- Footer -->
 <footer class="site-footer">
-  <div class="footer-top">
-    <div class="footer-logo">
-      <img src="/images/logo.png" alt="Site Logo" />
-      <p>Amplifying the voices of climate-affected communities through stories, research, and action.</p>
+  <div class="footer-container">
+    <!-- Left section -->
+    <div class="footer-about">
+      <img src="/images/logo.png" alt="Your Logo" class="footer-logo">
+      <p>Building a resilient and just future for all through community, advocacy, and action.</p>
     </div>
 
-    <div class="footer-nav">
+    <!-- Middle section -->
+    <div class="footer-links">
       <h4>Quick Links</h4>
       <ul>
         <li><a href="/about/">About</a></li>
@@ -16,19 +18,24 @@
       </ul>
     </div>
 
+    <!-- Right section -->
     <div class="footer-social">
       <h4>Connect</h4>
-      <a href="https://facebook.com" target="_blank">Facebook</a><br/>
-      <a href="https://twitter.com" target="_blank">Twitter/X</a><br/>
-      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <div class="social-icons">
+        <a href="https://facebook.com" class="icon facebook">FB</a>
+        <a href="https://twitter.com" class="icon twitter">TW</a>
+        <a href="https://instagram.com" class="icon instagram">IG</a>
+      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
   </div>
-
   <div class="footer-bottom">
-    <p>&copy; {{ now.Format "2006" }} Climate Refugee Stories. All rights reserved. | <a href="/privacy">Privacy Policy</a></p>
+    <p>&copy; 2025 Your Organization. All rights reserved.</p>
   </div>
 </footer>
-
 <!-- /Footer -->
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
