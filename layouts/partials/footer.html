@@ -1,13 +1,34 @@
 <!-- Footer -->
-<footer class="bg-dark footer-section">
-  <div class="footer-bottom border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">
-      &copy; <span id='copyYear'>2021</span> Climate Refugee Stories<br>
-      Website created by <a href="https://linktr.ee/LotusDC">Lotus Digital Consulting, LLC.</a>
-      using the <a href="https://github.com/themefisher/kross-hugo">Kross Hugo</a> theme
-    </p>
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+      <img src="/images/logo.png" alt="Site Logo" />
+      <p>Amplifying the voices of climate-affected communities through stories, research, and action.</p>
+    </div>
+
+    <div class="footer-nav">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/stories/">Stories</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Connect</h4>
+      <a href="https://facebook.com" target="_blank">Facebook</a><br/>
+      <a href="https://twitter.com" target="_blank">Twitter/X</a><br/>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; {{ now.Format "2006" }} Climate Refugee Stories. All rights reserved. | <a href="/privacy">Privacy Policy</a></p>
   </div>
 </footer>
+
 <!-- /Footer -->
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
