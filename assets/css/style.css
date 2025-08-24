@@ -645,7 +645,7 @@ blockquote > p {
   background-color: #022D62;
   color: #fff;
   padding: 40px 20px 20px;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 .footer-container {
@@ -681,7 +681,7 @@ blockquote > p {
 }
 
 .footer-links a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .social-icons a {
@@ -689,7 +689,7 @@ blockquote > p {
   margin-right: 10px;
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: none;
 }
 
 .newsletter-form {
@@ -705,8 +705,9 @@ blockquote > p {
 
 .newsletter-form button {
   padding: 8px 12px;
-  background-color: #ffd200;
-  border: none;
+  background-color: #ffff;
+  bordercolor:#022D62; 
+  border: ;
   border-radius: 3px;
   cursor: pointer;
 }
