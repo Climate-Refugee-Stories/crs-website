@@ -685,7 +685,7 @@ blockquote > p {
 }
 
 .social-icons-home {
-  display: inline-block;
+  display:block;
   margin-right: 10px;
   color: #fff;
   text-decoration: none;
