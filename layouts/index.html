@@ -80,6 +80,7 @@
           <h2 class="section-title">{{ .title }}</h2>
         </div>
       </div>
+      <!-- Remove the previous archive preview
       <div class="row shuffle-wrapper">
         {{ range first .item_show (where site.RegularPages "Section" "archive") }}
         <div class="col-lg-4 col-6 mb-4 shuffle-item">
@@ -93,6 +94,7 @@
           </div>
         </div>
         {{ end }}
+      -->
       </div>
     </div>
   </section>
@@ -107,6 +109,7 @@
         <div class="col-12 text-center">
           <h2 class="section-title">{{ .title }}</h2>
         </div>
+        <!-- remove the previous resources layout
         {{ range .item }}
         <div class="col-md-4 mb-4">
           <a class="text-primary" href="{{ .URL | relURL }}">
@@ -120,6 +123,7 @@
           </a>
         </div>
         {{ end }}
+        -->
         <div class="col-12 text-center">
           {{ with .button }}
           {{ if .enable }}
