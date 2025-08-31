@@ -1,12 +1,18 @@
 {{ define "main" }}
   {{ partial "page-title.html" . }}
-
+  
   <section class="section">
     <div class="container">
       <div class="row search-row">
         {{ partial "search.html" . }}
       </div>
-
+<!-- ArcGIS Story Map -->
+  {{ with .Params.stories.map }}
+      <div class="row mb-5">
+          <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="CRS Home Page" class="col-12 text-center homepage-story-map"
+          src="{{ .map }}"></iframe>
+        
+<!-- Story gallery -->   
       <div class="gallery">
         {{ range .Pages }}
           {{ partial "stories/story-card.html" . }}
