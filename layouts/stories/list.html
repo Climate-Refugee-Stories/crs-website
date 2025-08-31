@@ -11,8 +11,8 @@
  {{ with site.Home.Params.stories.map }}
       <div class="row mb-5">
         <div class="col-12">
-         <div id="arcgis-map" style="width:100%; height:500px; border-radius:1rem; overflow:hidden;">
-      <iframe src="{{ .Site.Home.Params.arcgis_url }}" 
+         <div id="map" style="width:100%; height:500px; border-radius:1rem; overflow:hidden;">
+      <iframe src="{{ .Site.Home.Params.map }}" 
               width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen>
       </iframe>
     </div>
