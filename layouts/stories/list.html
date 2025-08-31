@@ -6,11 +6,18 @@
       <div class="row search-row">
         {{ partial "search.html" . }}
       </div>
-<!-- ArcGIS Story Map -->
-  {{ with .Params.stories.map }}
-      <div class="row mb-5">
-          <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="CRS Home Page" class="col-12 text-center homepage-story-map"
-          src="{{ .map }}"></iframe>
+      
+<!-- Story Map -->
+<section class="section">
+  <div class="container">
+    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+      title="Stories Map" 
+      class="col-12 text-center homepage-story-map"
+      src="{{ .Site.Params.stories.map }}">
+    </iframe>
+  </div>
+</section>
+<!-- /Story Map -->
         
 <!-- Story gallery -->   
       <div class="gallery">
@@ -18,7 +25,8 @@
           {{ partial "stories/story-card.html" . }}
         {{ end }}
       </div>
-
+<--! Story Gallery -->
+  
       <!-- remove pagination from stories page
       <div class="row justify-content-center mt-5">
         {{ template "_internal/pagination.html" . }}
