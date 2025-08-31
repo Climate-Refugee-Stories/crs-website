@@ -8,15 +8,21 @@
       </div>
       
 <!-- Story Map -->
-<section class="section">
-  <div class="container">
-    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-      title="Stories Map" 
-      class="col-12 text-center homepage-story-map"
-      src="{{ .Site.Params.stories.map }}">
-    </iframe>
-  </div>
-</section>
+ {{ with site.Home.Params.stories.map }}
+      <div class="row mb-4">
+        <div class="col-12">
+          <iframe
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            title="Stories Map"
+            class="w-100"
+            src="{{ . }}">
+          </iframe>
+        </div>
+      </div>
+      {{ end }}
 <!-- /Story Map -->
         
 <!-- Story gallery -->   
