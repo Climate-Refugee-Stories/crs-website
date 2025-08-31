@@ -641,9 +641,11 @@ blockquote > p {
   line-height: 1.8;
 }
 
+
+/* site footer */
 .site-footer {
   background-color: #022D62;
-  color: #fff;
+  color: #ffffff;
   padding: 40px 20px 20px;
   font-size: 0.7rem;
 }
@@ -676,7 +678,7 @@ blockquote > p {
 }
 
 .footer-links a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -687,7 +689,7 @@ blockquote > p {
 .social-icons-home {
   display:block;
   margin-right: 10px;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: none;
 }
@@ -705,7 +707,7 @@ blockquote > p {
 
 .newsletter-form button {
   padding: 8px 12px;
-  background-color: #ffff;
+  background-color: #ffffff;
   bordercolor:#022D62; 
   border: ;
   border-radius: 3px;
@@ -754,8 +756,8 @@ blockquote > p {
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.8);
-  color: #fff;
+  background: rgba(0,0,0,0.9);
+  color: #ffffff;
   opacity: 0;
   display: flex;
   flex-direction: column;
@@ -774,9 +776,11 @@ blockquote > p {
 .gallery-overlay h4 {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
+  color: #ffffff;
 }
 
 .gallery-overlay p {
   font-size: 0.9rem;
+  color: #ffffff;
 }
 
