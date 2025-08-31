@@ -2,18 +2,23 @@
   {{ partial "page-title.html" . }}
 
   <section class="section">
-      <div class="container">
+    <div class="container">
       <div class="row search-row">
-          {{ partial "search.html" . }}
+        {{ partial "search.html" . }}
       </div>
-<div class="gallery">
-  {{ range .Pages }}
-    {{ partial "stories/story-card.html" . }}
-  {{ end }}
-</div>
-     <!-- <div class="row justify-content-center mt-5">
+
+      <div class="gallery">
+        {{ range .Pages }}
+          {{ partial "stories/story-card.html" . }}
+        {{ end }}
+      </div>
+
+      <!-- remove pagination from stories page
+      <div class="row justify-content-center mt-5">
         {{ template "_internal/pagination.html" . }}
       </div>
-    </div>
+      -->
+
+    </div> <!-- /.container -->
   </section>
-{{ end }}-->
+{{ end }}
