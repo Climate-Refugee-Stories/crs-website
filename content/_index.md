@@ -1,7 +1,7 @@
 ---
 title: Home
 banner:
-  title: "Climate Refugee Stories.<br><span class='hero-subtitle'>A public history project<br>narrating the fight for climate justice.</span>"
+  title: "Climate Refugee Stories<br><span class='hero-subtitle'>A public history project<br>narrating the fight for climate justice.</span>"
   background_img: i-ptQrJ35
   logo: i-Dfx3zd6
 about:
