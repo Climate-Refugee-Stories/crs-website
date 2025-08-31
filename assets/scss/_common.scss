@@ -693,3 +693,14 @@
   }
   font-weight: 300;
 }
+
+.hero-subtitle {
+  display: block;
+  font-size: 1.4rem; // visually like H4
+  font-weight: 400;  // adjust weight if needed
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  @include mobile {
+    font-size: 1.2rem;
+  }
+}
