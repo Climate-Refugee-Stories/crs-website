@@ -3,21 +3,22 @@
   
   <section class="section">
     <div class="container">
-      <div class="row search-row">
+   
+      <!-- search -->
+      <div class="row search-row mb-4">
         {{ partial "search.html" . }}
       </div>
       
 <!-- Story Map -->
- {{ with site.Home.Params.stories.map }}
+     <!-- ArcGIS Online map -->
+      {{ with .Params.map }}
       <div class="row mb-5">
         <div class="col-12">
-         <div id="map" style="width:100%; height:500px; border-radius:1rem; overflow:hidden;">
-      <iframe src="{{ .Site.Home.Params.map }}" 
-              width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen>
-      </iframe>
-    </div>
-  </div>
-</div>
+          <div id="arcgis-map" style="width:100%; height:500px; border-radius:1rem; overflow:hidden;">
+            <iframe src="{{ . }}" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
       {{ end }}
 <!-- /Story Map -->
         
