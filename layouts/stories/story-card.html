@@ -1,1 +1,12 @@
+<div class="gallery-item">
+  <a href="{{ .Permalink }}" title="{{ .Title }}">
+    <div class="gallery-img-wrapper">
+      <img src="https://photos.smugmug.com/photos/{{ .Params.Thumbnail }}/0/S/{{ .Params.Thumbnail }}-S.png" alt="{{ .Title }}">
+      <div class="gallery-overlay">
+        <h4>{{ .Title }}</h4>
+        <p>{{ .Summary }}</p>
+      </div>
+    </div>
+  </a>
+</div>
 
