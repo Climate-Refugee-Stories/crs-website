@@ -719,3 +719,64 @@ blockquote > p {
   margin-top: 20px;
   font-size: 0.8rem;
 }
+
+/* Pinterest-style gallery */
+.gallery {
+  column-count: 3;      /* Number of columns (adjust for responsiveness) */
+  column-gap: 1rem;
+}
+
+.gallery-item {
+  display: inline-block;
+  margin: 0 0 1rem;
+  width: 100%;
+  break-inside: avoid;
+}
+
+.gallery-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; /* Rounded rectangle */
+}
+
+.gallery-img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  transition: opacity 0.3s ease;
+  border-radius: 15px;
+}
+
+.gallery-img-wrapper:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.gallery-overlay p {
+  font-size: 0.9rem;
+}
+
