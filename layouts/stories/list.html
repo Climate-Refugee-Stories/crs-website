@@ -3,13 +3,13 @@
   <!-- Page title -->
   {{ partial "page-title.html" . }}
 
+     <!-- Search Bar -->
   <section class="section">
     <div class="container">
-
-      <!-- Search Bar -->
-      <div class="row search-row mb-4">
+    <div class="row search-row mb-4">
         {{ partial "search.html" . }}
       </div>
+     <!-- Search Bar -->
 
       <!-- Story Map -->
       {{ with site.Home.Params.stories.map }}
