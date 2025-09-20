@@ -814,3 +814,30 @@ blockquote > p {
   .gallery-img-wrapper img { transition: none; }
   .gallery-overlay { transition: none; }
 }
+/* in assets/scss/_a11y.scss or a global overrides file */
+
+/* Make toolbar more contrasty */
+#a11y-toolbar.a11y-toolbar {
+  background: #000 !important;
+}
+#a11y-toolbar .a11y-btn {
+  background: #fff !important;
+  color: #000 !important;
+}
+#a11y-toolbar .a11y-btn:hover {
+  background: #ccc !important;
+}
+
+/* For translation buttons */
+.translate-btn {
+  background: #000 !important;
+  color: #fff !important;
+  border: 1px solid #fff;
+}
+.translate-btn:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+.translate-sep {
+  color: #fff !important;
+}
