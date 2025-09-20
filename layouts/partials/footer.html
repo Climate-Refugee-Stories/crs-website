@@ -1,43 +1,45 @@
 <!-- Footer -->
-<footer class="site-footer">
-  <div class="footer-container">
-    <!-- Left section -->
-    <div class="footer-about">
-	 <h4>About Us</h4>
-     <ul>
-		<li><a href="/about/">About</a></li>
-        <li><a href="/about/">CRS News</a></li>
-		<li><a href="/about/">Our Contributors</a></li>
-     </ul>
-	</div>
+<footer class="site-footer text-white">
+  <!-- Background wrapper -->
+  <div class="footer-bg">
+    <div class="container py-5">
+      <div class="row">
+        <!-- Left section -->
+        <div class="col-md-4 mb-4">
+          <img src="i-GmLbXK9/A" alt="Site logo" class="footer-logo mb-3">
+          <p>A public history project narrating the fight for climate justice.</p>
+        </div>
 
-    <!-- Middle section -->
-    <div class="footer-links">
-      <h4>Our Work</h4>
-      <ul>
-        <li><a href="/archive/">Archive</a></li>
-        <li><a href="/stories/">Stories</a></li>
-        <li><a href="/resources/">Resources</a></li>
-       
-      </ul>
-    </div>
+        <!-- Middle section -->
+        <div class="col-md-4 mb-4">
+          <h5>Our Work</h5>
+          <ul class="list-unstyled">
+            <li><a href="/archive/">Archive</a></li>
+            <li><a href="/stories/">Stories</a></li>
+            <li><a href="/resources/">Resources</a></li>
+          </ul>
+        </div>
 
-    <!-- Right section -->
-    <div class="footer-social">
-      <h4>Connect with Us</h4>
-      <div class="social-icons">
-        <a href="https://facebook.com" class="icon facebook">FB</a>
-        <a href="https://twitter.com" class="icon twitter">TW</a>
-        <a href="https://instagram.com" class="icon instagram">IG</a>
+        <!-- Right section -->
+        <div class="col-md-4 mb-4">
+          <h5>Connect with Us</h5>
+          <div class="social-icons mb-3">
+            <a href="https://facebook.com" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="icon twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" class="icon instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+          <form class="newsletter-form d-flex">
+            <input type="email" placeholder="Email address" required class="form-control mr-2">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
       </div>
-      <form class="newsletter-form">
-        <input type="email" placeholder="Email address" required>
-        <button type="submit">Subscribe</button>
-      </form>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 Climate Refugee Stories. All rights reserved.</p>
+
+    <!-- Bottom strip -->
+    <div class="footer-bottom text-center py-3">
+      <p class="mb-0">&copy; {{ now.Format "2006" }} Climate Refugee Stories. All rights reserved.</p>
+    </div>
   </div>
 </footer>
 <!-- /Footer -->
@@ -47,71 +49,32 @@
 <script src="{{ .link | absURL }}"></script>
 {{ end }}
 
-{{ "<!-- Copyright update -->" | safeHTML }}
-<script>
-  // Set Current Year
-  const yearID = document.querySelector("#copyYear");
-  const currentYear = new Date().getFullYear();
-  yearID.textContent = currentYear;
-</script>
-
 <!-- Cookie -->
 {{ if site.Params.cookies.enable }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 <div id="js-cookie-box" class="cookie-box cookie-box-hide cookie-msg-text">
-	Stay up to date with our newsletter!
-  <a href="{{ (site.GetPage `/contact`).Params.newsletter_button.URL }}" target="_blank"><span id="js-cookie-sub" class="btn btn-sm btn-primary ml-2">Subscribe</span></a>
+  Stay up to date with our newsletter!
+  <a href="{{ (site.GetPage `/contact`).Params.newsletter_button.URL }}" target="_blank">
+    <span id="js-cookie-sub" class="btn btn-sm btn-primary ml-2">Subscribe</span>
+  </a>
   <a href=""><span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">Dismiss</span></a>
 </div>
 <script>
-	(function ($) {
-		const cookieBox = document.getElementById('js-cookie-box');
-		const cookieButton = document.getElementById('js-cookie-button');
+  (function ($) {
+    const cookieBox = document.getElementById('js-cookie-box');
+    const cookieButton = document.getElementById('js-cookie-button');
     const cookieButtonSub = document.getElementById('js-cookie-sub');
-		if (!Cookies.get('cookie-box')) {
-			cookieBox.classList.remove('cookie-box-hide');
-			cookieButton.onclick = function () {
-				Cookies.set('cookie-box', true, {
-					expires: {{ site.Params.cookies.expire_days }}
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
+    if (!Cookies.get('cookie-box')) {
+      cookieBox.classList.remove('cookie-box-hide');
+      cookieButton.onclick = function () {
+        Cookies.set('cookie-box', true, { expires: {{ site.Params.cookies.expire_days }} });
+        cookieBox.classList.add('cookie-box-hide');
+      };
       cookieButtonSub.onclick = function () {
-				Cookies.set('cookie-box', true, {
-					expires: 6000
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
-		}
-	})(jQuery);
+        Cookies.set('cookie-box', true, { expires: 6000 });
+        cookieBox.classList.add('cookie-box-hide');
+      };
+    }
+  })(jQuery);
 </script>
-
-<!-- Cookie Style -->
-<style>
-.cookie-box {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  font-size:15pt;
-  z-index: 9999;
-  padding: 1rem 2rem;
-  background: rgb(71, 71, 71);
-  transition: all .75s cubic-bezier(.19, 1, .22, 1);
-  color: #fdfdfd;
-}
-
-.cookie-box a {
-  color: white;
-}
-
-.cookie-box a:hover {
-  color: rgb(204, 204, 204);
-}
-
-.cookie-box-hide {
-  display: none;
-}
-</style>
 {{ end }}
