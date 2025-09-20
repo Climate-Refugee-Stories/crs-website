@@ -234,19 +234,21 @@
     padding: 0.5rem 1rem;
   }
 
-  .social-icons-home a {
-    display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    border-radius: 50%;
-    text-align: center;
-    color: #fff;
-    background-color: var(--primary-color);
-    margin-right: 0.5rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    &:hover { background-color: #fff; color: var(--primary-color); }
+.social-icons-home a {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: all 0.3s ease;
+  font-size: 1.25rem;
+
+  &:hover {
+    background-color: #fff;
+    color: var(--primary-color);
   }
 }
 
