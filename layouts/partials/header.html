@@ -36,13 +36,17 @@
         <li class="nav-item {{ if $active }}active{{ end }}">
           <a class="nav-link" href="{{ .URL | relURL }}">{{ .Name }}</a>
         </li>
-        
         {{ end }}
         {{ end }}
+
+        <!-- Translation widget inside nav (to the right of menu items) -->
+        <li class="nav-item d-flex align-items-center ml-3">
+          {{ partial "translate.html" . }}
+        </li>
       </ul>
     </div>
   </nav>
-  {{ partial "a11y-toolbar.html" . }}
-  {{ partial "translate.html" . }}
 
+  <!-- Accessibility toolbar fixed to bottom-left -->
+  {{ partial "a11y-toolbar.html" . }}
 </header>
