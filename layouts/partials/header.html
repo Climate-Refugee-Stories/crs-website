@@ -36,9 +36,12 @@
         <li class="nav-item {{ if $active }}active{{ end }}">
           <a class="nav-link" href="{{ .URL | relURL }}">{{ .Name }}</a>
         </li>
+        
         {{ end }}
         {{ end }}
       </ul>
     </div>
   </nav>
+  {{ partial "a11y-toolbar.html" . }}
+
 </header>
