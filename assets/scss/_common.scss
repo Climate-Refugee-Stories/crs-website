@@ -718,4 +718,10 @@
   @include mobile {
     font-size: 1.2rem;
   }
+  
+}
+.resources-spotify iframe {
+  max-width: 660px;
+  width: 100%;
+  margin: 0 auto;
 }
