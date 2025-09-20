@@ -71,6 +71,18 @@
   {{ end }}
   -->
 
+  {{ with .stories }}
+ <!-- Stories -->
+  <!-- Stories Section (Text Only) -->
+  <section class="section bg-shape-stories">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{ .title }}</h2>
+          <p class="lead">{{ .description | markdownify }}</p>
+        <!-- /Stories --></div>
+      </div>
+
   {{ with .archive }}
   <!-- Archive -->
   <section class="section">
@@ -108,6 +120,16 @@
       <div class="row">
         <div class="col-12 text-center">
           <h2 class="section-title">{{ .title }}</h2>
+               <!-- Spotify Playlist Embed -->
+      <div class="resources-spotify mt-4">
+        <h3 class="section-title">Featured Playlist</h3>
+        <iframe style="border-radius:12px"
+          src="https://open.spotify.com/embed/playlist/YOUR_PLAYLIST_ID"
+          width="100%" height="380" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+    </div>
+  </section>
+  {{ end }}
         </div>
         <!-- remove the previous resources layout
         {{ range .item }}
