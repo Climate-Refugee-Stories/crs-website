@@ -217,31 +217,44 @@
   }
 }
 
-.footer {
-  &-section {
-    padding-top: 12.5rem;
-    
-    & a {
-      color: #fff;
-      
-      &:hover {
-        color: #fff;
-        text-decoration: none;
-      }
-    }
+.footer-bg {
+  a {
+    color: #fff;
+    &:hover { color: #ffd700; }
   }
 
-  &-bottom {
-    & a {
-      color: #999;
-      text-decoration: underline;
-    }
+  .newsletter-form input {
+    border-radius: 0.25rem;
+    border: none;
+    padding: 0.5rem;
+  }
+
+  .newsletter-form button {
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .social-icons-home a {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background-color: var(--primary-color);
+    margin-right: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    &:hover { background-color: #fff; color: var(--primary-color); }
   }
 }
 
-.section-on-footer {
-  margin-bottom: -12.5rem;
+.footer-bottom {
+  font-size: 0.9rem;
+  color: #ccc;
 }
+
 
 
 .navigation {
