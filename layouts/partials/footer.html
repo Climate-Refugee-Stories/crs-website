@@ -56,4 +56,22 @@
     <button type="button" class="a11y-btn" data-a11y="negative" aria-label="Negative Contrast">NC</button>
     <button type="button" class="a11y-btn" data-a11y="light" aria-label="Light Background">LB</button>
     <button type="button" class="a11y-btn" data-a11y="underline" aria-label="Underline Links">U</button>
-    <button type="but
+    <button type="button" class="a11y-btn" data-a11y="readable" aria-label="Readable Font">RF</button>
+    <button type="button" class="a11y-btn a11y-reset" data-a11y="reset" aria-label="Reset">Reset</button>
+  </div>
+</div>
+
+<script>
+  const toggleBtn = document.getElementById('a11y-toggle');
+  const toolbar = document.getElementById('a11y-toolbar');
+  toggleBtn.addEventListener('click', () => {
+    toolbar.style.display = toolbar.style.display === 'none' ? 'flex' : 'none';
+    toolbar.style.flexDirection = 'row';
+    toolbar.style.gap = '0.25rem';
+  });
+</script>
+
+<!-- JS Plugins -->
+{{ range site.Params.plugins.js}}
+<script src="{{ .link | absURL }}"></script>
+{{ end }}
