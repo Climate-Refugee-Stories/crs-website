@@ -644,46 +644,46 @@ blockquote > p {
 
 /* site footer */
 .site-footer {
-  background-color: #022D62;
-  color: #ffffff;
-  padding: 40px 20px 20px;
-  font-size: 0.7rem;
+  position: relative;
+  background-color: #001a33; /* fallback if image doesn’t load */
+  color: #fff;
 }
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-about, .footer-links, .footer-social {
-  flex: 1 1 300px;
-  margin: 10px;
+.footer-bg {
+  background: url('/images/footer-bg.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 .footer-logo {
-  max-width: 150px;
-  margin-bottom: 10px;
+  max-width: 180px;
 }
 
-.footer-links ul {
-  list-style: none;
-  padding: 0;
+.site-footer h5 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
-.footer-links li {
-  margin-bottom: 5px;
-}
-
-.footer-links a {
-  color: #ffffff;
+.site-footer a {
+  color: #fff;
   text-decoration: none;
 }
+.site-footer a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
 
-.footer-links a:hover {
-  text-decoration: none;
+.social-icons a {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 1.3rem;
+}
+.social-icons a:hover {
+  color: #ffcc00;
+}
+
+.footer-bottom {
+  background: rgba(0,0,0,0.6);
+  font-size: 0.9rem;
 }
 
 .social-icons-home {
