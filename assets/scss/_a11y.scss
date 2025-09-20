@@ -1,0 +1,51 @@
+/* assets/scss/_a11y.scss */
+:root { --a11y-font-scale: 1; }
+
+/* Scale all typography without wrecking layout */
+html { font-size: calc(16px * var(--a11y-font-scale)); }
+
+/* Toolbar styles (fixed bottom-left) */
+#a11y-toolbar.a11y-toolbar {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 9999;
+  display: flex;
+  gap: .4rem;
+  flex-wrap: wrap;
+  background: rgba(0,0,0,.75);
+  border-radius: .6rem;
+  padding: .5rem;
+  backdrop-filter: saturate(120%) blur(3px);
+}
+#a11y-toolbar .a11y-btn {
+  border: 0;
+  border-radius: .4rem;
+  padding: .4rem .6rem;
+  font: 600 0.9rem/1 'Libertinus Sans', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  color: #fff;
+  background: rgba(255,255,255,.15);
+  cursor: pointer;
+}
+#a11y-toolbar .a11y-btn:hover { background: rgba(255,255,255,.28); }
+#a11y-toolbar .a11y-reset { background: #C01818; }
+#a11y-toolbar .a11y-reset:hover { background: #a01616; }
+
+/* Effects */
+.a11y-grayscale { filter: grayscale(100%); }
+.a11y-high-contrast {
+  background: #000 !important;
+  color: #fff !important;
+}
+.a11y-high-contrast * { color: #fff !important; background-color: transparent !important; }
+
+.a11y-negative-contrast { filter: invert(100%) contrast(120%); }
+.a11y-light-bg { background: #fff !important; color: #000 !important; }
+.a11y-light-bg * { color: #000 !important; }
+
+.a11y-underline-links a, .a11y-underline-links a * { text-decoration: underline !important; }
+
+/* Swap to a highly readable system font stack */
+.a11y-readable-font, .a11y-readable-font * {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, Helvetica, sans-serif !important;
+}
