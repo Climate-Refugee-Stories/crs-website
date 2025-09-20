@@ -332,11 +332,20 @@
     &.active { background: var(--primary-color); color: #fff; }
   }
 
-  // High contrast toggle
-  body.a11y-high { filter: contrast(150%) !important; }
-  body.a11y-negative { filter: invert(100%) !important; }
-  body.a11y-light { background-color: #fff !important; color: #000 !important; }
-  body.a11y-grayscale { filter: grayscale(100%) !important; }
-  body.a11y-underline a { text-decoration: underline; }
-  body.a11y-readable { font-family: 'Libertinus Sans', sans-serif !important; line-height: 1.8; }
+.a11y-high {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.a11y-negative {
+  filter: invert(1) !important;
+}
+
+.a11y-light {
+  background-color: #f8f9fa !important;
+  color: #212529 !important;
+}
+
+.a11y-grayscale {
+  filter: grayscale(100%) !important;
 }
