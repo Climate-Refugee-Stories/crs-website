@@ -1,0 +1,17 @@
+/* assets/scss/_translate.scss */
+.translate-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: .25rem;
+}
+.translate-btn {
+  background: transparent;
+  border: 0;
+  padding: .25rem .4rem;
+  font: 600 0.95rem/1 'Libertinus Sans', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  color: #fff; /* assumes header/nav has dark background; adjust if needed */
+  cursor: pointer;
+  text-decoration: none;
+}
+.translate-btn:hover { text-decoration: underline; }
+.translate-sep { color: #fff; opacity: .8; }
