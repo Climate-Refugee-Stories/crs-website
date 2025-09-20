@@ -1,0 +1,54 @@
+// static/js/translate.js
+(function(){
+  // Load Google Translate script
+  function loadGT(){
+    if (window.google && window.google.translate) return;
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    document.head.appendChild(s);
+  }
+
+  // Init called by Google script
+  window.googleTranslateElementInit = function() {
+    new window.google.translate.TranslateElement({
+      pageLanguage: 'en',
+      autoDisplay: false
+    }, 'google_translate_element');
+  };
+
+  // Set cookie used by Google Translate, then reload
+  function setLanguage(lang){
+    // cookie format per Google Translate widget
+    var domain = window.location.hostname;
+    document.cookie = 'googtrans=/auto/' + lang + ';path=/;expires=' + new Date(Date.now()+31536000000).toUTCString();
+    document.cookie = 'googtrans=/auto/' + lang + ';domain=' + domain + ';path=/;expires=' + new Date(Date.now()+31536000000).toUTCString();
+    // remember choice
+    try { localStorage.setItem('siteLang', lang); } catch(e){}
+    // reload to apply
+    window.location.reload();
+  }
+
+  // Wire up buttons
+  document.addEventListener('click', function(e){
+    const b = e.target.closest('.translate-btn');
+    if (!b) return;
+    e.preventDefault();
+    setLanguage(b.getAttribute('data-lang'));
+  });
+
+  // Auto-apply saved language
+  try {
+    const lang = localStorage.getItem('siteLang');
+    if (lang) {
+      // ensure script loads, cookie will be picked up on reloads too
+      loadGT();
+      // A micro delay lets the element initialize in case GT is cached
+      setTimeout(function(){ setLanguage(lang); }, 50);
+      return;
+    }
+  } catch(e){}
+
+  // fallback: load script so user can click a language
+  loadGT();
+})();
