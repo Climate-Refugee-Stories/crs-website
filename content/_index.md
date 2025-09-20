@@ -14,7 +14,7 @@ about:
     URL : "about"
 stories:
   title : "Stories"
-  description = "Our Stories Project documents the lived experiences of communities impacted by climate change, highlighting personal narratives, environmental justice campaigns, and local solutions."
+  description: "Our Stories Project documents the lived experiences of communities impacted by climate change, highlighting personal narratives, environmental justice campaigns, and local solutions."
 archive:
   title : "Archive"
   item_show : 5
