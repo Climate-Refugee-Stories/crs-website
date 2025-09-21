@@ -3,89 +3,179 @@
 // ===============================
 
 
+/* Base body */
 body {
-  background-color: #ffffff; // Normal contrast
-  color: #212529;            // Dark text
+  background-color: #ffffff;
+  color: #212529;
   font-family: 'Libertinus Sans', serif;
   line-height: 1.6;
   transition: all 0.3s ease;
 }
 
-/* =========================
-   Accessibility classes
-========================= */
-.a11y-high {
-  background-color: #000 !important;
-  color: #fff !important;
+/* Image / content helpers */
+.main-blog-image {
+  @include normal-image-processing;
+  img {
+    max-height: 700px;
+  }
 }
 
-.a11y-negative {
-  filter: invert(1) !important;
+.content {
+  @include normal-image-processing;
+
+  .vidcaption {
+    @include video-shortcode-base;
+    margin-bottom: 10px;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
 }
 
-.a11y-light {
-  background-color: #f8f9fa !important;
-  color: #212529 !important;
+/* Section background helpers */
+.bg-shape- {
+  &stories { background: rgb(0, 129, 180); }
+  &archive { background: rgb(3, 163, 169); }
+  &resources { background: rgb(0, 152, 119); }
+  &contact { background: rgb(209, 100, 0); }
+  &about { background: rgb(30, 75, 160); }
 }
 
-.a11y-grayscale {
-  filter: grayscale(100%) !important;
+/* Section */
+.section {
+  padding: 5rem 0;
+
+  &-title {
+    margin-bottom: 2.8rem;
+    font-family: 'Libertinus Sans' !important;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
 }
 
-.a11y-underline a {
-  text-decoration: underline !important;
+/* Hover utilities */
+.hover-shadow {
+  transition: .2s ease;
+
+  &:hover {
+    box-shadow: 0 1.125rem 2.5rem 0.5rem rgba(224, 241, 255, .54) !important;
+  }
 }
 
-.a11y-readable {
-  font-family: Arial, sans-serif !important;
-  font-size: 1.125rem !important;
-  line-height: 1.6 !important;
+.hover-wrapper {
+  overflow: hidden;
+
+  & img {
+    transition: .3s ease;
+    transform: scale(1.1);
+  }
+
+  &:hover {
+    & img { transform: scale(1); }
+    & .hover-overlay { opacity: 1; visibility: visible; }
+  }
 }
 
-/* =========================
-   Links & buttons
-========================= */
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
+.hover-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .3);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease;
 }
 
-a:hover {
-  color: darken(var(--primary-color), 10%);
+.hover-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
-.btn-primary {
-  background-color: var(--primary-color);
-  color: #fff;
+/* Buttons */
+.btn-alt {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out;
+
+  &:hover { text-decoration: none; }
+  &:focus { outline: 0; box-shadow: 0 0 0 .2rem rgba(0,123,255,.25); }
+  &:not(:disabled):not(.disabled) { cursor: pointer; }
+}
+
+/* Generic .btn */
+.btn {
+  font-size: 1.375rem;
+  font-family: 'Libertinus Sans', serif;
+  text-transform: capitalize;
+  padding: 1rem 2.75rem;
+  border-radius: 5px;
   font-weight: 600;
   border: 0;
-  border-radius: 5px;
-  transition: 0.2s ease;
-}
+  position: relative;
+  z-index: 1;
+  transition: .2s ease;
+  letter-spacing: 1px;
 
-.btn-primary:hover {
-  opacity: 0.85;
-}
+  &:focus { outline: 0; box-shadow: none !important; }
+  &:active { box-shadow: none; }
 
-/* =========================
-   Footer & social icons
-========================= */
-.footer-bg {
-  a {
+  &-sm {
+    font-size: 0.9375rem;
+    padding: 0.625rem 1.875rem;
+    @include tablet { font-size: 1.2rem; }
+    @include mobile { font-size: 1.5rem; }
+  }
+
+  &-xs {
+    padding: 0.3125rem 0.625rem;
+    font-size: 0.9375rem;
+  }
+
+  &-primary {
+    background: var(--primary-color);
     color: #fff;
-    &:hover { color: #ffd700; }
+
+    &:hover, &.active, &:active { background: var(--primary-color) !important; }
+    &.focus, &.active { box-shadow: none !important; }
   }
 
-  .newsletter-form input {
-    border-radius: 0.25rem;
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-  }
+  &-transparent {
+    background: transparent;
+    color: var(--primary-color);
+    font-weight: 700;
+    @include mobile { font-size: 1.7rem; }
 
-  .newsletter-form button {
-    border-radius: 0.25rem;
-    padding: 0.5rem 1rem;
+    &:active, &:hover { color: var(--primary-color); }
+  }
+}
+
+/* Footer, newsletter, social icons */
+.footer-bg {
+  a { color: #fff; &:hover { color: #ffd700; } }
+
+  .newsletter-form {
+    input { border-radius: 0.25rem; border: 1px solid #ccc; padding: 0.5rem; }
+    button { border-radius: 0.25rem; padding: 0.5rem 1rem; }
   }
 
   .social-icons-home a {
@@ -112,16 +202,29 @@ a:hover {
   color: #ccc;
 }
 
-/* =========================
-   Hero area
-========================= */
-.hero-area {
-  height: 100vh;
-  background-image: url($hero_img);
-  background-size: cover;
-  background-position: bottom;
-  position: relative;
+/* Navigation */
+.navigation {
+  padding: 2.5rem 8.125rem;
+  transition: .3s ease;
+
+  &.nav-bg {
+    background-color: var(--primary-color);
+    padding: 0.9375rem 6.25rem;
+  }
 }
+
+.navbar .nav-item .nav-link {
+  font-family: 'Libertinus Sans' !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.9375rem;
+}
+.navbar .nav-item.active .nav-link { color: #fff017; }
+.navbar-dark .navbar-nav .nav-link { color: #fff; }
+
+/* Homepage utilities */
+.homepage-abt-txt { font-size: 1.4rem; @include mobile { font-size: 1.7rem; } }
+.homepage-story-map { margin-bottom: 1.8rem; width: 700px; height: 550px; @include mobile { height: 400px; } }
 
 .main-title {
   display: grid;
@@ -134,6 +237,8 @@ a:hover {
   align-content: center;
 }
 
+.main-circle { grid-column: 1/-1; }
+
 .tagline-circle {
   border-radius: 8px;
   background: var(--primary-color);
@@ -144,11 +249,70 @@ a:hover {
   font-weight: 800;
   line-height: 2.6rem;
   letter-spacing: 1px;
+
+  &::before {
+    content: "";
+    background-color: #fff;
+    height: 120%;
+    width: 45%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-radius: 50%;
+    background-image: url($transparent_logo);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center 33%;
+    transform: translate(60%, -50%);
+  }
 }
 
-/* =========================
-   Embedded Spotify playlist
-========================= */
+/* Social icon shape used in header & footer */
+.social-icons-home {
+  position: relative;
+
+  a {
+    line-height: 3.4375rem;
+    border-radius: 50%;
+    display: block;
+    font-size: 1.125rem;
+    text-align: center;
+    height: 3.125rem;
+    width: 3.4375rem;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 3.4rem;
+      width: 3.4rem;
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -23;
+      top: 50%;
+      left: 0;
+      transform: translate(2%, -50%);
+    }
+
+    &::before { background-color: var(--primary-color); box-shadow: 0 18px 39.1px 6.9px rgba(224, 241, 255, 0.34); }
+    &::after { height: 2.5rem; width: 2.5rem; transform: translate(21%, -50%); background-color: #fff; }
+  }
+}
+
+/* Hero */
+.hero-area {
+  height: 100vh;
+  background-image: url($hero_img);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+/* Archive / gallery helpers remain untouched here - add separate file if needed */
+
+/* Spotify embed */
 .resources-spotify iframe {
   max-width: 660px;
   width: 100%;
@@ -157,3 +321,7 @@ a:hover {
   height: 380px;
 }
 
+/* Link hover fix: safe, no SASS color function on CSS var */
+a:hover {
+  opacity: 0.9;
+}
