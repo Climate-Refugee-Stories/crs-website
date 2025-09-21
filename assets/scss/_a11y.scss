@@ -1,10 +1,16 @@
 /* assets/scss/_a11y.scss */
-:root { --a11y-font-scale: 1; }
+:root { 
+  --a11y-font-scale: 1; 
+}
 
-/* Scale all typography without wrecking layout */
-html { font-size: calc(16px * var(--a11y-font-scale)); }
+/* Scale all typography without breaking layout */
+html { 
+  font-size: calc(16px * var(--a11y-font-scale)); 
+}
 
-/* Toolbar styles (fixed bottom-left) */
+/* =========================
+   Accessibility Toolbar
+========================= */
 #a11y-toolbar.a11y-toolbar {
   position: fixed;
   left: 1rem;
@@ -18,6 +24,7 @@ html { font-size: calc(16px * var(--a11y-font-scale)); }
   padding: .5rem;
   backdrop-filter: saturate(120%) blur(3px);
 }
+
 #a11y-toolbar .a11y-btn {
   border: 0;
   border-radius: .4rem;
@@ -31,21 +38,42 @@ html { font-size: calc(16px * var(--a11y-font-scale)); }
 #a11y-toolbar .a11y-reset { background: #C01818; }
 #a11y-toolbar .a11y-reset:hover { background: #a01616; }
 
-/* Effects */
-.a11y-grayscale { filter: grayscale(100%); }
-.a11y-high-contrast {
+/* =========================
+   Accessibility Modes
+   (Default = normal)
+========================= */
+
+/* Grayscale */
+body.a11y-grayscale { filter: grayscale(100%); }
+
+/* High Contrast */
+body.a11y-high {
   background: #000 !important;
   color: #fff !important;
 }
-.a11y-high-contrast * { color: #fff !important; background-color: transparent !important; }
+body.a11y-high * { 
+  color: #fff !important; 
+  background-color: transparent !important; 
+}
 
-.a11y-negative-contrast { filter: invert(100%) contrast(120%); }
-.a11y-light-bg { background: #fff !important; color: #000 !important; }
-.a11y-light-bg * { color: #000 !important; }
+/* Negative Contrast */
+body.a11y-negative { filter: invert(100%) contrast(120%); }
 
-.a11y-underline-links a, .a11y-underline-links a * { text-decoration: underline !important; }
+/* Light Background */
+body.a11y-light {
+  background: #fff !important;
+  color: #000 !important;
+}
+body.a11y-light * { color: #000 !important; }
 
-/* Swap to a highly readable system font stack */
-.a11y-readable-font, .a11y-readable-font * {
+/* Underline Links */
+body.a11y-underline a, 
+body.a11y-underline a * { 
+  text-decoration: underline !important; 
+}
+
+/* Readable Font */
+body.a11y-readable, 
+body.a11y-readable * {
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Arial, Helvetica, sans-serif !important;
 }
