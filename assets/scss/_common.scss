@@ -1,9 +1,8 @@
 // ===============================
-// Updated _common.scss zbates 2025
+// _common.scss - merged & updated
 // ===============================
 
-
-/* Base body */
+// Base body
 body {
   background-color: #ffffff;
   color: #212529;
@@ -12,12 +11,12 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Image / content helpers */
+// ===============================
+// Image / content helpers
+// ===============================
 .main-blog-image {
   @include normal-image-processing;
-  img {
-    max-height: 700px;
-  }
+  img { max-height: 700px; }
 }
 
 .content {
@@ -38,7 +37,9 @@ body {
   }
 }
 
-/* Section background helpers */
+// ===============================
+// Section background helpers
+// ===============================
 .bg-shape- {
   &stories { background: rgb(0, 129, 180); }
   &archive { background: rgb(3, 163, 169); }
@@ -47,7 +48,9 @@ body {
   &about { background: rgb(30, 75, 160); }
 }
 
-/* Section */
+// ===============================
+// Sections
+// ===============================
 .section {
   padding: 5rem 0;
 
@@ -59,27 +62,18 @@ body {
   }
 }
 
-/* Hover utilities */
+// ===============================
+// Hover utilities
+// ===============================
 .hover-shadow {
   transition: .2s ease;
-
-  &:hover {
-    box-shadow: 0 1.125rem 2.5rem 0.5rem rgba(224, 241, 255, .54) !important;
-  }
+  &:hover { box-shadow: 0 1.125rem 2.5rem 0.5rem rgba(224, 241, 255, .54) !important; }
 }
 
 .hover-wrapper {
   overflow: hidden;
-
-  & img {
-    transition: .3s ease;
-    transform: scale(1.1);
-  }
-
-  &:hover {
-    & img { transform: scale(1); }
-    & .hover-overlay { opacity: 1; visibility: visible; }
-  }
+  & img { transition: .3s ease; transform: scale(1.1); }
+  &:hover { & img { transform: scale(1); } & .hover-overlay { opacity: 1; visibility: visible; } }
 }
 
 .hover-overlay {
@@ -104,7 +98,9 @@ body {
   text-align: center;
 }
 
-/* Buttons */
+// ===============================
+// Buttons
+// ===============================
 .btn-alt {
   display: inline-block;
   font-weight: 400;
@@ -122,7 +118,6 @@ body {
   &:not(:disabled):not(.disabled) { cursor: pointer; }
 }
 
-/* Generic .btn */
 .btn {
   font-size: 1.375rem;
   font-family: 'Libertinus Sans', serif;
@@ -154,8 +149,7 @@ body {
   &-primary {
     background: var(--primary-color);
     color: #fff;
-
-    &:hover, &.active, &:active { background: var(--primary-color) !important; }
+    &:hover, &:active, &.active { background: var(--primary-color) !important; }
     &.focus, &.active { box-shadow: none !important; }
   }
 
@@ -164,12 +158,13 @@ body {
     color: var(--primary-color);
     font-weight: 700;
     @include mobile { font-size: 1.7rem; }
-
-    &:active, &:hover { color: var(--primary-color); }
+    &:hover, &:active { color: var(--primary-color); }
   }
 }
 
-/* Footer, newsletter, social icons */
+// ===============================
+// Footer
+// ===============================
 .footer-bg {
   a { color: #fff; &:hover { color: #ffd700; } }
 
@@ -202,15 +197,14 @@ body {
   color: #ccc;
 }
 
-/* Navigation */
+// ===============================
+// Navigation
+// ===============================
 .navigation {
   padding: 2.5rem 8.125rem;
   transition: .3s ease;
 
-  &.nav-bg {
-    background-color: var(--primary-color);
-    padding: 0.9375rem 6.25rem;
-  }
+  &.nav-bg { background-color: var(--primary-color); padding: 0.9375rem 6.25rem; }
 }
 
 .navbar .nav-item .nav-link {
@@ -222,10 +216,9 @@ body {
 .navbar .nav-item.active .nav-link { color: #fff017; }
 .navbar-dark .navbar-nav .nav-link { color: #fff; }
 
-/* Homepage utilities */
-.homepage-abt-txt { font-size: 1.4rem; @include mobile { font-size: 1.7rem; } }
-.homepage-story-map { margin-bottom: 1.8rem; width: 700px; height: 550px; @include mobile { height: 400px; } }
-
+// ===============================
+// Homepage hero / title
+// ===============================
 .main-title {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -241,27 +234,15 @@ body {
 
 .tagline-circle {
   border-radius: 8px;
-  background: $primary-color;
+  background: var(--primary-color);
   padding: 3% 18% 3% 3%;
   position: relative;
   font-size: 2.1875rem;
   font-family: 'Libertinus Sans' !important;
-  font-weight: inherit;
+  font-weight: 800;
   line-height: 2.6rem;
   letter-spacing: 1px;
-  text-align: left; // keep text aligned nicely inside the circle
 
-  // Subtitle styling
-  .subtitle {
-    display: block;
-    font-weight: 400;
-    font-size: 1.25rem;  // smaller than main line
-    line-height: 1.5;
-    margin-top: 0.3rem;
-    color: #ffffff;
-  }
-
-  // Circle logo / decorative pseudo
   &::before {
     content: "";
     background-color: #fff;
@@ -275,64 +256,25 @@ body {
     background-image: url($transparent_logo);
     background-size: 70%;
     background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 33%;
+    background-position: center 33%;
     transform: translate(60%, -50%);
   }
-
-  // Responsive adjustments
-  @include tablet {
-    font-size: 1.8rem;
-    .subtitle {
-      font-size: 1.1rem;
-    }
-  }
-
-  @include mobile {
-    font-size: 1.5rem;
-    padding: 3% 12% 3% 3%;
-    .subtitle {
-      font-size: 1rem;
-    }
-  }
 }
 
+// Subtitle under main title
+.hero-subtitle {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  text-align: center;
+  @include mobile { font-size: 1.2rem; }
 }
 
-/* Social icon shape used in header & footer */
-.social-icons-home {
-  position: relative;
-
-  a {
-    line-height: 3.4375rem;
-    border-radius: 50%;
-    display: block;
-    font-size: 1.125rem;
-    text-align: center;
-    height: 3.125rem;
-    width: 3.4375rem;
-    position: relative;
-
-    &::before,
-    &::after {
-      content: "";
-      height: 3.4rem;
-      width: 3.4rem;
-      display: block;
-      border-radius: 50%;
-      position: absolute;
-      z-index: -23;
-      top: 50%;
-      left: 0;
-      transform: translate(2%, -50%);
-    }
-
-    &::before { background-color: var(--primary-color); box-shadow: 0 18px 39.1px 6.9px rgba(224, 241, 255, 0.34); }
-    &::after { height: 2.5rem; width: 2.5rem; transform: translate(21%, -50%); background-color: #fff; }
-  }
-}
-
-/* Hero */
+// ===============================
+// Hero area
+// ===============================
 .hero-area {
   height: 100vh;
   background-image: url($hero_img);
@@ -341,9 +283,9 @@ body {
   position: relative;
 }
 
-/* Archive / gallery helpers remain untouched here - add separate file if needed */
-
-/* Spotify embed */
+// ===============================
+// Misc helpers
+// ===============================
 .resources-spotify iframe {
   max-width: 660px;
   width: 100%;
@@ -352,7 +294,4 @@ body {
   height: 380px;
 }
 
-/* Link hover fix: safe, no SASS color function on CSS var */
-a:hover {
-  opacity: 0.9;
-}
+a:hover { opacity: 0.9; }
