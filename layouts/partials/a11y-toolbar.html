@@ -1,15 +1,29 @@
+<!-- Floating Accessibility + Language Toolbar -->
 <div id="a11y-toolbar-wrapper" style="position: fixed; bottom: 1rem; right: 1rem; z-index: 9999;">
-  <button id="a11y-toggle" class="btn btn-sm" style="background-color: var(--primary-color); color: #fff;">Accessibility Tools</button>
-  <div id="a11y-toolbar" class="a11y-toolbar" style="display:none; margin-top:0.5rem; background:#022D62; padding:0.5rem; border-radius:5px;">
-    <button type="button" class="a11y-btn" data-a11y="font-inc" aria-label="Increase Text">A+</button>
-    <button type="button" class="a11y-btn" data-a11y="font-dec" aria-label="Decrease Text">A−</button>
-    <button type="button" class="a11y-btn" data-a11y="grayscale" aria-label="Grayscale">⬛︎⟡</button>
-    <button type="button" class="a11y-btn" data-a11y="high" aria-label="High Contrast">HC</button>
-    <button type="button" class="a11y-btn" data-a11y="negative" aria-label="Negative Contrast">NC</button>
-    <button type="button" class="a11y-btn" data-a11y="light" aria-label="Light Background">LB</button>
-    <button type="button" class="a11y-btn" data-a11y="underline" aria-label="Underline Links">U</button>
-    <button type="button" class="a11y-btn" data-a11y="readable" aria-label="Readable Font">RF</button>
-    <button type="button" class="a11y-btn a11y-reset" data-a11y="reset" aria-label="Reset">Reset</button>
+  <button id="a11y-toggle" class="btn btn-sm" style="background-color: var(--primary-color); color: #fff;">
+    Accessibility & Language
+  </button>
+  <div id="a11y-toolbar" class="a11y-toolbar" style="display:none; flex-direction: column; margin-top:0.5rem; background:#022D62; padding:0.5rem; border-radius:5px;">
+    
+    <!-- Accessibility Buttons -->
+    <div style="display:flex; flex-wrap: wrap; gap: 0.25rem; margin-bottom:0.5rem;">
+      <button type="button" class="a11y-btn" data-a11y="font-inc" aria-label="Increase Text">A+</button>
+      <button type="button" class="a11y-btn" data-a11y="font-dec" aria-label="Decrease Text">A−</button>
+      <button type="button" class="a11y-btn" data-a11y="grayscale" aria-label="Grayscale">⬛︎⟡</button>
+      <button type="button" class="a11y-btn" data-a11y="high" aria-label="High Contrast">HC</button>
+      <button type="button" class="a11y-btn" data-a11y="negative" aria-label="Negative Contrast">NC</button>
+      <button type="button" class="a11y-btn" data-a11y="light" aria-label="Light Background">LB</button>
+      <button type="button" class="a11y-btn" data-a11y="underline" aria-label="Underline Links">U</button>
+      <button type="button" class="a11y-btn" data-a11y="readable" aria-label="Readable Font">RF</button>
+      <button type="button" class="a11y-btn a11y-reset" data-a11y="reset" aria-label="Reset">Reset</button>
+    </div>
+
+    <!-- Language Toggle -->
+    <div style="margin-top:0.5rem; display:flex; justify-content:center; gap:0.5rem;">
+      <a href="/en/" class="btn btn-sm btn-light">EN</a>
+      <a href="/es/" class="btn btn-sm btn-light">ES</a>
+    </div>
+
   </div>
 </div>
 
@@ -18,7 +32,5 @@
   const toolbar = document.getElementById('a11y-toolbar');
   toggleBtn.addEventListener('click', () => {
     toolbar.style.display = toolbar.style.display === 'none' ? 'flex' : 'none';
-    toolbar.style.flexDirection = 'row';
-    toolbar.style.gap = '0.25rem';
   });
 </script>
