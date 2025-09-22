@@ -1,124 +1,147 @@
 {{ define "main" }}
 
-{{ with .Params }}
+  {{ with .Params }}
+  <!-- Hero Area -->
+  {{ with .banner }}
+  <section class="hero-area">
+    <div class="main-title">
+      <div class="container main-circle">
+        <div class="row align-items-center justify-content-center">
+          <div class="row align-items-start col-lg-8 tagline-circle-div">
+            <h3 class="text-white text-center home-tagline tagline-circle">{{ .title | safeHTML }}</h3>
+          </div>
+        </div>
+      </div>
 
-<!-- Hero Area -->
-{{ with .banner }}
-<section class="hero-area">
-  <div class="main-title">
-    <div class="container main-circle">
-      <div class="row align-items-center justify-content-center">
-        <div class="row align-items-start col-lg-8 tagline-circle-div">
-          <h3 class="text-white text-center home-tagline tagline-circle">{{ .title | safeHTML }}</h3>
+      <!-- Social Icons -->
+      <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+        {{ with (site.GetPage `/contact`).Params.socials }}
+        {{ range . }}
+        <li class="mb-3 social-icons-home">
+          <a class="text-primary" href="{{.URL | safeURL }}" target="_blank">
+            <i class="{{.icon}}"></i>
+          </a>
+        </li>
+        {{ end }}
+        {{ end }}
+      </ul>
+      <!-- /Social Icons  -->
+    </div>
+  </section>
+  {{ end }}
+  <!-- /Hero Area -->
+
+  {{ with .about }}
+  <!-- Intro Paragraph -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <p class="homepage-abt-txt">{{.content | markdownify}}</p>
+          {{ with .button }}
+          {{ if .enable }}
+          <br/>
+          <a href="{{ .URL | absURL }}" class="btn btn-sm btn-primary">{{.label}}</a>
+          {{ end }}
+          {{ end }}
         </div>
       </div>
     </div>
+  </section>
+  {{ end }}
+  <!-- /Intro Paragraph -->
 
-    <!-- Social Icons -->
-    <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-      {{ with (site.GetPage `/contact`).Params.socials }}
-        {{ range . }}
-          <li class="mb-3 social-icons-home">
-            <a class="text-primary" href="{{.URL | safeURL }}" target="_blank">
-              <i class="{{.icon}}"></i>
-            </a>
-          </li>
-        {{ end }}
-      {{ end }}
-    </ul>
-    <!-- /Social Icons  -->
-  </div>
-</section>
-{{ end }}
-<!-- /Hero Area -->
-
-<!-- About Section -->
-{{ with .about }}
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <p class="homepage-abt-txt">{{.content | markdownify}}</p>
-        {{ with .button }}
-          {{ if .enable }}
-            <br/>
-            <a href="{{ .URL | absURL }}" class="btn btn-sm btn-primary">{{.label}}</a>
-          {{ end }}
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-<!-- /About Section -->
-
-<!-- Stories Section -->
+ <!-- Removed story map on homepage Stories
 {{ with .stories }}
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">{{ .title }}</h2>
-        <p class="lead">{{ .description | markdownify }}</p>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{ .title }}</h2>
+        </div>
+          <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="CRS Home Page" class="col-12 text-center homepage-story-map"
+          src="{{ .map }}"></iframe>
+        {{ range first 3 (where site.RegularPages "Section" "stories")}}
+        {{ .Render "post" }}
+        {{ end }}
       </div>
     </div>
-  </div>
-</section>
-{{ end }}
+  </section>
+  /Stories 
+  {{ end }}
+  -->
 
-<!-- Archive Section -->
-{{ with .archive }}
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">{{ .title }}</h2>
+
+<!-- Stories -->
+  {{ with .stories }}
+ 
+  <!-- Stories Section (Text Only) -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{ .title }}</h2>
+          <p class="lead">{{ .description | markdownify }}</p>
+       </div>
       </div>
-      <!-- Uncomment if you want archive item previews
+      <!-- /Stories -->
+
+      
+  <!-- Archive -->
+  {{ with .archive }}
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{ .title }}</h2>
+        </div>
+      </div>
+      <!-- Remove the previous archive preview
       <div class="row shuffle-wrapper">
         {{ range first .item_show (where site.RegularPages "Section" "archive") }}
-          <div class="col-lg-4 col-6 mb-4 shuffle-item">
-            <div class="position-relative rounded hover-wrapper">
-              <img src="https://photos.smugmug.com/photos/{{ .Params.thumbnail }}/0/S/{{  .Params.thumbnail }}-S.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-              <div class="hover-overlay">
-                <div class="hover-content">
-                  <a class="btn btn-light btn-sm" href="{{ .Permalink | safeURL }}">Learn More</a>
-                </div>
+        <div class="col-lg-4 col-6 mb-4 shuffle-item">
+          <div class="position-relative rounded hover-wrapper">
+            <img src="https://photos.smugmug.com/photos/{{ .Params.thumbnail }}/0/S/{{  .Params.thumbnail }}-S.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+            <div class="hover-overlay">
+              <div class="hover-content">
+                <a class="btn btn-light btn-sm" href="{{ .Permalink | safeURL }}">Learn More</a>
               </div>
             </div>
           </div>
-        {{ end }}
-      </div>
-      -->
-    </div>
-  </div>
-</section>
-{{ end }}
-
-<!-- Resources Section -->
-{{ with .resources }}
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">{{ .title }}</h2>
-
-        <!-- Spotify Playlist Embed -->
-        <div class="resources-spotify mt-4">
-          <h3 class="section-title">Featured Playlist</h3>
-          <div class="spotify-responsive">
-            <iframe 
-              src="https://open.spotify.com/embed/playlist/78PUJJfxUPSQQJSyh9CTGZ?utm_source=generator&theme=0" 
-              frameborder="0" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
-          </div>
         </div>
+        {{ end }}
+      -->
+      </div>
+    </div>
+  </section>
+  <!-- /Archive -->
+  {{ end }}
 
-        <!-- Optional resources cards -->
+  {{ with .resources }}
+  <!-- Resources -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">{{ .title }}</h2>
+               <!-- Spotify Playlist Embed -->
+      <div class="resources-spotify mt-4">
+        <h3 class="section-title">Featured Playlist</h3>
+        <div class="spotify-responsive">
+  <iframe 
+    src="https://open.spotify.com/embed/playlist/78PUJJfxUPSQQJSyh9CTGZ?utm_source=generator&theme=0" 
+    frameborder="0" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+        </div>
+        <!-- remove the previous resources layout
         {{ range .item }}
-        <div class="col-md-4 mb-4 d-inline-block">
+        <div class="col-md-4 mb-4">
           <a class="text-primary" href="{{ .URL | relURL }}">
             <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
               <div class="card-body text-center px-4 py-5">
@@ -130,23 +153,21 @@
           </a>
         </div>
         {{ end }}
-
-        <!-- Resources button -->
-        {{ with .button }}
+        -->
+        <div class="col-12 text-center">
+          {{ with .button }}
           {{ if .enable }}
-            <div class="mt-3">
-              <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
-            </div>
+            <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
           {{ end }}
-        {{ end }}
-
+          {{ end }}
+        </div>
       </div>
     </div>
-  </div>
-</section>
-{{ end }}
+  </section>
+  <!-- /Resources -->
+  {{ end }}
 
-<!-- Partners Section -->
+  <!-- Partners -->
 {{ with (site.GetPage `/about`).Params.partners }}
 {{ if .enable }}
 <section class="section">
@@ -168,6 +189,7 @@
 </section>
 {{ end }}
 {{ end }}
+<!-- /Partners -->
 
 <!-- Twitter Feed -->
 <section class="section">
@@ -177,12 +199,15 @@
         <a class="twitter-timeline" data-height="500" data-tweet-limit="3" href="https://twitter.com/ClimRefStories?ref_src=twsrc%5Etfw">
           Tweets by ClimRefStories
         </a> 
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
     </div>
   </div>
 </section>
+<!-- /Twitter Feed -->
 
-{{ end }} <!-- /with .Params -->
+<!-- Ending with .Params -->
+{{ end }}
 
-{{ end }} <!-- /define main -->
+<!-- Ending main section definition -->
+{{ end }}
