@@ -1,10 +1,11 @@
 <!-- Floating Accessibility + Language Toolbar -->
 <div id="a11y-toolbar-wrapper" style="position: fixed; bottom: 1rem; right: 1rem; z-index: 9999;">
   <button id="a11y-toggle" class="btn btn-sm" style="background-color: var(--primary-color); color: #fff;">
-    Accessibility & Language
+    ☰
   </button>
-  <div id="a11y-toolbar" class="a11y-toolbar" style="display:none; flex-direction: column; margin-top:0.5rem; background:#022D62; padding:0.5rem; border-radius:5px;">
-    
+
+  <div id="a11y-toolbar" class="a11y-toolbar" style="display:none; flex-direction: column; margin-top:0.5rem; background:#022D62; padding:0.5rem; border-radius:5px; box-shadow:0 2px 6px rgba(0,0,0,0.3);">
+
     <!-- Accessibility Buttons -->
     <div style="display:flex; flex-wrap: wrap; gap: 0.25rem; margin-bottom:0.5rem;">
       <button type="button" class="a11y-btn" data-a11y="font-inc" aria-label="Increase Text">A+</button>
@@ -19,7 +20,7 @@
     </div>
 
     <!-- Language Toggle -->
-    <div style="margin-top:0.5rem; display:flex; justify-content:center; gap:0.5rem;">
+    <div style="display:flex; justify-content:center; gap:0.5rem;">
       <a href="/en/" class="btn btn-sm btn-light">EN</a>
       <a href="/es/" class="btn btn-sm btn-light">ES</a>
     </div>
@@ -30,6 +31,7 @@
 <script>
   const toggleBtn = document.getElementById('a11y-toggle');
   const toolbar = document.getElementById('a11y-toolbar');
+
   toggleBtn.addEventListener('click', () => {
     toolbar.style.display = toolbar.style.display === 'none' ? 'flex' : 'none';
   });
