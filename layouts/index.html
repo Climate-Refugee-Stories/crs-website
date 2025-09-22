@@ -1,6 +1,7 @@
 {{ define "main" }}
 
-  {{ with .Params }}
+{{ with .Params }}
+
   <!-- Hero Area -->
   {{ with .banner }}
   <section class="hero-area">
@@ -18,76 +19,55 @@
         {{ with (site.GetPage `/contact`).Params.socials }}
         {{ range . }}
         <li class="mb-3 social-icons-home">
-          <a class="text-primary" href="{{.URL | safeURL }}" target="_blank">
-            <i class="{{.icon}}"></i>
+          <a class="text-primary" href="{{ .URL | safeURL }}" target="_blank">
+            <i class="{{ .icon }}"></i>
           </a>
         </li>
         {{ end }}
         {{ end }}
       </ul>
-      <!-- /Social Icons  -->
+      <!-- /Social Icons -->
     </div>
   </section>
   {{ end }}
   <!-- /Hero Area -->
 
+  <!-- About Section -->
   {{ with .about }}
-  <!-- Intro Paragraph -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto text-center">
-          <p class="homepage-abt-txt">{{.content | markdownify}}</p>
+          <p class="homepage-abt-txt">{{ .content | markdownify }}</p>
           {{ with .button }}
-          {{ if .enable }}
-          <br/>
-          <a href="{{ .URL | absURL }}" class="btn btn-sm btn-primary">{{.label}}</a>
-          {{ end }}
+            {{ if .enable }}
+            <br/>
+            <a href="{{ .URL | absURL }}" class="btn btn-sm btn-primary">{{ .label }}</a>
+            {{ end }}
           {{ end }}
         </div>
       </div>
     </div>
   </section>
   {{ end }}
-  <!-- /Intro Paragraph -->
+  <!-- /About -->
 
- <!-- Removed story map on homepage Stories
-{{ with .stories }}
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">{{ .title }}</h2>
-        </div>
-          <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="CRS Home Page" class="col-12 text-center homepage-story-map"
-          src="{{ .map }}"></iframe>
-        {{ range first 3 (where site.RegularPages "Section" "stories")}}
-        {{ .Render "post" }}
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  /Stories 
-  {{ end }}
-  -->
-
-
-<!-- Stories -->
+  <!-- Stories Section -->
   {{ with .stories }}
- 
-  <!-- Stories Section (Text Only) -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
           <h2 class="section-title">{{ .title }}</h2>
           <p class="lead">{{ .description | markdownify }}</p>
-       </div>
+        </div>
       </div>
-      <!-- /Stories -->
+    </div>
+  </section>
+  {{ end }}
+  <!-- /Stories -->
 
-      
-  <!-- Archive -->
+  <!-- Archive Section -->
   {{ with .archive }}
   <section class="section">
     <div class="container">
@@ -96,12 +76,12 @@
           <h2 class="section-title">{{ .title }}</h2>
         </div>
       </div>
-      <!-- Remove the previous archive preview
+
       <div class="row shuffle-wrapper">
         {{ range first .item_show (where site.RegularPages "Section" "archive") }}
         <div class="col-lg-4 col-6 mb-4 shuffle-item">
           <div class="position-relative rounded hover-wrapper">
-            <img src="https://photos.smugmug.com/photos/{{ .Params.thumbnail }}/0/S/{{  .Params.thumbnail }}-S.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+            <img src="https://photos.smugmug.com/photos/{{ .Params.thumbnail }}/0/S/{{ .Params.thumbnail }}-S.png" alt="archive-image" class="img-fluid rounded w-100 d-block">
             <div class="hover-overlay">
               <div class="hover-content">
                 <a class="btn btn-light btn-sm" href="{{ .Permalink | safeURL }}">Learn More</a>
@@ -110,104 +90,93 @@
           </div>
         </div>
         {{ end }}
-      -->
       </div>
+
+      {{ with .button }}
+        {{ if .enable }}
+        <div class="col-12 text-center mt-3">
+          <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{ .label }}</a>
+        </div>
+        {{ end }}
+      {{ end }}
     </div>
   </section>
-  <!-- /Archive -->
   {{ end }}
+  <!-- /Archive -->
 
+  <!-- Resources Section -->
   {{ with .resources }}
-  <!-- Resources -->
   <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
           <h2 class="section-title">{{ .title }}</h2>
-               <!-- Spotify Playlist Embed -->
-      <div class="resources-spotify mt-4">
-        <h3 class="section-title">Featured Playlist</h3>
-        <div class="spotify-responsive">
-  <iframe 
-    src="https://open.spotify.com/embed/playlist/78PUJJfxUPSQQJSyh9CTGZ?utm_source=generator&theme=0" 
-    frameborder="0" 
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-    allowfullscreen>
-  </iframe>
+
+          <div class="resources-spotify mt-4">
+            <h3 class="section-title">Featured Playlist</h3>
+            <div class="spotify-responsive">
+              <iframe 
+                src="https://open.spotify.com/embed/playlist/78PUJJfxUPSQQJSyh9CTGZ?utm_source=generator&theme=0" 
+                frameborder="0" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          {{ with .button }}
+            {{ if .enable }}
+            <div class="col-12 text-center mt-3">
+              <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{ .label }}</a>
+            </div>
+            {{ end }}
+          {{ end }}
+        </div>
       </div>
     </div>
   </section>
   {{ end }}
+  <!-- /Resources -->
+
+  <!-- Partners Section -->
+  {{ with (site.GetPage `/about`).Params.partners }}
+  {{ if .enable }}
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">{{ .title }}</h2>
+          <p>{{ .about | markdownify }}</p>
         </div>
-        <!-- remove the previous resources layout
         {{ range .item }}
-        <div class="col-md-4 mb-4">
-          <a class="text-primary" href="{{ .URL | relURL }}">
-            <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
-              <div class="card-body text-center px-4 py-5">
-                <i class="{{.icon }} icon mb-5 d-inline-block"></i>
-                <h4 class="mb-4">{{.title}}</h4>
-                <p>{{.content | markdownify}}</p>
-              </div>
-            </div>
+        <div class="col-lg-3 col-md-4 hover-shadow pt-3 d-flex justify-content-center align-items-center">
+          <a href="{{ .link }}">
+            <img src="https://photos.smugmug.com/photos/{{ .logo }}/0/O/{{ .logo }}-O.png" class="img-fluid mb-4" alt="partner logo">
           </a>
         </div>
         {{ end }}
-        -->
-        <div class="col-12 text-center">
-          {{ with .button }}
-          {{ if .enable }}
-            <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
-          {{ end }}
-          {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+  <!-- /Partners -->
+
+  <!-- Twitter Feed -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-lg-7 text-center">
+          <a class="twitter-timeline" data-height="500" data-tweet-limit="3" href="https://twitter.com/ClimRefStories?ref_src=twsrc%5Etfw">
+            Tweets by ClimRefStories
+          </a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </div>
     </div>
   </section>
-  <!-- /Resources -->
-  {{ end }}
+  <!-- /Twitter Feed -->
 
-  <!-- Partners -->
-{{ with (site.GetPage `/about`).Params.partners }}
-{{ if .enable }}
-<section class="section">
-  <div class="container">
-    <div class="row justify-content-around">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-title">{{ .title }}</h2>
-        <p>{{ .about | markdownify }}</p>
-      </div>
-      {{ range .item }}
-      <div class="col-lg-3 col-md-4 hover-shadow pt-3 d-flex justify-content-center align-items-center">
-        <a href="{{ .link }}">
-          <img src="https://photos.smugmug.com/photos/{{ .logo }}/0/O/{{ .logo }}-O.png" class="img-fluid mb-4" alt="partner logo">
-        </a>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /Partners -->
-
-<!-- Twitter Feed -->
-<section class="section">
-  <div class="container">
-    <div class="row justify-content-around">
-      <div class="col-lg-7 text-center">
-        <a class="twitter-timeline" data-height="500" data-tweet-limit="3" href="https://twitter.com/ClimRefStories?ref_src=twsrc%5Etfw">
-          Tweets by ClimRefStories
-        </a> 
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-    </div>
-  </div>
-</section>
-<!-- /Twitter Feed -->
-
-<!-- Ending with .Params -->
 {{ end }}
 
-<!-- Ending main section definition -->
 {{ end }}
