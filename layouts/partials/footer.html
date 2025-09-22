@@ -1,89 +1,46 @@
-<!-- Footer -->
 <footer class="site-footer">
-  <!-- Background wrapper -->
-  <div class="footer-bg" style="background-color: var(--primary-color); color: #fff;">
-    <div class="container py-5">
-      <div class="row">
+  <div class="container">
+    <div class="row">
+      <!-- Logo & mission -->
+      <div class="col-md-4 mb-4 text-center text-md-left">
+        <img src="/images/logo.png" alt="Logo" class="footer-logo mb-3">
+        <p>Building resilience and equity through science, education, and action.</p>
+      </div>
 
-        <!-- Left section -->
-        <div class="col-md-4 mb-4 text-center text-md-left">
-          <img src="i-GmLbXK9/A" alt="Smug Mug Logo" class="footer-logo mb-3" style="max-width:150px;">
-          <p>A public history project narrating the fight for climate justice.</p>
-        </div>
+      <!-- Quick links -->
+      <div class="col-md-4 mb-4 text-center text-md-left">
+        <h5>Our Work</h5>
+        <ul class="footer-links">
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/stories">Stories</a></li>
+          <li><a href="/about">About Us</a></li>
+        </ul>
+      </div>
 
-        <!-- Middle section -->
-        <div class="col-md-4 mb-4 text-center text-md-left">
-          <h5>Our Work</h5>
-          <ul class="list-unstyled">
-            <li><a href="/archive/">Archive</a></li>
-            <li><a href="/stories/">Stories</a></li>
-            <li><a href="/resources/">Resources</a></li>
-          </ul>
-        </div>
-
-       <!-- Right section -->
-<div class="col-md-4 mb-4 text-center text-md-left">
-  <h5>Connect with Us</h5>
-  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-    {{ with (site.GetPage `/contact`).Params.socials }}
-      {{ range . }}
-        <li class="mb-3 social-icons-home">
-          <a href="{{ .URL | safeURL }}" target="_blank">
-            <i class="{{ .icon }}"></i>
-          </a>
-        </li>
-      {{ end }}
-    {{ end }}
-  </ul>
-  <form class="newsletter-form d-flex">
-    <input type="email" placeholder="Email address" required class="form-control mr-2">
-    <button type="submit" class="btn btn-primary">Subscribe</button>
-  </form>
-</div>
-
-      {{ end }}
-    {{ end }}
-  </ul>
-  <form class="newsletter-form d-flex">
-    <input type="email" placeholder="Email address" required class="form-control mr-2">
-    <button type="submit" class="btn btn-primary">Subscribe</button>
-  </form>
-</div>
-
-    <!-- Bottom strip -->
-    <div class="footer-bottom text-center py-3" style="background: #011a3d;">
-      <p class="mb-0">&copy; {{ now.Format "2006" }} Climate Refugee Stories. All rights reserved.</p>
+      <!-- Social + Newsletter -->
+      <div class="col-md-4 mb-4 text-center text-md-left">
+        <h5>Connect with Us</h5>
+        <ul class="social-icons-list">
+          {{ with (site.GetPage `/contact`).Params.socials }}
+            {{ range . }}
+              <li class="social-icons-home">
+                <a href="{{ .URL | safeURL }}" target="_blank">
+                  <i class="{{ .icon }}"></i>
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+        <form class="newsletter-form d-flex mt-3">
+          <input type="email" placeholder="Email address" required class="form-control mr-2">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
     </div>
   </div>
-</footer>
 
-<!-- Collapsible Accessibility Toolbar -->
-<div id="a11y-toolbar-wrapper" style="position: fixed; bottom: 1rem; right: 1rem; z-index: 9999;">
-  <button id="a11y-toggle" class="btn btn-sm btn-primary">Accessibility Tools</button>
-  <div id="a11y-toolbar" style="display:none; background: var(--primary-color); padding:0.5rem; border-radius:5px; margin-top:0.5rem; flex-wrap: wrap;">
-    <button type="button" class="a11y-btn" data-a11y="font-inc" aria-label="Increase Text">A+</button>
-    <button type="button" class="a11y-btn" data-a11y="font-dec" aria-label="Decrease Text">A−</button>
-    <button type="button" class="a11y-btn" data-a11y="grayscale" aria-label="Grayscale">⬛︎⟡</button>
-    <button type="button" class="a11y-btn" data-a11y="high" aria-label="High Contrast">HC</button>
-    <button type="button" class="a11y-btn" data-a11y="negative" aria-label="Negative Contrast">NC</button>
-    <button type="button" class="a11y-btn" data-a11y="light" aria-label="Light Background">LB</button>
-    <button type="button" class="a11y-btn" data-a11y="underline" aria-label="Underline Links">U</button>
-    <button type="button" class="a11y-btn" data-a11y="readable" aria-label="Readable Font">RF</button>
-    <button type="button" class="a11y-btn a11y-reset" data-a11y="reset" aria-label="Reset">Reset</button>
+  <div class="footer-bottom text-center">
+    <p>&copy; {{ now.Format "2006" }} Your Organization. All rights reserved.</p>
   </div>
-</div>
-
-<script>
-  const toggleBtn = document.getElementById('a11y-toggle');
-  const toolbar = document.getElementById('a11y-toolbar');
-  toggleBtn.addEventListener('click', () => {
-    toolbar.style.display = toolbar.style.display === 'none' ? 'flex' : 'none';
-    toolbar.style.flexDirection = 'row';
-    toolbar.style.gap = '0.25rem';
-  });
-</script>
-
-<!-- JS Plugins -->
-{{ range site.Params.plugins.js}}
-<script src="{{ .link | absURL }}"></script>
-{{ end }}
+</footer>
