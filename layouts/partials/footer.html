@@ -18,28 +18,26 @@
         </ul>
       </div>
 
-      <!-- Right section -->
-      <div class="col-md-4 mb-4 text-center text-md-left">
-        <h5>Connect with Us</h5>
-        <ul class="social-icons-list" style="list-style:none; padding:0; margin:0; display:flex; gap:.8rem; justify-content:center;">
-          {{ with (site.GetPage `/contact`).Params.socials }}
-            {{ range . }}
-              <li>
-                <a href="{{ .URL | safeURL }}" target="_blank" style="background:#FFFFFF; color:#022D62; border-radius:50%; width:42px; height:42px; display:inline-flex; align-items:center; justify-content:center;">
-                  <i class="{{ .icon }}"></i>
-                </a>
-              </li>
-            {{ end }}
-          {{ end }}
-        </ul>
-        <form class="newsletter-form d-flex mt-3">
-          <input type="email" placeholder="Email address" required class="form-control mr-2">
-          <button type="submit" class="btn btn-light">Subscribe</button>
-        </form>
-      </div>
+     <!-- Right section -->
+<div class="col-md-4 mb-4 text-center text-md-left">
+  <h5>Connect with Us</h5>
+  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+    {{ with (site.GetPage `/contact`).Params.socials }}
+      {{ range . }}
+        <li class="mb-3 social-icons-home">
+          <a class="text-primary" href="{{ .URL | safeURL }}" target="_blank">
+            <i class="{{ .icon }}"></i>
+          </a>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
 
-    </div>
-  </div>
+  <form class="newsletter-form d-flex mt-3">
+    <input type="email" placeholder="Email address" required class="form-control mr-2">
+    <button type="submit" class="btn btn-light">Subscribe</button>
+  </form>
+</div>
 
   <!-- Bottom strip -->
   <div class="footer-bottom text-center" style="font-size:0.85rem; margin-top:1rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.3); color:#FFFFFF;">
