@@ -1,8 +1,8 @@
 // ===============================
-// _common.scss - merged & updated
+// Updated Common SCSS 2025 - Safe Merge
 // ===============================
 
-// Base body
+/* Base body */
 body {
   background-color: #ffffff;
   color: #212529;
@@ -11,9 +11,7 @@ body {
   transition: all 0.3s ease;
 }
 
-// ===============================
-// Image / content helpers
-// ===============================
+/* Image / content helpers */
 .main-blog-image {
   @include normal-image-processing;
   img { max-height: 700px; }
@@ -37,9 +35,7 @@ body {
   }
 }
 
-// ===============================
-// Section background helpers
-// ===============================
+/* Section background helpers */
 .bg-shape- {
   &stories { background: rgb(0, 129, 180); }
   &archive { background: rgb(3, 163, 169); }
@@ -48,9 +44,7 @@ body {
   &about { background: rgb(30, 75, 160); }
 }
 
-// ===============================
-// Sections
-// ===============================
+/* Section titles */
 .section {
   padding: 5rem 0;
 
@@ -62,18 +56,26 @@ body {
   }
 }
 
-// ===============================
-// Hover utilities
-// ===============================
+/* Hover utilities */
 .hover-shadow {
   transition: .2s ease;
-  &:hover { box-shadow: 0 1.125rem 2.5rem 0.5rem rgba(224, 241, 255, .54) !important; }
+  &:hover {
+    box-shadow: 0 1.125rem 2.5rem 0.5rem rgba(224, 241, 255, .54) !important;
+  }
 }
 
 .hover-wrapper {
   overflow: hidden;
-  & img { transition: .3s ease; transform: scale(1.1); }
-  &:hover { & img { transform: scale(1); } & .hover-overlay { opacity: 1; visibility: visible; } }
+
+  & img {
+    transition: .3s ease;
+    transform: scale(1.1);
+  }
+
+  &:hover {
+    & img { transform: scale(1); }
+    & .hover-overlay { opacity: 1; visibility: visible; }
+  }
 }
 
 .hover-overlay {
@@ -98,9 +100,7 @@ body {
   text-align: center;
 }
 
-// ===============================
-// Buttons
-// ===============================
+/* Buttons */
 .btn-alt {
   display: inline-block;
   font-weight: 400;
@@ -149,7 +149,8 @@ body {
   &-primary {
     background: var(--primary-color);
     color: #fff;
-    &:hover, &:active, &.active { background: var(--primary-color) !important; }
+
+    &:hover, &.active, &:active { background: var(--primary-color) !important; }
     &.focus, &.active { box-shadow: none !important; }
   }
 
@@ -158,53 +159,70 @@ body {
     color: var(--primary-color);
     font-weight: 700;
     @include mobile { font-size: 1.7rem; }
-    &:hover, &:active { color: var(--primary-color); }
+
+    &:active, &:hover { color: var(--primary-color); }
   }
 }
 
-// ===============================
-// Footer
-// ===============================
-.footer-bg {
-  a { color: #fff; &:hover { color: #ffd700; } }
+/* Footer */
+.footer-section {
+  padding-top: 12.5rem;
 
-  .newsletter-form {
-    input { border-radius: 0.25rem; border: 1px solid #ccc; padding: 0.5rem; }
-    button { border-radius: 0.25rem; padding: 0.5rem 1rem; }
-  }
-
-  .social-icons-home a {
-    display: inline-block;
-    width: 3rem;
-    height: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    border-radius: 50%;
-    background-color: var(--primary-color);
+  & a {
     color: #fff;
-    font-size: 1.25rem;
-    transition: all 0.3s ease;
-  }
-
-  .social-icons-home a:hover {
-    background-color: #fff;
-    color: var(--primary-color);
+    &:hover { color: #fff; text-decoration: none; }
   }
 }
 
 .footer-bottom {
-  font-size: 0.9rem;
-  color: #ccc;
+  & a {
+    color: #999;
+    text-decoration: underline;
+  }
 }
 
-// ===============================
-// Navigation
-// ===============================
+/* Social icons (header/footer) */
+.social-icons-home {
+  position: relative;
+
+  a {
+    line-height: 3.4375rem;
+    border-radius: 50%;
+    display: block;
+    font-size: 1.125rem;
+    text-align: center;
+    height: 3.125rem;
+    width: 3.4375rem;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 3.4rem;
+      width: 3.4rem;
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -23;
+      top: 50%;
+      left: 0;
+      transform: translate(2%, -50%);
+    }
+
+    &::before { background-color: var(--primary-color); box-shadow: 0 18px 39.1px 6.9px rgba(224, 241, 255, 0.34); }
+    &::after { height: 2.5rem; width: 2.5rem; transform: translate(21%, -50%); background-color: #fff; }
+  }
+}
+
+/* Navigation */
 .navigation {
   padding: 2.5rem 8.125rem;
   transition: .3s ease;
 
-  &.nav-bg { background-color: var(--primary-color); padding: 0.9375rem 6.25rem; }
+  &.nav-bg {
+    background-color: var(--primary-color);
+    padding: 0.9375rem 6.25rem;
+  }
 }
 
 .navbar .nav-item .nav-link {
@@ -216,9 +234,10 @@ body {
 .navbar .nav-item.active .nav-link { color: #fff017; }
 .navbar-dark .navbar-nav .nav-link { color: #fff; }
 
-// ===============================
-// Homepage hero / title
-// ===============================
+/* Homepage utilities */
+.homepage-abt-txt { font-size: 1.4rem; @include mobile { font-size: 1.7rem; } }
+.homepage-story-map { margin-bottom: 1.8rem; width: 700px; height: 550px; @include mobile { height: 400px; } }
+
 .main-title {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -261,20 +280,7 @@ body {
   }
 }
 
-// Subtitle under main title
-.hero-subtitle {
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-top: 0.5rem;
-  text-align: center;
-  @include mobile { font-size: 1.2rem; }
-}
-
-// ===============================
-// Hero area
-// ===============================
+/* Hero */
 .hero-area {
   height: 100vh;
   background-image: url($hero_img);
@@ -283,9 +289,17 @@ body {
   position: relative;
 }
 
-// ===============================
-// Misc helpers
-// ===============================
+/* Subtitle helper */
+.hero-subtitle {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  @include mobile { font-size: 1.2rem; }
+}
+
+/* Spotify embed (resources) */
 .resources-spotify iframe {
   max-width: 660px;
   width: 100%;
@@ -294,4 +308,5 @@ body {
   height: 380px;
 }
 
+/* General link hover */
 a:hover { opacity: 0.9; }
