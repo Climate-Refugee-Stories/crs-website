@@ -1,22 +1,11 @@
+<!-- Footer Banner Image -->
+<div class="footer-banner-image">
+  <img src="https://tinashull.smugmug.com/CRS-Website/Archive/US-Mexico-Border/i-GmLbXK9/A" alt="Footer Banner">
+</div>
+
 <footer class="footer-bg" style="background-color:#022D62; color:#FFFFFF;">
-
-  <!-- Full-width footer image -->
-  <div class="footer-banner-image">
-    <img src="https://tinashull.smugmug.com/CRS-Website/Archive/US-Mexico-Border/i-GmLbXK9/A" alt="Footer Banner">
-  </div>
-
   <div class="container">
     <div class="row">
-      <!-- existing footer sections -->
-    </div>
-  </div>
-
-  <!-- Bottom strip -->
-  <div class="footer-bottom text-center" style="font-size:0.85rem; margin-top:1rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.3); color:#FFFFFF;">
-    <p class="mb-0">&copy; {{ now.Format "2006" }} Climate Refugee Stories. All rights reserved.</p>
-  </div>
-</footer>
-
 
       <!-- Left section -->
       <div class="col-md-4 mb-4 text-center text-md-left">
@@ -62,35 +51,3 @@
     <p class="mb-0">&copy; {{ now.Format "2006" }} Climate Refugee Stories. All rights reserved.</p>
   </div>
 </footer>
-
-
-<!-- Collapsible Accessibility Toolbar -->
-<div id="a11y-toolbar-wrapper" style="position: fixed; bottom: 1rem; right: 1rem; z-index: 9999;">
-  <button id="a11y-toggle" class="btn btn-sm btn-primary">Accessibility Tools</button>
-  <div id="a11y-toolbar" style="display:none; background: var(--primary-color); padding:0.5rem; border-radius:5px; margin-top:0.5rem; flex-wrap: wrap;">
-    <button type="button" class="a11y-btn" data-a11y="font-inc" aria-label="Increase Text">A+</button>
-    <button type="button" class="a11y-btn" data-a11y="font-dec" aria-label="Decrease Text">A−</button>
-    <button type="button" class="a11y-btn" data-a11y="grayscale" aria-label="Grayscale">⬛︎⟡</button>
-    <button type="button" class="a11y-btn" data-a11y="high" aria-label="High Contrast">HC</button>
-    <button type="button" class="a11y-btn" data-a11y="negative" aria-label="Negative Contrast">NC</button>
-    <button type="button" class="a11y-btn" data-a11y="light" aria-label="Light Background">LB</button>
-    <button type="button" class="a11y-btn" data-a11y="underline" aria-label="Underline Links">U</button>
-    <button type="button" class="a11y-btn" data-a11y="readable" aria-label="Readable Font">RF</button>
-    <button type="button" class="a11y-btn a11y-reset" data-a11y="reset" aria-label="Reset">Reset</button>
-  </div>
-</div>
-
-<script>
-  const toggleBtn = document.getElementById('a11y-toggle');
-  const toolbar = document.getElementById('a11y-toolbar');
-  toggleBtn.addEventListener('click', () => {
-    toolbar.style.display = toolbar.style.display === 'none' ? 'flex' : 'none';
-    toolbar.style.flexDirection = 'row';
-    toolbar.style.gap = '0.25rem';
-  });
-</script>
-
-<!-- JS Plugins -->
-{{ range site.Params.plugins.js}}
-<script src="{{ .link | absURL }}"></script>
-{{ end }}
