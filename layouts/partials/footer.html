@@ -1,31 +1,31 @@
-<footer class="site-footer">
+<footer class="footer-bg" style="background-color:#022D62; color:#FFFFFF;">
   <div class="container">
     <div class="row">
-      <!-- Logo & mission -->
+
+      <!-- Left section -->
       <div class="col-md-4 mb-4 text-center text-md-left">
-        <img src="/images/logo.png" alt="Logo" class="footer-logo mb-3">
-        <p>Building resilience and equity through science, education, and action.</p>
+        <img src="i-GmLbXK9/A" alt="Smug Mug Logo" class="footer-logo mb-3" style="max-width:150px;">
+        <p>A public history project narrating the fight for climate justice.</p>
       </div>
 
-      <!-- Quick links -->
+      <!-- Middle section -->
       <div class="col-md-4 mb-4 text-center text-md-left">
         <h5>Our Work</h5>
-        <ul class="footer-links">
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/events">Events</a></li>
-          <li><a href="/stories">Stories</a></li>
-          <li><a href="/about">About Us</a></li>
+        <ul class="footer-links" style="list-style:none; padding:0; margin:0;">
+          <li><a href="/archive/" style="color:#FFFFFF;">Archive</a></li>
+          <li><a href="/stories/" style="color:#FFFFFF;">Stories</a></li>
+          <li><a href="/resources/" style="color:#FFFFFF;">Resources</a></li>
         </ul>
       </div>
 
-      <!-- Social + Newsletter -->
+      <!-- Right section -->
       <div class="col-md-4 mb-4 text-center text-md-left">
         <h5>Connect with Us</h5>
-        <ul class="social-icons-list">
+        <ul class="social-icons-list" style="list-style:none; padding:0; margin:0; display:flex; gap:.8rem; justify-content:center;">
           {{ with (site.GetPage `/contact`).Params.socials }}
             {{ range . }}
-              <li class="social-icons-home">
-                <a href="{{ .URL | safeURL }}" target="_blank">
+              <li>
+                <a href="{{ .URL | safeURL }}" target="_blank" style="background:#FFFFFF; color:#022D62; border-radius:50%; width:42px; height:42px; display:inline-flex; align-items:center; justify-content:center;">
                   <i class="{{ .icon }}"></i>
                 </a>
               </li>
@@ -34,13 +34,47 @@
         </ul>
         <form class="newsletter-form d-flex mt-3">
           <input type="email" placeholder="Email address" required class="form-control mr-2">
-          <button type="submit" class="btn btn-primary">Subscribe</button>
+          <button type="submit" class="btn btn-light">Subscribe</button>
         </form>
       </div>
+
     </div>
   </div>
 
-  <div class="footer-bottom text-center">
-    <p>&copy; {{ now.Format "2006" }} Your Organization. All rights reserved.</p>
+  <!-- Bottom strip -->
+  <div class="footer-bottom text-center" style="font-size:0.85rem; margin-top:1rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.3); color:#FFFFFF;">
+    <p class="mb-0">&copy; {{ now.Format "2006" }} Climate Refugee Stories. All rights reserved.</p>
   </div>
 </footer>
+
+
+<!-- Collapsible Accessibility Toolbar -->
+<div id="a11y-toolbar-wrapper" style="position: fixed; bottom: 1rem; right: 1rem; z-index: 9999;">
+  <button id="a11y-toggle" class="btn btn-sm btn-primary">Accessibility Tools</button>
+  <div id="a11y-toolbar" style="display:none; background: var(--primary-color); padding:0.5rem; border-radius:5px; margin-top:0.5rem; flex-wrap: wrap;">
+    <button type="button" class="a11y-btn" data-a11y="font-inc" aria-label="Increase Text">A+</button>
+    <button type="button" class="a11y-btn" data-a11y="font-dec" aria-label="Decrease Text">A−</button>
+    <button type="button" class="a11y-btn" data-a11y="grayscale" aria-label="Grayscale">⬛︎⟡</button>
+    <button type="button" class="a11y-btn" data-a11y="high" aria-label="High Contrast">HC</button>
+    <button type="button" class="a11y-btn" data-a11y="negative" aria-label="Negative Contrast">NC</button>
+    <button type="button" class="a11y-btn" data-a11y="light" aria-label="Light Background">LB</button>
+    <button type="button" class="a11y-btn" data-a11y="underline" aria-label="Underline Links">U</button>
+    <button type="button" class="a11y-btn" data-a11y="readable" aria-label="Readable Font">RF</button>
+    <button type="button" class="a11y-btn a11y-reset" data-a11y="reset" aria-label="Reset">Reset</button>
+  </div>
+</div>
+
+<script>
+  const toggleBtn = document.getElementById('a11y-toggle');
+  const toolbar = document.getElementById('a11y-toolbar');
+  toggleBtn.addEventListener('click', () => {
+    toolbar.style.display = toolbar.style.display === 'none' ? 'flex' : 'none';
+    toolbar.style.flexDirection = 'row';
+    toolbar.style.gap = '0.25rem';
+  });
+</script>
+
+<!-- JS Plugins -->
+{{ range site.Params.plugins.js}}
+<script src="{{ .link | absURL }}"></script>
+{{ end }}
