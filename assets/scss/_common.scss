@@ -241,15 +241,27 @@ body {
 
 .tagline-circle {
   border-radius: 8px;
-  background: var(--primary-color);
+  background: $primary-color;
   padding: 3% 18% 3% 3%;
   position: relative;
   font-size: 2.1875rem;
   font-family: 'Libertinus Sans' !important;
-  font-weight: 800;
+  font-weight: inherit;
   line-height: 2.6rem;
   letter-spacing: 1px;
+  text-align: left; // keep text aligned nicely inside the circle
 
+  // Subtitle styling
+  .subtitle {
+    display: block;
+    font-weight: 400;
+    font-size: 1.25rem;  // smaller than main line
+    line-height: 1.5;
+    margin-top: 0.3rem;
+    color: #ffffff;
+  }
+
+  // Circle logo / decorative pseudo
   &::before {
     content: "";
     background-color: #fff;
@@ -263,9 +275,28 @@ body {
     background-image: url($transparent_logo);
     background-size: 70%;
     background-repeat: no-repeat;
-    background-position: center 33%;
+    background-position-x: center;
+    background-position-y: 33%;
     transform: translate(60%, -50%);
   }
+
+  // Responsive adjustments
+  @include tablet {
+    font-size: 1.8rem;
+    .subtitle {
+      font-size: 1.1rem;
+    }
+  }
+
+  @include mobile {
+    font-size: 1.5rem;
+    padding: 3% 12% 3% 3%;
+    .subtitle {
+      font-size: 1rem;
+    }
+  }
+}
+
 }
 
 /* Social icon shape used in header & footer */
