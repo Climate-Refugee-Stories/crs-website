@@ -643,12 +643,12 @@ blockquote > p {
 
 /* Footer wrapper */
 .footer-bg {
-    background: url('/images/footer-bg.jpg') no-repeat center center;
-    background-size: cover;
-    color: #ffffff; /* default text color for all footer text */
+    background-color: #022D62; /* fallback if image fails */
+    color: #ffffff;
     font-size: 0.9rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    position: relative; /* needed for overlapping image */
 }
 
 /* Footer headings */
@@ -717,14 +717,24 @@ blockquote > p {
     padding-top: 1rem;
     margin-top: 2rem;
     color: #ffffff;
+    position: relative;
+    z-index: 1; /* ensures it stays above overlapping image */
 }
 
-/* Ensure all text inside footer inherits white */
-.footer-bg p,
-.footer-bg li,
-.footer-bg span {
-    color: #ffffff;
+/* Footer image wrapper */
+.footer-image-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: -1px; /* overlap the bottom strip by 1px */
+    z-index: 2;
 }
+
+.footer-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 /* Pinterest-style gallery */
 /* ---- Story gallery overlay / readability fixes ---- */
