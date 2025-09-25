@@ -641,28 +641,30 @@ blockquote > p {
   line-height: 1.8;
 }
 
-
-/* Footer background and base text color */
+/* Footer wrapper */
 .footer-bg {
     background: url('/images/footer-bg.jpg') no-repeat center center;
     background-size: cover;
-    color: #ffffff; /* all text white by default */
+    color: #ffffff; /* default text color for all footer text */
     font-size: 0.9rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 /* Footer headings */
 .footer-bg h5 {
     font-size: 1.1rem;
     margin-bottom: 1rem;
+    color: #ffffff;
 }
 
 /* Footer links */
-.footer-bg a {
-    color: #ffffff; 
+.footer-links a {
+    color: #ffffff;
     text-decoration: none;
 }
 
-.footer-bg a:hover {
+.footer-links a:hover {
     color: #ffcc00;
     text-decoration: underline;
 }
@@ -673,15 +675,13 @@ blockquote > p {
 }
 
 /* Social icons */
-.social-icons-home a,
-.social-icons a {
+.social-icons-home a {
     color: #ffffff;
-    margin-right: 10px;
     font-size: 1.3rem;
+    margin-right: 10px;
 }
 
-.social-icons-home a:hover,
-.social-icons a:hover {
+.social-icons-home a:hover {
     color: #ffcc00;
 }
 
@@ -697,7 +697,7 @@ blockquote > p {
     margin-right: 5px;
 }
 
-.newsletter-form button {
+.newsletter-btn {
     padding: 8px 12px;
     background-color: #ffffff;
     color: #022D62;
@@ -706,26 +706,25 @@ blockquote > p {
     cursor: pointer;
 }
 
+.newsletter-btn:hover {
+    background-color: #f0f0f0;
+}
+
 /* Footer bottom strip */
 .footer-bottom {
     text-align: center;
     border-top: 1px solid rgba(255,255,255,0.3);
     padding-top: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     color: #ffffff;
 }
 
-/* Force all text inside footer to white */
-.footer-bg,
+/* Ensure all text inside footer inherits white */
 .footer-bg p,
 .footer-bg li,
-.footer-bg ul,
-.footer-bg h5,
-.footer-bg a,
 .footer-bg span {
     color: #ffffff;
 }
-
 
 /* Pinterest-style gallery */
 /* ---- Story gallery overlay / readability fixes ---- */
