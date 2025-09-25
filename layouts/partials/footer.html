@@ -1,31 +1,31 @@
-<footer class="footer-bg" style="background-color:#022D62; ">
+<footer class="footer-bg">
   <div class="container">
     <div class="row">
 
       <!-- Left section -->
       <div class="col-md-4 mb-4 text-center text-md-left">
-        <img src="i-GmLbXK9/A" alt="Smug Mug Logo" class="footer-logo mb-3" style="max-width:150px;">
+        <img src="i-GmLbXK9/A" alt="Smug Mug Logo" class="footer-logo mb-3">
         <p>A public history project narrating the fight for climate justice.</p>
       </div>
 
       <!-- Middle section -->
       <div class="col-md-4 mb-4 text-center text-md-left">
         <h5>Our Work</h5>
-        <ul class="footer-links" style="list-style:none; padding:0; margin:0;">
-          <li><a href="/archive/" style="";>Archive</a></li>
-          <li><a href="/stories/" style="";>Stories</a></li>
-          <li><a href="/resources/" style="";>Resources</a></li>
+        <ul class="footer-links">
+          <li><a href="/archive/">Archive</a></li>
+          <li><a href="/stories/">Stories</a></li>
+          <li><a href="/resources/">Resources</a></li>
         </ul>
       </div>
 
-     <!-- Right section -->
-    <div class="col-md-4 mb-4 text-center text-md-left">
+      <!-- Right section -->
+      <div class="col-md-4 mb-4 text-center text-md-left">
         <h5>Connect with Us</h5>
-        <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+        <ul class="social-icons-home list-unstyled mt-3">
           {{ with (site.GetPage `/contact`).Params.socials }}
             {{ range . }}
-              <li class="mb-3 social-icons-home">
-                <a class="text-primary" href="{{ .URL | safeURL }}" target="_blank">
+              <li class="mb-3">
+                <a href="{{ .URL | safeURL }}" target="_blank">
                   <i class="{{ .icon }}"></i>
                 </a>
               </li>
@@ -43,9 +43,11 @@
   </div>
 
   <!-- Bottom strip -->
+  <div class="footer-bottom">
     <p class="mb-0">&copy; {{ now.Format "2006" }} Climate Refugee Stories. All rights reserved.</p>
   </div>
 </footer>
+
 
 <!-- JS Plugins -->
 {{ range site.Params.plugins.js}}
