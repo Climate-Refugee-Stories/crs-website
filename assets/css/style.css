@@ -642,79 +642,90 @@ blockquote > p {
 }
 
 
-/* Footer container */
+/* Footer background and base text color */
 .footer-bg {
-  background: url('/images/footer-bg.jpg') no-repeat center center;
-  background-size: cover;
-  color: #ffffff; /* default text color */
-  font-size: 0.9rem;
-}
-
-/* Footer logo */
-.footer-logo {
-  max-width: 180px;
+    background: url('/images/footer-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #ffffff; /* all text white by default */
+    font-size: 0.9rem;
 }
 
 /* Footer headings */
 .footer-bg h5 {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  color: #ffffff; /* heading color */
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
 }
 
 /* Footer links */
 .footer-bg a {
-  color: #ffffff; /* all links white by default */
-  text-decoration: none;
+    color: #ffffff; 
+    text-decoration: none;
 }
 
 .footer-bg a:hover {
-  color: #ffcc00; /* hover color */
-  text-decoration: underline;
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Footer logo */
+.footer-logo {
+    max-width: 180px;
 }
 
 /* Social icons */
 .social-icons-home a,
 .social-icons a {
-  color: #ffffff; /* all social icons white */
-  margin-right: 10px;
-  font-size: 1.3rem;
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 1.3rem;
 }
 
 .social-icons-home a:hover,
 .social-icons a:hover {
-  color: #ffcc00;
+    color: #ffcc00;
 }
 
 /* Newsletter form */
 .newsletter-form {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .newsletter-form input {
-  padding: 8px;
-  border: none;
-  border-radius: 3px;
-  margin-right: 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 5px;
 }
 
 .newsletter-form button {
-  padding: 8px 12px;
-  background-color: #ffffff;
-  color: #022D62; /* button text color */
-  border: 1px solid #022D62;
-  border-radius: 3px;
-  cursor: pointer;
+    padding: 8px 12px;
+    background-color: #ffffff;
+    color: #022D62;
+    border: 1px solid #022D62;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 /* Footer bottom strip */
 .footer-bottom {
-  text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.2);
-  padding-top: 10px;
-  margin-top: 20px;
-  color: #ffffff; /* text color */
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 1rem;
+    margin-top: 1rem;
+    color: #ffffff;
 }
+
+/* Force all text inside footer to white */
+.footer-bg,
+.footer-bg p,
+.footer-bg li,
+.footer-bg ul,
+.footer-bg h5,
+.footer-bg a,
+.footer-bg span {
+    color: #ffffff;
+}
+
 
 /* Pinterest-style gallery */
 /* ---- Story gallery overlay / readability fixes ---- */
