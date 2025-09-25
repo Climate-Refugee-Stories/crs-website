@@ -641,99 +641,47 @@ blockquote > p {
   line-height: 1.8;
 }
 
-/* Footer wrapper */
 .footer-bg {
-    background-color: #022D62; /* fallback if image fails */
+    background-color: #022D62;
     color: #ffffff;
     font-size: 0.9rem;
+    position: relative;
     padding-top: 2rem;
-    padding-bottom: 2rem;
-    position: relative; /* needed for overlapping image */
+    padding-bottom: 5rem; /* extra space for the image */
 }
 
-/* Footer headings */
-.footer-bg h5 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    color: #ffffff;
-}
+.footer-bg h5 { font-size: 1.1rem; margin-bottom: 1rem; }
+.footer-links a { color: #ffffff; text-decoration: none; }
+.footer-links a:hover { color: #ffcc00; text-decoration: underline; }
+.footer-logo { max-width: 180px; }
+.social-icons-home a { color: #ffffff; font-size: 1.3rem; margin-right: 10px; }
+.social-icons-home a:hover { color: #ffcc00; }
 
-/* Footer links */
-.footer-links a {
-    color: #ffffff;
-    text-decoration: none;
-}
+.newsletter-form { margin-top: 10px; }
+.newsletter-form input { padding: 8px; border: none; border-radius: 3px; margin-right: 5px; }
+.newsletter-btn { padding: 8px 12px; background-color: #ffffff; color: #022D62; border: 1px solid #022D62; border-radius: 3px; cursor: pointer; }
+.newsletter-btn:hover { background-color: #f0f0f0; }
 
-.footer-links a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
-}
-
-/* Footer logo */
-.footer-logo {
-    max-width: 180px;
-}
-
-/* Social icons */
-.social-icons-home a {
-    color: #ffffff;
-    font-size: 1.3rem;
-    margin-right: 10px;
-}
-
-.social-icons-home a:hover {
-    color: #ffcc00;
-}
-
-/* Newsletter form */
-.newsletter-form {
-    margin-top: 10px;
-}
-
-.newsletter-form input {
-    padding: 8px;
-    border: none;
-    border-radius: 3px;
-    margin-right: 5px;
-}
-
-.newsletter-btn {
-    padding: 8px 12px;
-    background-color: #ffffff;
-    color: #022D62;
-    border: 1px solid #022D62;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.newsletter-btn:hover {
-    background-color: #f0f0f0;
-}
-
-/* Footer bottom strip */
 .footer-bottom {
     text-align: center;
     border-top: 1px solid rgba(255,255,255,0.3);
     padding-top: 1rem;
-    margin-top: 2rem;
     color: #ffffff;
     position: relative;
-    z-index: 1; /* ensures it stays above overlapping image */
+    z-index: 2; /* stays above the image */
 }
 
-/* Footer image wrapper */
-.footer-image-wrapper {
-    position: relative;
-    width: 100%;
-    margin-bottom: -1px; /* overlap the bottom strip by 1px */
-    z-index: 2;
-}
-
+/* Footer image sits behind the bottom strip */
 .footer-image {
     width: 100%;
     height: auto;
-    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1; /* behind the bottom strip */
+    pointer-events: none; /* so it doesn’t block clicks */
 }
+
 
 
 /* Pinterest-style gallery */
