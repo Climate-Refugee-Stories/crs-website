@@ -715,17 +715,29 @@ blockquote > p {
     z-index: 2;
 }
 
-/* Footer image wrapper */
+/* Footer image wrapper — half height version */
 .footer-image-wrapper {
-    width: 100%;
-    text-align: center;
-    margin-top: -1px; /* overlap bottom strip by 1px */
+  width: 100%;
+  text-align: center;
+  margin-top: -1px;
+  overflow: hidden; /* hide cropped edges */
 }
+
 .footer-image {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 150px; /* roughly half of standard banner height */
+  object-fit: cover; /* crop rather than squish */
 }
+
+/* Optional: make it slightly smaller on mobile */
+@media (max-width: 768px) {
+  .footer-image {
+    max-height: 100px;
+  }
+}
+
 
 
 /* Pinterest-style gallery */
