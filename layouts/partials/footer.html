@@ -2,6 +2,17 @@
   <div class="container">
     <div class="row">
 
+        <!-- Footer top strip -->
+  <div class="footer-top">
+    <p class="mb-0">&copy; {{ now.Format "2006" }} Climate Refugee Stories. All rights reserved.</p>
+  </div>
+
+  <!-- Decorative footer image -->
+  <div class="footer-image-wrapper">
+    <img src="https://photos.smugmug.com/CRS-Website/Archive/US-Mexico-Border/i-GmLbXK9/0/LcbnjdpSKw4rqmbT8zf2p65vZncPS6j7r7qbj5gd8/O/Love%20Trumps%20Hate.jpg" alt="Decorative Footer Image" class="footer-image">
+  </div>
+</footer>
+      
       <!-- Left section -->
       <div class="col-md-4 mb-4 text-center text-md-left">
         <p>A public history project narrating the fight for climate justice.</p>
@@ -20,11 +31,11 @@
       <!-- Right section -->
       <div class="col-md-4 mb-4 text-center text-md-left">
         <h5>Connect with Us</h5>
-        <ul class="social-icons-home list-unstyled mt-3">
+        <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
           {{ with (site.GetPage `/contact`).Params.socials }}
             {{ range . }}
-              <li class="mb-3">
-                <a href="{{ .URL | safeURL }}" target="_blank">
+              <li class="mb-3 social-icons-home">
+                <a class="text-primary" href="{{ .URL | safeURL }}" target="_blank">
                   <i class="{{ .icon }}"></i>
                 </a>
               </li>
@@ -34,23 +45,12 @@
 
         <form class="newsletter-form d-flex mt-3">
           <input type="email" placeholder="Email address" required class="form-control mr-2">
-          <button type="submit" class="btn newsletter-btn">Subscribe</button>
+          <button type="submit" class="btn btn-light">Subscribe</button>
         </form>
       </div>
 
     </div>
   </div>
-
-  <!-- Footer bottom strip -->
-  <div class="footer-bottom">
-    <p class="mb-0">&copy; {{ now.Format "2006" }} Climate Refugee Stories. All rights reserved.</p>
-  </div>
-
-  <!-- Decorative footer image -->
-  <div class="footer-image-wrapper">
-    <img src="https://photos.smugmug.com/CRS-Website/Archive/US-Mexico-Border/i-GmLbXK9/0/LcbnjdpSKw4rqmbT8zf2p65vZncPS6j7r7qbj5gd8/O/Love%20Trumps%20Hate.jpg" alt="Decorative Footer Image" class="footer-image">
-  </div>
-</footer>
 
 
 <!-- JS Plugins -->
