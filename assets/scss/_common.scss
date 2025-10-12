@@ -184,6 +184,52 @@ body {
   & a {
     color: #999;
     text-decoration: underline;
+/* Footer image (top strip) */
+.footer-image-wrapper {
+  text-align: center;
+  margin-bottom: 2rem; // space between image and columns
+
+  img.footer-image {
+    width: 100%;          // full width
+    max-height: 80px;     // narrow strip height, adjust as needed
+    object-fit: cover;    // crop/scale to fill width nicely
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Footer columns spacing */
+.footer-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;   // horizontal spacing evenly
+  align-items: center;             // vertical alignment
+}
+
+/* Column text styling */
+.footer-section p,
+.footer-section h5,
+.footer-section ul li a {
+  color: #fff;                     // match header/footer text
+}
+
+/* Footer bottom strip */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+/* Newsletter & social adjustments */
+.newsletter-form input {
+  max-width: 220px;
+}
+
+.social-icons-home a {
+  font-size: 1.2rem;
+}
+
   }
 }
 
