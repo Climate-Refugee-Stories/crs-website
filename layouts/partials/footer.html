@@ -1,35 +1,41 @@
-<footer class="footer-bg" style="background-color:#022D62; ">
-    <!-- Decorative footer image -->
-  <div class="footer-image-wrapper">
-    <img src="https://photos.smugmug.com/CRS-Website/Archive/US-Mexico-Border/i-GmLbXK9/0/LcbnjdpSKw4rqmbT8zf2p65vZncPS6j7r7qbj5gd8/O/Love%20Trumps%20Hate.jpg" alt="Decorative Footer Image" class="footer-image">
- </div>
+<!-- Footer -->
+<footer class="bg-dark footer-section">
 
-      
-      <!-- Left section -->
-      <div class="col-md-4 mb-4 text-center text-md-left">
-      <p>A public history project narrating the fight for climate justice.</p>
+  <!-- Decorative footer image (top of footer) -->
+  <div class="footer-image-wrapper text-center mb-4">
+    <img src="https://photos.smugmug.com/CRS-Website/Archive/US-Mexico-Border/i-GmLbXK9/0/LcbnjdpSKw4rqmbT8zf2p65vZncPS6j7r7qbj5gd8/O/Love%20Trumps%20Hate.jpg" 
+         alt="Decorative Footer Image" class="img-fluid">
+  </div>
+
+  <!-- Main Footer Content -->
+  <div class="container py-5">
+    <div class="row text-center text-md-left align-items-center">
+
+      <!-- Left Section -->
+      <div class="col-md-4 mb-4 d-flex flex-column justify-content-center">
+        <p class="text-light mb-0">
+          A public history project narrating the fight for climate justice.
+        </p>
       </div>
 
-      
-      <!-- Middle section -->
-      <div class="col-md-4 mb-4 text-center text-md-left">
-        <h5>Our Work</h5>
-        <ul class="footer-links list-unstyled">
-          <li><a href="/archive/">Archive</a></li>
-          <li><a href="/stories/">Stories</a></li>
-          <li><a href="/resources/">Resources</a></li>
+      <!-- Middle Section -->
+      <div class="col-md-4 mb-4 d-flex flex-column justify-content-center">
+        <h5 class="text-light mb-3">Our Work</h5>
+        <ul class="list-unstyled">
+          <li><a href="/archive/" class="text-light">Archive</a></li>
+          <li><a href="/stories/" class="text-light">Stories</a></li>
+          <li><a href="/resources/" class="text-light">Resources</a></li>
         </ul>
       </div>
 
-
-     <!-- Right section -->
-     <div class="col-md-4 mb-4 text-center text-md-left">
-        <h5>Connect with Us</h5>
-        <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+      <!-- Right Section -->
+      <div class="col-md-4 mb-4 d-flex flex-column justify-content-center">
+        <h5 class="text-light mb-3">Connect with Us</h5>
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center justify-content-md-start mb-3">
           {{ with (site.GetPage `/contact`).Params.socials }}
             {{ range . }}
-              <li class="mb-3 social-icons-home">
-                <a class="text-primary" href="{{ .URL | safeURL }}" target="_blank">
+              <li class="mr-3 mb-2">
+                <a class="text-light" href="{{ .URL | safeURL }}" target="_blank">
                   <i class="{{ .icon }}"></i>
                 </a>
               </li>
@@ -37,8 +43,9 @@
           {{ end }}
         </ul>
 
-        <form class="newsletter-form d-flex mt-3">
-          <input type="email" placeholder="Email address" required class="form-control mr-2">
+        <!-- Newsletter Form -->
+        <form class="newsletter-form d-flex flex-column flex-sm-row justify-content-center justify-content-md-start">
+          <input type="email" placeholder="Email address" required class="form-control mr-sm-2 mb-2 mb-sm-0">
           <button type="submit" class="btn btn-light">Subscribe</button>
         </form>
       </div>
@@ -47,8 +54,12 @@
   </div>
 
   <!-- Bottom strip -->
-  <div class="footer-bottom text-center" style="font-size:0.85rem; margin-top:1rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,0.3); color:#FFFFFF;">
-    <p class="mb-0">&copy; {{ now.Format "2006" }} Climate Refugee Stories. All rights reserved.</p>
+  <div class="footer-bottom border-top border-secondary text-center py-3 mt-4">
+    <p class="mb-0 text-light">
+      &copy; <span id="copyYear">{{ now.Format "2006" }}</span> Climate Refugee Stories.<br>
+      Website created by <a href="https://linktr.ee/LotusDC" class="text-light">Lotus Digital Consulting, LLC.</a> 
+      using the <a href="https://github.com/themefisher/kross-hugo" class="text-light">Kross Hugo</a> theme.
+    </p>
   </div>
 </footer>
 
@@ -56,3 +67,12 @@
 {{ range site.Params.plugins.js}}
 <script src="{{ .link | absURL }}"></script>
 {{ end }}
+
+<!-- Copyright update -->
+<script>
+  const yearID = document.querySelector("#copyYear");
+  if(yearID) {
+    const currentYear = new Date().getFullYear();
+    yearID.textContent = currentYear;
+  }
+</script>
