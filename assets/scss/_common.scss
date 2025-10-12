@@ -166,60 +166,45 @@ body {
 
 /* Footer */
 .footer-section {
+  background-color: #022D62;  // set footer background
   padding-top: 12.5rem;
+  color: #fff;
 
-  /* unify all footer text and link color with header */
-  color: #fff;  
-
-  & a {
-    color: #fff;          // matches header
+  a {
+    color: #fff;
     &:hover { 
-      color: #ffd700;     // keep hover accent if desired
+      color: #ffd700; 
       text-decoration: none; 
     }
   }
-}
 
-.footer-bottom {
-  & a {
-    color: #022D62;
-    text-decoration: underline;
-    
-/* Footer image (top strip) */
-.footer-image-wrapper {
-  text-align: center;
-  margin-bottom: 2rem; // space between image and columns
+  /* Footer image (top strip) */
+  .footer-image-wrapper {
+    text-align: center;
+    margin-bottom: 2rem;
 
-  img.footer-image {
-    width: 100%;          // full width
-    max-height: 80px;     // narrow strip height, adjust as needed
-    object-fit: cover;    // crop/scale to fill width nicely
-    display: block;
-    margin: 0 auto;
+    img.footer-image {
+      width: 100%;
+      max-height: 80px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
   }
-}
 
-/* Footer columns spacing */
-.footer-section .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;   // horizontal spacing evenly
-  align-items: center;             // vertical alignment
-}
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+  }
 
-/* Column text styling */
-.footer-section p,
-.footer-section h5,
-.footer-section ul li a {
-  color: #fff;                     // match header/footer text
-}
-
-/* Footer bottom strip */
-.footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.3);
-  padding: 1rem 0;
-  font-size: 0.85rem;
-  color: #fff;
+  p,
+  h5,
+  ul li a {
+    color: #fff;
+  }
 }
 
 /* Newsletter & social adjustments */
