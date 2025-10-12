@@ -729,8 +729,8 @@ blockquote > p {
   width: 100%;
   height: auto;
   display: block;
-  max-height: 150px; /* roughly half of standard banner height */
-  object-fit: contain;
+  transform: scaleY(0.5); 
+  transform-origin: top;
 }
 
 /* Make it slightly smaller on mobile */
