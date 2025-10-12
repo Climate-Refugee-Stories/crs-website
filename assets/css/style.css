@@ -647,8 +647,8 @@ blockquote > p {
     font-size: 0.9rem;
     position: relative;
     display: flex;
-    justify-content: space-around; /* Even spacing between items */
-    align-items: flex-start;
+    justify-content: space-between; /* Even spacing between items */
+    align-items: center;
     padding: 2rem 1rem;
 }
 
