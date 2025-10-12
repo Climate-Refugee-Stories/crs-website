@@ -730,7 +730,7 @@ blockquote > p {
   height: auto;
   display: block;
   max-height: 150px; /* roughly half of standard banner height */
-  object-fit: cover; /* crop rather than squish */
+  object-fit: contain;
 }
 
 /* Make it slightly smaller on mobile */
