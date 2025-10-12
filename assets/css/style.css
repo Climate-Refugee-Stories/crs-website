@@ -645,9 +645,11 @@ blockquote > p {
     background-color: #022D62;
     color: #ffffff;
     font-size: 0.9rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     position: relative;
+    display: flex;
+    justify-content: space-around; /* Even spacing between items */
+    align-items: flex-start;
+    padding: 2rem 1rem;
 }
 
 /* Footer headings */
@@ -704,8 +706,8 @@ blockquote > p {
     background-color: #f0f0f0;
 }
 
-/* Footer bottom strip */
-.footer-bottom {
+/* Footer top strip */
+.footer-top {
     text-align: center;
     border-top: 1px solid rgba(255,255,255,0.3);
     padding-top: 1rem;
@@ -731,7 +733,7 @@ blockquote > p {
   object-fit: cover; /* crop rather than squish */
 }
 
-/* Optional: make it slightly smaller on mobile */
+/* Make it slightly smaller on mobile */
 @media (max-width: 768px) {
   .footer-image {
     max-height: 100px;
@@ -832,7 +834,7 @@ blockquote > p {
   .gallery-img-wrapper img { transition: none; }
   .gallery-overlay { transition: none; }
 }
-/* in assets/scss/_a11y.scss or a global overrides file */
+
 
 /* Make toolbar more contrasty */
 #a11y-toolbar.a11y-toolbar {
