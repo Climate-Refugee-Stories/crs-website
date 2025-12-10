@@ -305,6 +305,13 @@ body {
   @include mobile { font-size: 1.2rem; }
 }
 
+
+
+Spotify embed (resources) */
+.resources-spotify {
+  position: relative; /* so the accent can position inside this */
+}
+
 /*/* Accent rectangle behind the Spotify playlist */
 .resources-rectangle-accent {
   position: relative;
@@ -316,13 +323,6 @@ body {
   border-radius: 12px;
   z-index: 1;                   /* behind the iframe */
 }
-
-Spotify embed (resources) */
-.resources-spotify {
-  position: relative; /* so the accent can position inside this */
-}
-
-
 .resources-spotify iframe {
   max-width: 620px;
   width: 100%;
