@@ -312,6 +312,18 @@ Spotify embed (resources) */
   position: relative; /* so the accent can position inside this */
 }
 
+
+.resources-spotify iframe {
+  max-width: 620px;
+  width: 100%;
+  margin: 2rem 0 2rem auto;
+  border-radius: 12px;
+  height: 300px;
+  position: relative;
+  z-index: 2; /* sit above the accent rectangle */
+}
+
+
 /*/* Accent rectangle behind the Spotify playlist */
 .resources-rectangle-accent {
   position: relative;
@@ -323,16 +335,6 @@ Spotify embed (resources) */
   border-radius: 12px;
   z-index: 1;                   /* behind the iframe */
 }
-.resources-spotify iframe {
-  max-width: 620px;
-  width: 100%;
-  margin: 2rem 0 2rem auto;
-  border-radius: 12px;
-  height: 300px;
-  position: relative;
-  z-index: 2; /* sit above the accent rectangle */
-}
-
 
 
 /* General link hover */
