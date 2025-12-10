@@ -642,7 +642,7 @@ blockquote > p {
 }
 /* Footer wrapper */
 .footer-bg {
-    background-color: #022D62;
+    background-color: var(--primary-color);
     color: #ffffff;
     font-size: 0.9rem;
     padding-top: 2rem;
