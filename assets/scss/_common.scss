@@ -305,10 +305,23 @@ body {
   @include mobile { font-size: 1.2rem; }
 }
 
-/* Spotify embed (resources) */
+/*/* Accent rectangle behind the Spotify playlist */
+.resources-rectangle-accent {
+  position: relative;
+  top: 2px;                     /* ~2px overlap behind iframe */
+  left: 0;                      /* anchored to the left side */
+  width: 45%;                   /* ~1/2 of the resources block */
+  height: 70%;     /* fill height minus a tiny offset */
+  background-color: #E36A09;
+  border-radius: 12px;
+  z-index: 1;                   /* behind the iframe */
+}
+
+Spotify embed (resources) */
 .resources-spotify {
   position: relative; /* so the accent can position inside this */
 }
+
 
 .resources-spotify iframe {
   max-width: 620px;
@@ -320,17 +333,6 @@ body {
   z-index: 2; /* sit above the accent rectangle */
 }
 
-/* Accent rectangle behind the Spotify playlist */
-.resources-rectangle-accent {
-  position: relative;
-  top: 2px;                     /* ~2px overlap behind iframe */
-  left: 0;                      /* anchored to the left side */
-  width: 45%;                   /* ~1/2 of the resources block */
-  height: 70%;     /* fill height minus a tiny offset */
-  background-color: #E36A09;
-  border-radius: 12px;
-  z-index: 1;                   /* behind the iframe */
-}
 
 
 /* General link hover */
