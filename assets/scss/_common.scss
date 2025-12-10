@@ -315,14 +315,14 @@ body {
   width: 100%;
   margin: 2rem 0 2rem auto;
   border-radius: 12px;
-  height: 0;
+  height: 300;
   position: relative;
   z-index: 2; /* sit above the accent rectangle */
 }
 
 /* Accent rectangle behind the Spotify playlist */
-.resources-spotify-accent {
-  position: absolute;
+.resources-rectangle-accent {
+  position: relative;
   top: 2px;                     /* ~2px overlap behind iframe */
   left: 0;                      /* anchored to the left side */
   width: 45%;                   /* ~1/2 of the resources block */
