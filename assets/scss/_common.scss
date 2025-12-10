@@ -308,11 +308,6 @@ body {
 /* Spotify embed (resources) */
 .resources-spotify {
   position: relative; /* so the accent can position inside this */
-   text-align: left;          /* override parent .text-center */
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-top: 2rem;
 }
 
 .resources-spotify iframe {
