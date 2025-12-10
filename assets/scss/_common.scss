@@ -164,112 +164,26 @@ body {
   }
 }
 
-/* ================= Footer ================= */
+/* Footer */
 .footer-section {
   padding-top: 12.5rem;
-  background-color: var(--primary-color);
-  color: #fff;
 
-  /* Footer links and text */
-  p,
-  h5,
-  ul li a {
-    color: #fff; 
-  }
+  /* unify all footer text and link color with header */
+  color: #fff;  
 
-  a {
-    color: #fff;
-    text-decoration: none;
-
-    &:hover {
-      color: #ffd700; // hover accent
-      text-decoration: none;
-    }
-  }
-
-  /* Footer columns layout */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; // evenly spaced
-    align-items: center; // vertical alignment
-  }
-
-  /* Footer image (top strip) */
-  .footer-image-wrapper {
-    text-align: center;
-    margin-bottom: 2rem;
-
-    img.footer-image {
-      width: 100%;
-      max-height: 80px;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto;
-    }
-  }
-
-  /* Newsletter & social adjustments */
-  .newsletter-form input {
-    max-width: 220px;
-  }
-
-  .social-icons-home {
-    position: relative;
-
-    a {
-      line-height: 3.4375rem;
-      border-radius: 50%;
-      display: block;
-      font-size: 1.125rem;
-      text-align: center;
-      height: 3.125rem;
-      width: 3.4375rem;
-      position: relative;
-
-      &::before,
-      &::after {
-        content: "";
-        height: 3.4rem;
-        width: 3.4rem;
-        display: block;
-        border-radius: 50%;
-        position: absolute;
-        z-index: -23;
-        top: 50%;
-        left: 0;
-        transform: translate(2%, -50%);
-      }
-
-      &::before {
-        background-color: var(--primary-color);
-        box-shadow: 0 18px 39.1px 6.9px rgba(224, 241, 255, 0.34);
-      }
-
-      &::after {
-        height: 2.5rem;
-        width: 2.5rem;
-        transform: translate(21%, -50%);
-        background-color: #fff;
-      }
+  & a {
+    color: #fff;          // matches header
+    &:hover { 
+      color: #ffd700;     // keep hover accent if desired
+      text-decoration: none; 
     }
   }
 }
 
-/* Footer bottom strip */
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 1rem 0;
-  font-size: 0.85rem;
-  color: #fff;
-
-  a {
+  & a {
     color: #999;
     text-decoration: underline;
-
-    &:hover {
-      color: #ffd700;
-    }
   }
 }
 
