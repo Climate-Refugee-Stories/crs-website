@@ -306,13 +306,32 @@ body {
 }
 
 /* Spotify embed (resources) */
+.resources-spotify {
+  position: relative; /* so the accent can position inside this */
+}
+
 .resources-spotify iframe {
   max-width: 660px;
   width: 100%;
-  margin: 2rem 0 2rem auto;
+  margin: 2rem auto;
   border-radius: 12px;
   height: 380px;
+  position: relative;
+  z-index: 2; /* sit above the accent rectangle */
 }
+
+/* Accent rectangle behind the Spotify playlist */
+.resources-spotify-accent {
+  position: absolute;
+  top: 2px;                     /* ~2px overlap behind iframe */
+  left: 0;                      /* anchored to the left side */
+  width: 33%;                   /* ~1/3 of the resources block */
+  height: calc(100% - 4px);     /* fill height minus a tiny offset */
+  background-color: rgb(32, 236, 122);
+  border-radius: 12px;
+  z-index: 1;                   /* behind the iframe */
+}
+
 
 /* General link hover */
 a:hover { opacity: 0.9; }
