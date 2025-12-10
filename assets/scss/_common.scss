@@ -307,7 +307,7 @@ body {
 
 /* Spotify embed (resources) */
 .resources-spotify {
-  position: left; /* so the accent can position inside this */
+  position: right; /* so the accent can position inside this */
 }
 
 .resources-spotify iframe {
@@ -316,7 +316,7 @@ body {
   margin: 2rem 0 2rem auto;
   border-radius: 12px;
   height: 300px;
-  position: left;
+  position: right;
   z-index: 2; /* sit above the accent rectangle */
 }
 
