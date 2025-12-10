@@ -113,15 +113,18 @@
           <h2 class="section-title">{{ .title }}</h2>
 
           <div class="resources-spotify mt-4">
-            <div class="spotify-responsive">
-              <iframe 
-                src="https://open.spotify.com/embed/playlist/78PUJJfxUPSQQJSyh9CTGZ?utm_source=generator&theme=0" 
-                frameborder="0" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                allowfullscreen>
-              </iframe>
-            </div>
-          </div>
+  <!-- Accent rectangle behind the playlist -->
+  <div class="resources-spotify-accent"></div>
+
+  <div class="spotify-responsive">
+    <iframe 
+      src="https://open.spotify.com/embed/playlist/78PUJJfxUPSQQJSyh9CTGZ?utm_source=generator&theme=0" 
+      frameborder="0" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
 
           {{ with .button }}
             {{ if .enable }}
