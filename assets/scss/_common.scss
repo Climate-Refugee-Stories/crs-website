@@ -168,15 +168,9 @@ body {
 .footer-section {
   padding-top: 12.5rem;
 
-  /* unify all footer text and link color with header */
-  color: #fff;  
-
   & a {
-    color: #fff;          // matches header
-    &:hover { 
-      color: #ffd700;     // keep hover accent if desired
-      text-decoration: none; 
-    }
+    color: #fff;
+    &:hover { color: #fff; text-decoration: none; }
   }
 }
 
@@ -306,32 +300,13 @@ body {
 }
 
 /* Spotify embed (resources) */
-.resources-spotify {
-  position: relative; /* so the accent can position inside this */
-}
-
 .resources-spotify iframe {
-  max-width: 620px;
+  max-width: 660px;
   width: 100%;
-  margin: 2rem 0 2rem auto;
+  margin: 2rem auto;
   border-radius: 12px;
-  height: 300;
-  position: relative;
-  z-index: 2; /* sit above the accent rectangle */
+  height: 380px;
 }
-
-/* Accent rectangle behind the Spotify playlist */
-.resources-spotify-accent {
-  position: absolute;
-  top: 2px;                     /* ~2px overlap behind iframe */
-  left: 0;                      /* anchored to the left side */
-  width: 45%;                   /* ~1/2 of the resources block */
-  height: 70%;     /* fill height minus a tiny offset */
-  background-color: #E36A09;
-  border-radius: 12px;
-  z-index: 1;                   /* behind the iframe */
-}
-
 
 /* General link hover */
 a:hover { opacity: 0.9; }
