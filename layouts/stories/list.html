@@ -12,22 +12,16 @@
      <!-- Search Bar -->
 
       <!-- Story Map -->
-      {{ with site.Home.Params.stories.map }}
-      <div class="row mb-5">
-        <div class="col-12">
-          <iframe
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-            title="Stories Map"
-            class="w-100"
-            style="height: 550px;"
-            src="{{ . }}">
-          </iframe>
-        </div>
-      </div>
-      {{ end }}
+    {{ with site.Home.Params.stories.map }}
+<div class="container">
+  <div class="row mb-5">
+    <div class="col-12">
+    <iframe class="w-100 stories-map-embed" src="{{ . }}">      
+     </iframe>
+    </div>
+  </div>
+</div>
+{{ end }}
       <!-- /Story Map -->
 
     <!-- Story Gallery -->
