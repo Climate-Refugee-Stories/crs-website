@@ -31,19 +31,7 @@
       <!-- Right Section -->
       <div class="col-md-4 mb-4 d-flex flex-column justify-content-center">
         <h5 class="text-light mb-3">Connect with Us</h5>
-        <ul class="list-unstyled d-flex flex-wrap justify-content-center justify-content-md-start mb-3">
-          {{ with (site.GetPage `/contact`).Params.socials }}
-            {{ range . }}
-              <li class="mr-3 mb-2">
-                <a class="text-light" href="{{ .URL | safeURL }}" target="_blank">
-                  <i class="{{ .icon }}"></i>
-                </a>
-              </li>
-            {{ end }}
-          {{ end }}
-        </ul>
-
-        <!-- Newsletter Form -->
+      <!-- Newsletter Form -->
         <form class="newsletter-form d-flex flex-column flex-sm-row justify-content-center justify-content-md-start">
           <input type="email" placeholder="Email address" required class="form-control mr-sm-2 mb-2 mb-sm-0">
           <button type="submit" class="btn btn-light">Subscribe</button>
