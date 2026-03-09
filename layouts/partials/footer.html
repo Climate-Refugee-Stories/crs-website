@@ -1,14 +1,14 @@
 <!-- Footer -->
 <footer class="footer-section" style="
-  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)), url('https://photos.smugmug.com/CRS-Website/Archive/US-Mexico-Border/i-GmLbXK9/0/LcbnjdpSKw4rqmbT8zf2p65vZncPS6j7r7qbj5gd8/O/Love%20Trumps%20Hate.jpg');
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.92) 100%), url('https://photos.smugmug.com/CRS-Website/Archive/US-Mexico-Border/i-GmLbXK9/0/LcbnjdpSKw4rqmbT8zf2p65vZncPS6j7r7qbj5gd8/O/Love%20Trumps%20Hate.jpg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  background-color: var(--primary-color);
+  background-color: #000;
 ">
   <!-- Main Footer Content -->
-  <div class="container py-5">
-    <div class="row text-center text-md-left align-items-center">
+  <div class="container py-5" style="margin-top: 6rem;">
+    <div class="row text-center text-md-left align-items-start">
       <!-- Left Section -->
       <div class="col-md-4 mb-4 d-flex flex-column justify-content-center">
         <p class="mb-3" style="color: #fff;">
@@ -37,7 +37,6 @@
       <!-- Right Section -->
       <div class="col-md-4 mb-4 d-flex flex-column justify-content-center">
         <h5 class="mb-3" style="color: #fff;">Connect with Us</h5>
-        <!-- Newsletter Form -->
         <div class="newsletter-form d-flex flex-column flex-sm-row justify-content-center justify-content-md-start">
           <input type="email" placeholder="Email address" class="form-control mr-sm-2 mb-2 mb-sm-0">
           <button type="button" class="btn" style="background-color: #fff; color: var(--primary-color); border: none;">Subscribe</button>
@@ -46,7 +45,7 @@
     </div>
   </div>
   <!-- Bottom strip -->
-  <div class="footer-bottom text-center py-3 mt-4" style="border-top: 1px solid rgba(255,255,255,0.3); color: #fff;">
+  <div class="footer-bottom text-center py-3 mt-4" style="border-top: 1px solid rgba(255,255,255,0.3); color: #fff; background-color: rgba(0,0,0,0.5);">
     <p class="mb-0">
       &copy; <span id="copyYear">{{ now.Format "2006" }}</span> Climate Refugee Stories.<br>
       Website created by <a href="https://linktr.ee/LotusDC" style="color: #fff; text-decoration: underline;">Lotus Digital Consulting, LLC.</a> 
