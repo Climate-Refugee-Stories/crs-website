@@ -21,6 +21,7 @@ stories:
     URL: stories
 archive:
   title: Archive
+  item_show: 5
   button:
     enable: true
     label: Archive
