@@ -31,5 +31,4 @@ resources:
     enable: true
     label: Resources
     URL: resources
- 
 ---
