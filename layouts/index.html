@@ -13,7 +13,6 @@
           </div>
         </div>
       </div>
-
       <!-- Social Icons -->
       <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
         {{ with (site.GetPage `/contact`).Params.socials }}
@@ -26,7 +25,6 @@
         {{ end }}
         {{ end }}
       </ul>
-      <!-- /Social Icons -->
     </div>
   </section>
   {{ end }}
@@ -52,14 +50,18 @@
   {{ end }}
   <!-- /About -->
 
-  <!-- Stories Section -->
+  <!-- Stories Section — split layout -->
   {{ with .stories }}
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">{{ .title }}</h2>
-          <p class="lead">{{ .description | markdownify }}</p>
+  <section class="section" style="padding: 0;">
+    <div class="row no-gutters align-items-stretch">
+      <!-- Image left -->
+      <div class="col-md-6" style="min-height: 400px; background: url('https://photos.smugmug.com/CRS-Website/Stories/i-WsGrWdH/0/M/i-WsGrWdH-M.jpg') center center / cover no-repeat;"></div>
+      <!-- Color block right -->
+      <div class="col-md-6 d-flex align-items-center" style="background-color: rgb(0, 129, 180); padding: 4rem 3rem;">
+        <div>
+          <h2 style="color: #fff; font-family: 'Libertinus Sans'; font-weight: 800; margin-bottom: 1.5rem;">{{ .title }}</h2>
+          <p style="color: #fff; font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">{{ .description | markdownify }}</p>
+          <a href="/stories/" class="btn" style="background-color: #fff; color: rgb(0, 129, 180); font-weight: 700;">Read Stories</a>
         </div>
       </div>
     </div>
@@ -67,70 +69,43 @@
   {{ end }}
   <!-- /Stories -->
 
-  <!-- Archive Section -->
+  <!-- Archive Section — split layout (image right) -->
   {{ with .archive }}
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">{{ .title }}</h2>
+  <section class="section" style="padding: 0;">
+    <div class="row no-gutters align-items-stretch">
+      <!-- Color block left -->
+      <div class="col-md-6 d-flex align-items-center" style="background-color: rgb(3, 163, 169); padding: 4rem 3rem;">
+        <div>
+          <h2 style="color: #fff; font-family: 'Libertinus Sans'; font-weight: 800; margin-bottom: 1.5rem;">{{ .title }}</h2>
+          <p style="color: #fff; font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">Explore our multimedia archive documenting the stories of climate refugees from around the world.</p>
+          {{ with .button }}
+            {{ if .enable }}
+            <a href="{{ .URL | absURL }}" class="btn" style="background-color: #fff; color: rgb(3, 163, 169); font-weight: 700;">{{ .label }}</a>
+            {{ end }}
+          {{ end }}
         </div>
       </div>
-
-      <div class="row shuffle-wrapper">
-        {{ range first .item_show (where site.RegularPages "Section" "archive") }}
-        <div class="col-lg-4 col-6 mb-4 shuffle-item">
-          <div class="position-relative rounded hover-wrapper">
-            <img src="https://photos.smugmug.com/photos/{{ .Params.thumbnail }}/0/S/{{ .Params.thumbnail }}-S.png" alt="archive-image" class="img-fluid rounded w-100 d-block">
-            <div class="hover-overlay">
-              <div class="hover-content">
-                <a class="btn btn-light btn-sm" href="{{ .Permalink | safeURL }}">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-
-      {{ with .button }}
-        {{ if .enable }}
-        <div class="col-12 text-center mt-3">
-          <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{ .label }}</a>
-        </div>
-        {{ end }}
-      {{ end }}
+      <!-- Image right -->
+      <div class="col-md-6" style="min-height: 400px; background: url('https://photos.smugmug.com/CRS-Website/Archive/i-kNmZrkB/0/M/i-kNmZrkB-M.jpg') center center / cover no-repeat;"></div>
     </div>
   </section>
   {{ end }}
   <!-- /Archive -->
 
-  <!-- Resources Section -->
+  <!-- Resources Section — split layout -->
   {{ with .resources }}
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">{{ .title }}</h2>
-
-          <div class="resources-spotify mt-4">
-  <!-- Accent rectangle behind the playlist -->
-  <div class="resources-spotify-accent"></div>
-
-  <div class="spotify-responsive">
-    <iframe 
-      src="https://open.spotify.com/embed/playlist/78PUJJfxUPSQQJSyh9CTGZ?utm_source=generator&theme=0" 
-      frameborder="0" 
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
-  </div>
-</div>
-
+  <section class="section" style="padding: 0;">
+    <div class="row no-gutters align-items-stretch">
+      <!-- Image left -->
+      <div class="col-md-6" style="min-height: 400px; background: url('https://photos.smugmug.com/CRS-Website/Resources/i-BtXm5jt/0/M/i-BtXm5jt-M.jpg') center center / cover no-repeat;"></div>
+      <!-- Color block right -->
+      <div class="col-md-6 d-flex align-items-center" style="background-color: rgb(0, 152, 119); padding: 4rem 3rem;">
+        <div>
+          <h2 style="color: #fff; font-family: 'Libertinus Sans'; font-weight: 800; margin-bottom: 1.5rem;">{{ .title }}</h2>
+          <p style="color: #fff; font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">Access our curated collection of resources on climate justice, migration, and environmental advocacy.</p>
           {{ with .button }}
             {{ if .enable }}
-            <div class="col-12 text-center mt-3">
-              <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{ .label }}</a>
-            </div>
+            <a href="{{ .URL | absURL }}" class="btn" style="background-color: #fff; color: rgb(0, 152, 119); font-weight: 700;">{{ .label }}</a>
             {{ end }}
           {{ end }}
         </div>
@@ -163,21 +138,6 @@
   {{ end }}
   {{ end }}
   <!-- /Partners -->
-
-  <!-- Twitter Feed -->
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-around">
-        <div class="col-lg-7 text-center">
-          <a class="twitter-timeline" data-height="500" data-tweet-limit="3" href="https://twitter.com/ClimRefStories?ref_src=twsrc%5Etfw">
-            Tweets by ClimRefStories
-          </a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Twitter Feed -->
 
 {{ end }}
 
