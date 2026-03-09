@@ -1,58 +1,61 @@
-<!-- Footer -->
-<footer class="footer-section" style="
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.92) 100%), url('https://photos.smugmug.com/CRS-Website/Archive/US-Mexico-Border/i-GmLbXK9/0/LcbnjdpSKw4rqmbT8zf2p65vZncPS6j7r7qbj5gd8/O/Love%20Trumps%20Hate.jpg');
+<!-- Footer Tier 1: Photo only, no text, no gradient -->
+<div style="
+  background-image: url('https://photos.smugmug.com/CRS-Website/Archive/US-Mexico-Border/i-GmLbXK9/0/LcbnjdpSKw4rqmbT8zf2p65vZncPS6j7r7qbj5gd8/O/Love%20Trumps%20Hate.jpg');
   background-size: cover;
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
-  background-color: #000;
-">
-  <!-- Main Footer Content -->
-  <div class="container py-5" style="margin-top: 6rem;">
+  height: 400px;
+  width: 100%;
+"></div>
+
+<!-- Footer Tier 2: Solid primary color with links and copyright -->
+<footer class="footer-section" style="background-color: var(--primary-color); padding-top: 3rem;">
+  <div class="container">
     <div class="row text-center text-md-left align-items-start">
-      <!-- Left Section -->
-      <div class="col-md-4 mb-4 d-flex flex-column justify-content-center">
-        <p class="mb-3" style="color: #fff;">
+      <!-- Left: Description -->
+      <div class="col-md-4 mb-4">
+        <p style="color: #fff;">
           A public history project narrating the fight for climate justice.
         </p>
-        <!-- Social Icons -->
-        <div class="d-flex justify-content-center justify-content-md-start">
-          {{ with (site.GetPage `/contact`).Params.socials }}
-            {{ range . }}
-              <a href="{{ .link }}" target="_blank" rel="noopener" style="color: #fff; font-size: 1.4rem; margin-right: 15px;">
-                <i class="{{ .icon }}"></i>
-              </a>
-            {{ end }}
-          {{ end }}
-        </div>
       </div>
-      <!-- Middle Section -->
-      <div class="col-md-4 mb-4 d-flex flex-column justify-content-center">
-        <h5 class="mb-3" style="color: #fff;">Our Work</h5>
+      <!-- Center: Our Work -->
+      <div class="col-md-4 mb-4">
+        <h5 style="color: #fff;">Our Work</h5>
         <ul class="list-unstyled">
           <li><a href="/archive/" style="color: #fff;">Archive</a></li>
           <li><a href="/stories/" style="color: #fff;">Stories</a></li>
           <li><a href="/resources/" style="color: #fff;">Resources</a></li>
         </ul>
       </div>
-      <!-- Right Section -->
-      <div class="col-md-4 mb-4 d-flex flex-column justify-content-center">
-        <h5 class="mb-3" style="color: #fff;">Connect with Us</h5>
-        <div class="newsletter-form d-flex flex-column flex-sm-row justify-content-center justify-content-md-start">
-          <input type="email" placeholder="Email address" class="form-control mr-sm-2 mb-2 mb-sm-0">
-          <button type="button" class="btn" style="background-color: #fff; color: var(--primary-color); border: none;">Subscribe</button>
+      <!-- Right: Connect with Us + Subscribe -->
+      <div class="col-md-4 mb-4">
+        <h5 style="color: #fff;">Connect with Us</h5>
+        <div class="d-flex mb-3" style="gap: 12px;">
+          {{ with (site.GetPage `/contact`).Params.socials }}
+            {{ range . }}
+              <a href="{{ .link }}" target="_blank" rel="noopener" style="color: #fff; font-size: 1.4rem;">
+                <i class="{{ .icon }}"></i>
+              </a>
+            {{ end }}
+          {{ end }}
+        </div>
+        <div class="newsletter-form d-flex">
+          <input type="email" placeholder="Email address" class="form-control mr-2">
+          <button type="button" class="btn" style="background-color: #fff; color: var(--primary-color); border: none; white-space: nowrap;">Subscribe</button>
         </div>
       </div>
     </div>
   </div>
-  <!-- Bottom strip -->
-  <div class="footer-bottom text-center py-3 mt-4" style="border-top: 1px solid rgba(255,255,255,0.3); color: #fff; background-color: rgba(0,0,0,0.5);">
-    <p class="mb-0">
+  <!-- Copyright bar -->
+  <div style="border-top: 1px solid rgba(255,255,255,0.3); margin-top: 2rem; padding: 1rem 0; text-align: center;">
+    <p class="mb-0" style="color: #fff; font-size: 0.85rem;">
       &copy; <span id="copyYear">{{ now.Format "2006" }}</span> Climate Refugee Stories.<br>
-      Website created by <a href="https://linktr.ee/LotusDC" style="color: #fff; text-decoration: underline;">Lotus Digital Consulting, LLC.</a> 
+      Website created by <a href="https://linktr.ee/LotusDC" style="color: #fff; text-decoration: underline;">Lotus Digital Consulting, LLC.</a>
       using the <a href="https://github.com/themefisher/kross-hugo" style="color: #fff; text-decoration: underline;">Kross Hugo</a> theme.
     </p>
   </div>
 </footer>
+
 <!-- JS Plugins -->
 {{ range site.Params.plugins.js}}
 <script src="{{ .link | absURL }}"></script>
@@ -61,7 +64,6 @@
 <script>
   const yearID = document.querySelector("#copyYear");
   if(yearID) {
-    const currentYear = new Date().getFullYear();
-    yearID.textContent = currentYear;
+    yearID.textContent = new Date().getFullYear();
   }
 </script>
