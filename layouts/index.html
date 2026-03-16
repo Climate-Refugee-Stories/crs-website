@@ -52,16 +52,20 @@
 
   <!-- Stories Section — split layout -->
   {{ with .stories }}
-  <section class="section" style="padding: 0;">
+  <section style="padding: 0; overflow: hidden;">
     <div class="row no-gutters align-items-stretch">
       <!-- Image left -->
-      <div class="col-md-6" style="min-height: 400px; background: url('https://photos.smugmug.com/CRS-Website/Stories/i-WsGrWdH/0/M/i-WsGrWdH-M.jpg') center center / cover no-repeat;"></div>
+      <div class="col-md-6" style="min-height: 250px; height: 40vw; max-height: 400px; background: url('https://tinashull.smugmug.com/CRS-Website/Stories/2-Marshall-Islands/i-bVBwvGw/A') center center / cover no-repeat;"></div>
       <!-- Color block right -->
-      <div class="col-md-6 d-flex align-items-center" style="background-color: rgb(0, 129, 180); padding: 4rem 3rem;">
+      <div class="col-md-6 d-flex align-items-center" style="background-color: rgb(0, 129, 180); padding: 3rem 2.5rem;">
         <div>
           <h2 style="color: #fff; font-family: 'Libertinus Sans'; font-weight: 800; margin-bottom: 1.5rem;">{{ .title }}</h2>
           <p style="color: #fff; font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">{{ .description | markdownify }}</p>
-          <a href="/stories/" class="btn" style="background-color: #fff; color: rgb(0, 129, 180); font-weight: 700;">Read Stories</a>
+          {{ with .button }}
+            {{ if .enable }}
+            <a href="{{ .URL | absURL }}" class="btn" style="background-color: #fff; color: #000; font-weight: 700;">{{ .label }}</a>
+            {{ end }}
+          {{ end }}
         </div>
       </div>
     </div>
@@ -71,22 +75,22 @@
 
   <!-- Archive Section — split layout (image right) -->
   {{ with .archive }}
-  <section class="section" style="padding: 0;">
+  <section style="padding: 0; overflow: hidden;">
     <div class="row no-gutters align-items-stretch">
-      <!-- Color block left -->
-      <div class="col-md-6 d-flex align-items-center" style="background-color: rgb(3, 163, 169); padding: 4rem 3rem;">
+      <!-- Color block left — stacks below image on mobile -->
+      <div class="col-md-6 order-2 order-md-1 d-flex align-items-center" style="background-color: rgb(3, 163, 169); padding: 3rem 2.5rem;">
         <div>
           <h2 style="color: #fff; font-family: 'Libertinus Sans'; font-weight: 800; margin-bottom: 1.5rem;">{{ .title }}</h2>
           <p style="color: #fff; font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">Explore our multimedia archive documenting the stories of climate refugees from around the world.</p>
           {{ with .button }}
             {{ if .enable }}
-            <a href="{{ .URL | absURL }}" class="btn" style="background-color: #fff; color: rgb(3, 163, 169); font-weight: 700;">{{ .label }}</a>
+            <a href="{{ .URL | absURL }}" class="btn" style="background-color: #fff; color: #000; font-weight: 700;">{{ .label }}</a>
             {{ end }}
           {{ end }}
         </div>
       </div>
-      <!-- Image right -->
-      <div class="col-md-6" style="min-height: 400px; background: url('https://photos.smugmug.com/CRS-Website/Archive/i-kNmZrkB/0/M/i-kNmZrkB-M.jpg') center center / cover no-repeat;"></div>
+      <!-- Image right — appears first on mobile -->
+      <div class="col-md-6 order-1 order-md-2" style="min-height: 250px; height: 40vw; max-height: 400px; background: url('https://tinashull.smugmug.com/CRS-Website/Stories/1-Who-Are-Climate-Refugees/i-TGTc2wb/A') center center / cover no-repeat;"></div>
     </div>
   </section>
   {{ end }}
@@ -94,18 +98,18 @@
 
   <!-- Resources Section — split layout -->
   {{ with .resources }}
-  <section class="section" style="padding: 0;">
+  <section style="padding: 0; overflow: hidden;">
     <div class="row no-gutters align-items-stretch">
       <!-- Image left -->
-      <div class="col-md-6" style="min-height: 400px; background: url('https://photos.smugmug.com/CRS-Website/Resources/i-BtXm5jt/0/M/i-BtXm5jt-M.jpg') center center / cover no-repeat;"></div>
+      <div class="col-md-6" style="min-height: 250px; height: 40vw; max-height: 400px; background: url('https://tinashull.smugmug.com/CRS-Website/Stories/2-Marshall-Islands/i-QhXGQfL/A') center center / cover no-repeat;"></div>
       <!-- Color block right -->
-      <div class="col-md-6 d-flex align-items-center" style="background-color: rgb(232, 167, 7); padding: 4rem 3rem;">
+      <div class="col-md-6 d-flex align-items-center" style="background-color: rgb(232, 167, 7); padding: 3rem 2.5rem;">
         <div>
           <h2 style="color: #fff; font-family: 'Libertinus Sans'; font-weight: 800; margin-bottom: 1.5rem;">{{ .title }}</h2>
           <p style="color: #fff; font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">Access our curated collection of resources on climate justice, migration, and environmental advocacy.</p>
           {{ with .button }}
             {{ if .enable }}
-            <a href="{{ .URL | absURL }}" class="btn" style="background-color: #fff; color: rgb(0, 152, 119); font-weight: 700;">{{ .label }}</a>
+            <a href="{{ .URL | absURL }}" class="btn" style="background-color: #fff; color: #000; font-weight: 700;">{{ .label }}</a>
             {{ end }}
           {{ end }}
         </div>
@@ -114,6 +118,26 @@
   </section>
   {{ end }}
   <!-- /Resources -->
+
+  <!-- Spotify Section -->
+  <section class="section" style="background-color: #f9f9f9;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10 col-12">
+          <iframe
+            src="https://open.spotify.com/embed/playlist/78PUJJfxUPSQQJSyh9CTGZ?utm_source=generator&theme=0"
+            width="100%"
+            height="380"
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            allowfullscreen
+            style="border-radius: 12px; display: block;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Spotify -->
 
   <!-- Partners Section -->
   {{ with (site.GetPage `/about`).Params.partners }}
