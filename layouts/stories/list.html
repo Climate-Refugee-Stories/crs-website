@@ -1,21 +1,40 @@
 {{ define "main" }}
-
+  <!-- Page title -->
   {{ partial "page-title.html" . }}
 
   <section class="section">
-      <div class="container">
-      <div class="row search-row">
-          {{ partial "search.html" . }}
+    <div class="container">
+
+      <!-- Story Map -->
+      {{ with site.Home.Params.stories.map }}
+      <div class="row mb-5">
+        <div class="col-12">
+          <iframe 
+            class="w-100 stories-map-embed" 
+            src="{{ . }}" 
+            style="height: 500px; border: none; border-radius: 8px;">
+          </iframe>
+        </div>
       </div>
-      <div class="row">
-        {{ range (.Paginator 9).Pages }}
-        {{ .Render "post" }}
+      {{ end }}
+      <!-- /Story Map -->
+
+      <!-- Search Bar -->
+      <div class="row search-row mb-4">
+        {{ partial "search.html" . }}
+      </div>
+      <!-- /Search Bar -->
+
+      <!-- Story Gallery -->
+      <div class="row justify-content-center gallery">
+        {{ range .Pages }}
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+            {{ partial "stories/story-card.html" . }}
+          </div>
         {{ end }}
       </div>
-      <div class="row justify-content-center mt-5">
-        {{ template "_internal/pagination.html" . }}
-      </div>
+      <!-- /Story Gallery -->
+
     </div>
   </section>
-
 {{ end }}

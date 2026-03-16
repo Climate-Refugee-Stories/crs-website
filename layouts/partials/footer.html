@@ -1,85 +1,70 @@
-<!-- Footer -->
-<footer class="bg-dark footer-section">
-  <div class="footer-bottom border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">
-      &copy; <span id='copyYear'>2021</span> Climate Refugee Stories<br>
-      Website created by <a href="https://linktr.ee/LotusDC">Lotus Digital Consulting, LLC.</a>
-      using the <a href="https://github.com/themefisher/kross-hugo">Kross Hugo</a> theme
+<!-- Footer Tier 1: Photo only, no text, no gradient -->
+<div style="
+  background-image: url('https://photos.smugmug.com/CRS-Website/Archive/US-Mexico-Border/i-GmLbXK9/0/LcbnjdpSKw4rqmbT8zf2p65vZncPS6j7r7qbj5gd8/O/Love%20Trumps%20Hate.jpg');
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  background-color: var(--primary-color);
+"></div>
+
+<!-- Footer Tier 2: Solid primary color with links and copyright -->
+<footer class="footer-section" style="background-color: var(--primary-color); padding-top: 3rem;">
+  <div class="container">
+    <div class="row text-center text-md-left align-items-start">
+      <!-- Left: Description -->
+      <div class="col-md-4 mb-4">
+        <p style="color: #fff;">
+          A public history project narrating the fight for climate justice.
+        </p>
+      </div>
+      <!-- Center: Our Work -->
+      <div class="col-md-4 mb-4">
+        <h5 style="color: #fff;">Our Work</h5>
+        <ul class="list-unstyled">
+          <li><a href="/archive/" style="color: #fff;">Archive</a></li>
+          <li><a href="/stories/" style="color: #fff;">Stories</a></li>
+          <li><a href="/resources/" style="color: #fff;">Resources</a></li>
+        </ul>
+      </div>
+      <!-- Right: Connect with Us + Subscribe -->
+      <div class="col-md-4 mb-4">
+        <h5 style="color: #fff;">Connect with Us</h5>
+        <div class="d-flex mb-3" style="gap: 12px;">
+          {{ with (site.GetPage `/contact`).Params.socials }}
+            {{ range . }}
+              <a href="{{ .link }}" target="_blank" rel="noopener" style="color: #fff; font-size: 1.4rem;">
+                <i class="{{ .icon }}"></i>
+              </a>
+            {{ end }}
+          {{ end }}
+        </div>
+        <div class="newsletter-form d-flex">
+          <input type="email" placeholder="Email address" class="form-control mr-2">
+          <button type="button" class="btn" style="background-color: #fff; color: var(--primary-color); border: none; white-space: nowrap;">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright bar -->
+  <div style="border-top: 1px solid rgba(255,255,255,0.3); margin-top: 2rem; padding: 1rem 0; text-align: center;">
+    <p class="mb-0" style="color: #fff; font-size: 0.85rem;">
+      &copy; <span id="copyYear">{{ now.Format "2006" }}</span> Climate Refugee Stories.<br>
+      Website created by <a href="https://linktr.ee/LotusDC" style="color: #fff; text-decoration: underline;">Lotus Digital Consulting, LLC.</a>
+      using the <a href="https://github.com/themefisher/kross-hugo" style="color: #fff; text-decoration: underline;">Kross Hugo</a> theme.
     </p>
   </div>
 </footer>
-<!-- /Footer -->
 
-{{ "<!-- JS Plugins -->" | safeHTML }}
+<!-- JS Plugins -->
 {{ range site.Params.plugins.js}}
 <script src="{{ .link | absURL }}"></script>
 {{ end }}
-
-{{ "<!-- Copyright update -->" | safeHTML }}
+<!-- Copyright update -->
 <script>
-  // Set Current Year
   const yearID = document.querySelector("#copyYear");
-  const currentYear = new Date().getFullYear();
-  yearID.textContent = currentYear;
+  if(yearID) {
+    yearID.textContent = new Date().getFullYear();
+  }
 </script>
-
-<!-- Cookie -->
-{{ if site.Params.cookies.enable }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-<div id="js-cookie-box" class="cookie-box cookie-box-hide cookie-msg-text">
-	Stay up to date with our newsletter!
-  <a href="{{ (site.GetPage `/contact`).Params.newsletter_button.URL }}" target="_blank"><span id="js-cookie-sub" class="btn btn-sm btn-primary ml-2">Subscribe</span></a>
-  <a href=""><span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">Dismiss</span></a>
-</div>
-<script>
-	(function ($) {
-		const cookieBox = document.getElementById('js-cookie-box');
-		const cookieButton = document.getElementById('js-cookie-button');
-    const cookieButtonSub = document.getElementById('js-cookie-sub');
-		if (!Cookies.get('cookie-box')) {
-			cookieBox.classList.remove('cookie-box-hide');
-			cookieButton.onclick = function () {
-				Cookies.set('cookie-box', true, {
-					expires: {{ site.Params.cookies.expire_days }}
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
-      cookieButtonSub.onclick = function () {
-				Cookies.set('cookie-box', true, {
-					expires: 6000
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
-		}
-	})(jQuery);
-</script>
-
-<!-- Cookie Style -->
-<style>
-.cookie-box {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  font-size:15pt;
-  z-index: 9999;
-  padding: 1rem 2rem;
-  background: rgb(71, 71, 71);
-  transition: all .75s cubic-bezier(.19, 1, .22, 1);
-  color: #fdfdfd;
-}
-
-.cookie-box a {
-  color: white;
-}
-
-.cookie-box a:hover {
-  color: rgb(204, 204, 204);
-}
-
-.cookie-box-hide {
-  display: none;
-}
-</style>
-{{ end }}
