@@ -1,11 +1,188 @@
-@import 'variables';
+//////////////////////////////////////////
+// MAIN SCSS ENTRY POINT
+// Zed
+//////////////////////////////////////////
 
-@import 'mixins';
+/* =========================
+   1. CORE FOUNDATION
+========================= */
 
-@import 'typography';
+@import "variables";
+@import "mixins";
+@import "hugo_vars";
 
-@import 'utility';
+/* Typography system */
+@import "typography";
 
-@import 'common';
+/* Utility helpers */
+@import "utility";
 
-@import 'media-queries';
+/* Media queries (responsive system) */
+@import "media-queries";
+
+
+/* =========================
+   2. BASE RESET + GLOBAL STYLES
+========================= */
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-family: 'Libertinus Sans', sans-serif;
+  font-weight: 500;
+  color: #4c4c4c;
+  background-color: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   3. TYPOGRAPHY BASELINE
+========================= */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libertinus Sans', sans-serif;
+  color: #C18D52;
+  line-height: 1.2;
+  margin: 0 0 0.75rem 0;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+
+/* =========================
+   4. DESIGN TOKENS USAGE SAFETY
+========================= */
+
+:root {
+  --transition-fast: 0.2s ease;
+  --radius-md: 12px;
+  --radius-lg: 15px;
+}
+
+
+/* =========================
+   5. LAYOUT FOUNDATION
+========================= */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+
+/* =========================
+   6. COMPONENT BASELINE
+========================= */
+
+/* Buttons (if used globally) */
+button {
+  cursor: pointer;
+  transition: var(--transition-fast);
+  border: none;
+  background: none;
+}
+
+/* Forms */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+}
+
+
+/* =========================
+   7. PAGE STRUCTURE HOOKS
+========================= */
+
+.page-title,
+.page-title-alt,
+.page-title-post {
+  position: relative;
+  padding: 250px 0 150px;
+}
+
+.page-title-alt {
+  padding: 290px 0 60px;
+}
+
+.page-title-post {
+  padding: 215px 0 125px;
+}
+
+
+/* =========================
+   8. ACCESSIBILITY BASELINE
+========================= */
+
+:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
+
+/* =========================
+   9. PERFORMANCE & MOTION SAFETY
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* =========================
+   10. PRINT SAFETY
+========================= */
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
