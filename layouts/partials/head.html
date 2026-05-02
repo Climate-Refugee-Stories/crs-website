@@ -53,17 +53,15 @@
 
   {{ $script := "" }}
 
-  {{ if hugo.IsProduction }}
-
-  {{ $options = merge $options (dict "minify" true ) }}
-  {{ $script = resources.Get "js/script.js" | js.Build $options | minify | fingerprint }}
-
-  {{ else }}
-
-  {{ $options = merge $options (dict "minify" false "targetPath" "js/main.js" ) }}
-  {{ $script = resources.Get "js/script.js" | js.Build $options }}
-
-  {{ end }}
+{{ if hugo.IsProduction }}
+	
+  {{ $script = resources.Get "js/script.js" | js.Build (dict "minify" true) | minify | fingerprint }}
+	
+{{ else }}
+	
+  {{ $script = resources.Get "js/script.js" | js.Build (dict "minify" false "targetPath" "js/main.js") }}
+	
+{{ end }}
 
   <script defer src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
@@ -107,5 +105,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet"> 
+
+  <script defer src="{{ "js/a11y.js" | relURL }}">
+  </script>
+	
+  <script defer src="{{ "js/translate.js" | relURL }}">
+  </script>
 
 </head>
